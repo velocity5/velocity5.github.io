@@ -1,0 +1,3 @@
+b.price::after {
+	content: " VND"
+}
