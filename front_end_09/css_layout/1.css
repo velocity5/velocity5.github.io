@@ -1,0 +1,48 @@
+/*
+.box {
+  width: 40%;
+  float: left;
+}
+
+#red {
+	height: 400px;
+	background-color: red;
+	margin-right: 15px;
+}
+
+#green {
+	height: 200px;
+	background-color: green;
+	
+}
+
+#blue {
+	height: 200px;
+	background-color: blue;
+	
+} */
+
+.box {
+	width: 30%; 
+  	border: none;
+  	float: left;
+  
+}
+
+#red {
+	height: 400px;
+	background-color: red;
+	margin-right: 15px;
+}
+
+#green {
+	height: 400px;
+	background-color: green;
+	margin-right: 15px;
+}
+
+#blue {
+	height: 400px;
+	background-color: blue;
+	margin-right: 15px;
+}
