@@ -1,3 +1,9 @@
 b.price::after {
 	content: " VND"
 }
+.contents {
+	padding: 20px 15px 20px 10px;
+}
+.btn {
+	margin: auto 10px 5px 10px;
+}
