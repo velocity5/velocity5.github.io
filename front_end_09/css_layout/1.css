@@ -1,6 +1,6 @@
-/*
+
 .box {
-  width: 40%;
+  width: 50%;
   float: left;
 }
 
@@ -20,8 +20,8 @@
 	height: 200px;
 	background-color: blue;
 	
-} */
-
+} 
+/*
 .box {
 	width: 30%; 
   	border: none;
@@ -45,4 +45,4 @@
 	height: 400px;
 	background-color: blue;
 	margin-right: 15px;
-}
+} */
