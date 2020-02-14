@@ -1,34 +1,30 @@
 * {
+	box-sizing: border-box;
 	margin: 0px;
 	padding: 0px;
 }
 
-.container {
-	display: block;
-}
 
 .red-box {
-	display: grid;
-	justify-content: center;
+	float: left;
     height: 400px;
     width: 60%;
     background-color: red;
-    margin-right: 15px;
+    border-right: 15px solid white;
+    /* margin-right: dung cho menu; */
 }
 
-.box-gb {
-	height: 100%;
-	width: 80%;
-}
 .green-box {
 	float: left;
 	height: 200px;
+	width: 40%;
 	background-color: green;
 }
 
 .blue-box {
 	float: left;
 	height: 200px;
+	width: 40%;
 	background-color: blue;
 	
 } 

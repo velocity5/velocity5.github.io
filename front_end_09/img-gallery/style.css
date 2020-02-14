@@ -6,12 +6,16 @@
     box-sizing: border-box;
 }
 
-a {
+ul li a {
     color: #de9714;
     text-decoration: none;
     background-color: transparent;
 }
 
+a {
+    color: #000000;
+    text-decoration: none;
+}
 .parent-menu a:hover {
     color: #e0e0d1;
 }
@@ -25,7 +29,6 @@ dl, ol, ul {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
 
 #header {
     background-color: #de9714;
@@ -68,4 +71,61 @@ dl, ol, ul {
 }
 .nav-padding {
     padding: 0 3px;
+}
+
+.danhsach {
+    position: relative;
+    overflow: hidden;
+    width: auto;
+    display: grid;
+    float: left;
+    padding: 15px 10px 10px 5px;
+}
+.danhsach img {
+    max-width: 100%;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    transition: .5s ease;
+}
+.danhsach:hover img {
+    -webkit-transform: scale(1.05,1.05);
+    -moz-transform: scale(1.05,1.05);
+    transform: scale(1.05,1.05);
+}
+
+.caption {
+    display: grid;
+    float: left;
+    padding: 10px 10px 10px 5px;
+}
+
+img {
+    max-width: 300px;
+    height: 210px;
+}
+.danhsach:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+    z-index: 2;
+    opacity: 0;
+    -moz-transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+.danhsach:hover:before {
+    opacity: 1;
+}
+
+.footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
