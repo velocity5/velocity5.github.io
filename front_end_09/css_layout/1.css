@@ -1,48 +1,23 @@
 
-.box {
-  width: 50%;
-  float: left;
-}
-
-#red {
+.red-box {
+	float: left;
 	height: 400px;
+	width: 60%;
 	background-color: red;
-	margin-right: 15px;
+	
 }
 
-#green {
+.green-box {
+	float: left;
+	width: 40%;
 	height: 200px;
 	background-color: green;
 	
 }
 
-#blue {
+.blue-box {
+	float: left;
+	width: 40%;
 	height: 200px;
 	background-color: blue;
-	
 } 
-/*
-.box {
-	width: 30%; 
-  	border: none;
-  	float: left;
-  
-}
-
-#red {
-	height: 400px;
-	background-color: red;
-	margin-right: 15px;
-}
-
-#green {
-	height: 400px;
-	background-color: green;
-	margin-right: 15px;
-}
-
-#blue {
-	height: 400px;
-	background-color: blue;
-	margin-right: 15px;
-} */

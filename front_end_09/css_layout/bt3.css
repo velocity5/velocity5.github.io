@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	flex-direction: row;
+}
+.red-box {
+	width: 33.3%;
+	height: 400px;
+	/*margin-right: 15px;  bai tap 4*/
+	background-color: red;
+}
+
+.green-box {
+	width: 33.3%;
+	height: 400px;
+	/*margin-right: 15px; bai tap 4*/
+	background-color: green;
+}
+
+.blue-box {
+	width: 33.3%;
+	height: 400px;
+	background-color: blue;
+}

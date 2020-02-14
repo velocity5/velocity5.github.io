@@ -1,0 +1,34 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	display: block;
+}
+
+.red-box {
+	display: grid;
+	justify-content: center;
+    height: 400px;
+    width: 60%;
+    background-color: red;
+    margin-right: 15px;
+}
+
+.box-gb {
+	height: 100%;
+	width: 80%;
+}
+.green-box {
+	float: left;
+	height: 200px;
+	background-color: green;
+}
+
+.blue-box {
+	float: left;
+	height: 200px;
+	background-color: blue;
+	
+} 
