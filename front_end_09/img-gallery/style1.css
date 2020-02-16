@@ -10,6 +10,13 @@
     width: 33.33%;
     padding: 60px;
 }
+.title-gal {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
+}
 /* begin hover */
 .danhsach img {
     max-width: 250px;

@@ -87,6 +87,16 @@ dl, ol, ul {
     text-align: center;
     font-weight: 300;
     font-size: 30px;
+    color: #F8C471;
+}
+.below {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 200;
+    font-size: 20px;
+    color: #F4F6F7;
+    line-height: 0.3;
 }
 
 .opening {
@@ -101,6 +111,7 @@ dl, ol, ul {
     font-family: Roboto, Helvetica, Arial, sans-serif;
     padding: 5px 50px 5px 0px;
     margin: 5px 5px 5px 50px;
+    color: #F4F6F7;
 }
 
 .footer {
