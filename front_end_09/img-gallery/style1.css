@@ -1,0 +1,78 @@
+.wrap {
+    max-width: 1000px;
+    margin: auto;
+}
+.danhsach {
+    position: relative;
+    overflow: hidden;
+    float: left;
+    line-height: 1.5;
+    width: 33.33%;
+    padding: 60px;
+}
+/* begin hover */
+.danhsach img {
+    max-width: 250px;
+    transition: .5s ease;
+    max-height: 250px;
+    flex-basis: auto;
+}
+.danhsach:hover img {
+    transform: scale(1.05,1.05);
+}
+
+.danhsach:before {
+    content: "";
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    z-index: 2;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.danhsach a:active {
+   color: #3282b8; 
+}
+
+#back:hover {
+    color: #3282b8;
+}
+
+#back:active {
+    color: #94ccf2; 
+}
+/* end hover */
+.caption {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+/* back2top */
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}

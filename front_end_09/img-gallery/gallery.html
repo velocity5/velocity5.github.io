@@ -2,90 +2,148 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	<title>Gallery</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
 </head>
 <body>
-	<main id="main" class="contents">
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/edifice-casio.png" alt="edifice-casio">
-				<div class="caption">
-					<h4>Casio Edifice</h4>
-					</a>
-				</div>
-		</div>
+	<div class="wrap">
+		<div class="container" id="header">
+			<header>
+				<div class="nav-bar">
+					<nav class="navbar navbar-expand-lg">
+						<div class="parent-menu desktop">
+							<ul class="list-menu">
+								<li class="parent-menu-item">
+									<a href="index.html" class="nav-padding">
+										<span>Home</span>
+									</a>
+								</li>
 
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/edifice-watches.png" alt="edifice-casio">
-				<div class="caption">
-					<h4>Casio Edifice</h4>
-					</a>
-				</div>
-		</div>
+								<li class="parent-menu-item">
+									<a href="#About" class="nav-padding">
+										<span>About</span>
+									</a>
+								</li>
 
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/edifice.png" alt="edifice-casio">
-				<div class="caption">
-					<h4>Casio Edifice</h4>
-					</a>
-				</div>
-		</div>
+								<li class="parent-menu-item">
+									<a href="gallery.html" class="nav-padding active">
+										<span>Image-Gallery</span>
+									</a>
+								</li>
 
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/g-shock.png" alt="G-shock casio">
-				<div class="caption">
-					<h4>G-shock</h4>
-					</a>
+								<li class="parent-menu-item">
+									<a href="#Contact" class="nav-padding">
+										<span>Contact</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
 				</div>
-		</div>
+			</header>
+		</div> <!-- End menu -->
+		<h2 class="title">Một số sản phẩm nổi bật</h2>
+		<hr>
+		<main id="gallery-contents">
+			<div class="danhsach">
+				<img src="images/edifice-casio.png" class="responsive" alt="GSTB200G-2A">
+				<div class="caption">
+					<a href="#" target="_blank">G-shock GSTB200G-2A</a>
+				</div>
+			</div>
+			
+			<!-- End san pham 1 -->
+			<div class="danhsach">
+				<img src="images/casio_watches.png" class="responsive" alt="GM6900B-4">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GM6900B-4</a>
+					</div>
+			</div>
+			<!-- End san pham 2 -->
+			<div class="danhsach">
+				<img src="images/g_shock1.png" class="responsive" alt="GA710GBX-1A9">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GA710GBX-1A9</a>
+					</div>
+			</div>
+			<!-- End san pham 3 -->
+			<div class="danhsach">
+				<img src="images/G_SHOCK2.png" class="responsive" alt="GGB100-1A3">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GGB100-1A3</a>
+					</div>
+			</div>
+			<!-- End san pham 4 -->
+			<div class="danhsach">
+				<img src="images/g_shock3.png" class="responsive" alt="GA2000-5A">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GA2000-5A</a>
+					</div>
+			</div>
+			<!-- End san pham 5 -->
+			<div class="danhsach">
+				<img src="images/g_steel.png" class="responsive" alt="GM6900-1">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GM6900-1</a>
+					</div>
+			</div>
+			<!-- End san pham 6 -->
+			<div class="danhsach">
+				<img src="images/GW_5000.png" class="responsive" alt="DW5700SF-1">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock DW5700SF-1</a>
+					</div>
+			</div>
+			<!-- End san pham 7 -->
+			<div class="danhsach">
+				<img src="images/rolex.png" class="responsive" alt="GA2000BT-1A">
+					<div class="caption">
+						<a href="#" target="_blank">G-Shock GA2000BT-1A</a>
+					</div>
+			</div>
+			<!-- End san pham 8 -->
+			<div class="danhsach">
+				<img src="images/rolex2.png" class="responsive" alt="GWFD1000ARR-1">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GWFD1000ARR-1</a>
+					</div>
+			</div>
+			<!-- End san pham 9 -->
+			<div class="danhsach">
+				<img src="images/rolex3.png" class="responsive" alt="GGB100-1A9">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GGB100-1A9</a>
+					</div>
+			</div>
+			<!-- End san pham 10 -->	
+			<div class="danhsach">
+				<img src="images/rolex4.png" class="responsive" alt="GM6900G-9">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock GM6900G-9</a>
+					</div>
+			</div>
+			<!-- End san pham 11 -->
+			<div class="danhsach">
+				<img src="images/rolex_silver.png" class="responsive" alt="MTGB1000DCM-1">
+					<div class="caption">
+						<a href="#" target="_blank">G-shock MTGB1000DCM-1</a>
+					</div>
+			</div>
+			<!-- End san pham 12 -->
+		</main>	
+		<!-- back2top -->
+		<a id="back2Top" title="Back to top" href="#">&#10148;</a>
 
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/g-solar.png" alt="G-shock solar casio">
-				<div class="caption">
-					<h4>G-shock Solar</h4>
-					</a>
-				</div>
-		</div>
-
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/g-shock1.png" alt="G-shock casio">
-				<div class="caption">
-					<h4>G-shock</h4>
-					</a>
-				</div>
-		</div>
-
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/rolex-sub.png" alt="Rolex Gold">
-				<div class="caption">
-					<h4>Rolex Gold</h4>
-					</a>
-				</div>
-		</div>
-
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/rolex.png" alt="Rolex Silver">
-				<div class="caption">
-					<h4>Rolex Silver</h4>
-					</a>
-				</div>
-		</div>
-
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/rolex2.png" alt="Rolex Gold">
-				<div class="caption">
-					<h4>Rolex Gold</h4>
-					</a>
-				</div>
-		</div>
-
-		<div class="danhsach">
-			<a href="#" target="_self"><img src="images/gold-green.png" alt="Rolex Gold Green">
-				<div class="caption">
-					<h4>Rolex Gold Green</h4>
-					</a>
-				</div>
-		</div>
-	</main>
+		<!-- back2home -->
+		<a href ="index.html" id="back" name="back">&#171;Home</a>
+	<!-- footer -->
+		<footer class="footer">
+			<span>Copyright &copy; 2020 by AnhBa Watch.</span>
+		</footer>
+	</div>
 </body>
 </html>

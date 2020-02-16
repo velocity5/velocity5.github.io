@@ -2,27 +2,25 @@
     box-sizing: border-box;
 }
 
-* {
-    box-sizing: border-box;
-}
-
 ul li a {
-    color: #de9714;
     text-decoration: none;
     background-color: transparent;
 }
+/* begin hover */
+li:hover {
+  background-color: #ecce6d;
+  text-shadow: 1px 1px #f0d8d8;
+}
 
+li a:hover {
+ -webkit-transform: rotate(-1deg) scale(0.9);
+ -moz-transform: rotate(-1deg) scale(0.9);
+ -o-transform: rotate(-1deg) scale(0.9);
+}
+/* end hover */
 a {
     color: #000000;
     text-decoration: none;
-}
-.parent-menu a:hover {
-    color: #e0e0d1;
-}
-
-.active {
-    color: white;
-    background-color: #edcd91;
 }
 
 dl, ol, ul {
@@ -30,8 +28,13 @@ dl, ol, ul {
     margin-bottom: 1rem;
 }
 
+.wrap {
+    max-width: 1000px;
+    margin: auto;
+}
+
 #header {
-    background-color: #de9714;
+    background-color: #000000;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -53,7 +56,9 @@ dl, ol, ul {
     display: flex;
     align-items: center;
 }
-
+.list-menu .active {
+    color: #ecce6d;
+}
 .desktop.parent-menu .parent-menu-item {
 	color: white;
     margin: 0 10px 0 10px;
@@ -73,59 +78,39 @@ dl, ol, ul {
     padding: 0 3px;
 }
 
-.danhsach {
-    position: relative;
-    overflow: hidden;
-    width: auto;
-    display: grid;
-    float: left;
-    padding: 15px 10px 10px 5px;
+#home-contents {
+    background-color: rgba(112,112,112,0.7);
 }
-.danhsach img {
-    max-width: 100%;
-    -webkit-transition: .5s ease;
-    -moz-transition: .5s ease;
-    transition: .5s ease;
-}
-.danhsach:hover img {
-    -webkit-transform: scale(1.05,1.05);
-    -moz-transform: scale(1.05,1.05);
-    transform: scale(1.05,1.05);
+.title {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 30px;
 }
 
-.caption {
-    display: grid;
-    float: left;
-    padding: 10px 10px 10px 5px;
+.opening {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
 }
 
-img {
-    max-width: 300px;
-    height: 210px;
-}
-.danhsach:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #000;
-    background: rgba(0,0,0,0.3);
-    z-index: 2;
-    opacity: 0;
-    -moz-transition: 0.5s ease;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
-}
-.danhsach:hover:before {
-    opacity: 1;
+.intro {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    padding: 5px 50px 5px 0px;
+    margin: 5px 5px 5px 50px;
 }
 
 .footer {
+    font-size: 13px;
     text-align: center;
-    position: fixed;
+    text-transform: capitalize;
+    line-height: 1.5;
     bottom: 0;
-    width: 100%;
+    right: 0;
+    left: 0;
+    background-color: rgba(0,0,0);
+    color: white;
 }
