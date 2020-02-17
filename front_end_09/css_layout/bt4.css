@@ -10,20 +10,21 @@
 .red-box {
 	width: 33.3%;
 	height: 400px;
-	border-right: 15px solid white;   
+	border-right: 10px solid white;     
 	background-color: red;
 }
 
 .green-box {
 	width: 33.3%;
 	height: 400px;
-	border-right: 15px solid white; 
+	border-right: 5px solid white; 
+	border-left: 5px solid white;
 	background-color: green;
 }
 
 .blue-box {
 	width: 33.3%;
 	height: 400px;
-	border-right: 15px solid white; 
+	border-left: 10px solid white; 
 	background-color: blue;
 }
