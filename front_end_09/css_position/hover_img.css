@@ -1,0 +1,32 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-color: #f5f5f0;
+}
+
+.zoom {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+.item {
+	padding: 10px;
+	border: 2px solid #e6e6e6;
+	border-radius: 10px;
+	background: #ffffff;
+	/* align-items: center; */
+	transition: transform 1.3s;
+
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+.item:hover {
+	transform: scale(1.4,1.4); /* = (x,y) viet 1 lan zoom theo 2 chieu */
+	border-color: black;
+	border-radius: 10px;
+}
