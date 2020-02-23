@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+#menu a {
+	list-style-type: none;
+	text-decoration: none;
+}
+#menu a:hover {
+ 	color: #c295d8;
+ 	background-color: #676464;
+}
+.main a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7e3c9e;
+	background-color: #f9fcfb;
+	height: 40px;
+	font-family: roboto;
+	text-transform: uppercase;
+
+}
+.main ul {
+	display: flex;
+	list-style-type: none;
+}
+.main ul li {
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+.main li:hover .submenu > li {
+	top: 0;
+	display: block;
+}
+.submenu li {
+	display: none;
+	position: relative;
+}
+#menu li:hover > .submenu > li {
+	display: block;
+}
+.submenu, .submenu_1, .submenu_2, .submenu_3, .submenu_4 {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	top: auto;
+	background: #ffffff; 
+}
+.submenu a, .submenu_1 a, .submenu_2 a, .submenu_3 a,  .submenu_4 a {
+	text-transform: capitalize;
+}
+.title {
+	padding: 10px;
+	cursor: default;
+	background-color: #f9fcfb; 
+}
+/* hover submenu */
+.submenu_1 li {
+	display: none;
+	position: relative;
+}
+#menu li:hover > .submenu_1 > li {
+	display: block;
+	top: 0px;
+}
+.submenu_2 li {
+	display: none;
+	position: relative;
+}
+#menu li:hover > .submenu_2 > li {
+	display: block;
+	top: 0px;
+}
+.submenu_3 li {
+	display: none;
+	position: relative;
+}
+#menu li:hover > .submenu_3 > li {
+	display: block;
+	top: 0px;
+}
+.submenu_4 li {
+	display: none;
+	position: relative;
+}
+#menu li:hover > .submenu_4 > li {
+	display: block;
+	top: 0px;
+}
