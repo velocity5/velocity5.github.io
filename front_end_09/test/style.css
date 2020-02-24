@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.item a {
+	list-style-type: none;
+	text-decoration: none;
+}
+#menu a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #7e3c9e;
+	background-color: #f9fcfb;
+	height: 40px;
+	font-family: roboto;
+	text-transform: uppercase;
+}
+.title {
+	font-size: 30px;
+	line-height: 1.3;
+	text-transform: capitalize;
+	text-align: center;
+}
+/* style danh sach */
+.container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 15px;
+	max-width: 1000px;
+    margin: auto;
+}
+.list {
+	position: relative;
+	overflow: hidden;
+	line-height: 1.5;
+    padding: 50px;
+	align-items: center;
+}
+
+.list img {
+	width: 300px;
+    transition: .5s ease;
+    flex-basis: auto;
+}
+.list:hover img {
+	transform: scale(1.05,1.05);
+}
+/* caption&hover */
+.caption {
+	display: block;
+	text-align: center;
+	padding: 10px;
+	text-transform: capitalize;
+}
+.caption a {
+	text-decoration: none;
+}
+.caption a:hover{
+	background-color: #3385ff;
+	color: #99c2ff;
+}
