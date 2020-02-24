@@ -37,7 +37,13 @@ body {
 #menu ul li {
 	position: relative;
 }
-
+/* hien thi angle-right khi hover */
+i {
+	visibility: hidden;
+}
+a:hover i{
+	visibility: visible;
+}
 /* end block */
 
 /* block submenu hover */
