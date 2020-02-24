@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -11,10 +11,11 @@
 	text-align: center;
 }
 .content img {
-	display: block;
-	margin: auto;
-	text-align: center;
+	display: grid;
+	grid-auto-flow: row;
 	max-width: 300px;
+	max-height: 300px;
+	padding: 5px;
 }
 .headline {
 	text-transform: capitalize;
@@ -28,14 +29,19 @@
 .list {
 	display: flex;
 	justify-content: center;
-	margin-left: 30px;
+	align-items: center;
 }
 .list li {
 	font-weight: bold;
 	text-align: center;
 	margin-top: 5px;
-	margin-left: 60px;	
+	margin-left: 10px;
+    padding-left: 100px;
+    list-style-type: none;	
 }
+
+
+/* back link */
 #back {
 	text-decoration: none;
 }
