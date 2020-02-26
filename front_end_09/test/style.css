@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+   	margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -35,8 +35,16 @@
 	position: relative;
 	overflow: hidden;
 	line-height: 1.5;
-    padding: 50px;
+    padding-top: 30px;
+	padding-left: 30px;
 	align-items: center;
+}
+.list a {
+	text-decoration: none;
+}
+.list a:hover {
+	/* background-color: #3385ff; */
+	color: #99c2ff;
 }
 
 .list img {
@@ -51,13 +59,6 @@
 .caption {
 	display: block;
 	text-align: center;
-	padding: 10px;
 	text-transform: capitalize;
 }
-.caption a {
-	text-decoration: none;
-}
-.caption a:hover{
-	background-color: #3385ff;
-	color: #99c2ff;
-}
+
