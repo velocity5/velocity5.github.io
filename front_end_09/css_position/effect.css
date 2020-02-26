@@ -1,0 +1,187 @@
+.heart {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  margin-top: $size*-0.5;
+  margin-left: $size*-0.5;
+  width: $size;
+  height: $size;
+  background: $color;
+  border-radius: 50% 50% 50% 5%;
+  transform: rotate(-45deg);
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    height: 94%;
+    width: 94%;
+    background: $color;
+    border-radius: 50% 50% 50% 0;
+  }
+  &:before {
+    top: -47%;
+    left: 0;
+  }
+  &:after {
+    bottom: 0;
+    right: -47%;
+  }
+}
+@keyframes sway { 
+	0% { transform: rotateZ(-15deg) rotateX(55deg);  }
+	30% { transform: rotateZ(20deg) rotateX(60deg); animation-timing-function: ease-in-out; }
+	60% { transform: rotateZ(-20deg) rotateX(55deg); animation-timing-function: ease-in-out;  }
+	100% { transform: rotateZ(0deg) rotateX(58deg); animation-timing-function: cubic-bezier(0.990, 0.000, 0.890, 0.435);  }
+}
+@keyframes fall { 
+	60% { -webkit-filter: drop-shadow(0px rgba(0,0,0,0)); }
+	100% { margin-top: 500px; 
+		-webkit-filter: drop-shadow(0px rgba(0,0,0,0.6)); }
+}
+
+@keyframes opacity { 
+  0% { fill-opacity: 0; }
+  25% { fill-opacity: 1; }
+  63% { transform: translateY(25px); fill-opacity: 0; }
+  100% { fill-opacity: 0 }
+}
+
+
+body { margin: 0; } 
+div#fall-container { 
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  perspective-origin: center;
+}
+div.contain { 
+  position: absolute;
+  width: 28%;
+  transform-origin: 0px -400px 0px;
+  animation-name: fall, sway;
+  animation-duration: 7s, 8s;
+  animation-fill-mode: both;
+  animation-timing-function: linear, ease-in-out;
+}
+
+div.contain1 { 
+  position: absolute;
+  width: 28%;
+  transform-origin: 0px -400px 0px;
+  animation-name: fall, sway;
+  animation-duration: 7s, 8s;
+  animation-fill-mode: both;
+  animation-timing-function: linear, ease-in-out;
+}
+
+#heart1 { top: -50px; left:10%}
+#heart2 { top: -45px; left: 50%; animation-delay: .9s; transform: rotateX(28deg); }
+#heart3 { top: -122px; left: 22%; animation-delay: .7s; }
+#heart4 {top: -55px; left: 38%; animation-delay: .5s; }
+#heart5 {top: -18px; left: 70%; animation-delay: .3s; }
+#heart6 { top: 0px; left: 55%; animation-delay: .1s; }
+#heart7 { top: -30px; left:12%; animation-delay: .4s;}
+#heart8 { top: -15px; left: 40%; animation-delay: .6s; transform: rotateX(28deg); }
+#heart9 { top: -152px; left: 20%; animation-delay: .8s; }
+#heart10 {top: -65px; left: 50%; animation-delay: 1.4s; }
+#heart11 {top: -48px; left: 90%; animation-delay: 2s; }
+#heart12 { top: -15px; left: 65%; animation-delay: .4s; }
+#heart13 { top: -30px; left:10%}
+#heart14 { top: -25px; left: 50%; animation-delay: .75s; transform: rotateX(28deg); }
+#heart15 { top: -22px; left: 22%; animation-delay: 1.2s; }
+#heart16 {top: -55px; left: 38%; animation-delay: 2.4s; }
+#heart17 {top: -78px; left: 70%; animation-delay: 1.75s; }
+#heart18 { top: -10px; left: 55%; animation-delay: 2.1s; }
+#heart19 { top: -60px; left:12%; animation-delay: 4.1s;}
+#heart20 { top: -35px; left: 40%; animation-delay: 2s; transform: rotateX(28deg); }
+#heart21 { top: -52px; left: 20%; animation-delay: 1.4s; }
+#heart22 {top: -65px; left: 50%; animation-delay: 3.4s; }
+#heart23 {top: -48px; left: 90%; animation-delay: 2.6s; }
+#heart24 { top: 30px; left: 65%; animation-delay: 2.9s; }
+#heart25 { top: -50px; left:10%; animation-delay: .2s;}
+#heart26 { top: -45px; left: 50%; animation-delay: .1s; transform: rotateX(28deg); }
+#heart27 { top: -122px; left: 22%; animation-delay: .2s; }
+#heart28 {top: -55px; left: 38%; animation-delay: .3s; }
+#heart29 {top: -18px; left: 70%; animation-delay: .4s; }
+#heart30 { top: 0px; left: 55%; animation-delay: .5s; }
+#heart31 { top: -30px; left:12%; animation-delay: .6s;}
+#heart32 { top: -15px; left: 40%; animation-delay: .7s; transform: rotateX(28deg); }
+#heart33 { top: -152px; left: 20%; animation-delay: .8s; }
+#heart34 {top: -65px; left: 50%; animation-delay: .9s; }
+#heart35 {top: -48px; left: 90%; animation-delay: 1s; }
+#heart36 { top: -15px; left: 65%; animation-delay: 1.1s; }
+#heart37 { top: -30px; left:10%; delay: 1.2s;}
+#heart38 { top: -25px; left: 50%; animation-delay: 1.3s; transform: rotateX(28deg); }
+#heart39 { top: -22px; left: 22%; animation-delay: 1.4s; }
+#heart40 {top: -55px; left: 38%; animation-delay: 1.5s; }
+#heart41 {top: -78px; left: 70%; animation-delay: 1.6s; }
+#heart42 { top: -10px; left: 55%; animation-delay: 1.7s; }
+#heart43 { top: -60px; left:12%; animation-delay: 1.8s;}
+#heart44 { top: -35px; left: 40%; animation-delay: 1.9s; transform: rotateX(28deg); }
+#heart45 { top: -52px; left: 20%; animation-delay: 2s; }
+#heart46 {top: -65px; left: 50%; animation-delay: 2.1s; }
+#heart47 {top: -48px; left: 90%; animation-delay: 2.2s; }
+#heart48 { top: -10px; left: 65%; animation-delay: 2.3s; }
+#heart49 { top: -11px; left:10%}
+#heart50 { top: -14px; left: 50%; animation-delay: .5s; transform: rotateX(28deg); }
+#heart51 { top: -16px; left: 22%; animation-delay: 2s; }
+#heart52 {top: -18px; left: 38%; animation-delay: 3.4s; }
+#heart53 {top: -20px; left: 70%; animation-delay: 2.25s; }
+#heart54 { top: -22px; left: 55%; animation-delay: 3s; }
+#heart55 { top: -24px; left:12%; animation-delay: 3.4s;}
+#heart56 { top: -26px; left: 40%; animation-delay: .2s; transform: rotateX(28deg); }
+#heart57 { top: -52px; left: 20%; animation-delay: .4s; }
+#heart58 {top: -58px; left: 50%; animation-delay: 1.4s; }
+#heart59 {top: -38px; left: 90%; animation-delay: 2s; }
+#heart60 { top: -42px; left: 65%; animation-delay: .4s; }
+#heart61 { top: -48px; left:10%}
+#heart62 { top: -52px; left: 50%; animation-delay: .75s; transform: rotateX(28deg); }
+#heart63 { top: -58px; left: 22%; animation-delay: 1.2s; }
+#heart64 {top: -50px; left: 38%; animation-delay: 1.4s; }
+#heart65 {top: -40px; left: 70%; animation-delay: 1.15s; }
+#heart66 { top: -10px; left: 55%; animation-delay: 2.1s; }
+#heart67 { top: -14px; left:12%; animation-delay: 1.1s;}
+#heart68 { top: -18px; left: 40%; animation-delay: 2s; transform: rotateX(28deg); }
+#heart69 { top: -22px; left: 20%; animation-delay: 1.4s; }
+#heart70 {top: -60px; left: 50%; animation-delay: .4s; }
+#heart71 {top: -38px; left: 90%; animation-delay: .6s; }
+#heart72 { top: -17px; left: 45%; animation-delay: .9s; }
+#heart73 { top: -11px; left:10%; animation-delay: .2s;}
+#heart74 { top: -21px; left: 50%; animation-delay: 1.1s; transform: rotateX(28deg); }
+#heart75 { top: -23px; left: 22%; animation-delay: 2.2s; }
+#heart76 {top: -51px; left: 38%; animation-delay: 1.3s; }
+#heart77 {top: -36px; left: 70%; animation-delay: 2.4s; }
+#heart78 { top: -10px; left: 55%; animation-delay: 1.5s; }
+#heart79 { top: -21px; left:12%; animation-delay: 2.6s;}
+#heart80 { top: -31px; left: 40%; animation-delay: 1.7s; transform: rotateX(28deg); }
+#heart81 { top: -42px; left: 20%; animation-delay: 2.8s; }
+#heart82 {top: -31px; left: 50%; animation-delay: 1.9s; }
+#heart83 {top: -39px; left: 90%; animation-delay: 2s; }
+#heart84 { top: -25px; left: 65%; animation-delay: 1.1s; }
+#heart85 { top: -17px; left:10%; delay: 1.2s;}
+#heart86 { top: -36px; left: 50%; animation-delay: 1.9s; transform: rotateX(28deg); }
+#heart87 { top: -39px; left: 22%; animation-delay: 1.4s; }
+#heart90 {top: -53px; left: 38%; animation-delay: 2.5s; }
+#heart91 {top: -71px; left: 70%; animation-delay: 1.6s; }
+#heart92 { top: -13px; left: 55%; animation-delay: 2.7s; }
+#heart93 { top: -63px; left:12%; animation-delay: 1.8s;}
+#heart94 { top: -38px; left: 40%; animation-delay: 2.9s; transform: rotateX(28deg); }
+#heart95 { top: -59px; left: 20%; animation-delay: 2s; }
+#heart96 {top: -61px; left: 50%; animation-delay: 3.1s; }
+#heart97 {top: -41px; left: 90%; animation-delay: 3.2s; }
+#heart98 { top: 33px; left: 65%; animation-delay: 2.3s; }
+
+
+div.contain .heart { 
+  animation-name: snowfall, sway, fall;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-ease-out; 
+}
+
+
+@keyframes snowfall { 
+  0% { fill-opacity: 0; }
+  25% { fill-opacity: 1; }
+  63% { transform: translateY(25px); fill-opacity: 0; }
+  100% { fill-opacity: 0 }
+}

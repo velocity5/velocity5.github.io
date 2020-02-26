@@ -1,0 +1,25 @@
+.spinner {
+	position: absolute;
+	margin: auto;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 30%;
+	animation: spin 2s infinite; 
+}
+
+@keyframes spin {
+	0% {
+		transform: rotateZ(0);
+	}
+	50% {
+		transform: rotateZ(90deg);
+	}
+	80% {
+		transform: rotateZ(180deg);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
