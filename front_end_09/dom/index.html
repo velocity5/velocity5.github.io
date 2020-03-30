@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom Practice</title>
+	<style type="text/css">
+		#title {
+			text-align: center;
+			text-transform: uppercase;
+		}
+		#p1 {
+			padding: 5px 10px 5px 10px
+		}
+		#p2 {
+			padding: 5px 10px 5px 10px
+		}
+		#p3 {
+			padding: 5px 10px 5px 10px
+		}
+	</style>
+</head>
+<body>
+	<script>
+		function changeColor() {
+			document.getElementById("p1").style.color = "green";
+			document.getElementById("p2").style.color = "yellow";
+			document.getElementById("p3").style.color = "red";
+		}
+		//----------------------------------------------------------
+		function changeBgColor(color) {
+			document.body.style.backgroundColor = color;
+		}
+		//-----------------------------------------------------------
+		function copyContent(id1,id2) {
+			document.getElementById("p2").innerText = document.getElementById("p1").innerText;
+		}
+		//-----------------------------------------------------------
+		function changeFontSize(x) {
+			document.getElementById("p1").style.fontSize = x;
+			document.getElementById("p2").style.fontSize = x;
+			document.getElementById("p3").style.fontSize = x;
+		}
+		//------------------------------------------------------------
+		function increaseFontSize(id) {
+			let c = document.getElementById(id);
+			let s = window.getComputedStyle(c, null).getPropertyValue('font-size');
+			let currentSize = parseInt(s);
+        	c.style.fontSize = (currentSize + 1) + 'px';
+		}
+		//------------------------------------------------------------
+		function decreaseFontSize(id) {
+			let d = document.getElementById(id);
+			let x = window.getComputedStyle(d, null).getPropertyValue('font-size');
+			let currentSize = parseInt(x);
+			d.style.fontSize = (currentSize - 1) + 'px';
+		}
+	</script>
+	<h1 id="title" class="headline">dom-document object model</h1>
+	<hr>
+	<p id="p1" class="para_1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+	<p id="p2" class="para_2">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+	<p id="p3" class="para_3">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+</body>
+</html>
