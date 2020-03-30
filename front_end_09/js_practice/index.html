@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript Practice</title>
+</head>
+<body>
+	<h1 style="text-align: center;">Javascript Practice</h1>
+	<hr>
+	<script type="text/javascript">
+		function binhPhuong(x) {
+			return x * x;
+		}
+		function theKy(year) {
+			return Math.ceil(year/100);
+		}
+		var text = "hello world, kaka";
+		function cutString(text) {
+			document.write(text.substr(0,10) + '...');
+		}
+		cutString(text);
+
+		function camelCase(txt) {
+			return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
+	}
+
+		function minNumb(numb) {
+			 /*return Math.min.apply(Math,numb);*/
+			 var numb = numb.sort();
+			 return numb;
+		}
+	
+		function orderName(students) {
+			var students = students.sort().join();
+			for (var i = 0; i < students.length; i++) {
+				document.write(students[i] + "<br>");
+			}
+		}
+		function checkParam(a,b) {
+			if(typeof a && typeof b == 'number') {
+				document.write(a + " is a number<br />", b + " is a number<br />");
+			} else {
+				document.write(a + " is not a number<br />", b + " is not a number<br />");
+			}
+			document.write("Maximum number is: " + Math.max(a,b));
+		}
+
+		// tinh can bac hai
+		  function squareRoot(x) {
+		      for (i = 0; i * i <= x; i++) {
+		        for (j = 0; j * j > i * i; j++) {
+		        	return i * i === x && j * j === x;
+		        } 
+		      		return i;
+		 }
+		}
+		// check tinh hop le
+		var input = {username:"minhtran12", password:"12345678", confirm:"12345678"};
+		function checkValidate(input) {
+			if (input.username != null && input.username.length < 20 && input.password.length >= 6 && input.password.length <= 32 && input.confirm.length === input.password.length) {
+			return "Pass";
+			}
+			 else {
+			return "Fail";
+			}
+		}
+		// reverse-triangle
+		function specialTriangle(h) {
+		  for (let i = 0; i < h; i++) {
+		    for (let j = 0; j < i; j++) {
+		      document.write("&nbsp;");   
+		    }
+		    for (let j = h; j > i; j--) { 
+		      document.write("*");
+		      document.write("&nbsp;");
+		    }
+		   document.write('<br/>');
+		  }
+		}
+		// hollow triangle
+		function hollowTriangle(w,h) {
+		  for (let i = 1; i <= h; i++) {
+		    for (let j = 1; j <= w; j++) {
+		      if (i == 1 || i == h || j == 1 || j == w) {
+		        document.write("*");
+		        document.write("&nbsp;");
+		      } else {
+		        document.write("&nbsp;&nbsp;&nbsp;");
+		      }
+		    }
+		    document.write('<br/>');
+		  }
+		}
+	</script>
+</body>
+</html>
