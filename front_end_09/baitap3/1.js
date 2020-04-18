@@ -1,4 +1,5 @@
-﻿$(document).ready(function() {
+﻿/*normal click*/
+$(document).ready(function() {
 	$('.navbar-right li:nth-child(1) a')
 	.click(function() {
 		$("html, body").animate({scrollTop: 600}, "slow");
@@ -15,11 +16,10 @@
 		return false;
 	})
 })
+/*responsive click*/
 
 
-
-
-/*Scroll to top when arrow up clicked BEGIN*/
+/*Scroll to top when arrow up clicked*/
 $(window).scroll(function() {
     var height = $(window).scrollTop();
     if (height > 100) {
