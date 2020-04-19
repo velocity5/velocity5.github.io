@@ -1,23 +1,26 @@
 ﻿/*normal click*/
 $(document).ready(function() {
-	$('.navbar-right li:nth-child(1) a')
+	$('.a0')
 	.click(function() {
-		$("html, body").animate({scrollTop: 600}, "slow");
+		$("html, body").animate({scrollTop:0}, "slow");
 		return false;
 	})
-	$('.navbar-right li:nth-child(2) a')
+	$('.a1')
 	.click(function() {
-		$("html, body").animate({scrollTop: 980}, "slow");
+		$("html, body").animate({scrollTop:$('#about').offset().top}, "slow");
 		return false;
 	})
-	$('.navbar-right li:nth-child(3) a')
+	$('.a2')
 	.click(function() {
-		$("html, body").animate({scrollTop: 1300}, "slow");
+		$("html, body").animate({scrollTop:$('#method').offset().top}, "slow");
+		return false;
+	})
+	$('.a3')
+	.click(function() {
+		$("html, body").animate({scrollTop:$('#footer').offset().top}, "slow");
 		return false;
 	})
 })
-/*responsive click*/
-
 
 /*Scroll to top when arrow up clicked*/
 $(window).scroll(function() {
