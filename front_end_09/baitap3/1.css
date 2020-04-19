@@ -182,13 +182,9 @@ i.fa.fa-youtube-play {
 }
 /* mobile and tablet devices */
 @media only screen and (max-width: 500px) {
-    /* .thumbnail .btn {
-        margin-left: 110px;
-    } */
-    /* .caption p {
-        padding-left: 10px;
-        padding-right: 10px;
-    } */
+    #method h2 {
+        font-size: 20px;
+    }
     .background_top h1 {
         font-size: 30px;
         text-shadow: 1px 2px 0 #2a2727;
