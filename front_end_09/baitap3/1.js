@@ -1,7 +1,7 @@
 ﻿/*responsive click*/
 $(document).ready(function() {
 	$('.a0').click(function() {
-		$('html, body').animate({scrollTop:0}, "slow");
+		$('html, body').animate({scrollTop:$('#product').offset().top});
 		return false;
 
 	})
@@ -10,11 +10,15 @@ $(document).ready(function() {
 		return false;
 	})
 	$('.a2').click(function() {
-		$('html, body').animate({scrollTop:$('#method').offset().top});
+		$('html, body').animate({scrollTop:$('#service').offset().top});
 		return false;
 	})
 	$('.a3').click(function() {
 		$('html, body').animate({scrollTop:$('#footer').offset().top});
+		return false;
+	})
+	$('.find').click(function() {
+		$('html, body').stop(true, true).delay(300).animate({scrollTop:$('#product').offset().top}, "slow");
 		return false;
 	})
 })
@@ -38,7 +42,7 @@ $(document).ready(function() {
 });
  /*Scroll to top when arrow up clicked END*/
  /*validate email*/
-
+/*
  $(document).ready(function() {
  	$('#inputEmail').change(function() {
  		let sEmail = $('#inputEmail').val();
@@ -80,13 +84,13 @@ $(document).ready(function() {
  		}
  	});
  });
-
+*/
  //validate password
- $(document).ready(function() {
+/* $(document).ready(function() {
  	$('input[type=password]').keyup(function() {
- 		let psw = $(this).val();
+ 		let psw = $(this).val();*/
  		//validate the length
- 		if (psw.length < 8) {
+ 		/*if (psw.length < 8) {
  			$('#length').removeClass('valid').addClass('invalid');
  		} else {
  			$('#length').removeClass('invalid').addClass('valid');
@@ -114,9 +118,9 @@ $(document).ready(function() {
  	}).blur(function() {
  		$('#psw-info').hide();
  	})
- });
+ });*/
  // show-hide password
-$('.glyphicon-eye-open').on('click', 
+/*$('.glyphicon-eye-open').on('click', 
 	function() {
 	$(this).toggleClass("glyphicon-eye-close");
 	let type = $("#inputPassword").attr("type");
@@ -125,4 +129,4 @@ $('.glyphicon-eye-open').on('click',
 	} else {
 		$('#inputPassword').attr("type", "text");
 	}
-});
+});*/
