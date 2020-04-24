@@ -22,6 +22,16 @@ $(document).ready(function() {
 		return false;
 	})
 })
+/* responsive mobile */
+$(function() {
+	let docao = $(window).height(); 
+	$('.background_top').css({'height':docao});
+	
+	$(window).resize(function() {
+		let docao = $(window).height(); 
+		$('.background_top').css({'height':docao});
+	});
+})
 
 /*Scroll to top when arrow up clicked*/
 $(window).scroll(function() {

@@ -12,11 +12,11 @@
 }
 .find {
     margin-top: 20px;
-    background-color: #9b9696;
+    background-color: #494242;
     color: white;
 }
 .find:hover {
-    background-color: #b6adad;
+    background-color: #5d5656;
     color: white;
 }
 .background_top h3 {
@@ -116,7 +116,7 @@
 
 #about {
     padding-top: 50px;
-    background-color: grey;
+    background-color: #3a3a34;
     color: white;
     padding-bottom: 50px;
 }
@@ -173,7 +173,7 @@ nav.navbar.navbar-default {
     display: inline-block;
 }
 #footer {
-    background-color: #1f1f14;
+    background-color: #3a3a34;
     padding: 35px 0;
     color: white;
     font-size: 15px;
@@ -192,7 +192,6 @@ nav.navbar.navbar-default {
 #back2Top {
     width: 40px;
     border: none;
-    border-radius: 20px;
     line-height: 40px;
     overflow: hidden;
     z-index: 999;
