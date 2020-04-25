@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title> Example </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">  
+	<script type="text/javascript" src="vendor/bootstrap.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="vendor/bootstrap.css">
+ 	<link rel="stylesheet" href="2.css">
+  <link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body>
+  <div class="menuphai">
+    <h2>PG Toys <div class="fas fa-times tat" style="font-size: 20px"></div> </h2>
+    <ul class="menudoc">
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Payments Method</a></li>
+      <li><a href="">Contact</a></li>
+      <li><a href="">Login</a></li>
+      <li><a href="">Signup</a></li>
+    </ul>
+  </div>
+    <div class="nutmenu">
+      <a href="" class="fas fa-bars"></a>
+    </div>
+    
+   <!-- modal login -->
+   <div class="modal fade" id="login" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <!-- modal-content -->
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9 col-md-3 col-lg-5 mx-auto">
+              <div class="card card-login my-5">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Log In</h5>
+                  <form class="form-login" method="post" action="#home">
+                    <div class="form-label-group">
+                        <input type="email" id="inputEmail" class="form-control" name="inputEmail" placeholder="Email Address" required autofocus>
+                    </div>
+
+                    <div class="form-label-group">
+                       <input type="password" id="inputPassword" class="form-control" name="inputPassword" placeholder="Password" required autofocus>
+                       <i class="glyphicon glyphicon-eye-open eyecon" title="Hide/Show Password"></i>
+                    </div> 
+                    <div id="psw-info">
+                      <h4>Password must meet the following requirements:</h4>
+                      <ul>
+                        <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+                        <li id="capital" class="invalid">At least <strong>one capital</strong></li>
+                        <li id="number" class="invalid">At least <strong>one number</strong></li>
+                        <li id="length" class="invalid">Be At least <strong>8 characters</strong></li>
+                      </ul>
+                    </div>
+                    <input type="checkbox" name="remember" class="remember" id="remember_me"><label for="remember_me">Remember me</label>
+                      <button class="btn btn-lg btn-primary btn-block text-capitalize" id="btn-login" type="submit">log in</button>
+                      <h4 class="forgotten"><a href="#">Forgot password?</a></h4>
+                          <div class="diff">
+                            <h4 class="or text-center">Or Login with:</h4>
+                            <div class="text-center">
+                              <div class="fab google-log-in">
+                                <a href="" type="submit"><img src="images/g_logo.png" class="img-responsive" alt="Google log in"></a>
+                              </div>
+
+                              <div class="fab facebook-log-in">    
+                                <a href="" type="submit"><img src="images/f_logo.png" class="img-responsive" alt="Facebook log in"></a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="modal-footer mx-5 pt-3 mb-1"> 
+                            <p class="sign_up">Not a member? <a href="#">Sign Up</a></p> 
+                          </div>
+                        </div>
+                      </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- end container -->
+      </div>
+    </div>
+   </div> <!-- end modal login -->
+   <div class="modal fade" id="signup" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-9 col-md-3 col-lg-5 box-signup">
+                <div class="card-body">
+                  <h5 class="card-title-1 text-center">Create an Account</h5>
+                  <form class="form-signup" method="post">
+                    <div class="form-group col-md-6">
+                      <input type="text" id="inputFullName" name="inputFullName" class="form-control" placeholder="Full Name" required autofocus>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                      <input type="date" id="inputBirthday" name="inputBirthday" class="form-control" placeholder="Birthday" required autofocus>
+                    </div>
+
+                  <div class="form-group col-md-6">
+                     <div class="custom-radio radio-inline">
+                      <label for="male">
+                         <input type="radio" id="male" name="gender" value="male">
+                         Male</label>
+                      </div>
+                      <div class="custom-radio radio-inline">
+                        <label for="female">
+                         <input type="radio" id="female" name="gender" value="female">
+                         Female</label>
+                     </div>
+                  </div>
+
+                        <div class="form-group col-md-6">
+                          <select class="form-control" id="address" required>
+                            <option selected>Your address</option>
+                            <option>Hà Nội</option>
+                            <option>Hải Phòng</option>
+                            <option>Đà Nẵng</option>
+                            <option>Cần Thơ</option>
+                            <option>Hồ Chí Minh</option>
+                          </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <input type="tel" id="inputTelephone" name="inputTelephone" class="form-control" placeholder="Telephone" required autofocus>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email Address" required autofocus>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required autofocus>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                          <input type="password" id="ConfirmPassword" name="ConfirmPassword" class="form-control" placeholder="Confirm Password" required autofocus>
+                        </div>
+                        <div class="col-md-12">
+                            <button class="btn btn-lg btn-success btn-block text-capitalize" id="btn-signup" type="submit">sign up</button>
+                            <div class="or-seperator"><b>or</b></div>
+                            <p class="sign-up-with text-center">Sign up with</p>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <div class="social-btn text-center">
+                              <a href="#" class="btn btn-primary btn-lg"><i class="fab fa-facebook-f"></i> Facebook</a>
+                              <a href="#" class="btn btn-danger btn-lg"><i class="fab fa-google"></i> Google</a>
+                            </div>
+                            <div class="already text-center">
+                              <p>Already have an account? <a href="#login">Login here</a></p>
+                            </div>
+                        </div>
+                      </div>
+                    </div> 
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div> <!-- end modal signup -->
+   <script type="text/javascript" src="2.js"></script>
+</body>
+</html>

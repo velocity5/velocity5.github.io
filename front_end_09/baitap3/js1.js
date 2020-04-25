@@ -1,5 +1,10 @@
 ﻿/*responsive click*/
 $(document).ready(function() {
+	$('.a').click(function() {
+		$('html, body').animate({scrollTop:0});
+		return false;
+
+	})
 	$('.a0').click(function() {
 		$('html, body').animate({scrollTop:$('#product').offset().top});
 		return false;
