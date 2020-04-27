@@ -91,6 +91,29 @@
 		    document.write('<br/>');
 		  }
 		}
+		//----
+		function factorize(num) {
+			let result = 1;
+			for(let i = num; i > 0; i--) {
+				num *= i;
+			}
+			return result;
+		}
+		function factorialize(num) {
+			return num;
+		}
+		//----
+		function reVerse(str) {
+			let newStr = "";
+			for(let i = str.length - 1; i >= 0; i--) {
+				newStr += str[i];  
+			}
+			return newStr;
+		}
+		function reverseString(str) {
+			return str.split("").reverse().join("");
+		}
 	</script>
+
 </body>
 </html>

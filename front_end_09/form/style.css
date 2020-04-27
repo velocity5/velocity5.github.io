@@ -1,0 +1,117 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+background: linear-gradient(to left, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.title {
+	text-align: center;
+	margin: 10px 10px;
+	font-size: 20px;
+	text-transform: capitalize;
+}
+.container {
+	width: 300px;
+	background-color: white;
+	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	padding: 10px;
+	margin: 40px auto;
+	border-radius: 20px;
+}
+#inputName, #inputTelephone, #inputEmail, #psw, #inputBirthday, #address {
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid #999;
+	width: 100%;
+	border-radius: 20px;
+	background: #f1f1f1;
+	outline: none; 
+}
+#male, #female {
+	margin-left: 50px;
+}
+label {
+	background: none;
+}
+.gradient-button {
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 0 0 20px #eee;
+	background-size: 200% auto;
+	font-size: 15px;
+	margin: 15px 0;
+	transition: 0.5s;
+	width: 100%;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	cursor: pointer;
+}
+
+.signupbtn {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)}
+.signupbtn:hover { background-position: right center; }
+/* login link */
+.already {
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.already a {
+    background: none;
+    text-decoration: none;
+}
+.already a:hover, .forgor a:hover {
+	color: #3366ff;
+}
+.already a:active, .forgot a:active {
+	color: #668cff;
+}
+/* login form */
+.forgot a {
+    text-decoration: none;
+    background: none;
+}
+.forgot {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+.loginbtn {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)}
+.loginbtn:hover { background-position: right center; }
+
+.form-label-group {
+    position: relative;
+    margin-bottom: 1rem;
+}
+.form-label-group input {
+    height: auto;
+    border-radius: 1rem;
+}
+
+.form-login {
+    width: 100%;
+}
+
+.form-login .btn {
+    font-size: 90%;
+    border-radius: 5rem;
+    letter-spacing: .1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.card-login {border-radius: 1em;border: 0;}
+
+.card-login .title {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.card-login .card-body {
+    padding: 2rem;
+}
+.title-login {
+	font-size: 20px;
+}
