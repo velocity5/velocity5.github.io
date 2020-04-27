@@ -1,0 +1,72 @@
+.top-part {
+    margin-top: 60px;
+}
+
+.carousel-caption {
+    font-size: 20px;
+    text-align: center;
+    color: #575151;
+    margin-bottom: 86px;
+}
+
+.carousel-fade .carousel-control {
+	z-index: 2;
+}
+.carousel-fade .item {
+	opacity: 0;
+	transition-property: opacity; 
+}
+.carousel-fade .left, .carousel-fade .right, .carousel-fade .item.active {
+	opacity: 1;
+}
+.carousel-fade .active.left, .carousel-fade .active.right {
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+} 
+/* carousel-control */
+.carousel-control .control-icon {
+	font-size: 48px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	z-index: 5;
+}
+/* remove BS background */
+.carousel .control-box {
+	opacity: 0;
+}
+a.carousel-control.left {
+	left: 0
+	background: none;
+	border: 0;
+}
+a.carousel-control.right {
+	right: 0
+	background: none;
+	border: 0;
+}
+/* animation */
+.control-box, a.carousel-control, .carousel-indicators li {
+	transition: all 250ms ease;
+} 
+/* hover effect */
+.carousel:hover .control-box { opacity: 1; }
+.carousel:hover a.carousel-control.left {
+	left: 15px;
+}
+.carousel:hover a.carousel-control.right {
+	right: 15px;
+}
+.carousel-indicators li {
+  background: #666;
+  margin: 0 3px;
+  width: 12px;
+  height: 12px;
+  }
+
+.carousel-indicators li.active {
+  background: #fff;
+  margin: 0 3px;
+  }
