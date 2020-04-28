@@ -36,6 +36,13 @@
 .title-left {
 	font-family: 'Roboto Condensed', sans-serif;
 }
+.list-group a:hover {
+    text-decoration: none;
+    color: #2f2fdf;
+}
+.list-group a:active {
+  color: #7575e7;
+}
 /* title bestseller */
 .title {
     border-top: 3px solid #939090;
@@ -45,6 +52,7 @@
     color: white;
     background-color: #939090;
     padding: 10px 15px 10px 15px;
+    border-bottom-right-radius: 30px;
 }
 .product_bestseller_grid, .product_latest_grid {
     margin-top: 20px;
@@ -63,15 +71,53 @@
 .breadcrumb a:hover {
 	text-decoration: none;
 }
+/* carousel section */
+.carousel-control {
+  z-index: 2;
+}
+.carousel-control .control-icon {
+  font-size: 48px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+}
 /* carousel indicator */
 .carousel-indicators li {
   background: #666;
   margin: 0 3px;
   width: 12px;
   height: 12px;
-  }
+}
 
 .carousel-indicators li.active {
   background: #fff;
   margin: 0 3px;
-  }
+}
+/* remove BS background */
+.carousel .control-box {
+  opacity: 0;
+}
+a.carousel-control.left {
+  left: 0
+  background: none;
+  border: 0;
+}
+a.carousel-control.right {
+  right: 0
+  background: none;
+  border: 0;
+}
+/* animation */
+.control-box, a.carousel-control, .carousel-indicators li {
+  transition: all 250ms ease;
+}
+/* hover effect */
+.carousel:hover .control-box { opacity: 1; }
+.carousel:hover a.carousel-control.left {
+  left: 15px;
+}
+.carousel:hover a.carousel-control.right {
+  right: 15px;
+}

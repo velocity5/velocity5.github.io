@@ -1,7 +1,15 @@
+/* top-part section */
 .top-part {
     margin-top: 60px;
 }
-
+.list-group a:hover {
+    text-decoration: none;
+    color: #2f2fdf;
+}
+.list-group a:active {
+  color: #7575e7;
+}
+/* carousel section */
 .carousel-caption {
     font-size: 20px;
     text-align: center;
@@ -59,6 +67,7 @@ a.carousel-control.right {
 .carousel:hover a.carousel-control.right {
 	right: 15px;
 }
+/* carousel indicators */
 .carousel-indicators li {
   background: #666;
   margin: 0 3px;
@@ -70,3 +79,37 @@ a.carousel-control.right {
   background: #fff;
   margin: 0 3px;
   }
+  /* bestseller */
+.title {
+    border-top: 3px solid #939090;
+    padding-top: 7px;
+}
+.top-product, .latest-product {
+    color: white;
+    background-color: #939090;
+    padding: 10px 15px 10px 15px;
+    border-bottom-right-radius: 30px;
+}
+.product_bestseller_grid, .product_latest_grid {
+    margin-top: 20px;
+}
+ /*  breadcrumb n backlink */ 
+#back:active, .breadcrumb a:active {
+    color: #94ccf2; 
+}
+.breadcrumb a:hover {
+	text-decoration: none;
+}
+
+#back:hover {
+    color: #3282b8;
+    text-decoration: none;
+}
+/* thumbnail */
+.thumbnail {
+	transition: all 0.4s ease;
+}
+.thumbnail:hover {
+    transform: translate(0, -5px);
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
+}
