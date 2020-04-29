@@ -31,9 +31,9 @@
 		}
 	
 		function orderName(students) {
-			var students = students.sort().join();
+			var students = students.sort();
 			for (var i = 0; i < students.length; i++) {
-				document.write(students[i] + "<br>");
+				document.write(i + 1 + "." + " " + students[i] + "<br>");
 			}
 		}
 		function checkParam(a,b) {
@@ -92,14 +92,12 @@
 		  }
 		}
 		//----
+		/*another way to factorize*/
 		function factorize(num) {
 			let result = 1;
-			for(let i = num; i > 0; i--) {
+			for(let i = num - 1; i >= 1; i--) {
 				num *= i;
 			}
-			return result;
-		}
-		function factorialize(num) {
 			return num;
 		}
 		//----
@@ -110,9 +108,36 @@
 			}
 			return newStr;
 		}
+		/*another way to reverse string*/
 		function reverseString(str) {
 			return str.split("").reverse().join("");
 		}
+		function checkEvenOdd() {
+			for(let i=1; i < 101; i++) {
+				if (i % 2 == 0) {
+					document.write("<span style= 'color:blue'>" + i + "<br>" + "</span>");
+				} else
+				document.write("<span style= 'color:red'>" + i + "<br>" + "</span>");
+			}
+		}
+		// alternative checkEvenOdd
+		function alCheckEvenOdd() {
+			for(let i = 1; i <= 100; i++) {
+				document.write("<span style= 'color:red'>" + i + "<br>" + "</span>");
+				i++;
+				document.write("<span style= 'color:blue'>" + i + "<br>" + "</span>");
+			}
+		}
+
+		function remainderArry(number) {
+			let reMainder = [];
+			for(let i = 1; i < number.length; i++) {
+				let result = number[i] % 2;
+				reMainder.push(result);
+			}
+			document.write(reMainder);
+		}
+		
 	</script>
 
 </body>
