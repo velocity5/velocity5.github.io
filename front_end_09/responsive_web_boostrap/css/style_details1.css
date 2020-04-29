@@ -6,7 +6,7 @@
     cursor: default;
 }
 
-.image-card .img-back {
+.img-back {
     position: absolute;
     top: 0;
     left: 0;
@@ -20,9 +20,7 @@
 .caption:hover a {
 	text-decoration: none;
 }
-.product_name:hover a {
-	color: #809fff;
-}
+
 .caption > h4 > a {
     font-size: 20px;
     font-weight: 100;
