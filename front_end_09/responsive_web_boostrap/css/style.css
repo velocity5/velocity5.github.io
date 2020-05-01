@@ -192,6 +192,7 @@ nav.navbar.navbar-default {
 #back2Top {
     width: 40px;
     border: none;
+    border-radius: 1em;
     line-height: 40px;
     overflow: hidden;
     z-index: 999;
@@ -205,15 +206,15 @@ nav.navbar.navbar-default {
     position: fixed;
     bottom: 50px;
     right: 0;
-    background-color: #DDD;
-    color: #555;
+    background-color: #536878;
+    color: #f5f0f0;
     text-align: center;
     font-size: 24px;
     text-decoration: none;
 }
 #back2Top:hover {
-    background-color: #DDF;
-    color: #000;
+    background-color: #708090;
+    color: #f5f0f0;
 }
 /* modal frame login */
 /* .modal-body {
