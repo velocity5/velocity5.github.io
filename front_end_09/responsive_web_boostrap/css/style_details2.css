@@ -111,7 +111,7 @@ a.carousel-control.right {
     cursor: default;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (max-width: 500px) {
   .carousel-caption {
     font-size: 10px;
     text-align: center;
