@@ -66,10 +66,56 @@
     font-size: 27px;
     padding-top: 20px;
 }
-.tieude_mid .below, #about .below, #service .below, #method .below {
-    width: 10%;
+.tieude_mid .below, #about .below, #service .below, #method .below, .below {
+    width: 20%;
     margin: auto;
     padding-bottom: 20px;
+}
+/* carousel customer */
+.img-box {
+    width: 145px;
+    height: 145px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.img-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: block;
+}
+.review {
+    padding: 30px 0 10px;
+}
+.overview {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.overview b {
+    font-size: 15px;
+    display: block;
+    padding-bottom: 5px;
+}
+
+.customer .indicator-customer {
+    bottom: 15px;
+}
+.indicator-customer li {
+    background: rgba(192,192,192,0.2);
+    border-color: transparent;
+}
+.indicator-customer li:active {
+    border: none;
+    color: #888;
+}
+.indicator-customer li, .indicator-customer li.active {
+    width: 11px;
+    height: 11px;
+    margin: 2px 4px;
+    border-radius: 50%;
+}
+.indicator-customer li.active {
+    background: orange; 
 }
 /* brand */
 .slide {
@@ -125,17 +171,12 @@
     background-color: #d6d6c2;
 }
 .thumb1 .caption {
-    opacity: 0;
     z-index: 3;
     position: relative;
     transition: all .3s ease-in-out;
     background: rgba(192,192,192,0.3);
     padding: 10px 15px; 
 }
-.thumb1:hover .caption {
-    opacity: 1;
-}
-
 
 /* end section button details */
 .col-xs-4.col-sm-4.col-md-4.col-lg-4 > h2 {
@@ -168,7 +209,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
-/* section service vs footer */
+/* section service */
 .row_4 h2 {
     font-size: 25px;
     font-weight: bold;
@@ -204,7 +245,7 @@
     background-color: #dcd9d9;
     padding-bottom: 30px;
 }
-
+/* end section service */
 #footer {
     background-color: #3a3a34;
     padding: 35px 0;
@@ -240,7 +281,7 @@
     padding: 8px 0;
 }
 #method {
-    margin-bottom: 10px;
+    padding-bottom: 30px;
 }
 #method .icon-box {
     padding: 30px;
