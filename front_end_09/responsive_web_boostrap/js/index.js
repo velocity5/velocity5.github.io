@@ -3,34 +3,28 @@
 $(document).ready(function() {
 	$('.a').click(function() {
 		$('html, body').animate({scrollTop:0});
-		$('.menu-left').removeClass("out");
 		return false;
 
 	})
 	$('.a0').click(function() {
 		$('html, body').animate({scrollTop:$('#about').offset().top}, "slow");
-		$('.menu-left').removeClass("out");
 		return false;
 
 	})
 	$('.a1').click(function() {
 		$('html, body').animate({scrollTop:$('#product').offset().top}, "slow");
-		$('.menu-left').removeClass("out");
 		return false;
 	})
 	$('.a2').click(function() {
 		$('html, body').animate({scrollTop:$('#service').offset().top}, "slow");
-		$('.menu-left').removeClass("out");
 		return false;
 	})
 	$('.a3').click(function() {
 		$('html, body').animate({scrollTop:$('#footer').offset().top}, "slow");
-		$('.menu-left').removeClass("out");
 		return false;
 	})
 	$('.find').click(function() {
 		$('html, body').stop(true, true).delay(300).animate({scrollTop:$('#product').offset().top}, "slow");
-		$('.menu-left').removeClass("out");
 		return false;
 	})
 })
