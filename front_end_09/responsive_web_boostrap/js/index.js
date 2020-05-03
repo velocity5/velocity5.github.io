@@ -1,4 +1,5 @@
-﻿/*responsive click*/
+﻿
+/*responsive click*/
 $(document).ready(function() {
 	$('.a').click(function() {
 		$('html, body').animate({scrollTop:0});
@@ -156,16 +157,16 @@ $(document).ready(function() {
 });*/
 
 // click menu ra
-$(".menu-btn").click(function() {
+/*$(".menu-btn").click(function() {
 	$(".menu-left").addClass("out");
 	return false;
-})
+})*/
 // click menu vao
-$(".close-btn").click(function() {
+/*$(".close-btn").click(function() {
 	$(".menu-left").removeClass("out");
 	return false;
 })
 $("body").click(function() {
 	$(".menu-left").removeClass("out");
 	return false;
-})
+})*/

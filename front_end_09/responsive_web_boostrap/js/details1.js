@@ -2,20 +2,20 @@
 $(document).ready(function() {
     
     $('.a0').click(function() {
-        $('html, body').animate({scrollTop:$('#product').offset().top});
+        $('html, body').animate({scrollTop:$('#product').offset().top}, "slow");
         return false;
 
     })
     $('.a1').click(function() {
-        $('html, body').animate({scrollTop:$('#about').offset().top});
+        $('html, body').animate({scrollTop:$('#about').offset().top}, "slow");
         return false;
     })
     $('.a2').click(function() {
-        $('html, body').animate({scrollTop:$('#service').offset().top});
+        $('html, body').animate({scrollTop:$('#service').offset().top}, "slow");
         return false;
     })
     $('.a3').click(function() {
-        $('html, body').animate({scrollTop:$('#footer').offset().top});
+        $('html, body').animate({scrollTop:$('#footer').offset().top}, "slow");
         return false;
     })
     $('.find').click(function() {
@@ -45,3 +45,17 @@ $(document).ready(function() {
 $(document).on('click', function() {
     $('.collapse').collapse('hide');
 });
+// click menu-left ra
+/*$(".menu-btn").click(function() {
+    $(".menu-left").addClass("out");
+    return false;
+})
+// click menu-left vao
+$(".close-btn").click(function() {
+    $(".menu-left").removeClass("out");
+    return false;
+})
+$("body").click(function() {
+    $(".menu-left").removeClass("out");
+    return false;
+})*/

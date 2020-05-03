@@ -1,51 +1,5 @@
 *{margin:0;padding:0; }
-/* vertical menu */
-.vertical-menu a {
-    color: white;
-    padding: 10px 10px;
-    display: block;
-    border-bottom: 1px solid #d6cbcb;
-    font-size: 15px;
-}
-.vertical-menu a:hover {
-    text-decoration: none;
-    color: grey;
-}
-ul.vertical-menu {
-    list-style-type: none;
-}
-.menu-left {
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0,0.9);
-    height: 900px;
-    width: 230px;
-    z-index: 3;
-    color: white;
-    transition: all 0.4s;
-    left: -230px;
-}
-.menu-left.out {
-    left: 0;
-}
-/* menu toggle */
-.menu-btn a {
-    color: #1f4068;
-    font-size: 25px;
-}
-.menu-btn a:hover {
-    text-decoration: none;
-    opacity: 0.6;
-}
-.menu-btn {
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 10px 20px 10px 20px;
-    margin: 10px 20px 10px 20px;
-    border: none;
-}
+
 /* section background_top */
 .background_top {
     background-color: #e0e0d1;
@@ -136,7 +90,17 @@ ul.vertical-menu {
 .row_4 h2 {
     text-align: center;
 }
-/* section button details */
+/* section button details vs thumbnail */
+.thumb1 {
+    overflow: hidden;
+}
+.thumb1 img {
+    transition: all 0.5s linear;
+}
+.thumb1:hover img {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
 .thumbnail .btn-custom {
     padding: 8px 18px;
     border: 0px;
@@ -154,22 +118,38 @@ ul.vertical-menu {
     font-weight: bold;
     font-size: 20px;
 }
-.red-bg {
+.red-bg, .green-bg, .orange-bg  {
+    background-color: transparent;
+    color: black;
+    transition: 0.4s ease-in-out;
+}
+.red-bg:hover {
     background-color: #df2a2ae8;
+    transition: 0.3s ease;
 }
-.green-bg {
+.green-bg:hover {
     background-color: #33b633;
+    transition: 0.3s ease;
 }
-.orange-bg {
+.orange-bg:hover {
     background-color: #ffa501;
+    transition: 0.3s ease;
 }
 .btn-custom:hover {
     background-color: #d6d6c2;
 }
-.thumbnail {
-    background-color: #ebebeb;
-    border: none;
+.thumb1 .caption {
+    opacity: 0;
+    z-index: 3;
+    position: relative;
+    transition: all .3s ease-in-out;
+    background: rgba(192,192,192,0.3);
+    padding: 10px 15px; 
 }
+.thumb1:hover .caption {
+    opacity: 1;
+}
+
 
 /* end section button details */
 .col-xs-4.col-sm-4.col-md-4.col-lg-4 > h2 {
