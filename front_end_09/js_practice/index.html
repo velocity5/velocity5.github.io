@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Javascript Practice</title>
 </head>
+
 <body>
 	<h1 style="text-align: center;">Javascript Practice</h1>
 	<hr>
@@ -12,32 +14,32 @@
 			return x * x;
 		}
 		function theKy(year) {
-			return Math.ceil(year/100);
+			return Math.ceil(year / 100);
 		}
 		var text = "hello world, kaka";
 		function cutString(text) {
-			document.write(text.substr(0,10) + '...');
+			document.write(text.substr(0, 10) + '...');
 		}
 		cutString(text);
 
 		function camelCase(txt) {
 			return txt.charAt(0).toUpperCase() + txt.slice(1).toLowerCase();
-	}
+		}
 
 		function minNumb(numb) {
-			 /*return Math.min.apply(Math,numb);*/
-			 var numb = numb.sort();
-			 return numb;
+			/*return Math.min.apply(Math,numb);*/
+			var numb = numb.sort();
+			return numb;
 		}
-	
+
 		function orderName(students) {
 			var students = students.sort();
 			for (var i = 0; i < students.length; i++) {
 				document.write(i + 1 + "." + " " + students[i] + "<br>");
 			}
 		}
-		function checkParam(a,b) {
-			if(typeof a == 'number' && typeof b == 'number') {
+		function checkParam(a, b) {
+			if (typeof a == 'number' && typeof b == 'number') {
 				if (a > b) {
 					document.write("Maximum number is: " + a);
 				} else {
@@ -46,20 +48,20 @@
 			} else {
 				alert("Ban phai nhap so!");
 			}
-			
+
 		}
 
 		// tinh can bac hai
-		  function squareRoot(x) {
-		      for (i = 0; i * i <= x; i++) {
-		        for (j = 0; j * j > i * i; j++) {
-		        	return i * i === x && j * j === x;
-		        } 
-		      		return i;
-		 }
+		function squareRoot(x) {
+			for (i = 0; i * i <= x; i++) {
+				for (j = 0; j * j > i * i; j++) {
+					return i * i === x && j * j === x;
+				}
+				return i;
+			}
 		}
 		// check tinh hop le
-		function checkValidate(id,pass,confirm) {
+		function checkValidate(id, pass, confirm) {
 			if (id.length > 0 && id.length < 21 && pass.length > 5 && pass.length <= 32 && confirm === pass) {
 				return "Pass";
 			} else {
@@ -68,36 +70,36 @@
 		}
 		// reverse-triangle
 		function specialTriangle(h) {
-		  for (let i = 0; i < h; i++) {
-		    for (let j = 0; j < i; j++) {
-		      document.write("&nbsp;");   
-		    }
-		    for (let j = h; j > i; j--) { 
-		      document.write("*");
-		      document.write("&nbsp;");
-		    }
-		   document.write('<br/>');
-		  }
+			for (let i = 0; i < h; i++) {
+				for (let j = 0; j < i; j++) {
+					document.write("&nbsp;");
+				}
+				for (let j = h; j > i; j--) {
+					document.write("*");
+					document.write("&nbsp;");
+				}
+				document.write('<br/>');
+			}
 		}
 		// hollow triangle
-		function hollowTriangle(w,h) {
-		  for (let i = 1; i <= h; i++) {
-		    for (let j = 1; j <= w; j++) {
-		      if (i == 1 || i == h || j == 1 || j == w) {
-		        document.write("*");
-		        document.write("&nbsp;");
-		      } else {
-		        document.write("&nbsp;&nbsp;&nbsp;");
-		      }
-		    }
-		    document.write('<br/>');
-		  }
+		function hollowTriangle(w, h) {
+			for (let i = 1; i <= h; i++) {
+				for (let j = 1; j <= w; j++) {
+					if (i == 1 || i == h || j == 1 || j == w) {
+						document.write("*");
+						document.write("&nbsp;");
+					} else {
+						document.write("&nbsp;&nbsp;&nbsp;");
+					}
+				}
+				document.write('<br/>');
+			}
 		}
 		//----
 		/*another way to factorize*/
 		function factorize(num) {
 			let result = 1;
-			for(let i = num - 1; i >= 1; i--) {
+			for (let i = num - 1; i >= 1; i--) {
 				num *= i;
 			}
 			return num;
@@ -105,8 +107,8 @@
 		//----
 		function reVerse(str) {
 			let newStr = "";
-			for(let i = str.length - 1; i >= 0; i--) {
-				newStr += str[i];  
+			for (let i = str.length - 1; i >= 0; i--) {
+				newStr += str[i];
 			}
 			return newStr;
 		}
@@ -115,16 +117,16 @@
 			return str.split("").reverse().join("");
 		}
 		function checkEvenOdd() {
-			for(let i=1; i < 101; i++) {
+			for (let i = 1; i < 101; i++) {
 				if (i % 2 == 0) {
 					document.write("<span style= 'color:blue'>" + i + "<br>" + "</span>");
 				} else
-				document.write("<span style= 'color:red'>" + i + "<br>" + "</span>");
+					document.write("<span style= 'color:red'>" + i + "<br>" + "</span>");
 			}
 		}
 		// alternative checkEvenOdd
 		function alCheckEvenOdd() {
-			for(let i = 1; i <= 100; i++) {
+			for (let i = 1; i <= 100; i++) {
 				document.write("<span style= 'color:red'>" + i + "<br>" + "</span>");
 				i++;
 				document.write("<span style= 'color:blue'>" + i + "<br>" + "</span>");
@@ -133,7 +135,7 @@
 
 		function remainderArry(number) {
 			let reMainder = [];
-			for(let i = 1; i < number.length; i++) {
+			for (let i = 1; i < number.length; i++) {
 				let result = number[i] % 2;
 				reMainder.push(result);
 			}
@@ -144,7 +146,7 @@
 		// input an array number and sum
 		function inputArry(numbers) {
 			let total;
-			for(const item of numbers) {
+			for (const item of numbers) {
 				total = numbers.reduce((total, item) => total + item);
 			}
 			console.log(`Total values of [` + numbers + `] is: `, total);
@@ -153,18 +155,18 @@
 		function originalArry(numbers) {
 			let remnantArry = [];
 			let result;
-			for(const item of numbers) {
+			for (const item of numbers) {
 				result = numbers.map(number => number % 2);
 			}
 			remnantArry.push(result);
-			console.log ("[" + remnantArry + "]");
+			console.log("[" + remnantArry + "]");
 		}
 		// doubleNum using map
 		function doubleNum(numbers) {
 			let newNumb = [];
 			let result;
-			for(const value of numbers) {
-				result = numbers.map(number => number*2);
+			for (const value of numbers) {
+				result = numbers.map(number => number * 2);
 			}
 			newNumb.push(result);
 			console.log("[" + newNumb + "]");
@@ -172,20 +174,21 @@
 		// filter even number
 		function evenFilter(numbers) {
 			let result;
-			for(const value of numbers) {
+			for (const value of numbers) {
 				result = numbers.filter(value => value % 2 === 0)
 			}
-			console.log (result);
+			console.log(result);
 		}
 		// filter student name with letter 'H'
 		function nameFilter(names) {
 			let filterH = [];
-			for(const firstLetters of names) {
+			for (const firstLetters of names) {
 				filterH = names.filter(name => name.startsWith("H") || name.startsWith("h"));
 			}
-			console.log (filterH);
+			console.log(filterH);
 		}
 	</script>
 
 </body>
+
 </html>
