@@ -37,12 +37,16 @@
 			}
 		}
 		function checkParam(a,b) {
-			if(typeof a && typeof b == 'number') {
-				document.write(a + " is a number<br />", b + " is a number<br />");
+			if(typeof a == 'number' && typeof b == 'number') {
+				if (a > b) {
+					document.write("Maximum number is: " + a);
+				} else {
+					document.write("Maximum number is: " + b);
+				}
 			} else {
-				document.write(a + " is not a number<br />", b + " is not a number<br />");
+				alert("Ban phai nhap so!");
 			}
-			document.write("Maximum number is: " + Math.max(a,b));
+			
 		}
 
 		// tinh can bac hai
@@ -55,13 +59,11 @@
 		 }
 		}
 		// check tinh hop le
-		var input = {username:"minhtran12", password:"12345678", confirm:"12345678"};
-		function checkValidate(input) {
-			if (input.username != null && input.username.length < 20 && input.password.length >= 6 && input.password.length <= 32 && input.confirm.length === input.password.length) {
-			return "Pass";
-			}
-			 else {
-			return "Fail";
+		function checkValidate(id,pass,confirm) {
+			if (id.length > 0 && id.length < 21 && pass.length > 5 && pass.length <= 32 && confirm === pass) {
+				return "Pass";
+			} else {
+				return "Fail";
 			}
 		}
 		// reverse-triangle
@@ -137,7 +139,52 @@
 			}
 			document.write(reMainder);
 		}
-		
+		/*---------------------------------------------------------------------------------*/
+		// BÀI THỰC HÀNH PHẦN 8
+		// input an array number and sum
+		function inputArry(numbers) {
+			let total;
+			for(const item of numbers) {
+				total = numbers.reduce((total, item) => total + item);
+			}
+			console.log(`Total values of [` + numbers + `] is: `, total);
+		}
+		// remainderArry using map
+		function originalArry(numbers) {
+			let remnantArry = [];
+			let result;
+			for(const item of numbers) {
+				result = numbers.map(number => number % 2);
+			}
+			remnantArry.push(result);
+			console.log ("[" + remnantArry + "]");
+		}
+		// doubleNum using map
+		function doubleNum(numbers) {
+			let newNumb = [];
+			let result;
+			for(const value of numbers) {
+				result = numbers.map(number => number*2);
+			}
+			newNumb.push(result);
+			console.log("[" + newNumb + "]");
+		}
+		// filter even number
+		function evenFilter(numbers) {
+			let result;
+			for(const value of numbers) {
+				result = numbers.filter(value => value % 2 === 0)
+			}
+			console.log (result);
+		}
+		// filter student name with letter 'H'
+		function nameFilter(names) {
+			let filterH = [];
+			for(const firstLetters of names) {
+				filterH = names.filter(name => name.startsWith("H") || name.startsWith("h"));
+			}
+			console.log (filterH);
+		}
 	</script>
 
 </body>
