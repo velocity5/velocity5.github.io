@@ -34,17 +34,17 @@
 } 
 /* remove BS background */
 .carousel .control-box {
-	opacity: 0;
+  opacity: 0;
 }
 a.carousel-control.left {
-	left: 0
-	background: none;
-	border: 0;
+  left: 0
+  background: none;
+  border: 0;
 }
 a.carousel-control.right {
-	right: 0
-	background: none;
-	border: 0;
+  right: 0
+  background: none;
+  border: 0;
 }
 /* animation */
 .control-box, a.carousel-control, .carousel-indicators li {
@@ -52,12 +52,7 @@ a.carousel-control.right {
 } 
 /* hover effect */
 .carousel:hover .control-box { opacity: 1; }
-.carousel:hover a.carousel-control.left {
-	left: 15px;
-}
-.carousel:hover a.carousel-control.right {
-	right: 15px;
-}
+
 /* carousel indicators */
 .carousel-indicators li {
   background: #666;

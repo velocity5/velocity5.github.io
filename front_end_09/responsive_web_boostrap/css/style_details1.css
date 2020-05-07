@@ -124,9 +124,3 @@ a.carousel-control.right {
 }
 /* hover effect */
 .carousel:hover .control-box { opacity: 1; }
-.carousel:hover a.carousel-control.left {
-  left: 15px;
-}
-.carousel:hover a.carousel-control.right {
-  right: 15px;
-}
