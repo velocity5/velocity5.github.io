@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://kit.fontawesome.com/75e2b85055.js"></script>
 </head>
+
 <body>
-    <script src="jquery-3.5.0.js"></script>
+	<script src="jquery-3.5.0.js"></script>
 
-		<div class="calculator">
-			<input type="text" id="calculator_display" placeholder="0" disabled />
-			<input type="text" id="answer" value="" disabled />
-			<div class="calculator_key">
-				<button type="button" value="+" class="operator" onclick="getOperand('+')">+</button> 
-				<button type="button" value="-" class="operator" onclick="getOperand('-')">-</button> 
-				<button type="button" value="x" class="operator" onclick="getOperand('*')">*</button> 
-				<button type="button" value="/" class="operator" onclick="getOperand('/')">/</button> 
+	<div class="calculator">
+		<input type="text" id="calculator_display" disabled />
+		<div class="calculator_key">
+			<button type="button" value="+" class="operator">+</button>
+			<button type="button" value="-" class="operator">-</button>
+			<button type="button" value="x" class="operator">*</button>
+			<button type="button" value="/" class="operator">/</button>
 
-				<button type="button" value="7" onclick="getNumber(7)">7</button> 
-				<button type="button" value="8" onclick="getNumber(8)">8</button> 
-				<button type="button" value="9" onclick="getNumber(9)">9</button>
+			<button type="button" value="7">7</button>
+			<button type="button" value="8">8</button>
+			<button type="button" value="9">9</button>
 
-				<button type="button" value="6" onclick="getNumber(6)">6</button>
-				<button type="button" value="5" onclick="getNumber(5)">5</button>
-				<button type="button" value="4" onclick="getNumber(4)">4</button>
+			<button type="button" value="6">6</button>
+			<button type="button" value="5">5</button>
+			<button type="button" value="4">4</button>
 
-				<button type="button" value="1" onclick="getNumber(1)">1</button>
-				<button type="button" value="2" onclick="getNumber(2)">2</button>
-				<button type="button" value="3" onclick="getNumber(3)">3</button>
+			<button type="button" value="1">1</button>
+			<button type="button" value="2">2</button>
+			<button type="button" value="3">3</button>
 
-				<button type="button" value="%" class="operator" onclick="getOperand('%')">%</button>
-				<button type="button" value="0" onclick="getNumber(0)">0</button>
-				<button type="button" value="." class="decimal" onclick="getDecimal('.')">.</button> 
-				<button type="button" value="" class="back_space" onclick="backScreen()"><i class="fas fa-times"></i></button> 
-				<button type="button" class="all-clear" onclick="clearScreen()">AC</button>
-				<button type="button" value="equal" class="equal operator" onclick="comPute()">=</button> 
-			</div>
+			<button type="button" value="%" class="operator">%</button>
+			<button type="button" value="0">0</button>
+			<button type="button" value="." class="decimal">.</button>
+			<button type="button" value="" class="back_space">C</button>
+			<button type="button" class="all-clear">AC</button>
+			<button type="button" value="=" class="equal operator">=</button>
 		</div>
-	<script type="text/javascript" src="cal1.js"></script>
+	</div>
+	<script type="text/javascript" src="cal.js"></script>
 </body>
+
 </html>
