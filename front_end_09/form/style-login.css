@@ -1,0 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrap {
+	display: block;
+	background: #e3dddd;
+	width: 600px;
+	padding: 10px;
+	margin: 40px auto;
+}
+.title {
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+}
+#email, #pwd{
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.form-login a {
+	text-decoration: none;
+	color: #0909ce;
+}
+.form-login a:hover {
+    color: #4343e3;
+}
+.form-login a:active {
+    color: #7878d9;
+}
+button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    width: 100%;
+    background-color: #058405;
+    color: white;
+}
+button:hover {
+	opacity: 0.8;
+}

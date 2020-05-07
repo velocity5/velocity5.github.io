@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style-login.css">
+</head>
+<body>
+	<div class="wrap">
+		<div class="title">Log In</div>
+		<div class="form-login">
+			<form action="post">
+				<input type="email" name="email" id="email" placeholder="Email Address" required autofocus>
+				<input type="password" name="pwd" id="pwd" placeholder="Password" required autofocus>
+				<input type="checkbox" name="remember" id="remember"><label for="remember">Remember me</label>
+				<button  type="submit" value="submit">Login</button>
+			</form>
+			<a href="#">Forgot password?</a>
+		</div>
+		<div class="title-signup">Sign Up</div>
+		<div class="form-signup">
+			<form action="get">
+				<input type="email" name="email" id="email" placeholder="Email Address" required autofocus>
+				<input type="password" name="pwd" id="pwd" placeholder="Password" required autofocus>
+				<input type="password" name="re-pwd" id="re-pwd" placeholder="Re-type Password" required autofocus>
+				<button type="submit" value="submit">Signup</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
