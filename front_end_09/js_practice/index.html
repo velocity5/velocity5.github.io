@@ -153,12 +153,10 @@
 		}
 		// remainderArry using map
 		function originalArry(numbers) {
-			let remnantArry = [];
-			let result;
-			for (const item of numbers) {
-				result = numbers.map(number => number % 2);
+			const remnantArry = [];
+			for (let item of numbers) {
+				remnantArry.push(numbers.map(number => number % 2));
 			}
-			remnantArry.push(result);
 			console.log("[" + remnantArry + "]");
 		}
 		// doubleNum using map
@@ -187,6 +185,7 @@
 			}
 			console.log(filterH);
 		}
+		
 	</script>
 
 </body>
