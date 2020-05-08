@@ -1,33 +1,44 @@
 ﻿
 /*responsive click*/
 $(document).ready(function() {
-	$('.a').click(function() {
+	$('.click-home').click(function() {
 		$('html, body').animate({scrollTop:0});
 		return false;
 
 	})
-	$('.a0').click(function() {
+	$('.click-about').click(function() {
 		$('html, body').animate({scrollTop:$('#about').offset().top}, "slow");
 		return false;
 
 	})
-	$('.a1').click(function() {
+	$('.click-product').click(function() {
 		$('html, body').animate({scrollTop:$('#product').offset().top}, "slow");
 		return false;
 	})
-	$('.a2').click(function() {
+	$('.click-service').click(function() {
 		$('html, body').animate({scrollTop:$('#service').offset().top}, "slow");
 		return false;
 	})
-	$('.a3').click(function() {
+	$('.click-contact').click(function() {
 		$('html, body').animate({scrollTop:$('#footer').offset().top}, "slow");
 		return false;
 	})
 	$('.find').click(function() {
-		$('html, body').stop(true, true).delay(300).animate({scrollTop:$('#product').offset().top}, "slow");
+		$('html, body').stop(true, true).delay(300).animate({scrollTop:$('#about').offset().top}, "slow");
 		return false;
 	})
 })
+/* function scroll */
+$(function() {
+	$(window).scroll(function() {
+		currentPostion = $('html,body').scrollTop();
+		if (currentPostion > 200) {
+			$('.navbar-fixed-top').addClass('squeeze');
+		} else {
+			$('.navbar-fixed-top').removeClass('squeeze');
+		}
+	})
+});
 /* responsive on mobile */
 $(function() {
 	let docao = $(window).height(); 

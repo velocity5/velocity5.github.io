@@ -1,5 +1,25 @@
 *{margin:0;padding:0; }
-
+/* navbar menu */
+.main-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.4s ease;
+}
+.squeeze .main-menu {
+    padding-top: 0; 
+}
+.navbar-default {
+    transition: all 0.4s ease;
+}
+.squeeze {
+    height: 1px;
+}
+.navbar-nav.navbar-right > li > a:hover {
+    background-color: crimson;
+}
+.navbar-brand {
+    cursor: default;
+}
 /* section background_top */
 .background_top {
     background-color: #e0e0d1;
@@ -135,9 +155,6 @@
     color: black;
 }
 /* brand */
-/* .bxslider {
-    padding: 20px 20px;
-} */
 
 .wrap-img img {
     max-width: 90%;

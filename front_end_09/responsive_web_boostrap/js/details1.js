@@ -1,25 +1,21 @@
 /*responsive click*/
 $(document).ready(function() {
     
-    $('.a0').click(function() {
-        $('html, body').animate({scrollTop:$('#product').offset().top}, "slow");
+    $('.click-about').click(function() {
+        $('html, body').animate({scrollTop:$('#about').offset().top}, "slow");
         return false;
 
     })
-    $('.a1').click(function() {
-        $('html, body').animate({scrollTop:$('#about').offset().top}, "slow");
+    $('.click-product').click(function() {
+        $('html, body').animate({scrollTop:$('#product').offset().top}, "slow");
         return false;
     })
-    $('.a2').click(function() {
+    $('.click-service').click(function() {
         $('html, body').animate({scrollTop:$('#service').offset().top}, "slow");
         return false;
     })
-    $('.a3').click(function() {
+    $('.click-contact').click(function() {
         $('html, body').animate({scrollTop:$('#footer').offset().top}, "slow");
-        return false;
-    })
-    $('.find').click(function() {
-        $('html, body').stop(true, true).delay(300).animate({scrollTop:$('#product').offset().top}, "slow");
         return false;
     })
 })
