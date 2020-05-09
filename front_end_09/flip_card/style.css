@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url(img/background.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.wrap {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	padding: 10px;
+}
+.wrap1 {
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 10px;
+	margin-top: 270px;
+}
+.flip-card {
+	padding: 20px;
+	background-color: transparent;
+	perspective: 1000px;
+}
+.inner {
+	position: relative;
+}
+.inner img {
+	max-width: 300px;
+	max-height: 300px; 
+}
+.front, .back {
+	position: absolute;
+	backface-visibility: hidden;
+	transition: all 0.8s;
+}
+.flip-card .back {
+	transform: rotateY(180deg);
+}
+.flip-card:hover .back {
+	transform: rotateY(0deg);
+}
+
+.flip-card:hover .front {
+	transform: rotateY(180deg);
+}
