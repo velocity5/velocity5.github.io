@@ -21,7 +21,7 @@ $(document).ready(function() {
 		return false;
 	})
 	$('.click-contact').click(function() {
-		$('html, body').animate({scrollTop:$('#footer').offset().top}, "slow");
+		$('html, body').animate({scrollTop:$('#contact').offset().top}, "slow");
 		return false;
 	})
 })

@@ -2,25 +2,25 @@
 /*responsive click*/
 $(document).ready(function() {
 	$('.click-home').click(function() {
-		$('html, body').animate({scrollTop:0});
+		$('html, body').stop(true,true).delay(300).animate({scrollTop:0});
 		return false;
 
 	})
 	$('.click-about').click(function() {
-		$('html, body').animate({scrollTop:$('#about').offset().top}, "slow");
+		$('html, body').stop(true,true).delay(300).animate({scrollTop:$('#about').offset().top}, "slow");
 		return false;
 
 	})
 	$('.click-product').click(function() {
-		$('html, body').animate({scrollTop:$('#product').offset().top}, "slow");
+		$('html, body').stop(true,true).delay(300).animate({scrollTop:$('#product').offset().top}, "slow");
 		return false;
 	})
 	$('.click-service').click(function() {
-		$('html, body').animate({scrollTop:$('#service').offset().top}, "slow");
+		$('html, body').stop(true,true).delay(300).animate({scrollTop:$('#service').offset().top}, "slow");
 		return false;
 	})
 	$('.click-contact').click(function() {
-		$('html, body').animate({scrollTop:$('#footer').offset().top}, "slow");
+		$('html, body').stop(true,true).delay(300).animate({scrollTop:$('#contact').offset().top}, "slow");
 		return false;
 	})
 	$('.find').click(function() {
@@ -28,6 +28,8 @@ $(document).ready(function() {
 		return false;
 	})
 })
+// scroll spy
+$('body').scrollspy({target: ".navbar-fixed-top",offset:30});
 /* function scroll */
 $(function() {
 	$(window).scroll(function() {

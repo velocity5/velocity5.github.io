@@ -10,16 +10,25 @@
 }
 .navbar-default {
     transition: all 0.4s ease;
+    opacity: 0.8;
 }
 .squeeze {
     height: 1px;
+    opacity: 1;
 }
 .navbar-nav.navbar-right > li > a:hover {
     background-color: crimson;
+    color: white;
 }
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: crimson;
+}
+
 .navbar-brand {
     cursor: default;
 }
+
 /* section background_top */
 .background_top {
     background-color: #e0e0d1;
@@ -237,10 +246,10 @@
 }
 
 #about {
-    padding-top: 50px;
+    padding-top: 30px;
     background-color: #3a3a34;
     color: white;
-    padding-bottom: 50px;
+    padding-bottom: 10px;
 }
 #about button.btn.btn-default {
     font-size: 20px;
@@ -286,7 +295,7 @@
 .tieude_service h2 {
     text-transform: capitalize;
 }
-.tieude_service {
+.tieude_service, .tieude_contact {
     padding-top: 30px;
     padding-bottom: 10px;
 }
@@ -295,12 +304,55 @@
     padding-bottom: 30px;
 }
 /* end section service */
-#footer {
-    background-color: #3a3a34;
-    padding: 35px 0;
-    color: white;
+/* section contact */
+#contact {
+    background-color: #dcd9d9;
+    color: black;
     font-size: 15px;
-    margin-top: 0;
+    height: 600px;
+    text-transform: capitalize;
+}
+.info-box {
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    background-color: #f0f0f0;
+    color: #00005c;
+    padding: 20px 0 30px 0;
+    border-radius: 10px;
+}
+.info-box .title {
+    color: #120136;
+}
+.info-box p {
+    color: #584153;
+}
+.info-box i {
+    border: 2px dotted #9a1f40;
+    padding: 8px;
+    border-radius: 50%;
+    color: #9a1f40;
+}
+.form-row {
+    margin-right: -14px;
+    margin-left: -14px;
+}
+
+.submit-form {
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.submit-form input {
+    padding: 18px 15px;
+}
+
+.submit-form textarea {
+    padding: 12px 15px;
+}
+.map-box {
+    margin-top: 10px;
 }
 .row_5 {
     text-transform: capitalize;
@@ -308,9 +360,7 @@
 #support {
     text-transform:none;
 } 
-.social i {
-    margin-right: 10px;
-}
+
 /* payment method */
 .wrap, .wrap1 {
     width: 3em;
@@ -350,6 +400,12 @@
 #method .icon-box:hover .cod, #method .icon-box:hover i {
     color: #536878;
 } 
+/* section footer */
+#footer {
+    background-color: black;
+    color: white;
+    padding: 30px 0;
+}
 /* end section method vs footer */
 #back2Top {
     width: 40px;
