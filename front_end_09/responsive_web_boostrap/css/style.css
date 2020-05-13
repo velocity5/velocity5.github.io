@@ -147,19 +147,16 @@
     background: orange; 
 }
 
-.overview i {
-    color: #ececec;
-}
-
-.testimonial, .overview b, .review {
-    color: white;
+.review {
+    color: #ffffff;
 }
 .background-midtop {
-    background: url(../images/icon/super-sentai.png);
-    background-size: cover;
-    background-position: center center;
+   background: url(../images/icon/super-sentai.png);
+   background-size: cover;
+   background-position: center center;
     padding: 50px 0;
 }
+
 .background-midtop .fa-quote-left, .background-midtop .fa-quote-right {
     color: black;
 }
@@ -247,21 +244,31 @@
 
 #about {
     padding-top: 30px;
-    background-color: #3a3a34;
-    color: white;
+    background-color: #ffffff;
+    color: black;
     padding-bottom: 10px;
+    min-height: 500px;
 }
 #about button.btn.btn-default {
     font-size: 20px;
     padding: 10px 20px 10px 20px;
 }
 #about p {
-    font-size: 15px;
-    padding-top: 49px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    
 }
 #about h2 {
     text-transform: capitalize;
+}
+.img-right {
+    width: 100%;
+}
+.about-list li {
+    list-style-type: none;
+    padding-left: 16px;
+}
+.about-list li > i {
+    color: orange;
 }
 .row_7 .col-xs-4.col-sm-4.col-md-4.col-lg-4 {
     padding-top: 20px;
@@ -309,15 +316,18 @@
     background-color: #dcd9d9;
     color: black;
     font-size: 15px;
-    height: 600px;
+    min-height: 500px;
     text-transform: capitalize;
 }
 .info-box {
+    padding: 20px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    background-color: #f0f0f0;
-    color: #00005c;
-    padding: 20px 0 30px 0;
-    border-radius: 10px;
+    transition: all 0.3s ease;
+    border-radius: 1em;
 }
 .info-box .title {
     color: #120136;
@@ -337,11 +347,15 @@
 }
 
 .submit-form {
+    padding: 50px;
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #f0f0f0;
     box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    padding: 20px;
-    margin-top: 10px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
+    transition: all 0.3s ease;
+    border-radius: 1em;
+}
 }
 
 .submit-form input {
@@ -363,21 +377,21 @@
 
 /* payment method */
 .wrap, .wrap1 {
-    width: 3em;
+    width: 100%;
+    min-height: 90px;
     display: flex;
-    flex-direction: row;  
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.wrap img {
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 10px;
-    padding: 8px 0;
-}
+.wrap img, 
 .wrap1 img {
+    width: 3em;
     border-radius: 50%;
-    margin-right: 50px;
-    margin-left: 50px;
-    padding: 8px 0;
+    /* margin-right: 50px; */
+    /* margin-left: 50px; */
+    padding: 8px 0; 
+    height: 100%;
+    margin: 0 10px 0 10px;
 }
 #method {
     padding-bottom: 30px;
@@ -392,6 +406,7 @@
     transition: all 0.3s ease;
     border: 1px solid #fff;
     border-radius: 1em;
+    min-height: 250px;
 }
 #method .icon-box:hover {
     border-color: #1f4068; 
@@ -607,6 +622,17 @@ modal frame signup
     text-decoration: none;
 } */
 /* mobile and tablet devices */
+@media only screen and (max-width: 750px) {
+    #method .icon-box {
+        min-height: 200px;
+    }
+    .wrap, .wrap1 {
+        min-height: 0;
+    }
+     #about p {
+        margin-top: 20px; 
+    }
+}
 @media only screen and (max-width: 500px) {
     #method h2 {
         font-size: 20px;
@@ -617,5 +643,9 @@ modal frame signup
     }
     .img-frame {
         width: 100%;
+    }
+
+    #about p {
+        margin-top: 10px;  
     }
 }
