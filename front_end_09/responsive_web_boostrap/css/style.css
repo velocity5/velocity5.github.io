@@ -20,13 +20,23 @@
     background-color: crimson;
     color: white;
 }
+.navbar-nav.navbar-right > li > a {
+    font-family: 'Quantico', sans-serif;
+}
 .navbar-inverse .navbar-nav > .active > a, 
 .navbar-inverse .navbar-nav > .active > a:focus {
     background-color: crimson;
 }
 
 .navbar-brand {
-    cursor: default;
+    font-family: 'Quantico', sans-serif;
+    font-size: 30px;
+}
+.navbar-header .navbar-brand {
+    color: white;
+}
+.navbar-brand span {
+    color: #FA5;
 }
 
 /* section background_top */
@@ -631,7 +641,7 @@ modal frame signup
     text-decoration: none;
 } */
 /* mobile and tablet devices */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 800px) {
     #method .icon-box {
         min-height: 200px;
     }
@@ -640,6 +650,9 @@ modal frame signup
     }
      #about p {
         margin-top: 20px; 
+    }
+    .find {
+        margin-top: 10px;
     }
 }
 @media only screen and (max-width: 500px) {
