@@ -6,14 +6,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">  
 	<script type="text/javascript" src="vendor/bootstrap.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quantico&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="vendor/bootstrap.css">
  	<link rel="stylesheet" href="css/style_details1.css">
  	<link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css_fontawesome/all.css">
-  <link rel="icon" type="image/png" href="images/icon/favicon.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="images/icon/favicon.png">
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
     	<div class="container">
     		<!-- Brand and toggle get grouped for better mobile display -->
     		<div class="navbar-header">
@@ -23,17 +24,19 @@
     				<span class="icon-bar"></span>
     				<span class="icon-bar"></span>
     			</button>
-    			<a class="navbar-brand">PG-TOYS</a>
+    			<a href="index.html" class="navbar-brand">
+    			<span>PG</span>-TOYS
+    			</a>
     		</div>
 
     		<!-- Collect the nav links, forms, and other content for toggling -->
     		<div class="collapse navbar-collapse navbar-ex1-collapse">
     			<ul class="nav navbar-nav navbar-right">
-             		<li><a href="index.html" class="a">Home</a></li>
-             		<li><a href="index.html" class="a0">Product</a></li>
-    				<li><a href="index.html" class="a1">About</a></li>
-            		<li><a href="index.html" class="a2">Services</a></li>
-    				<li><a href="#footer" class="a3">Contact</a></li>
+             		<li><a href="index.html" class="click-home">Home</a></li>
+    				<li><a href="index.html" class="click-about">About</a></li>
+    				<li><a href="" class="click-product">Products</a></li>
+            		<li><a href="index.html" class="click-service">Services</a></li>
+    				<li><a href="index.html" class="click-contact">Contact</a></li>
             <!-- <li><a href="" class="a4" title="Login/Signup" role="button" data-toggle="modal" data-target="#login"><i class="far fa-user"> login</i></a></li>
             <li><a href="" class="a4" title="Login/Signup" role="button" data-toggle="modal" data-target="#signup"><i class="fas fa-user-plus"> signup</i></a></li> -->
     			</ul>
@@ -42,55 +45,71 @@
     </nav> <!-- end-nav -->
     <div class="container top-part">
     	<div class="row">
-    		<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+    		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<nav aria-label="breadcrumb">
-				  <ol class="breadcrumb">
+				  <ol class="breadcrumb breadcrumb-figure">
 				    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-				    <li class="breadcrumb-item active" aria-current="page">Figure Details</li>
+				    <li class="breadcrumb-item"><a href="index.html">Products</a></li>
+				    <li class="breadcrumb-item active" aria-current="page">Figure</li>
 				  </ol>
 				</nav>
+			</div>
 				<!-- end breadcrumb -->	
-    			<h4 class="title-left">Product List</h4>
-    			<ul class="list-group"> <!-- nhóm menu -->
-    				<li class="list-group-item"><a href="#">Unique</a></li>
-    				<li class="list-group-item"><a href="details2.html">DX-Driver</a></li>
-    				<li class="list-group-item"><a href="details3.html">Others</a></li>
-   				 </ul>
-    		</div>
+			<div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+				<div class="search-box">
+					<h4 class="search-title">
+						Find Product
+					</h4>
+					<form class="navbar-form">
+						<div class="form-group">
+							<input type="text" name="search" placeholder="Search" class="form-control">
+						</div>
+						<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+					</form>
+				</div>
+				<div class="categories">
+					<h4 class="categories-title">Categories</h4>
+					<hr class="break">
+					<ul class="categories-menu">
+						<li><a href="javascript:void(0)" class="active">Figures</a>
+							<ul class="submenu">
+								<li><a href="">S.H.Figures</a></li>
+								<li><a href="">R.K.Figures</a></li>
+							</ul>
+						</li>
+						<li><a href="details2.html">DX-Drivers</a></li>
+						<li><a href="details3.html">Others</a></li>
+					</ul>
+				</div>
+			</div>
     		<div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
     			<!-- bs3-carosuel -->
-    			<!-- <div id="carousel-id" class="carousel slide" data-ride="carousel">
-    			 			        <ol class="carousel-indicators">
-    			 			           <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-    			 			           <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-    			 			            <li data-target="#carousel-id" data-slide-to="2" class=""></li>
-    			 			            <li data-target="#carousel-id" data-slide-to="3" class=""></li>
-    			 			        </ol>
-    			 			        <div class="carousel-inner">
-    			 			          	<div class="item active">
-    			 			            	<img src="images/product_images/build-box1.jpg">  
-    			 			        	</div>
-    			 			        	<div class="item">
-    			 			            	<img src="images/product_images/gaim.jpg">
-    			 			        	</div>
-    			 			        	<div class="item">
-    			 			            	<img src="images/product_images/kamen_rider.jpg">
-    			 			        	</div>
-    			 			        	<div class="item">
-    			 			            	<img src="images/product_images/zio-box1.jpg">
-    			 			        	</div>
-    			 			        </div>
-    			 			        <div class="control-box">
-    			 						<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left control-icon"></span></a>
-    			 		      			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right control-icon"></span></a>
-    			 	      			</div>
-    			 </div> --> <!-- end slide anh --> 
-    			 <div class="slider auto">
-    			 	<img src="images/product_images/build-box1.jpg" class="active">
-    			 	<img src="images/product_images/gaim.jpg">
-    			 	<img src="images/product_images/kamen_rider.jpg">
-    			 	<img src="images/product_images/zio-box1.jpg"> 
-    			 </div>
+    			<div id="carousel-id" class="carousel slide" data-ride="carousel">
+			        <ol class="carousel-indicators">
+			           <li data-target="#carousel-id" data-slide-to="0" class=""></li>
+			           <li data-target="#carousel-id" data-slide-to="1" class=""></li>
+			            <li data-target="#carousel-id" data-slide-to="2" class=""></li>
+			            <li data-target="#carousel-id" data-slide-to="3" class=""></li>
+			        </ol>
+			        <div class="carousel-inner">
+			          	<div class="item active">
+			            	<img src="images/product_images/build-box1.jpg">  
+			        	</div>
+			        	<div class="item">
+			            	<img src="images/product_images/gaim.jpg">
+			        	</div>
+			        	<div class="item">
+			            	<img src="images/product_images/kamen_rider.jpg">
+			        	</div>
+			        	<div class="item">
+			            	<img src="images/product_images/zio-box1.jpg">
+			        	</div>
+			        </div>
+			        <div class="control-box">
+						<a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left control-icon"></span></a>
+		      			<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right control-icon"></span></a>
+	      			</div>
+    			</div> <!-- end slide anh --> 
 
     			<hr class="below">
 		    	<div class="title">
@@ -101,20 +120,19 @@
 	    		<div class="row product_bestseller_grid">
 	    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/01-Figure.jpg" class="img-responsive img-top" alt="Zero1-Figure" title="Zero1-Figure">
-	    					<img src="images/product_images/01-Box.jpg" class="img-responsive img-back" alt="Zero1-Figure" title="Zero1-Figure">
+	    					<img src="images/product_images/01-Box.jpg" class="img-responsive" alt="Zero1-Figure" title="Zero1-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,200,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider 01</h4>
+	    						<h4 class="price">1,000,000 VND</h4>
+	    						<h4 class="product_name">RKF Kamen Rider 01</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal01">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div>
 	    			</div> <!-- end sp 1 -->
 	    			<!-- modal sp 1 -->
-		<div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal fade" id="infoModal01" tabindex="-1" role="dialog" aria-hidden="true">
 		  <div class="modal-dialog modal-lg" role="document">
 		    <div class="modal-content">
 		    	<div class="modal-header">
@@ -125,30 +143,32 @@
 			        <div class="row">
 			          	<div class="col-lg-6">
 			            <!-- Carousel Wrapper -->
-				            <div id="carousel-id" class="carousel slide img-slide" 
-				            data-ride="carousel">
+				            <div id="product-id" class="carousel slide img-slide" data-ride="carousel">
+				            	<ol class="carousel-indicators">
+				            		<li data-target="#product-id" data-slide-to="0" class="active">
+				            			<img src="images/product_images/01-Figure.jpg"></li>
+				            		<li data-target="#product-id" data-slide-to="1" class=""><img src="images/product_images/01-Box.jpg"></li>
+				            	</ol>
 				            	<div class="carousel-inner">
 				            		<div class="item active">
-				            			<img src="images/product_images/01-Figure.jpg" class="img-thumbnail img-responsive">
+				            			<img src="images/product_images/01-Figure.jpg">
 				            		</div>
 				            		<div class="item">
-				            			<img src="images/product_images/01-Box.jpg" class="img-thumbnail img-responsive">
+				            			<img src="images/product_images/01-Box.jpg">
 				            		</div>
-				            		<ol class="carousel-indicators">
-					            		<li data-target="#carousel-id" data-slide-to="0" class=""><img src="images/product_images/01-Figure.jpg"></li>
-					            		<li data-target="#carousel-id" data-slide-to="1" class="active"><img src="images/product_images/01-Box.jpg"></li>
-				            		</ol>
 				            	</div>
 				            </div>
-		          		</div>
+				            <a class="left carousel-control product-control" href="#product-id" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+				        </div>
 			            <!--/.Carousel Wrapper-->
 				          <div class="col-lg-6">
 				            <h2 class="h2-responsive product-name">
-				              <strong>SHF Kamen Rider 01</strong>
+				              <strong>RKF Kamen Rider 01</strong>
 				            </h2>
 				            <h4 class="h4-responsive">
-				              <span class="green-text">
-				                <strong>1,200,000 VND</strong>
+				              <span class="price">
+				                <strong>1,000,000 VND</strong>
 				              </span>
 				            </h4>
 		              	<!-- product description -->
@@ -167,79 +187,363 @@
       				</div>
     			</div>
   			</div> <!-- end modal content -->
-		</div>
-	</div> <!-- end modal sp1 -->
-	    			
+		 </div>
+	 </div>	<!-- end modal sp1 -->
 	    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/wolf-Figure.jpg" class="img-responsive img-top" alt="Vulcan-Figure" title="Vulcan-Figure">
-	    					<img src="images/product_images/wolf-Box.jpg" class="img-responsive img-back" alt="Vulcan-Figure" title="Vulcan-Figure">
+	    					<img src="images/product_images/wolf-Box.jpg" class="img-responsive" alt="Vulcan-Figure" title="Vulcan-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,200,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Vulcan</h4>
+	    						<h4 class="price">1,000,000 VND</h4>
+	    						<h4 class="product_name">RKF Kamen Rider Vulcan</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal02">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div>
 	    			</div> <!-- end sp 2 -->
+	    			<!-- modal sp 2 -->
+	   <div class="modal fade" id="infoModal02" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-2" class="carousel slide img-slide" data-ride="carousel">
+				            	<ol class="carousel-indicators">
+				            		<li data-target="#product-id-2" data-slide-to="0" class="active">
+				            			<img src="images/product_images/wolf-Figure.jpg"></li>
+				            		<li data-target="#product-id-2" data-slide-to="1" class=""><img src="images/product_images/wolf-Box.jpg"></li>
+				            	</ol>
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/wolf-Figure.jpg">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/wolf-Box.jpg">
+				            		</div>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-2" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-2" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+				        </div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>RKF Kamen Rider Vulcan</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>1,000,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div> <!-- end modal sp 2 -->
 	    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/build-genius.jpg" class="img-responsive img-top" alt="Build-Genius-Figure" title="Build-Genius-Figure">
-	    					<img src="images/product_images/build-box.jpg" class="img-responsive img-back" alt="Build-Genius-Figure" title="Build-Genius-Figure">
+	    					<img src="images/product_images/build-box.jpg" class="img-responsive" alt="Build-Genius-Figure" title="Build-Genius-Figure">
 	    					<div class="caption">
 	    						<h4 class="price">500,000 VND</h4>
-	    						<h4 class="product_name">SHF KR Build Genius Form</h4>
+	    						<h4 class="product_name">RKF KR Build Genius Form</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal03">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 3 -->
 	    			</div>
+	    			<!-- modal sp 3 -->
+	<div class="modal fade" id="infoModal03" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-3" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/build-genius.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/build-box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-3" data-slide-to="0" class=""><img src="images/product_images/build-genius.jpg"></li>
+					            		<li data-target="#product-id-3" data-slide-to="1" class="active"><img src="images/product_images/build-box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-3" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-3" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>RKF KR Build Genius Form</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>500,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 3 -->
 	    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/gaim-pineapple.jpg" class="img-responsive img-top" alt="Gaim-Pineapple-Figure" title="Gaim-Pineapple-Figure">
-	    					<img src="images/product_images/gaim-1.jpg" class="img-responsive img-back" alt="Gaim-Pineapple-Figure" title="Gaim-Pineapple-Figure">
+	    					<img src="images/product_images/gaim-1.jpg" class="img-responsive" alt="Gaim-Pineapple-Figure" title="Gaim-Pineapple-Figure">
 	    					<div class="caption">
 	    						<h4 class="price">300,000 VND</h4>
-	    						<h4 class="product_name">SHF KR Gaim Pineapple Form</h4>
+	    						<h4 class="product_name">RKF KR Gaim Pineapple Form</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal04">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 4 -->
 	    			</div>
+	    			<!-- modal sp 4 -->
+	   <div class="modal fade" id="infoModal04" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-4" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/gaim-pineapple.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/gaim-1.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-4" data-slide-to="0" class=""><img src="images/product_images/gaim-pineapple.jpg"></li>
+					            		<li data-target="#product-id-4" data-slide-to="1" class="active"><img src="images/product_images/gaim-1.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-4" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-4" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>RKF KR Gaim Pineapple Form</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>300,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div> <!-- end modal sp 4 -->
 	    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail  image-card">
-	    					<img src="images/product_images/drive-figure.jpg" class="img-responsive img-top" alt="Drive-Figure" title="Drive-Figure">
-	    					<img src="images/product_images/drive-Box.jpg" class="img-responsive img-back" alt="Drive-Figure" title="Drive-Figure">
+	    					<img src="images/product_images/drive-Box.jpg" class="img-responsive" alt="Drive-Figure" title="Drive-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">300,000 VND</h4>
+	    						<h4 class="price">500,000 VND</h4>
 	    						<h4 class="product_name">SHF Kamen Rider Drive</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal05">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 5 -->
 	    			</div>
+	    			<!-- modal sp 5 -->
+	<div class="modal fade" id="infoModal05" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-5" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/drive-figure.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/drive-Box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-5" data-slide-to="0" class=""><img src="images/product_images/drive-figure.jpg"></li>
+					            		<li data-target="#product-id-5" data-slide-to="1" class="active"><img src="images/product_images/drive-Box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-5" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-5" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>SHF Kamen Rider Drive</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>500,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 5 -->
 	    			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/zio-box.jpg" class="img-responsive" alt="Zi-O-Figure" title="Zi-O-Figure">
 	    					<div class="caption">
 	    						<h4 class="price">1,000,000 VND</h4>
 	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal06">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 6 -->
     				</div>
+    				<!-- modal sp 6 -->
+    <div class="modal fade" id="infoModal06" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-6" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/zio-fig.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/zio-box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-6" data-slide-to="0" class=""><img src="images/product_images/zio-fig.jpg"></li>
+					            		<li data-target="#product-id-6" data-slide-to="1" class="active"><img src="images/product_images/zio-box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-6" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-6" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>SHF Kamen Rider Zi-O</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>1,000,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 6 -->
     			</div> <!-- end product grid -->
     			<div class="title">
 		    		<strong class="latest-product">
@@ -249,88 +553,438 @@
     			<div class="product_latest_grid">
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/geiz_box.jpg" class="img-responsive" alt="Zi-O-Figure" title="Zi-O-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,000,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
+	    						<h4 class="price">1,500,000 VND</h4>
+	    						<h4 class="product_name">SHF Kamen Rider Geiz</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal07">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 7 -->
     				</div>
+    				<!-- modal sp 7 -->
+    <div class="modal fade" id="infoModal07" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-7" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/geiz.png" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/geiz_box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-7" data-slide-to="0" class=""><img src="images/product_images/geiz.png"></li>
+					            		<li data-target="#product-id-7" data-slide-to="1" class="active"><img src="images/product_images/geiz_box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-7" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-7" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>SHF Kamen Rider Geiz</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>1,500,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 7 -->
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/thouser_box.jpg" class="img-responsive" alt="Thouser-Figure" title="Thouser-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,000,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
+	    						<h4 class="price">2,000,000 VND</h4>
+	    						<h4 class="product_name">RKF Kamen Rider Thouser</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal08">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 8 -->
     				</div>
+    				<!-- modal sp 8 -->
+    <div class="modal fade" id="infoModal08" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-8" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/thouser.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/thouser_box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-8" data-slide-to="0" class=""><img src="images/product_images/thouser.jpg"></li>
+					            		<li data-target="#product-id-8" data-slide-to="1" class="active"><img src="images/product_images/thouser_box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-8" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-8" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>RKF Kamen Rider Thouser</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>2,000,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 8 -->
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/Jin_box.jpg" class="img-responsive" alt="Jin-Figure" title="Jin-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,000,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
+	    						<h4 class="price">700,000 VND</h4>
+	    						<h4 class="product_name">RKF KR Jin Flying Falcon</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal09">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 9 -->
     				</div>
+    				<!-- modal sp 9 -->
+    <div class="modal fade" id="infoModal09" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-9" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/rkf_jin.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/Jin_box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-9" data-slide-to="0" class=""><img src="images/product_images/rkf_jin.jpg"></li>
+					            		<li data-target="#product-id-9" data-slide-to="1" class="active"><img src="images/product_images/Jin_box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-9" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-9" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>SHF KR Jin Flying Falcon</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>700,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 9 -->
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/horobi_box.jpg" class="img-responsive" alt="Horobi-Figure" title="Horobi-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,000,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
+	    						<h4 class="price">600,000 VND</h4>
+	    						<h4 class="product_name">RKF Kamen Rider Horobi</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal10">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 10 -->
     				</div>
+    				<!-- modal sp 10 -->
+    <div class="modal fade" id="infoModal10" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-10" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/horobi_fig.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/horobi_box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-10" data-slide-to="0" class=""><img src="images/product_images/horobi_fig.jpg"></li>
+					            		<li data-target="#product-id-10" data-slide-to="1" class="active"><img src="images/product_images/horobi_box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-10" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-10" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>RKF Kamen Rider Horobi</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>600,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 10 -->
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/woz-ginga.jpg" class="img-responsive" alt="Woz-Ginga-Figure" title="Woz-Ginga-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,000,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
+	    						<h4 class="price">2,500,000 VND</h4>
+	    						<h4 class="product_name">SHF KR Woz-Ginga</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal11">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 11 -->
     				</div>
+    				<!-- modal sp 11 -->
+    <div class="modal fade" id="infoModal11" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-11" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/woz-gingaub.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/woz-ginga1.png" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/woz-ginga.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-11" data-slide-to="0" class=""><img src="images/product_images/woz-gingaub.jpg"></li>
+					            		<li data-target="#product-id-11" data-slide-to="1" class=""><img src="images/product_images/woz-ginga1.png"></li>
+					            		<li data-target="#product-id-11" data-slide-to="2" class="active"><img src="images/product_images/woz-ginga.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-11" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-11" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>SHF Kamen Rider Woz-Ginga</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>2,500,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 11 -->
     				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 	    				<div class="thumbnail image-card">
-	    					<img src="images/product_images/zio-fig.jpg" class="img-responsive img-top" alt="Zi-O-Figure" title="Zi-O-Figure">
-	    					<img src="images/product_images/zio-box.jpg" class="img-responsive img-back" alt="Zi-O-Figure" title="Zi-O-Figure">
+	    					<img src="images/product_images/geiz_revive_box.jpg" class="img-responsive" alt="Geiz-Figure" title="Geiz-Figure">
 	    					<div class="caption">
-	    						<h4 class="price">1,000,000 VND</h4>
-	    						<h4 class="product_name">SHF Kamen Rider Zi-O</h4>
+	    						<h4 class="price">3,000,000 VND</h4>
+	    						<h4 class="product_name">SHF KR Geiz-Revive</h4>
 	              					<p class="text-center">
-										<a href="" class="btn btn-info" role="button">Info</a>
-										<a href="" class="btn btn-danger" role="button">Order</a>
+										<a href="" class="btn btn-info" role="button" data-toggle="modal" data-target="#infoModal12">Info</a>
+										<!-- <a href="" class="btn btn-danger" role="button">Order</a> -->
 									</p>	
 	    					</div>
 	    				</div> <!-- end sp 12 -->
     				</div>
+    				<!-- modal sp 12 -->
+    <div class="modal fade" id="infoModal12" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-lg" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		    		<button type="button" class="close" data-dismiss="modal" title="Close"> 
+		    			<span class="glyphicon glyphicon-remove"></span>
+		    		</button>
+			      <div class="modal-body">
+			        <div class="row">
+			          	<div class="col-lg-6">
+			            <!-- Carousel Wrapper -->
+				            <div id="product-id-12" class="carousel slide img-slide" 
+				            data-ride="carousel">
+				            	<div class="carousel-inner">
+				            		<div class="item active">
+				            			<img src="images/product_images/geiz_revive1.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/geiz_revive2.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<div class="item">
+				            			<img src="images/product_images/geiz_revive_box.jpg" class="img-thumbnail img-responsive">
+				            		</div>
+				            		<ol class="carousel-indicators">
+					            		<li data-target="#product-id-12" data-slide-to="0" class=""><img src="images/product_images/geiz_revive1.jpg"></li>
+					            		<li data-target="#product-id-12" data-slide-to="1" class=""><img src="images/product_images/geiz_revive2.jpg"></li>
+					            		<li data-target="#product-id-12" data-slide-to="2" class="active"><img src="images/product_images/geiz_revive_box.jpg"></li>
+				            		</ol>
+				            	</div>
+				            </div>
+				            <a class="left carousel-control product-control" href="#product-id-12" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span></a>
+                  			<a class="right carousel-control product-control" href="#product-id-12" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span></a>
+		          		</div>
+			            <!--/.Carousel Wrapper-->
+				          <div class="col-lg-6">
+				            <h2 class="h2-responsive product-name">
+				              <strong>SHF KR Geiz-Revive</strong>
+				            </h2>
+				            <h4 class="h4-responsive">
+				              <span class="price">
+				                <strong>3,000,000 VND</strong>
+				              </span>
+				            </h4>
+		              	<!-- product description -->
+				              <div class="card PScript">
+				                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson adsquid. 3wolf moon officia aute,non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				               </div>
+				            		<!-- Close btn -->
+					           <div class="card-body">
+					             <div class="text-center">
+					               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					             </div>
+					           </div>
+	           		 			<!-- /.Close btn -->
+          					</div> <!-- end col-lg-6 -->
+        				</div> <!-- end row -->
+      				</div>
+    			</div>
+  			</div> <!-- end modal content -->
+		 </div>
+	 </div>	<!-- end modal sp 12 -->
     				<!-- <nav aria-label="Page navigation">
     									  <ul class="pagination">
     									    <li class="page-item disabled">
@@ -345,43 +999,24 @@
     									</nav> -->
     			</div>
     			<!-- back2home -->
-				<a href ="index.html" id="back" name="back">&#171;Home</a>
+				<!-- <a href ="index.html" id="back" name="back">&#171;Home</a> -->
     		</div>
     	</div> 
     </div> <!-- end details1 -->
-	<!-- footer -->
-    <div id="footer">
-   	<div class="container text-center">
-   		<div class="row_5">
-   			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-   				<h4 class="consult">contact us:</h4>
-   				<p><i class="fas fa-phone-alt"></i> +842 XXX YYY ZZZ</p>
-   				<p id="support"><i class="far fa-envelope"></i> support@pgtoys.vn</p>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-          <div class="social">
-            <h4 class="where">find us on:</h4>
-              <a href="#" title="Youtube"><i class='fab fa-youtube' style='font-size:30px;color:red'></i></a>
-              <a href="#" title="Facebook"><i class="fab fa-facebook-f" style="font-size:30px;color:#3b5998"></i></a>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <h4 class="copyright">Copyright &copy; 2020 By PG-Toys.<br /> All Rights Reserved.</h4>
-          </div>
-   		 </div>
       <!-- back2top -->
     <a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
    	</div>
    </div> <!-- end block footer -->
-   <script type="text/javascript" src="js/index.js"></script>
+    <!-- block footer -->
+   <div id="footer">
+	   <div class="container text-center">
+		   	<div class="row">
+			   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			      	<h4 class="copyright">Copyright &copy; 2020 By PG-Toys.<br /> All Rights Reserved.</h4>
+			    </div>
+			</div>
+		</div>
+	</div> <!-- end block footer -->
    <script type="text/javascript" src="js/details1.js"></script>
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script type="text/javascript">
-  	$(document).ready(function(){
-      $('.slider').bxSlider();
-    });
-  </script>
 </body>
 </html>
