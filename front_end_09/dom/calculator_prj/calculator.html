@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div id="container">
+		<form name="myForm">
+			<input type="text" name="textview" id="display" placeholder="0" disabled>
+		</form>
+		<table>
+			<tr>
+				<td><input type="button" class="button operand" value="CA" onclick="allClear()"></td>
+				<td><input type="button" class="button operand" value="C" onclick="backSpace()"></td>
+				<td><input type="button" class="button operand" value="&radic;" onclick="squareRoot('r')" id="r" disabled></td>
+				<td><input type="button" class="button operand" value="x²" onclick="squareRoot('s')" id="s" disabled></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button number" value="7" onclick="getNumber(7)"></td>
+				<td><input type="button" class="button number" value="8" onclick="getNumber(8)"></td>
+				<td><input type="button" class="button number" value="9" onclick="getNumber(9)"></td>
+				<td><input type="button" class="button operand" value="+" onclick="getOperand('+')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button number" value="4" onclick="getNumber(4)"></td>
+				<td><input type="button" class="button number" value="5" onclick="getNumber(5)"></td>
+				<td><input type="button" class="button number" value="6" onclick="getNumber(6)"></td>
+				<td><input type="button" class="button operand" value="-" onclick="getOperand('-')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button number" value="1" onclick="getNumber(1)"></td>
+				<td><input type="button" class="button number" value="2" onclick="getNumber(2)"></td>
+				<td><input type="button" class="button number" value="3" onclick="getNumber(3)"></td>
+				<td><input type="button" class="button operand" value="x" onclick="getOperand('*')"></td>
+			</tr>
+			<tr>
+				<td><input type="button" class="button operand" value="." onclick="getDecimal('.')"></td>
+				<td><input type="button" class="button number" value="0" onclick="getNumber(0)"></td>
+				<td><input type="button" class="button operand" value="=" onclick="compute()"></td>
+				<td><input type="button" class="button operand" value="÷" onclick="getOperand('/')"></td>
+			</tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="cal1.js"></script>
+</body>
+
+</html>
