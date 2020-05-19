@@ -54,11 +54,11 @@ function backSpace() {
 }
 
 function squareRoot(x) {
-	if (x == 'r') {
+	if (x == 'root') {
 		currentVal = Math.sqrt(currentVal);
 		display.value = currentVal;
 	}
-	else if (x == 's') {
+	else if (x == 'square') {
 		currentVal = currentVal * currentVal;
 		display.value = currentVal;
 	}
