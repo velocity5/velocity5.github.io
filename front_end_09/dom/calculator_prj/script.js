@@ -1,4 +1,4 @@
-let val = "", number, decimal, equal, operator, allowSquareRoot = true;
+let val = "", number, decimal, equal, operator, allowFactorial = true, allowSquareRoot = true;
 let display = document.forms['myForm']['display'];
 
 function getNumber(num) {
@@ -17,6 +17,7 @@ function getNumber(num) {
 		decimal = false;
 	}
 	squareRoot('a');
+	
 }
 
 function getOperand(op) {
@@ -24,7 +25,9 @@ function getOperand(op) {
 	operator = true;
 	equal = false;
 	allowSquareRoot = false;
+	allowFactorial = false;
 	squareRoot('a');
+	
 }
 function getDecimal() {
 	if (number && !decimal) {
@@ -42,7 +45,9 @@ function compute() {
 		decimal = false;
 		number = false;
 		allowSquareRoot = true;
+		allowFactorial = true;
 		squareRoot('a');
+		
 	}
 }
 
@@ -64,6 +69,7 @@ function squareRoot(x) {
 		display.value = val;
 	}
 	else if (x == 's') {
+		
 		val = val * val;
 		display.value = val;
 	}

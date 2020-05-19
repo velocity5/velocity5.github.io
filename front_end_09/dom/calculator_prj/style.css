@@ -41,7 +41,7 @@ table {
 }
 #container {
 	width: 330px;
-	height: 350px;
+	padding-bottom: 10px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
