@@ -2,12 +2,56 @@
 .top-part {
     margin-top: 60px;
 }
-.list-group a:hover {
-    text-decoration: none;
-    color: #2f2fdf;
+.search-title {
+    margin-left: 10px;
 }
-.list-group a:active {
-  color: #7575e7;
+.search-box {
+    border: 1px solid #d7cfcf;
+    margin-right: -20px;
+}
+.form-group {
+  margin-left: -6px;
+}
+/* categories part */
+.categories {
+    border: 1px solid #d7cfcf;
+    margin-right: -20px;
+    margin-top: 10px;
+}
+.categories .categories-title {
+    margin-left: 10px;
+}
+.categories-menu li a {
+    text-decoration: none;
+    margin-left: 10px;
+    padding-top: 10px;
+    line-height: 30px;
+}
+.categories-menu {
+  font-size: 15px;
+}
+.categories-menu, .submenu {
+    list-style-type: none;
+}
+.submenu {
+  margin-left: 10px;
+}
+.categories-menu a {
+  border-bottom: 3px solid transparent;
+  transition: .5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+.categories-menu a:hover {
+  border-bottom: 3px solid orange;
+}
+
+.categories-menu a.active {
+  border-bottom: 3px solid orange;
+}
+.break {
+    margin-top: 0;
+    border-width: 2px;
 }
 /* carousel section */
 .carousel-caption {
@@ -87,6 +131,9 @@ a.carousel-control.right {
 }
 .breadcrumb a:hover {
 	text-decoration: none;
+}
+.breadcrumb-driver {
+    background-color: white;
 }
 
 #back:hover {
