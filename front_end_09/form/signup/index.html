@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Signup Form</title>
@@ -9,65 +10,71 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="../css/all.css">
 </head>
+
 <body>
 	<div class="container">
 		<h4 class="title">sign up</h4>
 		<form method="get" action="register.html">
-			<input type="text" id="inputName" name="inputName" placeholder="Họ tên" title="Vui lòng nhập tên" required autofocus>
+			<input type="text" id="inputName" name="inputName" placeholder="Họ tên" title="Vui lòng nhập tên" required
+				autofocus>
 
 			<input type="radio" id="male" name="gender" value="male">
 			<label for="male">Nam</label>
 			<input type="radio" id="female" name="gender" value="female">
 			<label for="female">Nữ</label>
 
-			<input type="date" name="inputBirthday" id="inputBirthday" title="Vui lòng chọn ngày sinh" required autofocus>
+			<input type="date" name="inputBirthday" id="inputBirthday" title="Vui lòng chọn ngày sinh" required
+				autofocus>
 
-			<input type="tel" id="inputTelephone" name="inputTelephone" title="Vui lòng nhập số điện thoại" placeholder="Điện thoại" required autofocus>
-			<input type="email" id="inputEmail" name="inputEmail" placeholder="Email" title="Email là bắt buộc" required autofocus>
-				<select id="address" name="address">
-					<option selected>Địa chỉ</option>
-					<option>Hà Nội</option>
-					<option>Đà Nẵng</option>
-					<option>Hồ Chí Minh</option>
-				</select>
-			<input type="password" name="psw" id="psw" title="Vui lòng đặt mật khẩu" placeholder="Mật khẩu" required autofocus>
+			<input type="tel" id="inputTelephone" name="inputTelephone" title="Vui lòng nhập số điện thoại"
+				placeholder="Điện thoại" required autofocus>
+			<input type="email" id="inputEmail" name="inputEmail" placeholder="Email" title="Email là bắt buộc" required
+				autofocus>
+			<select id="address" name="address">
+				<option selected>Địa chỉ</option>
+				<option>Hà Nội</option>
+				<option>Đà Nẵng</option>
+				<option>Hồ Chí Minh</option>
+			</select>
+			<input type="password" name="psw" id="psw" title="Vui lòng đặt mật khẩu" placeholder="Mật khẩu" required
+				autofocus>
 			<button type="submit" value="submit" class="gradient-button signupbtn">Sign Up</button>
-			<p class="already">Already a member? <a href="#" role="button" data-toggle="modal" data-target="#login">Login here</a></p>
+			<p class="already">Already a member? <a href="#" role="button" data-toggle="modal"
+					data-target="#login">Login here</a></p>
 		</form>
 	</div>
-		<!-- modal login -->
+	<!-- modal login -->
 	<div class="modal fade" id="login" role="dialog" aria-hidden="true">
-	  <div class="modal-dialog modal-sm modal-container">
-	  	<div class="modal-content"></div>
-	      <!-- modal content -->
-	      <div class="modal-body">
-	        <button type="button" class="close" data-dismiss="modal">&times;</button>
-	        <div class="container-1">
-	        	<div class="row">
-	        		<div class="col-sm-9 col-md-3 col-lg-12 mx-auto">
-	        			<div class="card card-login my-5 mx-auto">
-	        				<div class="card-body">
-	        					<h5 class="title-login text-center">Log In</h5>
-	        					<form class="form-login" method="post" enctype="multipart/form-data">
-	        						<div class="form-label-group">
-	        							<input type="email" name="email" id="email" class="form-control" placeholder="Email address" required autofocus>
-	        						</div>
-	        						<div class="form-label-group">
-	        							<input type="password" name="pwd" id="pwd" class="form-control" placeholder="Password" required autofocus>
-	        						</div>
-	        							<input type="checkbox" class="custom-control-input" id="checkbox">
-	        							<label for="checkbox">Remember me</label>
-	        							<button class="btn gradient-button loginbtn">Log In</button>
-	        							<h4 class="forgot"><a href="#">Forgotten Password? </a></h4>
-	        					</form>
-	        				</div>
-	        			</div>
-	        		</div>
-	        	</div>
-    		</div>
-
-
-
-
+		<div class="modal-dialog modal-sm modal-container">
+			<div class="modal-content"></div>
+			<!-- modal content -->
+			<div class="modal-body">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+				<div class="container-1">
+					<div class="row">
+						<div class="col-sm-9 col-md-3 col-lg-12 mx-auto">
+							<div class="card card-login my-5 mx-auto">
+								<div class="card-body">
+									<h5 class="title-login text-center">Log In</h5>
+									<form class="form-login" method="post" enctype="multipart/form-data">
+										<div class="form-label-group">
+											<input type="email" name="email" id="email" class="form-control"
+												placeholder="Email address" required autofocus>
+										</div>
+										<div class="form-label-group">
+											<input type="password" name="pwd" id="pwd" class="form-control"
+												placeholder="Password" required autofocus>
+										</div>
+										<input type="checkbox" class="custom-control-input" id="checkbox">
+										<label for="checkbox">Remember me</label>
+										<button class="btn gradient-button loginbtn">Log In</button>
+										<h4 class="forgot"><a href="#">Forgotten Password? </a></h4>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 </body>
+
 </html>
