@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Iceberg&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+            <input type="text" name="textview" id="display" disabled>
+        <table id="key">
+            <tr>
+                <td><input type="button" class="button operand" id="squareRoot" value="&radic;"></td>
+                <td><input type="button" class="button operand" id="square" value="x²"></td>
+                <td><input type="button" class="button operand" id="sin" value="sin"></td>
+                <td><input type="button" class="button operand" id="cos" value="cos"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button all-clear" id="clear" value="CA"></td>
+                <td><input type="button" class="button backspace" id="back" value="C"></td>
+                <td><input type="button" class="button operand" id="percent" value="%"></td>
+                <td><input type="button" class="button operand" id="factorial" value="x!"></td>
+                
+            </tr>
+            <tr>
+                <td><input type="button" class="button btn-number" value="7"></td>
+                <td><input type="button" class="button btn-number" value="8"></td>
+                <td><input type="button" class="button btn-number" value="9"></td>
+                <td><input type="button" class="button operand" id="add" value="+"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button btn-number" value="4"></td>
+                <td><input type="button" class="button btn-number" value="5"></td>
+                <td><input type="button" class="button btn-number" value="6"></td>
+                <td><input type="button" class="button operand" id="minus" value="-"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button btn-number" value="1"></td>
+                <td><input type="button" class="button btn-number" value="2"></td>
+                <td><input type="button" class="button btn-number" value="3"></td>
+                <td><input type="button" class="button operand" id="multiply" value="x"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button decimal" value="."></td>
+                <td><input type="button" class="button btn-number" value="0"></td>
+                <td><input type="button" class="button operand" id="equal" value="="></td>
+                <td><input type="button" class="button operand" id="divide" value="÷"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="background-change">
+        <button class="btn-grad gradient" id="color">change me</button>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="jquery-3.5.0.js"></script>
+</body>
+
+</html>

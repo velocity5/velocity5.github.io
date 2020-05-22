@@ -4,7 +4,7 @@ let display = document.forms['myForm']['display'];
 function getNumber(num) {
 	if (equal) {
 		currentVal = num;
-		display.value = val;
+		display.value = currentVal;
 		number = true;
 		equal = false;
 	}
@@ -60,6 +60,16 @@ function squareRoot(x) {
 	}
 	else if (x == 'square') {
 		currentVal = currentVal * currentVal;
+		display.value = currentVal;
+	}
+}
+function sincosCal(x) {
+	if (x == 'sin') {
+		currentVal = Math.sin(currentVal);
+		display.value = currentVal;
+	}
+	else if (x == 'cos') {
+		currentVal = Math.cos(currentVal);
 		display.value = currentVal;
 	}
 }

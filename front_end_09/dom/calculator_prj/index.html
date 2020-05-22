@@ -18,6 +18,8 @@
 			<tr>
 				<td><input type="button" class="button operand" value="&radic;" onclick="squareRoot('root')"></td>
 				<td><input type="button" class="button operand" value="x²" onclick="squareRoot('square')"></td>
+				<td><input type="button" class="button operand" value="sin" onclick="sincosCal('sin')"></td>
+				<td><input type="button" class="button operand" value="cos" onclick="sincosCal('cos')"></td>
 			</tr>
 			<tr>
 				<td><input type="button" class="button operand" value="CA" onclick="allClear()"></td>
@@ -47,7 +49,7 @@
 			<tr>
 				<td><input type="button" class="button operand" value="." onclick="getDecimal('.')"></td>
 				<td><input type="button" class="button number" value="0" onclick="getNumber(0)"></td>
-				<td><input type="button" class="button operand" value="=" onclick="compute()"></td>
+				<td><input type="button" class="button operand" value="=" onclick="compute()" id="equal"></td>
 				<td><input type="button" class="button operand" value="÷" onclick="getOperand('/')"></td>
 			</tr>
 		</table>

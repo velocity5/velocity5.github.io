@@ -28,6 +28,9 @@ table {
 	backdrop-filter: blur(5px);
 	transition: 0.8s;
 }
+#equal {
+	background-color: crimson;
+}
 .button:active {
 	font-size: 20px;
 }
