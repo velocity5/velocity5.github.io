@@ -2,13 +2,16 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+    font-family: sans-serif;
+    background: linear-gradient(to left, #6A82FB, #FC5C7D);
 }
 .wrap {
 	display: block;
-	background: #e3dddd;
-	width: 600px;
+	width: 350px;
 	padding: 10px;
-	margin: 40px auto;
+    margin: 40px auto;
+    border-radius: 10px;
+    transform: translateY(50%);
 }
 .title {
 	text-align: center;
@@ -16,13 +19,26 @@
 	font-size: 20px;
 }
 #email, #pwd{
-    padding: 5px;
+    background: white;
+    padding: 10px;
     border-radius: 10px;
     border: none;
     margin-bottom: 10px;
     width: 100%;
 }
+#showhide {
+    margin-left: 25px;
+}
+label {
+    background: none;
+}
+#email:focus, #pwd:focus {
+    outline: none;
+}
 .form-login a {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 	text-decoration: none;
 	color: #0909ce;
 }
@@ -32,15 +48,23 @@
 .form-login a:active {
     color: #7878d9;
 }
-button {
-    padding: 10px;
-    border-radius: 10px;
-    border: none;
-    font-size: 15px;
-    width: 100%;
-    background-color: #058405;
+
+.gradient-button {
     color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #eee;
+    background-size: 200% auto;
+    font-size: 15px;
+    margin: 15px 0;
+    transition: 0.5s;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    cursor: pointer;
 }
-button:hover {
-	opacity: 0.8;
+.gradient-button:focus {
+    outline: none;
 }
+.loginbtn {background-image: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%)}
+.loginbtn:hover { background-position: right center; }
