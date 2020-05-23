@@ -1,20 +1,19 @@
 let currentVal = "", number, decimal, equal, operator;
 let display = document.forms['myForm']['display'];
-// let ct;
+
 $(document).ready(function () {
 	$(".number").click(function () {
-		// if (!operator) { $("#display").val("") }
 		Val = $(this).val(); /* get number and assign to currentVal*/
 		console.log(Val);
-		dp = $("#display").val();/* get display value */
-		if (dp) {
-			$("#display").val(dp + Val);
+		onScreen = $("#display").val();/* get display value */
+		if (onScreen) {
+			$("#display").val(onScreen + Val);
 		}
 		else {
 			$("#display").val(Val);
 		}
 
-		if (dp) { currentVal = dp + Val; }
+		if (onScreen) { currentVal = onScreen + Val; }
 		else { currentVal = Val; }
 	});
 
