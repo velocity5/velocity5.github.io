@@ -1,56 +1,63 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 table {
-    padding-left: 44px;
+	padding-left: 44px;
 }
 .button {
-    width: 50px;
-    height: 50px;
-    font-size: 25px;
-    margin: 2px;
-    cursor: pointer;
-    border-radius: 50%;
-    border: 1px solid #ededed;
-    border-width: 0px 0px 2px 1px;
-    outline: none;
-    font-family: 'Iceberg', cursive;
-    background-color: rgba(255, 255, 255, .15);
-    backdrop-filter: blur(5px);
-    transition: 0.8s;
+	width: 50px;
+	height: 50px;
+	font-size: 25px;
+	margin: 2px;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 1px solid #ededed;
+	border-width: 0px 0px 2px 1px;
+	outline: none;
+	font-family: 'Iceberg', cursive;
+	background-color: rgba(255, 255, 255, .15);
+	backdrop-filter: blur(5px);
+	transition: 0.8s;
+}
+#equal {
+	background-color: crimson;
+}
+#allClear, #backSpace {
+	background-color: orangered;
+}
+#root, #square, #sin, #cos, #percent, #factorial {
+	background-color: #3c3939;
+	color: white;
 }
 .button:active {
-    font-size: 20px;
+	font-size: 20px;
 }
 
 #display {
-    width: 305px;
-    margin: 10px;
-    font-size: 25px;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 3px;
-    background-color: transparent;
-    text-align: right;
-    font-family: 'Iceberg', cursive;
-}
-#equal {
-    background-color: crimson;
+	width: 305px;
+	margin: 10px;
+	font-size: 25px;
+	padding: 5px;
+	border: 1px solid grey;
+	border-radius: 3px;
+	background-color: transparent;
+	text-align: right;
+	font-family: 'Iceberg', cursive;
 }
 #container {
-    width: 330px;
-    padding-bottom: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%)translateY(-50%);
-    border: 1px solid #ededed;
-    background-color: rgba(255, 255, 255, .15);
+	width: 330px;
+	padding-bottom: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%)translateY(-50%);
+	border: 1px solid #ededed;
+	background-color: rgba(169, 160, 160, 0.15);
     backdrop-filter: blur(3px);
-    transition: all .4s ease-in-out;
+	transition: all .4s ease-in-out;
 }
 
 .btn-grad {background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%)}
@@ -59,7 +66,7 @@ table {
     margin: 10px;
     font-family: "Arial Black", Gadget, sans-serif;
     font-size: 15px;
-    padding: 15px;
+    padding: 5px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;
@@ -78,11 +85,9 @@ table {
 .gradient:focus {
     outline: none;
 }
-.gradient:active {
-    font-size: 14px;
-}
+
 .background-change {
     display: flex;
     justify-content: space-around;
-    transform: translateY(700%);
+    transform: translateY(1000%);
 }
