@@ -2,6 +2,12 @@
 .top-part {
     margin-top: 60px;
 }
+.navbar-form {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-left: 10px;
+}
 .search-title {
     margin-left: 10px;
 }
@@ -11,6 +17,9 @@
 }
 .form-group {
   margin-left: -6px;
+}
+.form-group .form-control {
+  margin-right: 1em;
 }
 /* categories part */
 .categories {
@@ -30,10 +39,10 @@
 .categories-menu {
   font-size: 15px;
 }
-.categories-menu, .submenu {
+.categories-menu, .submenu-categories {
     list-style-type: none;
 }
-.submenu {
+.submenu-categories {
   margin-left: 10px;
 }
 .categories-menu a {

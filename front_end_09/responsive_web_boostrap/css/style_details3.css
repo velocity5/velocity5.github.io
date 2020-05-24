@@ -41,10 +41,10 @@
 .categories-menu {
   font-size: 15px;
 }
-.categories-menu, .submenu {
+.categories-menu, .submenu-categories {
     list-style-type: none;
 }
-.submenu {
+.submenu-categories {
   margin-left: 10px;
 }
 .categories-menu a {

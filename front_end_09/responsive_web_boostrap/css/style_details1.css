@@ -131,6 +131,9 @@
 .form-group .form-control {
     margin-right: 1em;
 }
+.form-control.form-control-figure, .btn-search {
+  border-radius: 5px;
+}
 /* categories part */
 .categories .categories-title {
     margin-left: 10px;
@@ -150,10 +153,10 @@
 .categories-menu {
   font-size: 15px;
 }
-.categories-menu, .submenu {
+.categories-menu, .submenu-categories {
     list-style-type: none;
 }
-.submenu {
+.submenu-categories {
   margin-left: 10px;
 }
 .categories-menu a {

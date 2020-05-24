@@ -51,7 +51,7 @@ $(function() {
 		$('.background_top').css({'height':docao});
 	});
 })
-/* click menu ra */
+/* click menu out */
 $(document).on('click', function() {
 	$('.collapse').collapse('hide');
 });
