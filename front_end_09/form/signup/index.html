@@ -14,7 +14,7 @@
 <body>
 	<div class="container">
 		<h4 class="title">sign up</h4>
-		<form method="get" action="register.html">
+		<form method="get" action="register.html" id="form">
 			<input type="text" id="inputName" name="inputName" placeholder="Họ tên" title="Vui lòng nhập tên" required
 				autofocus>
 
@@ -26,19 +26,19 @@
 			<input type="date" name="inputBirthday" id="inputBirthday" title="Vui lòng chọn ngày sinh" required
 				autofocus>
 
-			<input type="tel" id="inputTelephone" name="inputTelephone" title="Vui lòng nhập số điện thoại"
-				placeholder="Điện thoại" required autofocus>
+			<input type="tel" id="inputTelephone" name="inputTelephone"
+				placeholder="Điện thoại" autofocus>
 			<input type="email" id="inputEmail" name="inputEmail" placeholder="Email" title="Email là bắt buộc" required
 				autofocus>
 			<select id="address" name="address">
 				<option selected>Địa chỉ</option>
-				<option>Hà Nội</option>
-				<option>Đà Nẵng</option>
-				<option>Hồ Chí Minh</option>
+				<option value="Ha Noi">Hà Nội</option>
+				<option value="Da Nang">Đà Nẵng</option>
+				<option value="Ho Chi Minh">Hồ Chí Minh</option>
 			</select>
 			<input type="password" name="psw" id="psw" title="Vui lòng đặt mật khẩu" placeholder="Mật khẩu" required
 				autofocus>
-			<button type="submit" value="submit" class="gradient-button signupbtn">Sign Up</button>
+			<button type="submit" value="submit" class="gradient-button signupbtn" onclick="submitForm()">Sign Up</button>
 			<p class="already">Already a member? <a href="#" role="button" data-toggle="modal"
 					data-target="#login">Login here</a></p>
 		</form>
@@ -75,6 +75,7 @@
 						</div>
 					</div>
 				</div>
+				<script src="index.js"></script>
 </body>
 
 </html>
