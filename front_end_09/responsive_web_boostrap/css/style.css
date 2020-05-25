@@ -93,24 +93,49 @@
     padding-top: 230px;
     color: white;
     padding-bottom: 280px;
-    background: url(../images/product_images/background.jpg);
+    background: url(../images/product_images/background_kr.jpg);
     background-position: center;
     background-size: cover;
 }
 .find {
-    border: 2px solid #d6d6c2;
-    border-radius: 5px;
-    width: 9em;
-    margin-top: 20px;
+    border: none;
     background-color: transparent;
-    color: black;
     transition: all 0.4s ease-in-out;
+}
+.find:focus {
+    outline: none;
 }
 .find:hover {
     transition: all 0.4s ease-in-out;
-    background-color: #1f1f14;
+    background-color: transparent;
+}
+.find .fa-chevron-down {
+    font-size: 30px;
+    color: rgba(192,192,192,0.8);
+    
+}
+.find .fa-chevron-down:hover {
     color: white;
 }
+.sologan {
+    font-family: 'Quantico', sans-serif;
+    text-transform: uppercase;
+}
+.sologan a {
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+.sologan span {
+    color: #FA5;
+}
+@keyframes up-down {
+    0% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+  
 .background_top h3 {
     font-size: 25px;
     text-shadow: 0 1px 0 #2a2727;
