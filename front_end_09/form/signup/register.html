@@ -13,7 +13,12 @@
 
 	</p>
 	<script>
-	
+		const queryString = window.location.search;
+		const params = new URLSearchParams(queryString);
+		const obj = Object.fromEntries(params);
+		for (let props in obj) {
+			document.getElementById("show").innerHTML += props + ": " + obj[props] + "<br />";
+		}
 	</script>
 </body>
 
