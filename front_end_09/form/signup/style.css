@@ -35,6 +35,18 @@ background: linear-gradient(to left, #6A82FB, #FC5C7D);  /* Chrome 10-25, Safari
 label {
 	background: none;
 }
+/* show/hide password */
+.pwd-section .fa-eye {
+    top: 25px;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    right: 10px;
+    background: none;
+}
+.pwd-section {
+	position: relative;
+}
 .gradient-button {
 	color: white;
 	padding: 10px;
