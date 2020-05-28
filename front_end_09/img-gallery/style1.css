@@ -35,4 +35,25 @@
     margin-bottom: 20px;
     margin-top: 4px;
 }
+/* hover img*/
+.hover-effect {
+    width: 100%;
+    height:100%;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    cursor:default;
+}
+
+.hover-effect img {
+    display: block;
+    position:relative;
+    -webkit-transition:all .4s linear;
+    transition:all .4s linear;
+}
+
+.hover-effect:hover img {
+    transform:scale(1.1);
+}
 
