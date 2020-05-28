@@ -1,149 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"> 
-	<title>Gallery</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="style1.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<script type="text/javascript" src="javascript.js"></script>
-</head>
-<body>
-	<div class="wrap">
-		<div class="container" id="header">
-			<header>
-				<div class="nav-bar">
-					<nav class="navbar navbar-expand-lg">
-						<div class="parent-menu desktop">
-							<ul class="list-menu">
-								<li class="parent-menu-item">
-									<a href="index.html" class="nav-padding">
-										<span>Home</span>
-									</a>
-								</li>
-
-								<li class="parent-menu-item">
-									<a href="#About" class="nav-padding">
-										<span>About</span>
-									</a>
-								</li>
-
-								<li class="parent-menu-item">
-									<a href="gallery.html" class="nav-padding active">
-										<span>Image-Gallery</span>
-									</a>
-								</li>
-
-								<li class="parent-menu-item">
-									<a href="#Contact" class="nav-padding">
-										<span>Contact</span>
-									</a>
-								</li>
-							</ul>
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Gallery</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style1.css">
+		<script src="jquery-3.5.0.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand brand-title" href="#">ABW</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">About</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link active" href="gallery.html">Image-Gallery</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Contact</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav> <!-- end nav -->
+			<h2 class="title-gal">top products</h2>
+			<hr class="below">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="card card-product">
+							<img src="images/edifice-casio.png" class="card-img-top" alt="GSTB200G-2A">
+							<div class="zoom"><i class="fas fa-search-plus"></i></div>
+						<div class="card-body">
+							<a href="#" target="_blank" class="card-title">GSTB200G-2A</a>
 						</div>
-					</nav>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="card card-product">
+						<img src="images/casio_watches.png" class="card-img-top" alt="GM6900B-4">
+						<div class="card-body">
+							<a href="#" target="_blank" class="card-title">GA710GBX-1A9</a>
+						</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="card card-product">
+						<img src="images/G_SHOCK2.png" class="card-img-top" alt="GGB100-1A3">
+						<div class="card-body">
+							<a href="#" target="_blank" class="card-title">GA2000-5A</a>
+						</div>
+						</div>
+					</div>
 				</div>
-			</header>
-		</div> <!-- End menu -->
-		<h2 class="title-gal">Một số sản phẩm nổi bật</h2>
-		<hr>
-		<main id="gallery-contents">
-			<div class="danhsach">
-				<img src="images/edifice-casio.png" class="responsive" alt="GSTB200G-2A">
-				<div class="caption">
-					<a href="#" target="_blank">G-shock GSTB200G-2A</a>
+				<div class="row">
+					<div class="col-xs-12 col-md-4">
+						<div class="card card-product">
+						<img src="images/g_steel.png" class="card-img-top" alt="GM6900-1">
+						<div class="card-body">
+							<a href="#" target="_blank" class="card-title">GM6900-1</a>
+						</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="card card-product">
+						<img src="images/rolex2.png" class="card-img-top" alt="GWFD1000ARR-1">
+					
+						<div class="card-body">
+							<a href="#" target="_blank" class="card-title">GGB100-1A9</a>
+						</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-4">
+						<div class="card card-product">
+						<img src="images/rolex4.png" class="card-img-top " alt="GM6900G-9">
+					
+						<div class="card-body">
+							<a href="#" target="_blank" class="card-title">MTGB1000DCM-1</a>
+						</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			
-			<!-- End san pham 1 -->
-			<div class="danhsach">
-				<img src="images/casio_watches.png" class="responsive" alt="GM6900B-4">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GM6900B-4</a>
-					</div>
-			</div>
-			<!-- End san pham 2 -->
-			<div class="danhsach">
-				<img src="images/g_shock1.png" class="responsive" alt="GA710GBX-1A9">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GA710GBX-1A9</a>
-					</div>
-			</div>
-			<!-- End san pham 3 -->
-			<div class="danhsach">
-				<img src="images/G_SHOCK2.png" class="responsive" alt="GGB100-1A3">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GGB100-1A3</a>
-					</div>
-			</div>
-			<!-- End san pham 4 -->
-			<div class="danhsach">
-				<img src="images/g_shock3.png" class="responsive" alt="GA2000-5A">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GA2000-5A</a>
-					</div>
-			</div>
-			<!-- End san pham 5 -->
-			<div class="danhsach">
-				<img src="images/g_steel.png" class="responsive" alt="GM6900-1">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GM6900-1</a>
-					</div>
-			</div>
-			<!-- End san pham 6 -->
-			<div class="danhsach">
-				<img src="images/GW_5000.png" class="responsive" alt="DW5700SF-1">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock DW5700SF-1</a>
-					</div>
-			</div>
-			<!-- End san pham 7 -->
-			<div class="danhsach">
-				<img src="images/rolex.png" class="responsive" alt="GA2000BT-1A">
-					<div class="caption">
-						<a href="#" target="_blank">G-Shock GA2000BT-1A</a>
-					</div>
-			</div>
-			<!-- End san pham 8 -->
-			<div class="danhsach">
-				<img src="images/rolex2.png" class="responsive" alt="GWFD1000ARR-1">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GWFD1000ARR-1</a>
-					</div>
-			</div>
-			<!-- End san pham 9 -->
-			<div class="danhsach">
-				<img src="images/rolex3.png" class="responsive" alt="GGB100-1A9">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GGB100-1A9</a>
-					</div>
-			</div>
-			<!-- End san pham 10 -->	
-			<div class="danhsach">
-				<img src="images/rolex4.png" class="responsive" alt="GM6900G-9">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock GM6900G-9</a>
-					</div>
-			</div>
-			<!-- End san pham 11 -->
-			<div class="danhsach">
-				<img src="images/rolex_silver.png" class="responsive" alt="MTGB1000DCM-1">
-					<div class="caption">
-						<a href="#" target="_blank">G-shock MTGB1000DCM-1</a>
-					</div>
-			</div>
-			<!-- End san pham 12 -->
-		</main>	
-		<!-- back2top -->
-		<a id="back2Top" title="Back to top" href="#">&#10148;</a>
-
-		<!-- back2home -->
-		<a href ="index.html" id="back" name="back">&#171;Home</a>
-	<!-- footer -->
-		<footer class="footer">
-			<span>Copyright &copy; 2020 by AnhBa Watch.</span>
-		</footer>
-	</div>
-</body>
-</html>
+		<!-- footer -->
+			<footer class="footer">
+				<span>Copyright &copy; 2020 by AnhBa Watch.</span>
+			</footer>
+		</div>
+		<script type="text/javascript" src="javascript.js"></script>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</body>
+	</html>

@@ -1,92 +1,47 @@
 *, ::after, ::before{
     box-sizing: border-box;
 }
-
-ul li a {
+/* nav menu */
+.nav.navbar-nav {
+    padding: 10px;
+}
+.nav.navbar-nav li {
+    margin: 10px;
+}
+.navbar-nav li > a {
     text-decoration: none;
-    background-color: transparent;
+    color: blanchedalmond;
 }
-/* begin hover */
-li:hover {
-  background-color: #ecce6d;
-  text-shadow: 1px 1px #f0d8d8;
+.navbar-nav li:hover > a {
+    color: whitesmoke;
+   }
+.nav-item a {
+    float: left;
+    border-bottom: 3px solid transparent;
 }
-
-li a:hover {
- -webkit-transform: rotate(-1deg) scale(0.9);
- -moz-transform: rotate(-1deg) scale(0.9);
- -o-transform: rotate(-1deg) scale(0.9);
+.nav-item a:hover {
+    border-bottom: 3px solid #e59113;
 }
-/* end hover */
-a {
-    color: #000000;
-    text-decoration: none;
+.nav-item a.active {
+    border-bottom: 3px solid #e59113;
 }
-
-dl, ol, ul {
-    margin-top: 0;
-}
-
-.wrap {
-    max-width: 1000px;
-    margin: auto;
-}
-
-#header {
-    background-color: #000000;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.container {
-    padding-left: 0;
-    padding-right: 0;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-}
-.parent-menu.desktop {
-    height: 100%;
-    flex: initial;
-}
-
-.parent-menu.desktop .list-menu {
-	margin-bottom: 0px;
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-}
-.list-menu .active {
-    color: #ecce6d;
-}
-.desktop.parent-menu .parent-menu-item {
-	color: white;
-    margin: 0 10px 0 10px;
-    text-transform: uppercase;
-    position: relative;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    font-size: 1.1rem;
-}
-.parent-menu a {
-    font-size: 0.95rem !important;
-    color: white;
-}
-.nav-padding {
-    padding: 0 3px;
-}
-
+/*end nav */
 #home-contents {
     background-color: rgba(112,112,112,0.7);
 }
+.navbar-expand-lg.navbar-dark .brand-title {
+     color: #F8C471;
+}
+.navbar-expand-lg.navbar-dark .brand-title:hover {
+    color: #e2b773;
+}
 .title {
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
     text-align: center;
     font-weight: 300;
     font-size: 30px;
     color: #F8C471;
+    margin-top: 10px;
 }
 .below {
     font-family: Roboto, Helvetica, Arial, sans-serif;
