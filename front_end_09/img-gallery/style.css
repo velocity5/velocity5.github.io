@@ -41,16 +41,15 @@
     font-weight: 300;
     font-size: 30px;
     color: #F8C471;
+    text-transform: uppercase;
     margin-top: 10px;
 }
 .below {
-    font-family: Roboto, Helvetica, Arial, sans-serif;
-    text-transform: capitalize;
-    text-align: center;
-    font-weight: 200;
-    font-size: 20px;
-    color: #F4F6F7;
-    line-height: 0.3;
+   width: 100px;
+    border-width: 3px;
+    background-color: black;
+    margin-bottom: 20px;
+    margin-top: 4px;
 }
 
 .opening {
