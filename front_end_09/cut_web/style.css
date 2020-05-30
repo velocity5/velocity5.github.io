@@ -1,0 +1,142 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+.navbar.navbar-expand-lg {
+	line-height: 68px;
+	padding-bottom: 71px;
+	padding-left: 69px;
+}
+
+.navmenu .nav-item a {
+	color: #a8a8a8;
+	text-transform: uppercase;
+	font-family: 'Playfair Display', serif;
+	font-size: 14px;
+}
+.navmenu #item1 a {
+	margin-right: 121px;
+}
+.navmenu #item2 a {
+	margin-right: 103px;
+}
+.navmenu #item3 a {
+	margin-right: 95px;
+}
+.navmenu #item4 a {
+	margin-right: 100px;
+}
+/* content */
+.title {
+    font-size: 14px;
+    margin-top: 99px;
+    margin-left: 82px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    color: #959595;
+}
+.heading {
+    margin-top: 29px;
+    margin-left: 82px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+}
+.content {
+    margin-top: 35px;
+    margin-left: 82px;
+    font-size: 14px;
+    padding-right: 159px;
+    font-family: 'Playfair Display', serif;
+    color: #626262;
+}
+.comment {
+	margin-top: 53px;
+	 margin-left: 82px;
+	 margin-bottom: 142px;
+	 text-transform: uppercase;
+	 font-size: 14px;
+	font-family: 'Ubuntu', sans-serif;
+    color: #959595;
+}
+.title-style {
+	 font-size: 14px;
+    margin-left: 82px;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    color: #959595;
+}
+.row .img-style {
+    margin-left: 82px;
+    margin-bottom: 32px;
+}
+.style-content {
+    font-size: 14px;
+    color: #626262;
+    margin-left: 82px;
+    padding-right: 59px;
+    margin-top: 36px;
+}
+.section-two {
+    margin-top: 132px;
+}
+.background-signup {
+	height: 286px;
+	background-color: #f0f0f0;
+	margin-top: 123px;
+}
+.signup {
+	margin-top: 74px;
+	margin-bottom: 83px;
+	 font-family: 'Playfair Display', serif;
+	 font-size: 30px;
+}
+.mail-box {
+    width: 400px;
+    border: none;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid;
+    margin-bottom: 74px;
+}
+.mail-box:focus {
+	outline: none;
+}
+.section-three {
+	margin-top: 103px;
+}
+.load-more {
+	margin-top: 166px;
+}
+.btn-load {
+	width: 163px;
+	height: 61px;
+	font-size: 20px;
+	font-family: 'Playfair Display', serif;
+}
+footer {
+	margin-top: 1369px;
+	height: 100px;
+    background-color: #f0f0f0;
+}
+.terms-section, .follow-section {
+	margin-top: 40px;
+}
+.terms-section a, .follow-section {
+    color: black;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+}
+.terms-section a:hover {
+    text-decoration: none;
+    color: grey;
+}
+.terms-section a:active {
+	color: #7a9595;
+}
+.follow-section p i {
+    margin-left: 23px;
+  }
+
+.terms-section .terms {
+    margin-left: 150px;
+}
