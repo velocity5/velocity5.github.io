@@ -1,0 +1,45 @@
+.second-content {
+    padding-right: 159px;
+    margin-left: 82px;
+    margin-bottom: 64px;
+    color: #626262;
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+}
+.scarf-girl, .sand-dune, .girl-sun {
+	margin-left: 82px;
+	margin-bottom: 58px;
+}
+.italic-content {
+    margin-left: 105px;
+    margin-right: 109px;
+    font-style: italic;
+    font-size: 14px;
+     color: #626262;
+    font-family: 'Playfair Display', serif;
+}
+.fourth-content {
+    margin-left: 82px;
+    font-size: 14px;
+     color: #626262;
+    font-family: 'Playfair Display', serif;
+    margin-right: 140px;
+}
+.share {
+	margin-right: 152px;
+	font-size: 13px;
+	font-family: 'Ubuntu', sans-serif;
+	color: #bab3a5;
+}
+.fab.fa-facebook-f {
+    margin-left: 24px;
+}
+.fab.fa-twitter {
+    margin-left: 17px;
+}
+.fab.fa-google-plus-g {
+    margin-left: 12px;
+}
+.fab.fa-tumblr, .fab.fa-pinterest {
+    margin-left: 16px;
+}

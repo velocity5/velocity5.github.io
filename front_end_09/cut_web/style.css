@@ -108,6 +108,12 @@
 .section-three {
 	margin-top: 103px;
 }
+.send-icon {
+    margin-left: -30px;
+}
+.send-icon img {
+    margin-bottom: 9px;
+}
 .load-more {
 	margin-top: 166px;
 }
@@ -118,7 +124,7 @@
 	font-family: 'Playfair Display', serif;
 }
 footer {
-	margin-top: 1369px;
+	margin-top: 23px;
 	height: 100px;
     background-color: #f0f0f0;
 }
