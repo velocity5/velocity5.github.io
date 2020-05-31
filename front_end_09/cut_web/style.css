@@ -6,10 +6,13 @@
 	line-height: 68px;
 	padding-bottom: 71px;
 	padding-left: 69px;
+	background-color: white!important;
 }
-
+.navbar.navbar-expand-lg:active {
+	outline: none;
+}
 .navmenu .nav-item a {
-	color: #a8a8a8;
+	color: #a8a8a8!important;
 	text-transform: uppercase;
 	font-family: 'Playfair Display', serif;
 	font-size: 14px;
@@ -26,6 +29,7 @@
 .navmenu #item4 a {
 	margin-right: 100px;
 }
+
 /* content */
 .title {
     font-size: 14px;
@@ -139,4 +143,71 @@ footer {
 
 .terms-section .terms {
     margin-left: 150px;
+}
+
+@media only screen and (max-width:600px) {
+	.navbar.navbar-expand-lg {
+		padding-left: 35px;
+	}
+	.section-zero img {
+		max-width: 100%;
+	}	
+	.content { 
+		padding-right: 0;
+		margin-left: 20px;
+	}
+	.title {
+		margin-top: 40px;
+		margin-left: 20px;
+	}
+	.heading, .comment, .row .img-style, .title-style,
+	.style-content {
+		margin-left: 20px;
+		max-width: 100%;
+	}
+	.terms-section .terms {
+		margin-left: 0;
+	}
+	.terms-section, .follow-section {
+		margin-top: 20px;
+	}
+	.mail-box {
+		width: 300px;
+	}
+	#navbarSupportedContent .nav-link {
+		padding: 0;
+	}
+}
+@media only screen and (max-width:400px) {
+	.navbar.navbar-expand-lg {
+		padding-left: 13px;
+	}
+
+	.content {
+		margin-left: 10px;
+	}
+	.title {
+		margin-top: 30px;
+		margin-left: 10px;
+	}
+	.heading, .comment, .row .img-style, .title-style,
+	.style-content {
+		margin-left: 10px;
+		padding-right: 0px;
+		width: 100%;
+	}
+	.terms-section .terms {
+		margin-left: 0;
+	}
+	.terms-section, .follow-section {
+		margin-top: 10px;
+	}
+
+	.background-signup {
+		width: 110%;
+	}
+	.mail-box {
+		width: 300px;
+	}
+
 }
