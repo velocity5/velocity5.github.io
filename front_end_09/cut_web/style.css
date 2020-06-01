@@ -12,11 +12,12 @@
 	outline: none;
 }
 .navmenu .nav-item a {
-	color: #a8a8a8!important;
+	color: #a8a8a8;
 	text-transform: uppercase;
 	font-family: 'Playfair Display', serif;
 	font-size: 14px;
 }
+
 .navmenu #item1 a {
 	margin-right: 121px;
 }
@@ -46,6 +47,10 @@
     font-family: 'Playfair Display', serif;
     color: #626262;
 }
+.heading:hover {
+    text-decoration: none;
+    color: grey;
+}
 .content {
     margin-top: 35px;
     margin-left: 82px;
@@ -55,13 +60,19 @@
     color: #626262;
 }
 .comment {
-	margin-top: 53px;
+	margin-top: 50px;
 	 margin-left: 82px;
-	 margin-bottom: 142px;
+	 margin-bottom: 62px;
 	 text-transform: uppercase;
 	 font-size: 14px;
 	font-family: 'Ubuntu', sans-serif;
     color: #959595;
+    border: none;
+    width: 900px;
+    height: 75px;
+}
+.comment:focus {
+    outline: none;
 }
 .title-style {
 	 font-size: 14px;
@@ -74,6 +85,7 @@
     margin-left: 82px;
     margin-bottom: 32px;
 }
+
 .style-content {
     font-size: 14px;
     color: #626262;
@@ -120,9 +132,9 @@
 .btn-load {
 	width: 163px;
 	height: 61px;
-	font-size: 20px;
 	font-family: 'Playfair Display', serif;
 }
+
 footer {
 	margin-top: 23px;
 	height: 100px;
@@ -146,6 +158,10 @@ footer {
 .follow-section p i {
     margin-left: 23px;
   }
+  .follow-section i:hover {
+    color: grey;
+    cursor: pointer;
+}
 
 .terms-section .terms {
     margin-left: 150px;

@@ -43,3 +43,88 @@
 .fab.fa-tumblr, .fab.fa-pinterest {
     margin-left: 16px;
 }
+/* "you may also like" section */
+.background-grey {
+    background-color: #f5f5f5;
+    
+}
+
+.title-caption {
+	font-family: 'Ubuntu', sans-serif;
+	color: #bab3a5;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.title-more {
+	text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+	color: #bab3a5;
+	margin-top: 70px;
+    margin-bottom: 41px;
+}
+.road, .girl, .bridge {
+    width: 80%;
+}
+
+.img-road, .title-more {
+    margin-left: 120px;
+}
+
+.img-girl, .img-bridge {
+    margin-left: -60px;
+    margin-bottom: 89px;
+}
+/* comment section */
+.title-comment {
+    font-size: 14px;
+     font-family: 'Ubuntu', sans-serif;
+    color: #bab3a5;
+    margin-top: 52px;
+}
+.img-round {
+    border-radius: 50%;
+    margin-bottom: 90px;
+}
+.reply-btn {
+    font-size: 14px;
+     font-family: 'Ubuntu', sans-serif;
+    color: #bab3a5;
+}
+.reply-btn:hover, .reply-btn:active {
+    text-decoration: none;
+    color: grey;
+}
+.user-name, .cmt-content {
+     font-size: 14px;
+     color: #626262;
+    font-family: 'Playfair Display', serif;
+}
+.text-input {
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 714px;
+    height: 72px;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+.social-connect {
+    margin-top: 35px;
+    margin-left: 320px;
+    margin-bottom: 131px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #bab3a5;
+}
+.twitter-icon {
+    padding-left: 50px;
+    margin-right: -14px;
+}
+.facebook-icon {
+    padding-right: 30px;
+}
+.twitter-icon:hover, .facebook-icon:hover, .social-icon:hover {
+    cursor: pointer;
+    color: gray;
+}
