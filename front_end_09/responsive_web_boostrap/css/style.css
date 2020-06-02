@@ -92,10 +92,13 @@
     background-color: #e0e0d1;
     padding-top: 230px;
     color: white;
-    padding-bottom: 280px;
-    background: url(../images/product_images/background_kr.jpg);
+    padding-bottom: 280px;   
     background-position: center;
     background-size: cover;
+}
+.img-top-left, .img-top-right {
+    margin-top: -70px;
+    width: 350px;
 }
 .find {
     border: none;
