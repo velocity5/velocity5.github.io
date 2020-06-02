@@ -103,6 +103,9 @@
      color: #626262;
     font-family: 'Playfair Display', serif;
 }
+.bx-content {
+    margin-left: -37px;
+}
 .text-input {
     text-transform: uppercase;
     font-size: 14px;
