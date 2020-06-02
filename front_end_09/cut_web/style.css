@@ -43,7 +43,8 @@
 .heading {
     margin-top: 29px;
     margin-left: 82px;
-    font-size: 30px;
+	font-size: 30px;
+	cursor: pointer;
     font-family: 'Playfair Display', serif;
     color: #626262;
 }
@@ -180,11 +181,11 @@ footer {
 	}
 	.title {
 		margin-top: 40px;
-		margin-left: 20px;
+		margin-left: 0;
 	}
 	.heading, .comment, .row .img-style, .title-style,
 	.style-content {
-		margin-left: 20px;
+		margin-left: 0;
 		max-width: 100%;
 	}
 	.terms-section .terms {
@@ -210,12 +211,12 @@ footer {
 	}
 	.title {
 		margin-top: 30px;
-		margin-left: 10px;
+		margin-left: 0;
 	}
 	.heading, .comment, .row .img-style, .title-style,
 	.style-content {
-		margin-left: 10px;
-		padding-right: 0px;
+		margin-left: 0;
+		padding-right: 0;
 		width: 100%;
 	}
 	.terms-section .terms {

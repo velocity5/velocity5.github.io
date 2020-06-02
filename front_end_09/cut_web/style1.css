@@ -75,6 +75,9 @@
     margin-left: -60px;
     margin-bottom: 89px;
 }
+.img-road:hover a, .img-girl:hover a, .img-bridge:hover a {
+    text-decoration: none;
+}
 /* comment section */
 .title-comment {
     font-size: 14px;
@@ -127,4 +130,55 @@
 .twitter-icon:hover, .facebook-icon:hover, .social-icon:hover {
     cursor: pointer;
     color: gray;
+}
+
+@media only screen and (max-width:600px) {
+    .second-content {
+        padding-right: 60px;
+        margin-left: 20px;
+    }
+    .scarf-girl, .sand-dune, .girl-sun {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    .italic-content, .fourth-content {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+    .title-more {
+        margin-left: 0;
+    }
+    .img-road, .img-girl, .img-bridge {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .img-round {
+        margin-bottom: 30px;
+    }
+    .bx-content {
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+    .text-input {
+        font-size: 15px;
+        width: 380px;
+        height: 60px;
+    }
+    .social-connect {
+        margin-top: 25px;
+        margin-left: 239px;
+    } 
+}
+@media only screen and (max-width:400px) {
+    .text-input {
+        width: 360px;
+    }
+    .social-connect {
+        margin-left: 210px;
+    } 
+    .img-road, .img-girl, .img-bridge {
+        margin-left: 30px;
+    }
+
 }
