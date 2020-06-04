@@ -233,3 +233,17 @@ footer {
         margin-top: 62px;
     }
 }
+@media (min-width: 320px) {
+    .navbar.navbar-expand-lg .navbar-toggler {
+        margin-right: 0;
+    }
+    h4.title, a.heading-one, p.content, input.comment {
+        margin-top: 20px;
+    }
+    .background-signup {
+        margin-top: 50px;
+    }
+    .mail-box {
+        width: 350px;
+    }
+}
