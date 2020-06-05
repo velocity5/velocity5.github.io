@@ -61,10 +61,6 @@
     color: #7a9595;
 }
 
-  .follow-section i:hover {
-    color: grey;
-    cursor: pointer;
-}
 .content {
     margin-top: 35px;
     margin-left: 82px;
@@ -165,8 +161,13 @@ footer {
     font-size: 14px;
     font-family: 'Playfair Display', serif;
 }
-.follow-section p i {
+.follow-section i, .follow-section a {
     margin-left: 23px;
+    color: #626262;
+}
+ .follow-section i:hover, .follow-section a:hover {
+    color: grey;
+    cursor: pointer;
 }
 .terms-section .terms {
     margin-left: 150px;
