@@ -41,21 +41,33 @@
                     </button>
             </div>
         </nav>
-        <div class="hero_content text-center">
-            <h2 class="hero_title">
-                Find Your Dream Car
-            </h2>
-            <h5 class="hero_subtitle">
-                Search over 20,000 pre-approved used cars and find your perfect vehicle today
-            </h5>
-            <div class="hero_search">
-                <input type="text" placeholder="Search make or model">
-                <input type="number" placeholder="Postcode">
-                <button class="btn btn-search"><span>Find My Car</span></button>
+        <div class="hero_content container">
+            <div class="row text-center">
+                <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                    <h2 class="hero_title">
+                        Find Your Dream Car
+                    </h2>
+                    <h5 class="hero_subtitle">
+                        Search over 20,000 pre-approved used cars and find your perfect vehicle today
+                    </h5>
+                </div>
             </div>
-            <div class="image_top">
-                <img src="images/merc.png" alt="Mercesdes-Benz">
-            </div>
+            <div class="row text-center hero_search">
+                <div class="col-12 col-sm-12 col-xs-12 col-md-6 col-lg-6">
+                    <input type="text" placeholder="Search make or model">
+                </div>
+                <div class="col-12 col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <input type="number" placeholder="Postcode">
+                </div>
+                <div class="col-12 col-sm-12 col-xs-12 col-md-3 col-lg-3">
+                    <button class="btn btn-search"><span>Find My Car</span></button>
+                </div>
+            </div> 
+            <div class="row image_top text-center">
+                <div class="col-12 col-sm-12 col-xs-12 col-md-12 col-lg-12">
+                    <img src="images/merc.png" alt="Mercesdes-Benz">
+                </div>
+            </div>  
         </div>
         <section class="hot-deal text-center">
             <h3 class="section_title">Today’s Hottests Deals</h3>
@@ -63,91 +75,88 @@
 
             <div class="container car-list">
                 <div class="row car-row-one">
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£7,599</span></div>  
-                                <img src="images/focus.png" alt="Ford Focus">
-                            </div>
-                                <h4 class="card-title text-center">Ford Focus</h4>
-                                
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                            <div class="price">
+                                <img src="images/pricetag.png" class="price-tag">
+                                <span>£7,599</span>
+                            </div>  
+                            <img src="images/focus.png" alt="Ford Focus" class="thumb">
                         </div>
-
+                            <h4 class="card-title text-center">Ford Focus</h4>   
                     </div>
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£6,500</span></div>
-                                <img src="images/fabina.png" alt="Skoda Fabia">
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                            <div class="price">
+                                    <img src="images/pricetag.png" class="price-tag">
+                                    <span>£6,500</span>
                             </div>
-                                <h4 class="card-title">Skoda Fabia</h4>
+                            <img src="images/fabina.png" alt="Skoda Fabia" class="thumb">
                         </div>
-
+                        <h4 class="card-title">Skoda Fabia</h4>
                     </div>
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£10,400</span></div>
-                                <img src="images/honda.png" alt="Honda Civic">
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                            <div class="price">
+                                <img src="images/pricetag.png" class="price-tag">
+                                    <span>£10,400</span>
                             </div>
-                                <h4 class="card-title">Honda Civic</h4>
+                            <img src="images/honda.png" alt="Honda Civic" class="thumb">
                         </div>
-
+                        <h4 class="card-title">Honda Civic</h4>
                     </div>
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£3,999</span></div>
-                                <img src="images/corsa.png" alt="Vauxhall Corsa">
-                            </div>
-
-                                <h4 class="card-title">Vauxhall Corsa</h4>
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                                <div class="price">
+                                    <img src="images/pricetag.png" class="price-tag">
+                                    <span>£3,999</span>
+                                </div>
+                                <img src="images/corsa.png" alt="Vauxhall Corsa" class="thumb">
                         </div>
-
+                        <h4 class="card-title">Vauxhall Corsa</h4>
                     </div>
                 </div>
                 <!--end row 1 -->
                 <div class="row car-row-two">
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£4,999</span></div>
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                                <div class="price">
+                                    <img src="images/pricetag.png" class="price-tag">
+                                    <span>£4,999</span>
+                                </div>
                                 <img src="images/renault.png" alt="Renault Clio">
-                            </div>
-                                <h4 class="card-title">Renault Clio</h4>
                         </div>
-
+                        <h4 class="card-title">Renault Clio</h4>
                     </div>
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£1,999</span></div>
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                                <div class="price">
+                                    <img src="images/pricetag.png" class="price-tag">
+                                    <span>£1,999</span>
+                                </div>
                                 <img src="images/vw.png" alt="Volkswagen Polo">
-                            </div>
-                                <h4 class="card-title">Volkswagen Polo</h4>
                         </div>
-
+                        <h4 class="card-title">Volkswagen Polo</h4>
                     </div>
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£6,850</span></div>
-                                <img src="images/ibiza.png" alt="Seat Ibiza">
-                            </div>
-                                <h4 class="card-title">Seat Ibiza</h4>
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                                <div class="price">
+                                    <img src="images/pricetag.png" class="price-tag">
+                                    <span>£6,850</span>
+                                </div>
+                                <img src="images/ibiza.png" alt="Seat Ibiza">         
                         </div>
-
+                        <h4 class="card-title">Seat Ibiza</h4>
                     </div>
-                    <div class="col-12 col-sm-12 col-xs-12 col-lg-3 col-md-3">
-                        <div class="car-card">
-                            <div class="image-card">
-                                <div class="price-tag"><span>£8,950</span></div>
+                    <div class="col-12 col-sm-6 col-xs-6 col-lg-3 col-md-3">
+                        <div class="card car-card">
+                                <div class="price">
+                                    <img src="images/pricetag.png" class="price-tag">
+                                    <span>£8,950</span>
+                                </div>
                                 <img src="images/bmw.png" alt="BMW i5">
-                            </div>
-
-                                <h4 class="card-title">BMW i5</h4>
                         </div>
-
+                        <h4 class="card-title">BMW i5</h4>
                     </div>
                 </div>
                 <!--end row 2 -->
@@ -204,7 +213,7 @@
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="#">DreamCars</a>
                     <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav nav-footer">
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Search Cars</a>
                             </li>

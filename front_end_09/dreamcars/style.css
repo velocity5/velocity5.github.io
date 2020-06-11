@@ -65,7 +65,6 @@
     padding-left: 380px;
 }
 .hero_title {
-    width: 591px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 600;
@@ -77,7 +76,6 @@
     text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.151183);
 }
 .hero_subtitle {
-    width: 617px;
     font-family: Poppins;
     padding-left: 31px;
     font-style: normal;
@@ -89,7 +87,6 @@
     text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.0910043);
 }
 input[type="number"] {
-    width: 142px;
     height: 55px;
     font-family: Poppins;
     font-style: normal;
@@ -103,7 +100,6 @@ input[type="number"] {
 }
 
 input[type="text"] {
-    width: 307px;
     height: 55px;
     font-family: Poppins;
     font-style: normal;
@@ -152,10 +148,6 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-.image_top img {
-    margin-top: 51px;
-}
 /* section deal */
 .section_title {
     font-family: Poppins;
@@ -163,7 +155,6 @@ input::-webkit-inner-spin-button {
     font-weight: 500;
     font-size: 30px;
     line-height: 45px;
-    margin-top: 84px;
     margin-bottom: 14px;
     /* identical to box height */
     text-align: center;
@@ -339,16 +330,299 @@ input[type="email"] {
     border-radius: 0;
     background: #DEFF06;
 }
-/* price tag */
-.price-tag {
-    background-image:url(images/pricetag.png);
-    background-repeat: no-repeat;
-    background-position: right;
+/* car card */
+.car-card {
+    background: rgba(227, 227, 227, 0.732139);
+    border-radius: 4px;
+    margin-right: 7px;
+    position: relative;
 }
-.price-tag span {
-    margin-left: 150px;
+/* price tag */
+img.price-tag {
+    position: absolute;
+    margin-top: 20px;
+    right: -8px;
+}
+
+.price span {
+    position: absolute;
+    margin-top: 25px;
+    right: 8px;
+    color: white;
 }
 /* media query */
-@media (max-width: 900px) {
+@media (min-width: 576px) {
     
+    .hero_content {
+        padding-right: 0;
+    }
+    .hero_title {
+        width: 500px;
+        margin-left: -8em;
+    }
+    .hero_subtitle {
+        width: 500px;
+        margin-left: -17em;
+    }
+    .hero_search {
+        width: 150px;
+        height: 56px;
+        margin-left: -17em;
+    }
+    input[type="text"], input[type="number"] {
+        width: 400px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .btn-search {
+        width: 100%;
+        margin-left: 90%;
+    }
+    .image_top img {
+        margin-left: -20em; 
+        margin-top: 8em;
+        width: 30em;
+    }
+    .section_title {
+        margin-top: 0;
+    }
+    /*.car-card {
+        width: 70%;
+        margin-left: 5em;
+    } */
+    img.price-tag {
+        margin-left: 0.5em;
+    }
+    .price span {
+        margin-left: 2em;
+    }
+    /*.card-title, .big-button {
+        margin-left: 3em;
+    } */
+    .checklist img, .fraud img, .bestcar img {
+        margin-bottom: 20px;
+    }
+    input[type="email"] {
+        width: 300px;
+    }
+    .nav-footer {
+        margin-top: -2.5em;
+    }
+    .navbar-toggler {
+        margin-right: -3em;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero_content {
+        padding-right: 0;
+    }
+    .hero_title {
+        max-width: 500px;
+        margin-left: -10em;
+        margin-right: -18px;
+    }
+    .hero_subtitle {
+        max-width: 500px;
+        margin-left: -21em;
+        margin-right: -8px;
+    }
+    .hero_search {
+        width: 200px;
+        margin-left: -15em;
+    }
+    input[type="text"], input[type="number"] {
+        width: 350px;
+        margin-bottom: 10px;
+        margin-left: -50%;
+    }
+   
+    .btn-search {
+        width: 100%;
+    }
+    .image_top img {
+        margin-left: -24em; 
+        margin-top: 8em;
+        max-width: 28em;
+    }
+    .car-card {
+        width: 70%;
+        margin-left: 5em;
+    }
+    img.price-tag {
+        margin-left: 3.7em;
+    }
+    img.thumb{
+        width: 100%;
+        height:auto;
+    }
+    .section_subtitle {
+        font-size: 17px;
+    }
+    .price span {
+        margin-left: 5em;
+    }
+    .card-title, .big-button {
+        margin-left: 3em;
+    }
+     .checklist img, .fraud img, .bestcar img {
+        margin-bottom: 20px;
+    }
+    input[type="email"] {
+        max-width: 250px;
+    }
+    .subscribe_signup {
+        padding-top: 0;
+    }
+    .nav-footer {
+        margin-top: -2.5em;
+    }
+    .navbar-toggler {
+        margin-right: -3em;
+    }
+    .tips-title {
+        font-size: 16px;
+        top: 65%;
+   }    
+}
+
+
+@media (min-width: 768px) {
+    
+    .hero_title {
+        width: 500px;
+        margin-left: -6em;
+     }
+     .hero_subtitle {
+        width: 500px;
+        margin-left: -12em;
+     }
+     .hero_search {
+        width: 250px;
+        margin-left: -5em;
+    }
+     input[type="text"], input[type="number"] {
+         width: 400px;
+        margin-left: -8em;
+        margin-bottom: 10px;
+     }
+     .btn-search {
+        height: 40px;
+        margin-left: -3em;
+    }
+     .image_top img {
+        margin-left: -12em; 
+        margin-top: 8em;
+        width: 30em;
+    }
+    .car-card {
+        width: 100%;
+        margin-left: 0;
+    }
+    .section_title {
+        margin-top: 0px;
+    }
+    .section_subtitle {
+        margin-bottom: 10px;
+    }
+     .car-list {
+         padding-left: 0px;
+         padding-right: 0px;
+         margin-top: 0px;
+     }
+     .car-card img:nth-child(2) {
+        max-width: 100%;
+        margin-top: 2em;
+    }
+    .card-title {
+        margin-left: 0;
+    }
+     img.price-tag {
+        margin-left: 0;
+    }
+    .price span {
+        margin-left: 1.5em;
+    }
+    .tips-title {
+        line-height: 20px;
+        padding-top: 0;
+    }
+    .nav-footer {
+        margin-right: 3em;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    .hero_title {
+        margin-left: -2em;
+        }
+    .hero_subtitle {
+        margin-left: -5em;
+    } 
+    .hero_search {
+        margin-left: -5em;
+    }
+    input[type="number"] {
+        width: 142px;
+        margin-left: 13em;
+    }
+    .btn-search { 
+        margin-left: 15.5em;          
+        height: 55px;           
+        width: 142px;
+    }
+    img.price-tag {
+        margin-left: 2em;
+    }
+    .price span {
+        margin-left: 3.5em;
+    }
+    .tips-title {
+        padding-right: 1em;
+    }
+    .nav-footer {
+        margin-top: 0;
+    }     
+}
+@media (min-width: 1200px) {
+    .hero_content {
+        padding-right: 0em;
+    }
+    .hero_title {
+        width: 591px;
+    }
+    .hero_subtitle {
+        width: 617px;
+    }
+    .hero_search {
+        width: 591px;
+        margin-left: 0;
+    }
+    /*input[type="text"] {
+        width: 307px;
+    } */
+    input[type="number"] {
+        width: 142px;
+        margin-left: 0px;
+    }
+    .btn-search {
+        height: 55px;
+        margin-left: -12px;
+    }
+    .image_top img {
+        margin-top: 51px;
+        }
+    .section_title {
+        margin-top: 84px;
+    }
+    img.price-tag {
+        margin-left: 51px;
+    }
+    .price span {
+        margin-left: 4.5em;
+    }
+    .tips-title {
+        padding-right: 0;
+    }
 }
