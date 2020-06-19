@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+.container {
+    transform: translateY(30%);
+    margin: 0 auto;
+    width: 25em;
+    height: 15em;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+button {
+    position: absolute;
+    border-radius: 10px;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.quote-text {
+    text-align: center;
+    padding-top: 4rem;
+}
+button:focus {
+    outline: none;
+}
