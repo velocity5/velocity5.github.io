@@ -1,0 +1,160 @@
+extends template-part/layout.pug
+
+block content
+    .slider_top
+        #carouselIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#carouselIndicators' data-slide-to='0')
+                li(data-target='#carouselIndicators' data-slide-to='1')
+            .carousel-inner
+                .carousel-item.darken-img
+                    img.d-block.w-100(src='images/product_images/burning-falcon.jpg' alt='First slide')
+                    .caption
+                        .container.d-flex.justify-content-center
+                            .div-table.summer
+                                .caption-content
+                                    h3.caption-title SIÊU PHẨM HÈ 2020
+                                .view
+                                    button.btn.btn-outline-secondary.btn-view(type='button') Xem Ngay
+                .carousel-item.active.darken-img
+                    img.d-block.w-100(src='images/product_images/garo-1.jpg' alt='Second slide')
+                    .caption
+                        .container.d-flex.justify-content-center
+                            .div-table
+                                .caption-content
+                                    h4.caption-title NHẬN COUPON 
+                                        span 30%
+                                    h2.caption-subtitle cho lần ĐĂNG KÝ ĐẦU TIÊN
+                                .subscribe
+                                    button.btn.btn-outline-secondary.btn-subscribe(type='button') Đăng Ký Ngay
+                a.carousel-control-prev(href='#carouselIndicators' role='button' data-slide='prev')
+                    span.carousel-control-prev-icon(aria-hidden='true')
+                    span.sr-only Previous
+                a.carousel-control-next(href='#carouselIndicators' role='button' data-slide='next')
+                    span.carousel-control-next-icon(aria-hidden='true')
+                    span.sr-only Next
+    section.container-fluid#about
+        .row.text-center
+            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .box.heading
+                    h2 Giới thiệu về ZIGToys
+                    hr.below
+        .row.text-center
+            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .box.content
+                    p Là đơn vị chuyên cung cấp các sản phẩm mô hình đồ chơi và một số sản phẩm khác của các hãng Bandai và Saban Hasbro.   
+                    p ZIGToys luôn đặt giá trị cốt lõi là sự 
+                        b UY TÍN 
+                        span và 
+                        b TÍN NHIỆM 
+                        span về giá cả.
+                .view-more
+                    a.btn-more(href='#') Xem Thêm 
+                        i.fas.fa-angle-right
+
+    section.container-fluid
+        .row.text-center
+            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .box.heading
+                    h2 Sản phẩm mới
+                    hr.below
+        .row.text-center
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+                .thumbnail
+                    .product-image
+                        img.img-fluid.figure(src='images/product_images/01-Figure.jpg' alt)
+                        .zoom
+                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1')
+                    .product.text-center
+                        h4.product-title
+                            a(href='details1.html') S.H.Figure <br>Kamen Rider Zero One 
+                        .rating
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star-half-alt
+                        p.price 1.000.000đ
+                        .buttons
+                            a.btn.btn-icon-left(href='#')
+                                i.fa.fa-shopping-cart  Thêm vào giỏ
+                            a.btn.btn-icon-right(href='#')
+                                i.far.fa-heart
+            .modal.fade#quickview1(tabindex='-1' role='dialog' aria-hidden='true')
+                .modal-dialog.modal-lg(role='document')
+                    .modal-content
+                        .modal-header
+                            button.close(type='button' data-dismiss='modal' title='Close')
+                                span(aria-hidden='true') ×
+                            .modal-body
+                                .row
+                                    .col-lg-12
+                                        #product-id.carousel.slide(data-ride='carousel')
+                                            ol.carousel-indicators
+                                                li.active(data-target='#product-id' data-slide-to='0')
+                                                li(data-target='#product-id' data-slide-to='1')
+                                                li(data-target='#product-id' data-slide-to='2')
+                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                .carousel-item.active
+                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/01-Figure.jpg' alt='ZeroOne')
+                                                .carousel-item
+                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act1.jpg' alt='ZeroOne')
+                                                .carousel-item
+                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act2.jpg' alt='ZeroOne')
+                                            a.carousel-control-prev.product-control(href='#product-id' role='button' data-slide='prev')
+                                                i.fa.fa-chevron-circle-left.fa-2x
+                                                span.sr-only Previous
+                                            a.carousel-control-next.product-control(href='#product-id' role='button' data-slide='next')
+                                                i.fa.fa-chevron-circle-right.fa-2x
+                                                span.sr-only Next
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+                .thumbnail
+                    .product-image
+                        img.img-fluid.figure(src='images/product_images/wolf-Figure.jpg' alt)
+                        .zoom
+                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2')
+                    .product.text-center
+                        h4.product-title
+                            a(href='details1.html') S.H.Figure <br>Kamen Rider Vulcan 
+                        .rating
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.far.fa-star
+                        p.price 1.000.000đ
+                        .buttons
+                            a.btn.btn-icon-left(href='#')
+                                i.fa.fa-shopping-cart  Thêm vào giỏ
+                            a.btn.btn-icon-right(href='#')
+                                i.far.fa-heart
+            .modal.fade#quickview2(tabindex='-1' role='dialog' aria-hidden='true')
+                .modal-dialog.modal-lg(role='document')
+                    .modal-content
+                        .modal-header
+                            button.close(type='button' data-dismiss='modal' title='Close')
+                                span(aria-hidden='true') ×
+                            .modal-body
+                                .row
+                                    .col-lg-12
+                                        #product-id-2.carousel.slide(data-ride='carousel')
+                                            ol.carousel-indicators
+                                                li.active(data-target='#product-id-2' data-slide-to='0')
+                                                li(data-target='#product-id-2' data-slide-to='1')
+                                                li(data-target='#product-id-2' data-slide-to='2')
+                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                .carousel-item.active
+                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/wolf-Figure.jpg' alt='Vulcan')
+                                                .carousel-item
+                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan.jpg' alt='Vulcan')
+                                                .carousel-item
+                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan-act.jpg' alt='Vulcan')
+                                            a.carousel-control-prev.product-control(href='#product-id-2' role='button' data-slide='prev')
+                                                i.fa.fa-chevron-circle-left.fa-2x
+                                                span.sr-only Previous
+                                            a.carousel-control-next.product-control(href='#product-id-2' role='button' data-slide='next')
+                                                i.fa.fa-chevron-circle-right.fa-2x
+                                                span.sr-only Next
+
+    section
+        

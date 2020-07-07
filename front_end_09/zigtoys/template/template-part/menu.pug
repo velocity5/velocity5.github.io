@@ -1,0 +1,35 @@
+nav.navbar.navbar-expand-lg.navbar-dark
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse#collapsibleNavbar
+    ul.navbar-nav
+      li.nav-item
+        a.nav-link(href='#home') Trang Chủ
+      li.nav-item
+        a.nav-link(href='#product')
+          | Sản Phẩm 
+          i.fa.fa-angle-down
+        ul.submenu
+          li
+            a(href='details1.html') Figures
+          li
+            a(href='details2.html') Drivers
+          li
+            a(href='details3.html') Sản phẩm khác
+      li.nav-item
+        a.nav-link Về ZIGToys
+      li.nav-item
+        a.nav-link Blog&Tips
+      li.nav-item
+        a.nav-link Liên Hệ
+    form.form-inline
+      input.form-control.mb-2.mr-sm-2(type='text' placeholder='Tìm kiếm')
+      button
+        i.fa.fa-search(aria-hidden='true')
+    .header-cart
+      .heart-wrapper
+        a.btn.btn-theme-transparent.hidden-xs.hidden-sm(href)
+          i.far.fa-heart(style='font-size:24px')
+      .cart-wrapper
+        a.btn.btn-theme-transparent(href data-toggle='modal' data-target='#cart')
+          i.fa.fa-shopping-cart(style='font-size:24px')
