@@ -79,12 +79,12 @@
           <a class="nav-link">Liên Hệ</a>
         </li>
       </ul>
-      <form class="form-inline">
-        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tìm kiếm">
-        <button>
+      <div class="searchBox">
+        <input type="text" class="form-control mb-2 searchInput" placeholder="Tìm kiếm">
+        <button class="searchButton" href="#">
           <i class="fa fa-search" aria-hidden="true"></i>
         </button>
-      </form>
+      </div>
       <div class="header-cart">
         <div class="heart-wrapper">
           <a href="" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="far fa-heart" style="font-size:24px"></i></a>
@@ -652,7 +652,160 @@
       </div>
     </div>
     <!--end new arrival-->
-
+<!--customer review-->
+<div class="container-fluid review-bg">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 col-10 offset-1 mt-5">
+      <div id="indicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators review-indicators">
+          <li data-target="#indicators" data-slide-to="0" class="active"></li>
+          <li data-target="#indicators" data-slide-to="1"></li>
+          <li data-target="#indicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner mt-4">
+          <div class="carousel-item text-center active">
+            <p class="m-0 pt-3">Nhờ bên ZIG Toys tư vấn, tôi đã mua cho con gái bộ mô hình Gundam và nó đã rất thích. Hai cha con đã mất nguyên 1 ngày để hoàn thành mô hình. Xin cám ơn các bạn nhiều.</p>
+            <strong class="customer-one">Jimmy Fallon <span>- Người dẫn chương trình</span></strong>
+          </div>
+          <div class="carousel-item text-center">
+            <p class="m-0 pt-3">Tuần trước, tôi có mua bộ Figure ở đây cho con trai. Nó thích mê và còn đem khoe với bạn nữa. Cám ơn nhân viên ZIG Toys nhiều.</p>
+            <strong class="customer-two">Will Smith <span>- Diễn viên</span></strong> 
+          </div>
+          <div class="carousel-item text-center">
+            <p class="m-0 pt-3">Hàng chất lượng tốt. Nhân viên tư vấn nhiệt tình. Mình sẽ quay lại mua ủng hộ shop nhiều hơn.</p>
+            <strong class="customer-three">Angel Asher <span>- Học sinh</span></strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--blog slider-->
+<div class="carousel slide" data-ride="carousel" id="postIndicators">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-right">
+        <a class="carousel-control-prev product-control prev" href="#postIndicators" role="button" data-slide="prev">
+          <i class="fa fa-chevron-circle-left fa-2x"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next product-control next" href="#postIndicators" role="button" data-slide="next">
+          <i class="fa fa-chevron-circle-right fa-2x"></i>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> 
+    </div>
+  </div>
+  <div class="container carousel-inner">
+    <div class="row row-equal carousel-item active">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/product_images/content-writer-750x500.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">
+              ZIG Toys tuyển CTV viết blog
+            </h5>
+            <h6 class="card-admin">
+              <i class="fas fa-user-circle"></i> By Admin - <span>26/06/2020</span>
+            </h6>
+            <p class="card-text">
+              Cần tuyển CTV viết blog cho trang web, nhuận bút tùy vào lượt xem
+            </p>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/product_images/ultraman-zero.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">
+              Mẹo bảo quản Figure được bền đẹp
+            </h5>
+            <h6 class="card-admin">
+              <i class="fas fa-user-circle"></i> By Admin - <span>25/06/2020</span>
+            </h6>
+            <p class="card-text">
+              Hôm nay, Ad sẽ giới thiệu cho các bạn vài mẹo hay để bảo quản Figure được như lúc mới "tậu", 
+            </p>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/product_images/kamen_rider.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">
+              Thế nào là R.K.Figure? S.H.Figure?
+            </h5>
+            <h6 class="card-admin">
+              <i class="fas fa-user-circle"></i> By Admin - <span>23/06/2020</span>
+            </h6>
+            <p class="card-text">
+              Bài viết này sẽ giải thích tên gọi và sự khác nhau giữa 2 dòng Figure, rất thích hợp
+            </p>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-equal carousel-item">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/product_images/kamen_rider.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">
+              Thế nào là R.K.Figure? S.H.Figure?
+            </h5>
+            <h6 class="card-admin">
+              <i class="fas fa-user-circle"></i> By Admin - <span>23/06/2020</span>
+            </h6>
+            <p class="card-text">
+              Bài viết này sẽ giải thích tên gọi và sự khác nhau giữa 2 dòng Figure, rất thích hợp
+            </p>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/product_images/kamen_rider.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">
+              Thế nào là R.K.Figure? S.H.Figure?
+            </h5>
+            <h6 class="card-admin">
+              <i class="fas fa-user-circle"></i> By Admin - <span>23/06/2020</span>
+            </h6>
+            <p class="card-text">
+              Bài viết này sẽ giải thích tên gọi và sự khác nhau giữa 2 dòng Figure, rất thích hợp
+            </p>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="images/product_images/kamen_rider.jpg" alt="" class="img-fluid">
+          <div class="card-body">
+            <h5 class="card-title">
+              Thế nào là R.K.Figure? S.H.Figure?
+            </h5>
+            <h6 class="card-admin">
+              <i class="fas fa-user-circle"></i> By Admin - <span>23/06/2020</span>
+            </h6>
+            <p class="card-text">
+              Bài viết này sẽ giải thích tên gọi và sự khác nhau giữa 2 dòng Figure, rất thích hợp
+            </p>
+            <a href="#" class="btn btn-primary">Chi tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>
+</div>
   <!-- back2top -->
   <a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
   
