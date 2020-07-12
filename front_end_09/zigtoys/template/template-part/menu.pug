@@ -1,35 +1,36 @@
-nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#collapsibleNavbar')
+nav.navbar.navbar-expand-lg.navbar-light.bg-light
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
-  .collapse.navbar-collapse#collapsibleNavbar
-    ul.navbar-nav
+  .collapse.navbar-collapse#navbarSupportedContent
+    ul.navbar-nav.mr-auto
+      li.nav-item.active
+        a.nav-link(href='#')
+          | Trang chủ 
+          span.sr-only (current)
       li.nav-item
-        a.nav-link(href='#home') Trang Chủ
+        a.nav-link(href='#') Về ZIGToys
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').
+          
+          Sản Phẩm
+          
+        .dropdown-menu(aria-labelledby='navbarDropdown')
+          a.dropdown-item(href='#') Mô hình Figures
+          a.dropdown-item(href='#') DX-Drivers
+          a.dropdown-item(href='#') Sản phẩm khác
       li.nav-item
-        a.nav-link(href='#product')
-          | Sản Phẩm 
-          i.fa.fa-angle-down
-        ul.submenu
-          li
-            a(href='details1.html') Figures
-          li
-            a(href='details2.html') Drivers
-          li
-            a(href='details3.html') Sản phẩm khác
+        a.nav-link(href='#') Blog
       li.nav-item
-        a.nav-link Về ZIGToys
-      li.nav-item
-        a.nav-link Blog&Tips
-      li.nav-item
-        a.nav-link Liên Hệ
-    .searchBox
-      input.form-control.mb-2.searchInput(type='text' placeholder='Tìm kiếm')
-      button.searchButton(href='#')
-        i.fa.fa-search(aria-hidden='true')
-    .header-cart.order-1
-      .heart-wrapper
-        a.btn.btn-theme-transparent.hidden-xs.hidden-sm(href)
-          i.far.fa-heart(style='font-size:24px')
-      .cart-wrapper
-        a.btn.btn-theme-transparent(href data-toggle='modal' data-target='#cart')
-          i.fa.fa-shopping-cart(style='font-size:24px')
+        a.nav-link(href='#') Liên hệ
+    form.form-inline.my-2.my-lg-0.searchBox
+      input.form-control.mr-sm-2.searchInput(type='search' placeholder='Search' aria-label='Search')
+      button.btn.my-2.my-sm-0(type='submit')
+        i.fas.fa-search
+    .heart-wrapper
+      a.btn.btn-theme-transparent.hidden-xs.hidden-sm(href)
+        i.far.fa-heart(style='font-size:24px')
+    .cart-wrapper
+      a.btn.btn-theme-transparent(href data-toggle='modal' data-target='#cart')
+        span.badge.badge-pill-red 1
+        i.fa.fa-shopping-cart(style='font-size:24px')
+    

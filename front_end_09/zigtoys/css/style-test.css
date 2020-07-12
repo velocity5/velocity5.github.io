@@ -18,8 +18,8 @@
         font-size: 16px;
         margin-left: 10px;
     }
-    .navbar-dark {
-        background: #fcc226;
+    .navbar.navbar-expand-lg.navbar-light {
+        background-color: #fcc226!important;
     }
     .user-part {
         margin-top: 10px;
@@ -40,9 +40,6 @@
     .navbar-nav {
         display: inline-flex;
         margin: 0 auto;
-    }
-    .navbar-nav > .nav-item {
-        padding-right: 22px;
     }
     .navbar-nav li {
         font-family: 'Playfair Display', serif;
@@ -83,100 +80,77 @@
         max-width: 190px;
     }
     .heart-wrapper .btn i {
-        color: #FFEB3B;
+        color: #f8e21f;
     }
     .heart-wrapper .btn i:hover {
-        color: #f0e15f;
+        color: #d3c864;
+    }
+    .cart-wrapper .btn i:hover {
+        color: rgba(138, 133, 133, 0.5);
     }
     .navbar-toggler {
         color: rgba(255, 255, 255, .5);
         border-color: rgba(255, 255, 255, .1);
     }
-
-    .searchBox {
-        position: relative;
-        background: white;
-        height: 40px;
-        border:1px solid rgb(163, 161, 161);
-        border-radius: 40px;
-    }
-    .searchBox:active {
-        border: 1px solid rgb(235, 166, 39);
-    }
-    .searchBox:hover > .searchInput {
-        width: 240px;
-        padding: 0 10px;
-    }
-    .searchBox:hover > .searchButton {
-        background: black;
-        color: darkorange;
-    }
-    .searchButton {
-        color: white;
-        width: 40px;
-        height: 40px;
+    .badge-pill-red {
+        background: red;
         border-radius: 50%;
-        background: #2f3640;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.4s;
-    }
-    .searchInput {
-        border: none;
-        border-radius: 40px;
-        background: transparent;
-        outline:none;
-        float:left;
-        padding: 0;
         color: white;
-        font-size: 16px;
-        transition: 0.4s;
-        line-height: 40px;
-        width: 0px;
     }
     
-   
-    /* submenu navbar */
-    .submenu {
-        flex-direction: column;
+    .searchBox {
+        position: relative;
+        transition: all .5s ease-in-out;
+        width: 50px;
+        height: 50px;
+        background: white;
+        box-sizing: border-box;
+        border-radius: 25px;
+        border: 4px solid white;
+        padding: 5px;
+
+    }
+    .searchBox .searchInput {
         position: absolute;
-        width: 15%;
-        border-radius: 4px;
-        background-color:#393939;
-        z-index: 1;
-    }
-    .navbar-nav .nav-item .submenu {
-        list-style-type: none;
-    }
-    .navbar-nav .nav-item .submenu a {
-        text-decoration: none;
-    }
-    #collapsibleNavbar .navbar-nav .nav-item .submenu a {
-        display: flex;
-        padding-left: 20px;
-        padding-top: 8px;
-        height: 40px;
-        color: #9d9d9d;
-    }
-    #collapsibleNavbar .navbar-nav .nav-item .submenu a:hover {
-        background-color: orange;
-        color: white;
-    }
-    #collapsibleNavbar .navbar-nav li:hover .submenu > li {
         top: 0;
+        left: 0;
+        width: 100%;;
+        height: 42.5px;
+        line-height: 30px;
+        outline: 0;
+        border: 0;
+        display: none;
+        font-size: 16px;
+        border-radius: 20px;
+        padding: 0 20px;
+    }
+    .fa-search {
+        box-sizing: border-box;
+        padding: 12px;
+        width: 42px;
+        height: 42px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 50%;
+        color: #07051a;
+        text-align: center;
+        transition: all 1s;
+    }
+    .searchBox:hover {
+        width: 200px;
+        cursor: pointer;
+    }
+    .searchBox:hover input {
         display: block;
     }
-    .submenu li {
-        display: none;
-        position: relative;
+    .searchBox:hover .fa-search {
+        background: #07051a;
+        color: rgb(224, 132, 11);
     }
-    .header-cart {
-        display: flex;
-    }
-    .cart-wrapper i {
-        margin-right: 46px;
-    }
+   
+    /* submenu navbar */
+   
     /* carousel slider img active*/
     .carousel-item img {
         max-height: 571px;
