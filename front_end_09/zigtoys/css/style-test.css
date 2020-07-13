@@ -114,7 +114,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;;
+        width: 100%;
         height: 42.5px;
         line-height: 30px;
         outline: 0;
@@ -286,6 +286,7 @@
     .thumbnail .img-fluid {
         position: relative;
         overflow: hidden;
+        height: 100%;
     }
     .thumbnail .zoom {
         position: absolute;
@@ -304,6 +305,7 @@
     }
     .product-image {
         width: 200px;
+        height: 277px;
         margin-left: 25%;
     }
     .product {
@@ -607,131 +609,112 @@
         font-weight: normal;
     }
     /* modal frame login */
-    
-
-    /* password requirements */
-    #psw-info ul li {
-        list-style-type: none;
+    .modal-content {
+        border-radius: 40px;
     }
-    #psw-info {
-        position: absolute;
-        right: 70px;
-        width: 250px;
-        padding: 15px;
-        background-color: #fefefe;
-        font-size: .875em;
-        border-radius: 5px;
-        box-shadow: 0 1px 3px #ccc;
-        border: 1px solid #ddd;
-        display: none;
+    .mail-login, .mail-pass {
+        border-radius: 40px;
+        width: 300px;
+        height: 40px;
+        margin-left: 4.5rem;
     }
-    #psw-info h4 {
-        margin: 0 0 10px 0;
-        font-weight: normal;
-    }
-    #psw-info::before {
-        content: "\25B2";
-        position: absolute;
-        top: -12px;
-        left: 45%;
-        font-size: 14px;
-        line-height: 14px;
-        color: #ddd;
-        text-shadow: none;
-        display: block;
-    }
-    #inputPassword + .eyecon {
-        float: right;
-        margin-top: -24px;
-        margin-right: 15px;
+    .md-form.mb-4 {
         position: relative;
-        cursor: pointer;
     }
-    .invalid {
-        background: url(images/icon_cancel.png) no-repeat 0 50%;
-        padding-left: 22px;
-        line-height: 24px;
+    .md-form.mb-4 i {
+        position: absolute;
+        margin-left: 21rem;
+        top: 12px;
     }
-    .valid {
-        background: url(images/icon_accept.png) no-repeat 0 50%;
-        padding-left: 22px;
-        line-height: 24px;
+    .modal-title {
+        margin-top: 34px;
     }
-    /* signup part */
-    .sign_up a, .forgotten a {
-        font-size: 14px;
+    .close {
+        margin-right: 1.5rem;
+    }
+    .check-remember {
+        margin-left: 4.5rem;
+    }
+    .modal-footer {
+        display: flex;
+        flex-direction: column;
+    }
+    .modal-footer .btn-login {
+        background-color: orange;
+        width: 300px;
+        height: 44px;
+        border-radius: 40px;
+    }
+    .modal-footer .forgot-pwd, p .not-member {
         text-decoration: none;
     }
-    .sign_up {
-        margin-top: 10px;
-        float: right;
+    /* modal frame reset */
+    .modal-footer .btn-reset {
+        background-color: dodgerblue;
+        width: 300px;
+        height: 44px;
+        border-radius: 40px;
     }
+    /* password requirements */
+    
     /* modal frame signup */
-    /* .card-title-1 {
-        font-size: 20px;
-        padding-bottom: 10px;
+    .username, .mail-signup {
+        border-radius: 40px;
+        width: 300px;
+        height: 40px;
+        margin-left: 4.5rem;
     }
-    #btn-signup {
-        text-align: center;
-        transition: all 0.4s;
+    .radio-group {
+        margin-left: 8rem;
     }
-    .form-control, .btn {
-        border-radius: 50px;
+    #female {
+        margin-left: 4rem;
     }
-    .box-signup {
-        margin-left: 45px;
-        margin-top: 25px;
-        margin-bottom: 25px;
+    .md-form.mb-3 {
+        position: relative;
+    }
+    .md-form.mb-3 i {
+        position: absolute;
+        margin-left: 21rem;
+        top: 12px;
+    }
+    .md-form.mb-3 #inputBirthday {
+        margin-left: 4.5rem;
+        width: 300px;
+        height: 40px;
+        border-radius: 40px;
+        border: 1px solid #ced4da;
+        padding: 1rem;
+    }
+    .md-form.mb-3 #inputBirthday:focus {
+        outline: none;
+    }
+    .btn-signup {
+        background-color: orange;
+        width: 300px;
+        height: 44px;
+        border-radius: 40px;
     }
     .or-seperator {
-        margin: 50px 0 15px;
-        text-align: center;
-        border-top: 1px solid #ccc4c4;
+        border: 1px double darkgrey;
+        margin-top: 39px;
+        margin-bottom: 32px;
     }
-    .or-seperator b, .or-login-seperator b {
-        padding: 0 10px;
-        font-size: 16px;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        display: inline-block;
-        border: 1px solid #a4a7a5;
-        border-radius: 50px;
-        position: relative;
-        top: -22px;
-        text-transform: capitalize;
-        z-index: 1;
-        background: #fff;
+    .btn-google {
+        background-color: #EE1D1D;
+        color: white;
+        width: 300px;
+        height: 44px;
+        border-radius: 40px;
     }
-    .sign-up-with {
-        margin-top: -27px;
-        font-size: 16px;
-    }
-    .social-btn .btn {
-        margin: 10px 0 0 10px;
-        font-size: 15px;
-        border: none;
-        transition: all 0.4s;
-    }
-    .social-btn .btn:hover {
-        opacity: 0.8;
-    }
-    .social-btn .btn-primary {
-        background-color: #3b5998;
-    }
-    .social-btn .btn-danger {
-        background-color: #db3236;
-    }
-    .social-btn .btn i {
-        margin: 2px 6px;
-        font-size: 16px;
-    }
-    .already {
+    .already-acc {
         margin-top: 10px;
     }
-    .already a:hover {
+    .already-acc .is-member {
         text-decoration: none;
-    } */
+    }
+    .is-member:hover, .is-member:active {
+        color: rgb(135, 184, 233);
+    }
     /* mobile and tablet devices */
    

@@ -3,6 +3,14 @@
         .navbar-collapse {
         text-align: left;
         }
+        .navbar-toggler {
+            position: relative;
+        }
+        .cart-wrapper, .heart-wrapper {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
         .submenu {
             width: 88%;
         }

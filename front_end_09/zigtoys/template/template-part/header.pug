@@ -18,3 +18,71 @@ header.bg-dark
           li.nav-item
             a(href='#')
               i.fa.fa-envelope  support@zigtoys.com
+  .modal.fade#login(tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .text-center
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') ×
+          h4.modal-title.w-100.font-weight-bold ĐĂNG NHẬP
+        .modal-body.mx-3
+          .md-form.mb-3
+            input#defaultForm-email.form-control.validate.mail-login(type='email' placeholder='Email')
+          .md-form.mb-4
+            input#defaultForm-pass.form-control.validate.mail-pass(type='password' placeholder='Mật khẩu')
+            i.far.fa-eye
+          .md-form.check-remember
+            input#remember_me(type='checkbox')
+            label(for='remember_me') Ghi nhớ đăng nhập
+        .modal-footer.d-flex.justify-content-center
+            button.btn.btn-default.btn-login ĐĂNG NHẬP
+            a.forgot-pwd(href="#" data-toggle='modal' data-target="#reset" data-dismiss="modal") Quên mật khẩu?
+        p.text-center
+          | Chưa có tài khoản? 
+          a.not-member(href='#' data-target='#signup' data-toggle='modal' data-dismiss="modal") Đăng Ký
+  .modal.fade#reset(tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .text-center
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+              span(aria-hidden='true') ×
+          h4.modal-title.w-100.font-weight-bold QUÊN MẬT KHẨU
+          p.modal-subtitle.font-weight-normal Hãy để đó cho chúng tôi
+        .modal-body.mx-3
+          .md-form.mb-3
+            input#defaultForm-email.form-control.validate.mail-login(type='email' placeholder='Email')
+        .modal-footer.d-flex.justify-content-center
+            button.btn.btn-info.btn-reset ĐẶT LẠI MẬT KHẨU
+            p Quay về 
+              a.forgot-pwd(href="#" data-toggle='modal' data-target="#login" data-dismiss="modal") ĐĂNG NHẬP
+  .modal.fade#signup(tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+      .modal-content
+        .text-center
+          button.close(type='button' data-dismiss='modal' aria-label="Close")
+            span(aria-hidden='true') ×
+          h4.modal-title.w-100.font-weight-bold ĐĂNG KÝ
+        .modal-body.mx-3
+          .md-form.mb-3
+            input#defaultForm-username.form-control.username(type='text' placeholder="Tên người dùng*")
+          .md-form.mb-3
+            input#defaultForm-email.form-control.validate.mail-signup(type='email' placeholder="Email*")
+          .md-form.mb-3
+            input#defaultForm-pass.form-control.validate.mail-pass(type='password' placeholder='Mật khẩu')
+            i.far.fa-eye
+          .md-form.mb-3.radio-group
+            input#male(type='radio' name='gender' value='male') 
+            label(for="male") Nam
+            input#female(type='radio' name='gender' value='female') 
+            label(for="female") Nữ
+          .md-form.mb-3
+            input#inputBirthday(type='date' name='inputBirthday' autofocus)
+        .d-flex.justify-content-center
+            button.btn.btn-default.btn-signup ĐĂNG KÝ
+        .or-seperator
+        .d-flex.justify-content-center
+            button.btn.btn-default.btn-google ĐĂNG NHẬP BẰNG 
+              i.fab.fa-google
+        p.text-center.already-acc
+            | Đã có tài khoản? 
+            a.is-member(href='#' data-target="#login" data-toggle="modal" data-dismiss="modal") Đăng Nhập
