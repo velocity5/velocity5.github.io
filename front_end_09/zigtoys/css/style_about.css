@@ -9,6 +9,9 @@
 .background-top {
     height: 300px;
 }
+.title-col p {
+    padding-right: 20px;
+}
 .wrap_title {
     width: 10.75rem;
     background-color: rgb(244, 186, 35,.8);

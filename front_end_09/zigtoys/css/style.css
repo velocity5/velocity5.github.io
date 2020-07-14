@@ -41,6 +41,7 @@
     }
     .navbar-nav li {
         font-family: 'Playfair Display', serif;
+        margin-left: 12px;
     }
     .nav-item .fa-phone-alt, .nav-item a > .fa-envelope {
         color: white;
@@ -70,9 +71,10 @@
         font-size: 20px;
         cursor: pointer;
     }
-
     .navbar-nav li a.nav-link:hover {
         border-bottom: 1px solid #E76F51;
+        border-bottom-width: medium;
+        background-color: rgb(223, 217, 217,.2);
     }
     .navbar-brand img {
         max-width: 190px;
@@ -80,11 +82,17 @@
     .heart-wrapper .btn i {
         color: #f8e21f;
     }
+    .heart-wrapper .btn i:nth-child(2) {
+        color: black;
+    }
     .heart-wrapper .btn i:hover {
         color: #d3c864;
     }
-    .cart-wrapper .btn i:hover {
+    .heart-wrapper .btn i:nth-child(2):hover {
         color: rgba(138, 133, 133, 0.5);
+    }
+    .heart-wrapper {
+        margin-left: 1rem;
     }
     .navbar-toggler {
         color: rgba(255, 255, 255, .5);
@@ -106,7 +114,7 @@
         border-radius: 25px;
         border: 4px solid white;
         padding: 5px;
-
+        margin-left: 6rem;
     }
     .searchBox .searchInput {
         position: absolute;
