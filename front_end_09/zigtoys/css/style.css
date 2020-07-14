@@ -36,10 +36,8 @@
         font-weight: bold;
         padding-top: 13%;
     }
-
     .navbar-nav {
-        display: inline-flex;
-        margin: 0 auto;
+        margin-left: 6rem;
     }
     .navbar-nav li {
         font-family: 'Playfair Display', serif;

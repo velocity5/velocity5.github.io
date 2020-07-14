@@ -2,13 +2,13 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   .collapse.navbar-collapse#navbarSupportedContent
-    ul.navbar-nav.mr-auto
+    ul.navbar-nav.mt-2.mt-lg-0
       li.nav-item.active
-        a.nav-link(href='#')
+        a.nav-link(href='index.html')
           | Trang chủ 
           span.sr-only (current)
       li.nav-item
-        a.nav-link(href='#') Về ZIGToys
+        a.nav-link(href='about.html') Về ZIGToys
       li.nav-item.dropdown
         a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').
           
@@ -22,10 +22,6 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         a.nav-link(href='#') Blog
       li.nav-item
         a.nav-link(href='#') Liên hệ
-    form.form-inline.my-2.my-lg-0.searchBox
-      input.form-control.mr-sm-2.searchInput(type='search' placeholder='Search' aria-label='Search')
-      button.btn.my-2.my-sm-0(type='submit')
-        i.fas.fa-search
     .heart-wrapper
       a.btn.btn-theme-transparent.hidden-xs.hidden-sm(href)
         i.far.fa-heart(style='font-size:24px')
@@ -33,4 +29,9 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
       a.btn.btn-theme-transparent(href data-toggle='modal' data-target='#cart')
         span.badge.badge-pill-red 1
         i.fa.fa-shopping-cart(style='font-size:24px')
+    form.form-inline.my-2.my-lg-0.searchBox
+      input.form-control.mr-sm-2.searchInput(type='search' placeholder='Search' aria-label='Search')
+      button.btn.my-2.my-sm-0(type='submit')
+        i.fas.fa-search
+    
     
