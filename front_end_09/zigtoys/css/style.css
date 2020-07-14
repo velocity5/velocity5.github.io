@@ -528,28 +528,24 @@
     #back2Top {
         width: 40px;
         border: none;
-        border-radius: 1em;
+        border-radius: 6px;
         line-height: 40px;
         overflow: hidden;
         z-index: 999;
         display: none;
         cursor: pointer;
-        -moz-transform: rotate(270deg);
-        -webkit-transform: rotate(270deg);
-        -o-transform: rotate(270deg);
-        -ms-transform: rotate(270deg);
         transform: rotate(270deg);
         position: fixed;
         bottom: 50px;
         right: 0;
-        background-color: #536878;
+        background-color: #d5dce0;
         color: #f5f0f0;
         text-align: center;
         font-size: 24px;
         text-decoration: none;
     }
     #back2Top:hover {
-        background-color: #708090;
+        background-color: orangered;
         color: #f5f0f0;
     }
     /* footer */
@@ -619,7 +615,7 @@
         border-radius: 40px;
     }
     .mail-login, .mail-pass {
-        border-radius: 40px;
+        border-radius: 6px;
         width: 300px;
         height: 40px;
         margin-left: 4.5rem;
@@ -665,7 +661,7 @@
     
     /* modal frame signup */
     .username, .mail-signup {
-        border-radius: 40px;
+        border-radius: 6px;
         width: 300px;
         height: 40px;
         margin-left: 4.5rem;
@@ -687,8 +683,8 @@
     .md-form.mb-3 #inputBirthday {
         margin-left: 4.5rem;
         width: 300px;
-        height: 40px;
-        border-radius: 40px;
+        height: 6px;
+        border-radius: 6px;
         border: 1px solid #ced4da;
         padding: 1rem;
     }
@@ -722,5 +718,4 @@
     .is-member:hover, .is-member:active {
         color: rgb(135, 184, 233);
     }
-    /* mobile and tablet devices */
    
