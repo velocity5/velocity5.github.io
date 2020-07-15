@@ -1,0 +1,128 @@
+extends template-part/layout.pug
+block title
+    title Chi tiết sản phẩm
+block content
+    section
+        .container-fluid.text-center.banner-products.background-top
+            .wrap_title
+                h2.title_banner Sản phẩm
+    ol.breadcrumb
+        li.breadcrumb-item
+            a.black-text(href="index.html") Trang chủ
+        li.breadcrumb-item
+            a.black-text(href="products.html") Sản phẩm
+        li.breadcrumb-item.active Chi tiết
+    section.main-detail
+        .container.product-detail
+            .row
+                .col-12.col-xs-12.col-sm-12.col-md-4
+                    #carouselImg.carousel.slide.carousel-fade.thumbnailProduct(data-ride='carousel')
+                        .carousel-inner(role='listbox')
+                            .carousel-item.active
+                                img.d-block.w-100(src='images/product_images/01-Figure.jpg' alt='01' class="img-fluid")
+                            .carousel-item
+                                img.d-block.w-100(src='images/product_images/01-figure-act1.jpg' alt='01' class="img-fluid")
+                            .carousel-item
+                                img.d-block.w-100(src='images/product_images/01-figure-act2.jpg' alt='01' class="img-fluid")
+                        ol.carousel-indicators.thumbnail-indicator
+                            li.active(data-target='#carouselImg' data-slide-to='0')
+                                img(src="images/product_images/01-Figure.jpg", alt="", class="d-block")
+                            li(data-target='#carouselImg' data-slide-to='1')
+                                img(src="images/product_images/01-figure-act1.jpg", alt="", class="d-block")
+                            li(data-target='#carouselImg' data-slide-to='2')
+                                img(src="images/product_images/01-figure-act2.jpg", alt="", class="d-block")
+                    p.share.text-center Chia sẻ: 
+                        i.fab.fa-facebook-messenger
+                        i.fab.fa-pinterest
+                        i.fab.fa-facebook
+                        a.btn.btn-theme-transparent
+                            i.far.fa-heart 
+                .col-12.col-xs-12.col-sm-12.col-md-8
+                    h2.product-title <b>S.H.Figuarts</b> Kamen Rider Zero One-Rising Hopper
+                    .rating-product
+                        i.far.fa-star
+                        i.far.fa-star
+                        i.far.fa-star
+                        i.far.fa-star
+                        i.far.fa-star
+                        .space-bar 
+                            span 3 đánh giá
+                    p.available Còn hàng
+                    h2.price 1.000.000đ
+                    form.qty-cart 
+                        span Số lượng
+                        .quantity-number
+                            button.qty-desc -
+                            input(type="text", name="quantity", value="1", min="1",id="qty")
+                            button.qty-incre +
+                    .btn-group
+                        button.btn-warning.addcart 
+                            i.fa.fa-shopping-cart  Thêm Vào Giỏ
+                        button.btn-danger.buynow MUA NGAY
+                    .description-tab
+                        ul.nav.nav-tabs.tabs(role="tablist")
+                            li.active 
+                                a(data-toggle="tab", href="#descript", role="tab", id="descript-tab" ,aria-controls="descript", aria-selected="true") Mô Tả Sản Phẩm
+                            li
+                                a(data-toggle="tab", href="#detail", role="tab", id="detail-tab", aria-controls="detail", aria-selected="false") Chi Tiết Sản Phẩm
+                            li
+                                a(data-toggle="tab", href="#review", role="tab", id="review-tab",aria-controls="review", aria-selected="false") Đánh Giá
+                        .tab-content
+                            .tab-pane.fade.show.active#descript(role="tabpanel",aria-labelledby="descript-tab")
+                                p Hàng chính hãng của Nhật. 
+                                p Hàng mới 100% - Có sẵn tại shop. <br>Shop chuyên nhận order hàng chính hãng từ Nhật về.
+                            .tab-pane.fade.show#detail(role="tabpanel",aria-labelledby="detail-tab")
+                                p Thương Hiệu: Bandai <br>Tỷ lệ: 15 cm <br>Chất liệu: Nhựa an toàn <br>Lứa tuổi phù hợp: 13 tuổi trở lên.
+                            .tab-pane.fade.show#review(role="tabpanel",aria-labelledby="review-tab")
+                                .comment-section
+                                    ul.comment-list
+                                        li.comment
+                                            .comment-wrap
+                                                .comment-img
+                                                    img(src="images/icon/angel_asher.jpg", alt="")
+                                                .comment-block
+                                                    .comment-header
+                                                        span.comment-author
+                                                            a(href="#") Angel Asher
+                                                        span 2 ngày trước
+                                                        span
+                                                            i.fas.fa-star
+                                                            i.fas.fa-star
+                                                            i.fas.fa-star
+                                                            i.fas.fa-star
+                                                            i.fas.fa-star
+                                                    .comment-content
+                                                        p Mới mua hàng về thử. Màu sắc khá bắt mắt, giống với trong hình, giá cả lại phải chăng. Chúng bạn của mình cũng thích lắm. Mình đã giới thiệu shop cho chúng nó rồi, chúng nó nói lần tới sẽ mua thẳng shop luôn, không qua các shop khác nữa.
+                                            ul.child
+                                                li.comment
+                                                    .comment-wrap
+                                                        .comment-img
+                                                            img(src="images/icon/jimmy_fallon.jpg", alt="")
+                                                        .comment-block
+                                                            .comment-header
+                                                                span.comment-author
+                                                                    a(href="#") Admin
+                                                                span 2 ngày trước
+                                                            .comment-content
+                                                                p Chào bạn, cám ơn bạn đã mua hàng tại shop. Mong bạn sẽ tiếp tục ủng hộ shop trong thời gian tới. 
+                                    .respond-wrap
+                                        h3.comment-title Viết đánh giá
+                                        i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        form.comment-form
+                                            textarea.form-control#cmt-area(placeholder='Viết đánh giá của bạn...')
+                                            button.btn.btn-primary(type="submit") GỬI ĐÁNH GIÁ
+                                            
+
+
+        .container.relate-product.text-center
+            .row
+                .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                    .box.heading
+                            h2 Sản Phẩm Liên Quan
+                            hr.below
+            .row
+                

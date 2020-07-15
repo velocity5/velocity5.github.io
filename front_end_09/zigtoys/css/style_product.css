@@ -1,0 +1,8 @@
+.banner-products {
+    background: url(../images/product_images/background.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>ZIGToys</title>
+    <title>Chi tiết sản phẩm</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&amp;display=swap"/>
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style_media.css"/>
     <link rel="stylesheet" href="css/style_about.css"/>
     <link rel="stylesheet" href="css/style_product.css"/>
+    <link rel="stylesheet" href="css/style_details1.css"/>
   </head>
   <body>
     <header class="bg-dark">
@@ -133,7 +134,7 @@
           <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Sản Phẩm
               </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products1.html">Mô hình Figures</a><a class="dropdown-item" href="#">DX-Drivers</a><a class="dropdown-item" href="#">Sản phẩm khác</a></div>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô hình Figures</a><a class="dropdown-item" href="#">DX-Drivers</a><a class="dropdown-item" href="#">Sản phẩm khác</a></div>
           </li>
           <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
@@ -141,6 +142,122 @@
         <div class="heart-wrapper"><a class="btn btn-theme-transparent hidden-xs hidden-sm" href="href"><i class="far fa-heart" style="font-size:24px"></i></a><a class="btn btn-theme-transparent" href="href" data-toggle="modal" data-target="#cart"><span class="badge badge-pill-red">1</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
       </div>
     </nav>
+    <section>
+      <div class="container-fluid text-center banner-products background-top">
+        <div class="wrap_title">
+          <h2 class="title_banner">Sản phẩm</h2>
+        </div>
+      </div>
+    </section>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a class="black-text" href="index.html">Trang chủ</a></li>
+      <li class="breadcrumb-item"><a class="black-text" href="products.html">Sản phẩm</a></li>
+      <li class="breadcrumb-item active">Chi tiết</li>
+    </ol>
+    <section class="main-detail">
+      <div class="container product-detail">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4">
+            <div class="carousel slide carousel-fade thumbnailProduct" id="carouselImg" data-ride="carousel">
+              <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active"><img class="d-block w-100 img-fluid" src="images/product_images/01-Figure.jpg" alt="01"/></div>
+                <div class="carousel-item"><img class="d-block w-100 img-fluid" src="images/product_images/01-figure-act1.jpg" alt="01"/></div>
+                <div class="carousel-item"><img class="d-block w-100 img-fluid" src="images/product_images/01-figure-act2.jpg" alt="01"/></div>
+              </div>
+              <ol class="carousel-indicators thumbnail-indicator">
+                <li class="active" data-target="#carouselImg" data-slide-to="0"><img class="d-block" src="images/product_images/01-Figure.jpg" alt=""/></li>
+                <li data-target="#carouselImg" data-slide-to="1"><img class="d-block" src="images/product_images/01-figure-act1.jpg" alt=""/></li>
+                <li data-target="#carouselImg" data-slide-to="2"><img class="d-block" src="images/product_images/01-figure-act2.jpg" alt=""/></li>
+              </ol>
+            </div>
+            <p class="share text-center">Chia sẻ: <i class="fab fa-facebook-messenger"></i><i class="fab fa-pinterest"></i><i class="fab fa-facebook"></i><a class="btn btn-theme-transparent"><i class="far fa-heart"> </i></a></p>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-8">
+            <h2 class="product-title"><b>S.H.Figuarts</b> Kamen Rider Zero One-Rising Hopper</h2>
+            <div class="rating-product"><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+              <div class="space-bar"> <span>3 đánh giá</span></div>
+            </div>
+            <p class="available">Còn hàng</p>
+            <h2 class="price">1.000.000đ</h2>
+            <form class="qty-cart"> <span>Số lượng</span>
+              <div class="quantity-number">
+                <button class="qty-desc">-</button>
+                <input type="text" name="quantity" value="1" min="1" id="qty"/>
+                <button class="qty-incre">+</button>
+              </div>
+            </form>
+            <div class="btn-group">
+              <button class="btn-warning addcart"> <i class="fa fa-shopping-cart"> Thêm Vào Giỏ</i></button>
+              <button class="btn-danger buynow">MUA NGAY</button>
+            </div>
+            <div class="description-tab">
+              <ul class="nav nav-tabs tabs" role="tablist">
+                <li class="active"> <a data-toggle="tab" href="#descript" role="tab" id="descript-tab" aria-controls="descript" aria-selected="true">Mô Tả Sản Phẩm</a></li>
+                <li><a data-toggle="tab" href="#detail" role="tab" id="detail-tab" aria-controls="detail" aria-selected="false">Chi Tiết Sản Phẩm</a></li>
+                <li><a data-toggle="tab" href="#review" role="tab" id="review-tab" aria-controls="review" aria-selected="false">Đánh Giá</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade show active" id="descript" role="tabpanel" aria-labelledby="descript-tab">
+                  <p>Hàng chính hãng của Nhật. </p>
+                  <p>Hàng mới 100% - Có sẵn tại shop. <br>Shop chuyên nhận order hàng chính hãng từ Nhật về.</p>
+                </div>
+                <div class="tab-pane fade show" id="detail" role="tabpanel" aria-labelledby="detail-tab">
+                  <p>Thương Hiệu: Bandai <br>Tỷ lệ: 15 cm <br>Chất liệu: Nhựa an toàn <br>Lứa tuổi phù hợp: 13 tuổi trở lên.</p>
+                </div>
+                <div class="tab-pane fade show" id="review" role="tabpanel" aria-labelledby="review-tab">
+                  <div class="comment-section">
+                    <ul class="comment-list">
+                      <li class="comment">
+                        <div class="comment-wrap">
+                          <div class="comment-img"><img src="images/icon/angel_asher.jpg" alt=""/></div>
+                          <div class="comment-block">
+                            <div class="comment-header"><span class="comment-author"><a href="#">Angel Asher</a></span><span>2 ngày trước</span><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
+                            <div class="comment-content">
+                              <p>Mới mua hàng về thử. Màu sắc khá bắt mắt, giống với trong hình, giá cả lại phải chăng. Chúng bạn của mình cũng thích lắm. Mình đã giới thiệu shop cho chúng nó rồi, chúng nó nói lần tới sẽ mua thẳng shop luôn, không qua các shop khác nữa.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <ul class="child">
+                          <li class="comment">
+                            <div class="comment-wrap">
+                              <div class="comment-img"><img src="images/icon/jimmy_fallon.jpg" alt=""/></div>
+                              <div class="comment-block">
+                                <div class="comment-header"><span class="comment-author"><a href="#">Admin</a></span><span>2 ngày trước</span></div>
+                                <div class="comment-content">
+                                  <p>Chào bạn, cám ơn bạn đã mua hàng tại shop. Mong bạn sẽ tiếp tục ủng hộ shop trong thời gian tới. </p>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <div class="respond-wrap">
+                      <h3 class="comment-title">Viết đánh giá</h3><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+                      <form class="comment-form">
+                        <textarea class="form-control" id="cmt-area" placeholder="Viết đánh giá của bạn..."></textarea>
+                        <button class="btn btn-primary" type="submit">GỬI ĐÁNH GIÁ</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container relate-product text-center">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box heading">
+              <h2>Sản Phẩm Liên Quan</h2>
+              <hr class="below"/>
+            </div>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+    </section>
     <footer class="bg-dark">
       <div class="container">
         <div class="row">
@@ -192,5 +309,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/details1.js"></script>
   </body>
 </html>

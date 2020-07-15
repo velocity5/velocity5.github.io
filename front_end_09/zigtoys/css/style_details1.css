@@ -1,246 +1,90 @@
-/* thumbnail */
-.thumbnail {
-  transition: all 0.4s ease;
-}
-.thumbnail:hover {
-    transform: translate(0, -5px);
-    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.5);
-}
-.caption {
-  cursor: default;
-}
-/* thumbnail carousel */
-.img-slide .carousel-indicators {
-    bottom: 0;
-    left: 0;
-    margin-left: 5px;
-    width: 100%;
-}
-.img-slide .carousel-indicators li {
-    border-radius: 0;
-    height: 35px;
-    margin-bottom: -10px;
+  .thumbnailProduct .thumbnail-indicator img {
+    max-width: 100%;
+  }
+  .thumbnailProduct .thumbnail-indicator {
+    position: relative;
+    margin-right: 0;
     margin-left: 0;
-    margin-right: 5px;
-    margin-top: 0;
-    width: 50px;
-    border-radius: 3px;
-}
-.img-slide .carousel-indicators img {
-    float: left;
-    height: 35px;
-    left: 0;
-    width: 50px;
-    opacity: 0.7;
-    border-radius: 2px;
-    border: 1px solid #cac6c6; 
-}
-.img-slide .carousel-indicators .active img {
-    border: 1px solid #ffffff;
-    opacity: 1;
-}
-.product-control {
-  color: darkgoldenrod;
-  opacity: 0.5;
-  margin: 10px;
-}
-.product-control:hover, .product-control:focus {
-  color: gold;
-  opacity: 1;
-}
-.product-control.left, .product-control.right {
-  background: none !important;
-  filter: none !important;
-}
-/* for price */
-.price {
-  color: crimson;
-}
-/* shopping cart */
-.in-stock {
-  color: #339966;
-}
-.input-group {
-    width: 30%;
-    margin-right: 10px;
-}
-
-.btn-cart .fa-cart-plus, .btn-heart .fa-heart {
-  font-size: 20px;
-  display: inline-block;
-}
-
-.quantity {
-    display: flex;
-    flex-direction: row;
-}
-.quantity li {
-    overflow: hidden;
-    background: #FFA500;
-    color: white;
-    list-style: none;
-    white-space:nowrap;
-    margin-right: 10px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 10px;
-}
-.quantity li:hover {
-  color: white;
-}
-.quantity li a {
-  opacity: 0;
-  color: #666;
-  max-width: 0;
-  display: inline-block;
-  text-decoration: none;
-  transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s, color;
-}
-
-.quantity li a i {
-  font-style: normal;
-  float:right;
- color: black;
- font-weight: 2;
-}
-.quantity li:hover a {
-  opacity: 1;
-   max-width: 150px;
-  transition: max-width 1s ease-out .1s, opacity 1s ease-out .1s;
-}
-/* top part */
-.top-part {
-    padding-top: 40px;
-    margin-top: 20px;
-}
-.navbar-form {
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    margin-left: 10px;
+  }
+  .thumbnailProduct .thumbnail-indicator li {
+    margin-top: 10px;
+    height: auto;
+    border: none;
+    box-shadow: 1px 3px 5px 0px rgba(0,0,0,0.75);
+  }
+  .share i {
+    margin-left: 11px;
+  }
+  .share .btn i {
+    border-left: 2px solid grey;
+    padding-left: 23px;
+    color: #FFEB3B;
   }
  
-.search-title {
-    margin-left: 10px;
-}
-
-.search-box {
-    border: 1px solid #d7cfcf;
-    margin-right: -20px;
-}
-
-.form-group .form-control {
-    margin-right: 1em;
-}
-.form-control.form-control-figure, .btn-search {
-  border-radius: 5px;
-}
-/* categories part */
-.categories .categories-title {
-    margin-left: 10px;
-}
-
-.categories {
-    border: 1px solid #d7cfcf;
-    margin-right: -20px;
+  .product-title {
+    font-family: 'Roboto', sans-serif;
+  }
+  .rating-product {
+    display: flex;
+  }
+  .rating-product i {
+      color: #FFEB3B;
+        cursor: pointer;
+        margin-top: 3px;
+  }
+  .rating-product .space-bar {
+    border: none;
+    border-left: 1px solid rgb(170, 167, 167);
+    margin-left: 12px;
+  }
+  .rating-product .space-bar span {
+    padding-left: 12px;
+  }
+  .available {
+    color: #339966;
+    margin-bottom: 30px;
+  }
+  .price {
+    margin-bottom: 30px;
+  }
+  /* quantity button */
+  .qty-cart {
+    display: flex;
+  }
+  .qty-cart span {
+    margin-right: 5px;
+    font-size: 14px;
     margin-top: 10px;
 }
-.categories-menu li a {
-    text-decoration: none;
-    margin-left: 10px;
-    padding-top: 10px;
-    line-height: 30px;
-}
-.categories-menu {
-  font-size: 15px;
-}
-.categories-menu, .submenu-categories {
-    list-style-type: none;
-}
-.submenu-categories {
-  margin-left: 10px;
-}
-.categories-menu a {
-  border-bottom: 3px solid transparent;
-  transition: .5s ease-in-out;
-  transform: scaleX(0);
-  transform-origin: right;
-}
-.categories-menu a:hover {
-  border-bottom: 3px solid orange;
-}
-
-.categories-menu a.active {
-  border-bottom: 3px solid orange;
-}
-.break {
-    margin-top: 0;
-    border-width: 2px;
-}
-/* title bestseller */
-.title {
-    border-bottom: 3px solid #939090;
-    padding-bottom: 5px;
-    border-bottom-left-radius: 1em;
-}
-.top-product, .latest-product {
+  .quantity-number {
+    font-weight: 600;
+    border: 1px solid rgb(182, 178, 178);
+    font-size: 16px;
+    width: 100px;
+    text-align: center;
+  }
+  .qty-cart .quantity-number input {
+    width: 30px;
+    text-align: center;
+    border: none;
+  }
+  .quantity-number button {
+    border: none;
+    background: none;
+    height: 40px;
+    transition: all 0.4s ease-in-out;
+  }
+  .qty-cart {
+    margin-bottom: 56px;
+  }
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-group .addcart, .btn-group .buynow {
     color: white;
-    background-color: #939090;
-    padding: 10px 15px 10px 15px;
-    border-top-right-radius: 2em;
-    border-bottom-left-radius: 1em;
-}
-.product_bestseller_grid, .product_latest_grid {
-    margin-top: 20px;
-}
-
-/* back link */
-#back:hover {
-    color: #3282b8;
-    text-decoration: none;
-}
-
-#back:active, .breadcrumb a:active {
-    color: #94ccf2; 
-}
-/* breadcrumb */
-.breadcrumb a:hover {
-	text-decoration: none;
-}
-.breadcrumb-figure {
-    background-color: white;
-}
-/* carousel section */
-.carousel-control {
-  z-index: 2;
-}
-/* carousel indicator */
-.carousel-indicators li {
-  background: #666;
-  margin: 0 3px;
-  width: 12px;
-  height: 12px;
-}
-
-.carousel-indicators li.active {
-  background: #fff;
-}
-/* remove BS background */
-.carousel .control-box {
-  opacity: 0;
-}
-a.carousel-control.left {
-  left: 0
-  background: none;
-  border: 0;
-}
-a.carousel-control.right {
-  right: 0
-  background: none;
-  border: 0;
-}
-/* animation */
-.control-box, a.carousel-control, .carousel-indicators li {
-  transition: all 250ms ease;
-}
-/* hover effect */
-.carousel:hover .control-box { opacity: 1; }
+    margin-bottom: 23px;
+    border-radius: 6px;
+    width: 646px;
+    height: 48px;
+  }
