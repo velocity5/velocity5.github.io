@@ -534,7 +534,7 @@
     #back2Top {
         width: 40px;
         border: none;
-        border-radius: 6px;
+        border-radius: 4px;
         line-height: 40px;
         overflow: hidden;
         z-index: 999;
@@ -543,16 +543,17 @@
         transform: rotate(270deg);
         position: fixed;
         bottom: 50px;
-        right: 0;
-        background-color: #d5dce0;
-        color: #f5f0f0;
+        right: 10px;
+        background-color: #ffb727;
+        color: #fff;
         text-align: center;
         font-size: 24px;
         text-decoration: none;
+        transition: all 0.4s ease;
     }
     #back2Top:hover {
-        background-color: orangered;
-        color: #f5f0f0;
+        background-color: #ffc550;
+        color: white;
     }
     /* footer */
     footer.bg-dark {
@@ -604,6 +605,9 @@
         color: white;
         height: 48px;
         width: 130px;
+    }
+    .subscribe-newsletter button:hover {
+        color: white;
     }
     .fa-facebook-square, .fa-youtube, .fa-instagram {
         margin-right: 20px;

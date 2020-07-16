@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Liên Hệ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="css_fontawesome/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style_media.css"/>
+    <link rel="stylesheet" href="css/style_about.css"/>
+    <link rel="stylesheet" href="css/style_product.css"/>
+    <link rel="stylesheet" href="css/style_details1.css"/>
+    <link rel="stylesheet" href="css/style_contact.css"/>
+  </head>
+  <body>
+    <header class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 user-part">
+            <ul>
+              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login">Đăng Nhập</a></li>
+              <li class="nav-item"><a class="nav-link dangky" href="#" data-toggle="modal" data-target="#signup">Đăng Ký</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex justify-content-center logo"><a class="navbar-brand pt-3" href="index.html"><img src="images/icon/logo2.jpg" title="Logo" alt="Logo"/></a></div>
+          <div class="col-md-3 col-xs-12 pt-2 info-part">
+            <ul class="info">
+              <li class="nav-item">
+                <p><i class="fas fa-phone-alt"> (+84)1923-8564</i></p>
+              </li>
+              <li class="nav-item"><a href="#"><i class="fa fa-envelope"> support@zigtoys.com</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-login">
+            <div class="text-center">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title w-100 font-weight-bold">ĐĂNG NHẬP</h4>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-3">
+                <input class="form-control validate mail-login" id="defaultForm-email" type="email" placeholder="Email"/>
+              </div>
+              <div class="md-form mb-4">
+                <input class="form-control validate mail-pass" id="defaultForm-pass" type="password" placeholder="Mật khẩu"/><i class="far fa-eye"></i>
+              </div>
+              <div class="md-form check-remember">
+                <input id="remember_me" type="checkbox"/>
+                <label for="remember_me">Ghi nhớ đăng nhập</label>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default btn-login">ĐĂNG NHẬP</button><a class="forgot-pwd" href="#" data-toggle="modal" data-target="#reset" data-dismiss="modal">Quên mật khẩu?</a>
+            </div>
+            <p class="text-center">Chưa có tài khoản? <a class="not-member" href="#" data-target="#signup" data-toggle="modal" data-dismiss="modal">Đăng Ký</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-reset">
+            <div class="text-center">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title w-100 font-weight-bold">QUÊN MẬT KHẨU</h4>
+              <p class="modal-subtitle font-weight-normal">Hãy để đó cho chúng tôi</p>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-3">
+                <input class="form-control validate mail-login" id="defaultForm-email" type="email" placeholder="Email"/>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-info btn-reset">ĐẶT LẠI MẬT KHẨU</button>
+              <p>Quay về <a class="forgot-pwd" href="#" data-toggle="modal" data-target="#login" data-dismiss="modal">Đăng Nhập</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-signup">
+            <div class="text-center">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title w-100 font-weight-bold">ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-3">
+                <input class="form-control username" id="defaultForm-username" type="text" placeholder="Tên người dùng*"/>
+              </div>
+              <div class="md-form mb-3">
+                <input class="form-control validate mail-signup" id="defaultForm-email" type="email" placeholder="Email*"/>
+              </div>
+              <div class="md-form mb-3">
+                <input class="form-control validate mail-pass" id="defaultForm-pass" type="password" placeholder="Mật khẩu"/><i class="far fa-eye"></i>
+              </div>
+              <div class="md-form mb-3 radio-group">
+                <input id="male" type="radio" name="gender" value="male"/>
+                <label for="male">Nam</label>
+                <input id="female" type="radio" name="gender" value="female"/>
+                <label for="female">Nữ</label>
+              </div>
+              <div class="md-form mb-3">
+                <input id="inputBirthday" type="date" name="inputBirthday" autofocus="autofocus"/>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-default btn-signup">ĐĂNG KÝ</button>
+            </div>
+            <div class="or-seperator"></div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-default btn-google">ĐĂNG NHẬP BẰNG <i class="fab fa-google"></i></button>
+            </div>
+            <p class="text-center already-acc">Đã có tài khoản? <a class="is-member" href="#" data-target="#login" data-toggle="modal" data-dismiss="modal">Đăng Nhập</a></p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <form class="form-inline my-2 my-lg-0 searchBox">
+        <input class="form-control mr-sm-2 searchInput" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mt-2 mt-lg-0">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Sản Phẩm
+              </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô hình Figures</a><a class="dropdown-item" href="#">DX-Drivers</a><a class="dropdown-item" href="#">Sản phẩm khác</a></div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        </ul>
+        <div class="heart-wrapper"><a class="btn btn-theme-transparent hidden-xs hidden-sm" href="href"><i class="far fa-heart" style="font-size:24px"></i></a><a class="btn btn-theme-transparent" href="href" data-toggle="modal" data-target="#cart"><span class="badge badge-pill-red">1</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+      </div>
+    </nav>
+    <section class="main-contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4 info-col">
+            <div class="contact">
+              <div class="contact-icon"><i class="fas fa-headset"> </i></div>
+              <div class="contact-info">
+                <h3>Liên Hệ Hotline:</h3>
+                <p>(+84)1923-8564</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact-icon"><i class="fas fa-map-marked-alt"></i></div>
+              <div class="contact-info">
+                <h3>Địa chỉ:</h3>
+                <p>123 Lương Định Của,</p>
+                <p>Đống Đa, Hà Nội</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-info">
+                <h3>Email:</h3>
+                <p>support@zigtoys.com</p>
+              </div>
+            </div>
+            <div class="contact">
+              <div class="contact-icon"><i class="fas fa-hourglass-start"></i></div>
+              <div class="contact-info">
+                <h3>Thời gian làm việc:</h3>
+                <p>Cả tuần. Từ 9:00 am - 10:00 pm <br>Nghỉ ngày lễ, Tết</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-8 message-col text-center">
+            <h3 class="action">Gửi tin cho chúng tôi</h3>
+            <form class="comment-form">
+              <div class="row">
+                <div class="comment-form-name col-md-6">
+                  <input type="text" id="name" placeholder="Họ tên *"/>
+                </div>
+                <div class="comment-form-email col-md-6">
+                  <input type="email" id="email" placeholder="Email *"/>
+                </div>
+              </div>
+              <div class="row">
+                <div class="comment-form-textarea col-md-12">
+                  <textarea type="text" id="comment" cols="40" rows="10" placeholder="Nội dung *"></textarea>
+                </div>
+                <div class="submit col-md-12">
+                  <button type="submit" name="submit" id="submit">GỬI</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid map text-center">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12">
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.686567447595!2d105.83332771493221!3d21.00519758601116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7f35dcfcd3%3A0xa4810c02ae0a992!2zUGjhu5EgTMawxqFuZyDEkOG7i25oIEPhu6dhLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lp!5e0!3m2!1sen!2s!4v1594873152410!5m2!1sen!2s" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="allowfullscreen" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 info-footer">
+            <h4 class="title-info-footer">Thông tin cửa hàng</h4>
+            <h5 class="add">Địa chỉ: <span>123 Lương Định Của</span></h5>
+            <h5 class="phone">Điện thoại: <span>(+84)1923-8564</span></h5>
+            <h5 class="mail">Email: <span>support@zigtoys.com</span></h5>
+            <h5 class="time">Thời gian làm việc: <br><span>Cả tuần. Từ 9:00 am - 10:00 pm.<br> Nghỉ ngày lễ, Tết</span></h5>
+          </div>
+          <div class="col-md-3 col-xs-12 support">
+            <h4 class="title-support">Hỗ trợ khách hàng</h4>
+            <ul class="support-list">
+              <li><a class="link-support" href="#">Câu hỏi thường gặp</a></li>
+              <li><a class="link-support" href="#">Phương thức thanh toán</a></li>
+              <li><a class="link-support" href="#">Phương thức vận chuyển</a></li>
+              <li><a class="link-support" href="#">Hướng dẫn mua hàng & đổi trả</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-12 quick">
+            <h4 class="title-quick">Liên kết nhanh</h4>
+            <ul class="quick-list">
+              <li><a class="quick-link" href="#">Về ZIG Toys</a></li>
+              <li><a class="quick-link" href="#">Sản phẩm</a></li>
+              <li><a class="quick-link" href="#">Blog&Tips</a></li>
+              <li><a class="quick-link" href="#">Trang chủ    </a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-12 newsletter">
+            <h4 class="title-newsletter">Đăng ký nhận tin</h4>
+            <form action="#">
+              <div class="form-group subscribe-newsletter">
+                <input class="form-control" type="email" placeholder="Nhập email của bạn"/>
+                <button class="btn btn-warning" type="submit">Đăng Ký</button>
+              </div>
+            </form><a href="#"><i class="fab fa-facebook-square" style="font-size:30px"></i></a><a href="#"><i class="fab fa-youtube" style="font-size:30px"></i></a><a href="#"><i class="fab fa-instagram" style="font-size:30px"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h6 class="copyright">Copyright&copy;2020 by MinhTran. All Rights Reserved.</h6>
+          </div>
+        </div>
+      </div>
+    </footer><a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="js/details1.js"></script>
+  </body>
+</html>
