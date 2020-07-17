@@ -1,13 +1,4 @@
-﻿
-/*responsive click*/
-
-// scroll spy
-
-/* function scroll */
-
-/* responsive on mobile */
-
-/* click menu out */
+﻿/* click menu out */
 /*$(document).on('click', function() {
 	$('.collapse').collapse('hide');
 }); */
@@ -28,10 +19,7 @@ $(document).ready(function() {
     });
 
 });
-
- /*Scroll to top when arrow up clicked END*/
  /*validate email*/
-
  $(document).ready(function() {
  	$('#inputEmail').change(function() {
  		let sEmail = $('#inputEmail').val();
@@ -119,19 +107,126 @@ $('.glyphicon-eye-open').on('click',
 		$('#inputPassword').attr("type", "text");
 	}
 });
+// Add2cart function
+let carts = document.querySelectorAll(".add-cart");
+let products = [
+	{
+		id: "1",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Zero One",
+		size: "15",
+		price: 1000000,
+		inCart: 0
+	},
+	{
+		id: "2",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Vulcan",
+		size: "15",
+		price: 1000000,
+		inCart: 0
+	},
+	{
+		id: "3",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Geiz",
+		size: "15",
+		price: 1200000,
+		inCart: 0
+	},
+	{
+		id: "4",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Thouser",
+		size: "15",
+		price: 1500000,
+		inCart: 0
+	},
+	{
+		id: "5",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Woz",
+		size: "15",
+		price: 1200000,
+		inCart: 0
+	},
+	{
+		id: "6",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Valkyrie",
+		size: "15",
+		price: 1300000,
+		inCart: 0
+	},
+	{
+		id: "7",
+		brand: "Bandai",
+		name: "S.H.Figuarts Kamen Rider Geiz Revive",
+		size: "15",
+		price: 1500000,
+		inCart: 0
+	},
+	{
+		id: "8",
+		brand: "Bandai",
+		name: "Metal Build Gundam Astray Red Frame Kai",
+		size: "18",
+		price: 4500000,
+		inCart: 0
+	},
+	{
+		id: "9",
+		brand: "Bandai",
+		name: "S.H.Figure Red Go-buster",
+		size: "15",
+		price: 1000000,
+		inCart: 0
+	}
+]
+for(let i = 0; i < carts.length; i++) {
+	carts[i].addEventListener("click", () => {
+		cartNumber(products[i]);
+	})
+}
 
-// click menu ra
-/*$(".menu-btn").click(function() {
-	$(".menu-left").addClass("out");
-	return false;
-})*/
-// click menu vao
-/*$(".close-btn").click(function() {
-	$(".menu-left").removeClass("out");
-	return false;
-})
-$("body").click(function() {
-	$(".menu-left").removeClass("out");
-	return false;
-})*/
-/* carousel section */
+function onLoadCartNumber() {
+	let productNumber = localStorage.getItem('cartNumber');
+
+	if(productNumber) {
+		document.querySelector(".cart-icon span").textContent = productNumber;
+	}
+}
+function cartNumber(product) {
+	let productNumber = localStorage.getItem('cartNumber');
+	productNumber = parseInt(productNumber);
+	if(productNumber) {
+		localStorage.setItem('cartNumber', productNumber + 1);
+		document.querySelector(".cart-icon span").textContent = productNumber + 1;
+	} else {
+		localStorage.setItem('cartNumber', 1);
+		document.querySelector(".cart-icon span").textContent = 1;
+	}
+	setItems(product);
+}
+	function setItems(product) {
+		let cartItems = localStorage.getItem("productIncart");
+		cartItems = JSON.parse(cartItems);
+
+		if(cartItems != null) {
+			if(cartItems[product.id] == undefined) {
+				cartItems = {
+					...cartItems,
+					[product.id]: product
+				}
+			}
+			cartItems[product.id].inCart += 1;
+		} else {
+			product.inCart = 1;
+			cartItems = {
+				[product.id]: product
+			}
+		}
+		localStorage.setItem("productIncart", JSON.stringify(cartItems));
+	}
+
+onLoadCartNumber();
