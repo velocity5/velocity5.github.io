@@ -112,72 +112,81 @@ let carts = document.querySelectorAll(".add-cart");
 let products = [
 	{
 		id: "1",
+		tag: "01-Figure",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Zero One",
+		name: "S.H.Figuarts <br /> Kamen Rider Zero One",
 		size: "15",
-		price: 1000000,
-		inCart: 0
+		inCart: 0,
+		price: 1000000
 	},
 	{
 		id: "2",
+		tag: "wolf-Figure",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Vulcan",
+		name: "S.H.Figuarts <br /> Kamen Rider Vulcan",
 		size: "15",
 		price: 1000000,
 		inCart: 0
 	},
 	{
 		id: "3",
+		tag: "geiz",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Geiz",
+		name: "S.H.Figuarts <br /> Kamen Rider Geiz",
 		size: "15",
 		price: 1200000,
 		inCart: 0
 	},
 	{
 		id: "4",
+		tag: "thouser-fig",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Thouser",
+		name: "S.H.Figuarts <br /> Kamen Rider Thouser",
 		size: "15",
 		price: 1500000,
 		inCart: 0
 	},
 	{
 		id: "5",
+		tag: "woz",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Woz",
+		name: "S.H.Figuarts <br /> Kamen Rider Woz",
 		size: "15",
 		price: 1200000,
 		inCart: 0
 	},
 	{
 		id: "6",
+		tag: "val",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Valkyrie",
+		name: "S.H.Figuarts <br /> Kamen Rider Valkyrie",
 		size: "15",
 		price: 1300000,
 		inCart: 0
 	},
 	{
 		id: "7",
+		tag: "geiz_revive1",
 		brand: "Bandai",
-		name: "S.H.Figuarts Kamen Rider Geiz Revive",
+		name: "S.H.Figuarts <br /> Kamen Rider Geiz Revive",
 		size: "15",
 		price: 1500000,
 		inCart: 0
 	},
 	{
 		id: "8",
+		tag: "gundam_metal_2",
 		brand: "Bandai",
-		name: "Metal Build Gundam Astray Red Frame Kai",
+		name: "Mô Hình Gundam <br /> Astray Red Frame Kai",
 		size: "18",
 		price: 4500000,
 		inCart: 0
 	},
 	{
 		id: "9",
+		tag: "red_beast",
 		brand: "Bandai",
-		name: "S.H.Figure Red Go-buster",
+		name: "S.H.Figure <br /> Red Go-buster",
 		size: "15",
 		price: 1000000,
 		inCart: 0
@@ -186,12 +195,11 @@ let products = [
 for(let i = 0; i < carts.length; i++) {
 	carts[i].addEventListener("click", () => {
 		cartNumber(products[i]);
+		totalCost(products[i]);
 	})
 }
-
 function onLoadCartNumber() {
 	let productNumber = localStorage.getItem('cartNumber');
-
 	if(productNumber) {
 		document.querySelector(".cart-icon span").textContent = productNumber;
 	}
@@ -211,7 +219,6 @@ function cartNumber(product) {
 	function setItems(product) {
 		let cartItems = localStorage.getItem("productIncart");
 		cartItems = JSON.parse(cartItems);
-
 		if(cartItems != null) {
 			if(cartItems[product.id] == undefined) {
 				cartItems = {
@@ -228,5 +235,52 @@ function cartNumber(product) {
 		}
 		localStorage.setItem("productIncart", JSON.stringify(cartItems));
 	}
-
+	function totalCost(product) {
+		let cartCost = localStorage.getItem("totalCost");
+		if (cartCost != null) {
+			cartCost = parseInt(cartCost);
+			localStorage.setItem("totalCost", cartCost + product.price);
+		} else {
+			localStorage.setItem("totalCost", product.price);
+		}	
+	}
+	function displayCart() {
+		let cartCost = localStorage.getItem("totalCost");
+		let cartItems = localStorage.getItem("productIncart");
+		cartItems = JSON.parse(cartItems);
+		let cartFrame = document.querySelector(".product-content");
+		if (cartItems && cartFrame) {
+			cartFrame.innerHTML = '';
+			Object.values(cartItems).map(item =>{
+				cartFrame.innerHTML += `
+				<div class="productInCart">
+					<img src="images/product_images/${item.tag}.jpg" class="img-fluid">
+					<span>${item.name}</span>
+						<i class="far fa-times-circle" type="button"></i>
+				</div>
+				<div class="priceQuantity">
+					<div class="priceInCart">${item.price}đ</div>
+					<div class="quantityInCart">
+						<button class="qtyDesc">-</button>
+						<span>${item.inCart}</span>
+						<button class="qtyIncre">+</button>
+					</div>
+					<div class="totalInCart">
+						${item.inCart * item.price}đ
+					</div>	
+				</div>	` 
+			});
+			cartFrame.innerHTML += `
+				<div class="basketTotal">
+					<h4 class="basketTotalTitle">
+						TỔNG TIỀN
+					</h4>
+					<h5 class="totalPrice">
+						${cartCost}đ
+					</h5>
+				</div>
+			`
+		}
+	}
 onLoadCartNumber();
+displayCart();

@@ -1,0 +1,104 @@
+.product-header {
+    display: flex;
+    margin: 0 auto;
+    border-bottom: 4px solid orange;
+}
+.product-content {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.product-cart-title {
+    margin-right: 90px;
+}
+.product-cart-title-name, .product-cart-price, .product-cart-quantity {
+    margin-right: 4rem;
+}
+.total {
+    margin-left: 10rem;
+}
+.productInCart {
+    display: flex;
+}
+.productInCart .fa-times-circle {
+    font-size: 20px;
+    color: #bcb4b4;
+    margin-left: 46rem;
+    margin-top: 3.5rem;
+}
+.productInCart img {
+    height: 150px;
+    padding-bottom: 10px;
+}
+.productInCart span {
+    padding-left: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.priceQuantity {
+    display: flex;
+    margin-left: 24rem;
+}
+.priceInCart, .quantityInCart {
+    margin-top: -6rem;
+}
+.priceInCart {
+    margin-left: 1rem;
+}
+.quantityInCart {
+    margin-left: 5rem;
+    border: 1px solid #eeee;
+    height: 30px;
+    width: 100px;
+}
+.quantityInCart button {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 0 15px;
+    transition: all 0.4s ease 0s;
+    outline: none;
+}
+.totalInCart {
+    margin-left: 15rem;
+    margin-top: -6rem;
+}
+.basketTotal {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 0;
+    margin-right: 7.5rem;
+}
+.checkOut {
+    width: 358px;
+    height: 48px;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    background-color: #FFB800;
+    color: white;
+}
+.basketTotalTitle {
+    width: 35%;
+}
+.totalPrice {
+    width: 10%;
+}
+.coupon-dropdown a {
+    text-decoration: none;
+    color: black;
+}
+.coupon-dropdown a:hover {
+    color: rgb(128, 124, 124);
+}
+#discount-code {
+    width: 200px;
+}
+.applyCoupon {
+    margin-top: 5px;
+    width: 100px;
+    height: 38px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffb800;
+    color: white;
+}
