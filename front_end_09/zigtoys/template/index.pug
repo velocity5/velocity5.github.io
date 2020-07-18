@@ -9,14 +9,14 @@ block content
                 li(data-target='#carouselIndicators' data-slide-to='1')
             .carousel-inner
                 .carousel-item
-                    img.d-block.w-100.lazyload(data-original='images/product_images/burning-falcon-ds.jpg' alt='First slide')
+                    img.d-block.w-100(src='images/product_images/burning-falcon-ds.jpg' alt='First slide')
                     .caption
                         .container.d-flex.justify-content-center
                             .div-table.summer
                                 .view
                                     button.btn.btn-outline-secondary.btn-view(type='button', href="#") Xem Ngay
                 .carousel-item.active.darken-img
-                    img.d-block.w-100.lazyload(data-original='images/product_images/garo-1.jpg' alt='Second slide')
+                    img.d-block.w-100(src='images/product_images/garo-1.jpg' alt='Second slide')
                     .caption
                         .container.d-flex.justify-content-center
                             .div-table
@@ -61,7 +61,7 @@ block content
             .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                 .thumbnail
                     .product-image.hover-shadow
-                        img.img-fluid.figure(src='images/product_images/01-Figure.jpg' alt)
+                        img.img-fluid.figure.lazyload(data-original='images/product_images/01-Figure.jpg' alt)
                         .zoom
                             i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1')
                     .product.text-center
