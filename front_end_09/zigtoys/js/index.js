@@ -284,3 +284,10 @@ function cartNumber(product) {
 	}
 onLoadCartNumber();
 displayCart();
+
+// lazy load img
+$(function() {
+	$("img.lazyload").lazyload({
+		effect: "fadeIn"
+	});
+});

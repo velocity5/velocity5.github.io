@@ -11,4 +11,217 @@ block content
             a.black-text(href="index.html") Trang chủ
         li.breadcrumb-item.active Sản phẩm
     section
-        
+        .container.filter-contain
+            h3.filter-title Sắp xếp theo
+            select.browser-default.custom-select.filter-one
+                option(selected) Hàng mới về
+                option(value='1') Hàng bán chạy
+                option(value='2') Giá thấp - cao
+                option(value='3') Giá cao - thấp
+            select.browser-default.custom-select.filter-two
+                option(selected disabled) Sản phẩm
+                option(value='1') Figure
+                option(value='2') DX-Driver
+                option(value='3') Sản phẩm Khác
+            select.browser-default.custom-select.filter-three
+                option(selected disabled) Hãng
+                option(value='1') Bandai
+                option(value='2') Saban
+                option(value='3') Movic
+                option(value='4') Bioworld
+            a(href="#" class="delete" type="submit") Bỏ lọc
+    section
+        .container
+            .row.text-center
+                .col-12.col-xs-12.col-sm-3.col-md-3
+                    .thumbnail.thumbnail-product
+                        .product-image.hover-shadow.product-page-img
+                            img.img-fluid.figure(data-original='images/product_images/01-Figure.jpg' alt)
+                            .zoom.zoom-product
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1')
+                        .product.text-center
+                            h4.product-title.product-page-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Zero One 
+                            .rating.product-rate
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                            p.price.product-page-price 1.000.000đ
+                            .buttons.btn-cart-heart
+                                a.btn.btn-icon-left(href='#')
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                a.btn.btn-icon-right(href='#')
+                                    i.far.fa-heart
+                .modal.fade#quickview1(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id' data-slide-to='0')
+                                                    li(data-target='#product-id' data-slide-to='1')
+                                                    li(data-target='#product-id' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/01-Figure.jpg' alt='ZeroOne')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act1.jpg' alt='ZeroOne')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act2.jpg' alt='ZeroOne')
+                                                a.carousel-control-prev.product-control(href='#product-id' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-3.col-md-3
+                    .thumbnail.thumbnail-product
+                        .product-image.hover-shadow
+                            img.img-fluid.figure(src='images/product_images/wolf-Figure.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2')
+                        .product.text-center
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Vulcan 
+                            .rating
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                            p.price 1.000.000đ
+                            .buttons
+                                a.btn.btn-icon-left(href='#')
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                a.btn.btn-icon-right(href='#')
+                                    i.far.fa-heart
+                .modal.fade#quickview2(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-2.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-2' data-slide-to='0')
+                                                    li(data-target='#product-id-2' data-slide-to='1')
+                                                    li(data-target='#product-id-2' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/wolf-Figure.jpg' alt='Vulcan')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan.jpg' alt='Vulcan')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan-act.jpg' alt='Vulcan')
+                                                a.carousel-control-prev.product-control(href='#product-id-2' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-2' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-3.col-md-3
+                    .thumbnail.thumbnail-product
+                        .product-image.hover-shadow
+                            img.img-fluid.figure(src='images/product_images/geiz.png' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview3')
+                        .product.text-center
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Geiz 
+                            .rating
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                            p.price 1.200.000đ
+                            .buttons
+                                a.btn.btn-icon-left(href='#')
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                a.btn.btn-icon-right(href='#')
+                                    i.far.fa-heart
+                .modal.fade#quickview3(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-3.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-3' data-slide-to='0')
+                                                    li(data-target='#product-id-3' data-slide-to='1')
+                                                    li(data-target='#product-id-3' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz.png' alt='Geiz')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz-act-1.jpg' alt='Geiz')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz-act-2.jpg' alt='Geiz')
+                                                a.carousel-control-prev.product-control(href='#product-id-3' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-3' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-3.col-md-3
+                    .thumbnail.thumbnail-product
+                        .product-image.hover-shadow
+                            img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview4')
+                        .product.text-center
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Thouser 
+                            .rating
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                            p.price 1.500.000đ
+                            .buttons
+                                a.btn.btn-icon-left(href='#')
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                a.btn.btn-icon-right(href='#')
+                                    i.far.fa-heart
+                .modal.fade#quickview4(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-4.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-4' data-slide-to='0')
+                                                    li(data-target='#product-id-4' data-slide-to='1')
+                                                    li(data-target='#product-id-4' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-fig.jpg' alt='Thouser')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-act.jpg' alt='Thouser')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-act-2.jpg' alt='Thouser')
+                                                a.carousel-control-prev.product-control(href='#product-id-4' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-4' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
