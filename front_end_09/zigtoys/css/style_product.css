@@ -41,16 +41,108 @@ a.delete:hover {
 .product-page-img {
     margin-left: 0;
 }
+.product-page-img-fr {
+    margin-left: 3.5rem;
+}
 .product-page-title {
     font-size: 20px;
     margin-right: 3rem;
     margin-left: -1rem;
 }
+.product-page-title-fr {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: -4rem;
+}
 .product-rate, .product-page-price, .btn-cart-heart {
     margin-right: 3rem;
     margin-left: -1rem;
 }
+.product-page-price-fr, .product-rate-fr, .btn-cart-heart-fr {
+    margin-left: 3rem;
+}
 .thumbnail-product .zoom-product {
     margin-left: -3rem;
     margin-top: -7rem;
+}
+.thumbnail-product .zoom-product-fr {
+    margin-left: 1rem;
+    margin-top: -7rem;
+}
+.product-page-img-sc {
+    margin-left: 1rem;
+}
+.thumbnail-product .zoom-product-sc {
+    margin-top: -7rem;
+}
+.product-page-img-tr {
+    margin-left: 3rem;
+}
+.thumbnail-product .zoom-product-tr {
+    margin-left: 0;
+    margin-top: -7rem;
+}
+.product-page-title-sc {
+    font-size: 20px;
+    margin-left: 0;
+    margin-right: 1.5rem;
+}
+.product-page-title-tr {
+    font-size: 20px;
+    margin-left: 3.6rem;
+    margin-right: 1rem;
+}
+.product-rate-sc, .product-page-price-sc, .btn-cart-heart-sc {
+    margin-right: 1rem;
+}
+.product-rate-tr, .product-page-price-tr, .btn-cart-heart-tr {
+    margin-left: 3rem;
+}
+.first-row, .second-row {
+    margin-bottom: 50px;
+}
+/* pagination */
+.pagination-container {
+    margin: 25px auto;
+    text-align: center;
+}
+.pagination {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+.pagination a {
+    position: relative;
+    display: inline-block;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px 16px 10px;
+}
+.pagination a::before {
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #EEB31D;
+    border-radius: 20px;
+    transform: scale(0);
+    transition: all 0.2s;
+}
+.pagination a:hover, 
+.pagination .page-active {
+    color: #ffff;
+}
+.pagination a:hover::before,
+.pagination .page-active::before {
+    transform: scale(1);
+}
+.pagination-newer {
+    margin-right: 25px;
+}
+.pagination-older {
+    margin-left: 25px;
 }
