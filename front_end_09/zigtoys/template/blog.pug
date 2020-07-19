@@ -1,0 +1,32 @@
+extends template-part/layout.pug
+block title
+    title Blog&Tips
+block content
+    section
+        .container-fluid.text-center.banner-products.background-top
+            .wrap_title
+                h2.title_banner Blog&Tips
+    ol.breadcrumb
+        li.breadcrumb-item
+            a.black-text(href="index.html") Trang chủ 
+        li.breadcrumb-item.active Blog&Tips
+    section
+        .container.post-grid
+            .row
+                .col-12.col-xs-3.col-sm-3.col-md-8
+                   a.img-big(href="blog-detail.html")
+                        img.img-fluid(src="images/product_images/gundam.jpg", alt="Gundam")
+                        .img-title
+                            h2 Chia sẻ kinh nghiệm chơi mô hình Gundam (P1)
+                            span.post-date 25 Th6, 2020
+                .col-12.col-xs-3.col-sm-3.col-md-4
+                    a.img-small(href="blog-detail.html")
+                        img.img-fluid(src="images/product_images/brain.jpg", alt="Kamen Rider")
+                        .img-side-title.post1
+                            h4 Giới thiệu các S.H.Figuarts Kamen Rider ngoài series đẹp mê ly
+                            span.post-date 23 Th6, 2020
+                    a.img-small(href="blog-detail.html")
+                        img.img-fluid(src="images/product_images/product_cabin.jpg", alt="Cabin Figure")
+                        .img-side-title.post2
+                            h4 Chiêm ngưỡng tủ đựng Figure của 1 fan cuồng
+                            span.post-date 26 Th6, 2020

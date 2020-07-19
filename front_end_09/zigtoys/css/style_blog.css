@@ -1,0 +1,52 @@
+.img-big img {
+   border-radius: 6px;
+   position: relative;
+   margin-bottom: 30px; 
+}
+.img-big .img-title {
+    position: absolute;
+    bottom: 1.9rem;
+    z-index: 10;
+    padding: 16px;
+    width: 45rem;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-title span {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.img-title h2 {
+    color: #f5f6fa;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.img-small img {
+    position: relative;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.img-small .img-side-title {
+    position: absolute;
+    z-index: 10;
+    width: 92%;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.img-small .post1 {
+    bottom: 54%;
+}
+.img-small .post2 {
+    bottom: 5.5%;
+}
+.post1 span, .post2 span {
+    color: #a4b0be;
+    font-size: 15px;
+}
+.img-small h4 {
+    font-size: 18px;
+    color: #f5f6fa;
+    font-weight: 400;
+}
