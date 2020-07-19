@@ -60,17 +60,18 @@ block content
                             i.fa.fa-shopping-cart  Thêm Vào Giỏ
                         button.btn-danger.buynow MUA NGAY
                     .description-tab
-                        ul.nav.nav-tabs.tabs(role="tablist")
-                            li.active 
-                                a(data-toggle="tab", href="#descript", role="tab", id="descript-tab" ,aria-controls="descript", aria-selected="true") Mô Tả Sản Phẩm
+                        ul.nav.nav-tabs.tabs.tabs-hold(role="tablist")
+                            li 
+                                a.active.nav-item(data-toggle="tab", href="#descript", role="tab", id="descript-tab" ,aria-controls="descript", aria-selected="true") Mô Tả Sản Phẩm
                             li
-                                a(data-toggle="tab", href="#detail", role="tab", id="detail-tab", aria-controls="detail", aria-selected="false") Chi Tiết Sản Phẩm
+                                a.nav-item(data-toggle="tab", href="#detail", role="tab", id="detail-tab", aria-controls="detail", aria-selected="false") Chi Tiết Sản Phẩm
                             li
-                                a(data-toggle="tab", href="#review", role="tab", id="review-tab",aria-controls="review", aria-selected="false") Đánh Giá
+                                a.nav-item(data-toggle="tab", href="#review", role="tab", id="review-tab",aria-controls="review", aria-selected="false") Đánh Giá
                         .tab-content
                             .tab-pane.fade.show.active#descript(role="tabpanel",aria-labelledby="descript-tab")
                                 p Hàng chính hãng của Nhật. 
-                                p Hàng mới 100% - Có sẵn tại shop. <br>Shop chuyên nhận order hàng chính hãng từ Nhật về.
+                                p Hàng mới 100% - Có sẵn tại shop. 
+                                p Shop chuyên nhận order hàng chính hãng từ Nhật về.
                             .tab-pane.fade.show#detail(role="tabpanel",aria-labelledby="detail-tab")
                                 p Thương Hiệu: Bandai <br>Tỷ lệ: 15 cm <br>Chất liệu: Nhựa an toàn <br>Lứa tuổi phù hợp: 13 tuổi trở lên.
                             .tab-pane.fade.show#review(role="tabpanel",aria-labelledby="review-tab")
@@ -93,6 +94,10 @@ block content
                                                             i.fas.fa-star
                                                     .comment-content
                                                         p Mới mua hàng về thử. Màu sắc khá bắt mắt, giống với trong hình, giá cả lại phải chăng. Chúng bạn của mình cũng thích lắm. Mình đã giới thiệu shop cho chúng nó rồi, chúng nó nói lần tới sẽ mua thẳng shop luôn, không qua các shop khác nữa.
+                                                    span.reply
+                                                        a.cmt-reply(href="#")
+                                                            i.fa.fa-reply
+                                                            span.hidden-sm Trả lời
                                             ul.child
                                                 li.comment
                                                     .comment-wrap
@@ -104,18 +109,28 @@ block content
                                                                     a(href="#") Admin
                                                                 span 2 ngày trước
                                                             .comment-content
-                                                                p Chào bạn, cám ơn bạn đã mua hàng tại shop. Mong bạn sẽ tiếp tục ủng hộ shop trong thời gian tới. 
+                                                                p Chào bạn, cám ơn bạn đã mua hàng tại shop. Mong bạn sẽ tiếp tục ủng hộ shop trong thời gian tới.
+                                                            span.reply
+                                                                a.cmt-reply(href="#")
+                                                                    i.fa.fa-reply
+                                                                    span.hidden-sm Trả lời 
                                     .respond-wrap
                                         h3.comment-title Viết đánh giá
-                                        i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
-                                            i.fas.fa-star
+                                        span
+                                            .rating
+                                                input#1(type='radio' name='rating' value='1')
+                                                label(for='1') ☆
+                                                input#2(type='radio' name='rating' value='2')
+                                                label(for='2') ☆
+                                                input#3(type='radio' name='rating' value='3')
+                                                label(for='3') ☆
+                                                input#4(type='radio' name='rating' value='4')
+                                                label(for='4') ☆ 
+                                                input#5(type='radio' name='rating' value='5')
+                                                label(for='5') ☆
                                         form.comment-form
                                             textarea.form-control#cmt-area(placeholder='Viết đánh giá của bạn...')
-                                            button.btn.btn-primary(type="submit") GỬI ĐÁNH GIÁ
-                                            
+                                            button.btn.btn-primary(type="submit") GỬI ĐÁNH GIÁ                                         
         section.container-fluid
             .row.text-center
                 .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12

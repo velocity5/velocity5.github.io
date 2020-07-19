@@ -193,15 +193,16 @@
               <button class="btn-danger buynow">MUA NGAY</button>
             </div>
             <div class="description-tab">
-              <ul class="nav nav-tabs tabs" role="tablist">
-                <li class="active"> <a data-toggle="tab" href="#descript" role="tab" id="descript-tab" aria-controls="descript" aria-selected="true">Mô Tả Sản Phẩm</a></li>
-                <li><a data-toggle="tab" href="#detail" role="tab" id="detail-tab" aria-controls="detail" aria-selected="false">Chi Tiết Sản Phẩm</a></li>
-                <li><a data-toggle="tab" href="#review" role="tab" id="review-tab" aria-controls="review" aria-selected="false">Đánh Giá</a></li>
+              <ul class="nav nav-tabs tabs tabs-hold" role="tablist">
+                <li> <a class="active nav-item" data-toggle="tab" href="#descript" role="tab" id="descript-tab" aria-controls="descript" aria-selected="true">Mô Tả Sản Phẩm</a></li>
+                <li><a class="nav-item" data-toggle="tab" href="#detail" role="tab" id="detail-tab" aria-controls="detail" aria-selected="false">Chi Tiết Sản Phẩm</a></li>
+                <li><a class="nav-item" data-toggle="tab" href="#review" role="tab" id="review-tab" aria-controls="review" aria-selected="false">Đánh Giá</a></li>
               </ul>
               <div class="tab-content">
                 <div class="tab-pane fade show active" id="descript" role="tabpanel" aria-labelledby="descript-tab">
                   <p>Hàng chính hãng của Nhật. </p>
-                  <p>Hàng mới 100% - Có sẵn tại shop. <br>Shop chuyên nhận order hàng chính hãng từ Nhật về.</p>
+                  <p>Hàng mới 100% - Có sẵn tại shop. </p>
+                  <p>Shop chuyên nhận order hàng chính hãng từ Nhật về.</p>
                 </div>
                 <div class="tab-pane fade show" id="detail" role="tabpanel" aria-labelledby="detail-tab">
                   <p>Thương Hiệu: Bandai <br>Tỷ lệ: 15 cm <br>Chất liệu: Nhựa an toàn <br>Lứa tuổi phù hợp: 13 tuổi trở lên.</p>
@@ -216,7 +217,7 @@
                             <div class="comment-header"><span class="comment-author"><a href="#">Angel Asher</a></span><span>2 ngày trước</span><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></div>
                             <div class="comment-content">
                               <p>Mới mua hàng về thử. Màu sắc khá bắt mắt, giống với trong hình, giá cả lại phải chăng. Chúng bạn của mình cũng thích lắm. Mình đã giới thiệu shop cho chúng nó rồi, chúng nó nói lần tới sẽ mua thẳng shop luôn, không qua các shop khác nữa.</p>
-                            </div>
+                            </div><span class="reply"><a class="cmt-reply" href="#"><i class="fa fa-reply"></i><span class="hidden-sm">Trả lời</span></a></span>
                           </div>
                         </div>
                         <ul class="child">
@@ -226,8 +227,8 @@
                               <div class="comment-block">
                                 <div class="comment-header"><span class="comment-author"><a href="#">Admin</a></span><span>2 ngày trước</span></div>
                                 <div class="comment-content">
-                                  <p>Chào bạn, cám ơn bạn đã mua hàng tại shop. Mong bạn sẽ tiếp tục ủng hộ shop trong thời gian tới. </p>
-                                </div>
+                                  <p>Chào bạn, cám ơn bạn đã mua hàng tại shop. Mong bạn sẽ tiếp tục ủng hộ shop trong thời gian tới.</p>
+                                </div><span class="reply"><a class="cmt-reply" href="#"><i class="fa fa-reply"></i><span class="hidden-sm">Trả lời </span></a></span>
                               </div>
                             </div>
                           </li>
@@ -235,10 +236,22 @@
                       </li>
                     </ul>
                     <div class="respond-wrap">
-                      <h3 class="comment-title">Viết đánh giá</h3><i class="fas fa-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></i>
+                      <h3 class="comment-title">Viết đánh giá</h3><span>
+                        <div class="rating">
+                          <input id="1" type="radio" name="rating" value="1"/>
+                          <label for="1">☆</label>
+                          <input id="2" type="radio" name="rating" value="2"/>
+                          <label for="2">☆</label>
+                          <input id="3" type="radio" name="rating" value="3"/>
+                          <label for="3">☆</label>
+                          <input id="4" type="radio" name="rating" value="4"/>
+                          <label for="4">☆ </label>
+                          <input id="5" type="radio" name="rating" value="5"/>
+                          <label for="5">☆</label>
+                        </div></span>
                       <form class="comment-form">
                         <textarea class="form-control" id="cmt-area" placeholder="Viết đánh giá của bạn..."></textarea>
-                        <button class="btn btn-primary" type="submit">GỬI ĐÁNH GIÁ</button>
+                        <button class="btn btn-primary" type="submit">GỬI ĐÁNH GIÁ                                         </button>
                       </form>
                     </div>
                   </div>
