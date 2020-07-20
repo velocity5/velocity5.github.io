@@ -112,6 +112,32 @@ $(".fa-search").click(() => {
 	$(".searchBox").fadeToggle(500);
 	$(".searchInput").focus();
 });
+// owl carousel
+$(document).ready(function(){
+	$(".owl-carousel").owlCarousel({
+		loop:true,
+        margin:20,
+        dots: false,
+        autoplay:true,
+        autoplayTimeout:3000,
+		autoplaySpeed: 1500,
+		responsiveClass:true,
+		responsive: {
+			0:{
+				items:1,
+			},
+			480:{
+				items:2,
+			},
+			550:{
+				items:3,
+			},
+			768:{
+				items:4,
+			}
+		}
+	});
+  });
 // Add2cart function
 let carts = document.querySelectorAll(".add-cart");
 let products = [

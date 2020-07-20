@@ -347,16 +347,17 @@ block content
                                             a.carousel-control-next.product-control(href='#product-id-6' role='button' data-slide='next')
                                                 i.fa.fa-chevron-circle-right.fa-2x
                                                 span.sr-only Next
-    section.container-fluid.brand.text-center
-        .row
-            .col-md-3
-                img(src="images/brand_images/bandai_sp.png", alt="Bandai Spirits", title="Bandai Spirits")
-            .col-md-3
-                img(src="images/brand_images/saban_brand.png", alt="Saban Hasbro", title="Saban Hasbro")
-            .col-md-3
-                img(src="images/brand_images/movic.png", alt="Movic", title="Movic")
-            .col-md-3
-                img(src="images/brand_images/bioworld.png", alt="Bio World", title="Bio World")
+    section.container-fluid.brand
+        .container
+            .brand-owl.owl-carousel
+                .brand-item
+                    img.img-fluid(src="images/brand_images/bandai_sp.png", alt="Bandai Spirits", title="Bandai Spirits")
+                .brand-item
+                    img.img-fluid(src="images/brand_images/saban_brand.png", alt="Saban Hasbro", title="Saban Hasbro")
+                .brand-item
+                    img.img-fluid(src="images/brand_images/movic.png", alt="Movic", title="Movic")
+                .brand-item
+                    img.img-fluid(src="images/brand_images/bioworld.png", alt="Bio World", title="Bio World")
 
     section.container-fluid
         .row.text-center

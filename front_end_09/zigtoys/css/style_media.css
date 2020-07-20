@@ -124,13 +124,40 @@
         .content {
             width: auto;
         }
+        .thumbnail .img-fluid {
+            max-height: 70%;
+        }
+        .thumbnail .zoom {
+            top: 34%;
+        }
+        .product-image {
+            height: 300px;
+        }
+        /* product title */
+        .product-title a {
+            font-size: 14px;
+        }
+        .product-title {
+            margin-top: -50%;
+        }
+        .thumbnail .buttons .btn-icon-left {
+            padding: 10px 10px;
+            font-size: 10px;
+        }
+        .thumbnail .price {
+            font-size: 13px;
+        }
+        /* */
+        .hover-shadow:hover {
+            box-shadow: none;
+        }
         .brand img {
             margin-bottom: 20px;
+            width: 100px;
         }
         #indicators .carousel-inner {
             width: auto;
         }
-        
         .prev, .next {
             transform: translate(-250%,50%);
             left: 50%;

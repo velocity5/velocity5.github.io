@@ -33,11 +33,11 @@
         padding-top: 13%;
     }
     .navbar-nav {
-        margin-left: 16rem;
+        margin-left: 10rem;
     }
     .navbar-nav li {
         font-family: 'Playfair Display', serif;
-        margin-left: 12px;
+        padding: 0 30px 0 0;
     }
     .nav-item .fa-phone-alt, .nav-item a > .fa-envelope {
         color: white;
@@ -68,27 +68,31 @@
         cursor: pointer;
     }
     .navbar-nav li a.nav-link:hover {
-        border-bottom: 1px solid #E76F51;
-        border-bottom-width: medium;
+        border-bottom: 1px solid #c23616;
         background-color: rgb(223, 217, 217,.2);
     }
     .navbar-brand img {
         max-width: 190px;
     }
     .heart-wrapper .btn i {
-        color: #f8e21f;
-    }
-    .heart-wrapper .btn i:nth-child(2) {
-        color: black;
+        color: #f0932b;
     }
     .heart-wrapper .btn i:hover {
-        color: #d3c864;
-    }
-    .heart-wrapper .btn i:nth-child(2):hover {
-        color: rgba(138, 133, 133, 0.5);
+        color: #e55039;
     }
     .heart-wrapper {
+        border-right: 1px solid grey;
+        margin-left: 3rem;
+        height: 2rem;
+    }
+    .cart-wrapper {
         margin-right: 3rem;
+    }
+    .cart-wrapper .btn i {
+        color: black;
+    }
+    .cart-wrapper .btn i:hover {
+        color: rgba(138, 133, 133, 0.5);
     }
     .navbar-toggler {
         color: rgba(255, 255, 255, .5);
@@ -103,13 +107,13 @@
     }
     /* searchBox menu */
     .fa-search {
-        margin-left: 3rem;
+        margin-left: 1rem;
     }
     .searchBox {
         background-color: #ecf0f1;
         position: absolute;
-        top: 70px;
-        left: 4%;
+        top: 60px;
+        left: 10%;
         width: 350px;
         height: 60px;
         z-index: 10;
@@ -354,7 +358,6 @@
         line-height: 1.3;
         margin-bottom: 15px;
     }
-
     .thumbnail .buttons .btn-icon-left {
         padding: 10px 12px;
         font-size: 12px;
@@ -378,7 +381,6 @@
         border-color: #ffc107;
         margin-left: 10px;
     }
-
     .thumbnail .buttons .btn-icon-right:hover {
         background-color: darkorange;
     }
@@ -395,11 +397,12 @@
         cursor: pointer;
     }
     /* brand section */
-    .brand img {
-        width: 150px;
+    .brand-owl .brand-item img {
+        max-width: 50%;
     }
     .brand {
-        margin-top: 50px;
+        padding: 40px 0;
+        margin-top: 20px;
     }
     /* testimonial section */
     .review-bg {
@@ -625,6 +628,12 @@
     }
     a .fa-facebook-square:hover, a .fa-youtube:hover, a .fa-instagram:hover {
         color: #cdc5c5;
+    }
+    .divider {
+        border: 2px;
+        height: 1px;
+        width: 100%;
+        background-color: #576574;
     }
     .copyright {
         font-size: 13px;
