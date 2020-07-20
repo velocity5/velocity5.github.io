@@ -22,6 +22,9 @@
     margin-bottom: 0;
     font-weight: 500;
 }
+.img-title h2:hover, .img-title h2:active {
+    color: #7f8c8d;
+}
 .img-small img {
     position: relative;
     border-radius: 6px;
@@ -34,6 +37,9 @@
     padding: 16px;
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.5);
+}
+.img-side-title h4:hover, .img-side-title h4:active {
+    color: #7f8c8d;
 }
 .img-small .post1 {
     bottom: 54%;
@@ -49,4 +55,39 @@
     font-size: 18px;
     color: #f5f6fa;
     font-weight: 400;
+}
+/* recent post vs old post */
+.recent-post, .old-post {
+    margin-bottom: 10px;
+}
+.old-post {
+    margin-top: 30px;
+}
+.recent-post h2, .old-post h2 {
+    font-size: 30px;
+    margin-bottom: -14px;
+}
+.card-tag {
+    background-color: #FFAA55;
+    width: 68px;
+    height: 20px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: default;
+}
+.second-post-row {
+    margin-top: 30px;
+}
+.old-post-row {
+    margin-bottom: 50px;
+}
+/* hover effect */
+.hover-post-shadow {
+    transition: all 0.5s ease;
+}
+.hover-post-shadow:hover {
+    box-shadow: 12px 8px 19px -5px rgba(0,0,0,0.75);
 }

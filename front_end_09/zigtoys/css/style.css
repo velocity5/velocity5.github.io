@@ -5,13 +5,11 @@
         margin: 0;
         padding: 0;
     }
-
     header ul li {
         display: block;
         text-align: right;
         float: right;
     }
-
     header .nav-link {
         padding: 10px;
         margin-top: 24px;
@@ -23,12 +21,10 @@
     }
     .user-part {
         margin-top: 10px;
-    }
-    
+    } 
     .info {
         margin-top: 24px;
     }
-
     .info li:first-child {
         margin-bottom: -10px;
     }
@@ -209,9 +205,8 @@
         line-height: 36px;
         text-transform: uppercase;
     }
-    .subscribe .btn-subscribe:hover {
-        background-color: #e3b528;
-        border-color: #d39e00;
+    .subscribe .btn-outline-secondary.btn-subscribe:hover {
+        background-color: #ffc107;
     }
     .subscribe .btn-outline-secondary.btn-subscribe {
         color: white;
@@ -219,7 +214,8 @@
         margin-top: 20px;
         height: 48px;
         border-radius: 4px;
-        background-color: #ffc107;
+        background-color: transparent;
+        border: 1px solid #ffc107;
     }
     .darken-img img {
         filter: brightness(50%);
@@ -232,7 +228,6 @@
         margin-top: 200%;
     }
     .view .btn-view {
-        background-color: #ffc107;
         color: white;
         text-transform: uppercase;
         padding: 0 20px;
@@ -241,10 +236,17 @@
         line-height: 36px;
         height: 48px;
         width: 130px;
+        background-color: transparent;
+        border: 1px solid #ffc107;
     }
-    .btn-view:hover {
-        background-color: #e3b528;
-        border-color: #d39e00;
+    .btn-outline-secondary.btn-view:hover {
+        background-color: #ffc107;
+    }
+    .btn-outline-secondary.btn-view > .fa-angle-right {
+        position: absolute;
+        margin-left: 5px;
+        margin-top: 12px;
+        font-size: 14px;
     }
     /* about section */
     .heading .below {
