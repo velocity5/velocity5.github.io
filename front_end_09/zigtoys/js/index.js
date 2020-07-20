@@ -107,6 +107,11 @@ $('.glyphicon-eye-open').on('click',
 		$('#inputPassword').attr("type", "text");
 	}
 });
+// toggle searchbox menu
+$(".fa-search").click(() => {
+	$(".searchBox").fadeToggle(500);
+	$(".searchInput").focus();
+});
 // Add2cart function
 let carts = document.querySelectorAll(".add-cart");
 let products = [

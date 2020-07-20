@@ -125,25 +125,26 @@
       </div>
     </header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <form class="form-inline my-2 my-lg-0 searchBox">
-        <input class="form-control mr-sm-2 searchInput" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-      </form>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><i class="fas fa-search"> </i>
+      <div class="searchBox">
+        <input class="searchInput" type="text" placeholder="Bạn muốn tìm gì?" aria-label="Search"/>
+        <input type="button" value="Tìm kiếm"/>
+      </div>
+      <div class="collapse in navbar-collapse" id="navmenu">
         <ul class="navbar-nav mt-2 mt-lg-0">
+          <li class="d-inline d-lg-none">
+            <button class="close float-right" data-toggle="collapse" data-target="#navmenu">×</button>
+          </li>
           <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Sản Phẩm
-              </a>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản Phẩm  </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô hình Figures</a><a class="dropdown-item" href="#">DX-Drivers</a><a class="dropdown-item" href="#">Sản phẩm khác</a></div>
           </li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
         </ul>
-        <div class="heart-wrapper"><a class="btn btn-theme-transparent hidden-xs hidden-sm" href="href"><i class="far fa-heart" style="font-size:24px"></i></a><a class="btn btn-theme-transparent cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
       </div>
+      <div class="heart-wrapper"><a class="btn btn-theme-transparent hidden-xs hidden-sm" href="href"><i class="far fa-heart" style="font-size:24px"></i></a><a class="btn btn-theme-transparent cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
     </nav>
     <div class="slider_top">
       <div class="carousel slide" id="carouselIndicators" data-ride="carousel">
@@ -156,9 +157,7 @@
             <div class="caption">
               <div class="container d-flex justify-content-center">
                 <div class="div-table summer">
-                  <div class="view">
-                    <button class="btn btn-outline-secondary btn-view" type="button" href="products.html">Xem Ngay  <i class="fas fa-angle-right"></i></button>
-                  </div>
+                  <div class="view"><a class="btn btn-outline-secondary btn-view" type="button" href="products.html">Xem Ngay  <i class="fas fa-angle-right"></i></a></div>
                 </div>
               </div>
             </div>

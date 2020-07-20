@@ -1,12 +1,14 @@
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navmenu' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
-  form.form-inline.my-2.my-lg-0.searchBox
-      input.form-control.mr-sm-2.searchInput(type='search' placeholder='Search' aria-label='Search')
-      button.btn.my-2.my-sm-0(type='submit')
-        i.fas.fa-search
-  .collapse.navbar-collapse#navbarSupportedContent
+  i.fas.fa-search  
+  .searchBox
+      input.searchInput(type='text' placeholder='Bạn muốn tìm gì?' aria-label='Search')
+      input(type='button' value="Tìm kiếm")
+  .collapse.in.navbar-collapse#navmenu
     ul.navbar-nav.mt-2.mt-lg-0
+      li.d-inline.d-lg-none
+        button.close.float-right(data-toggle='collapse' data-target='#navmenu') ×
       li.nav-item.active
         a.nav-link(href='index.html')
           | Trang chủ 
@@ -15,9 +17,8 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         a.nav-link(href='about.html') Về ZIGToys
       li.nav-item.dropdown
         a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').
-          
-          Sản Phẩm
-          
+        
+          Sản Phẩm  
         .dropdown-menu(aria-labelledby='navbarDropdown')
           a.dropdown-item(href='products.html') Mô hình Figures
           a.dropdown-item(href='#') DX-Drivers
@@ -26,12 +27,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         a.nav-link(href='blog.html') Blog
       li.nav-item
         a.nav-link(href='contact.html') Liên hệ
-    .heart-wrapper
-      a.btn.btn-theme-transparent.hidden-xs.hidden-sm(href)
-        i.far.fa-heart(style='font-size:24px')
-      a.btn.btn-theme-transparent.cart-icon(href="cart.html")
-        span.badge.badge-pill-red 0
-        i.fa.fa-shopping-cart(style='font-size:24px')
+  .heart-wrapper
+    a.btn.btn-theme-transparent.hidden-xs.hidden-sm(href)
+      i.far.fa-heart(style='font-size:24px')
+    a.btn.btn-theme-transparent.cart-icon(href="cart.html")
+      span.badge.badge-pill-red 0
+      i.fa.fa-shopping-cart(style='font-size:24px')
       
     
     
