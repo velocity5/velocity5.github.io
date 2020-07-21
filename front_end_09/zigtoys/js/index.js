@@ -19,24 +19,18 @@ $(document).ready(function() {
     });
 
 });
- /*validate email password login*/
+ /*validate username n' password login*/
  $(document).ready(function() {
  	$("#btnLogin").click(function(e) {
 		 $(".error").hide();
 		 let hasError = false;
-
-		 let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 		 let passReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
 
-		let emailAdd = $("#inputEmail").val();
+		let userName = $("#inputUser").val();
 		let pwdVal = $('#inputPassword').val();
-		if (emailAdd == '' || pwdVal == '') {
-			$("#inputEmail").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Email không được để trống</span>`);
+		if (pwdVal == '' || userName == '') {
+			$("#inputUser").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Tên người dùng không được để trống</span>`);
 			$("#inputPassword").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Mật khẩu không được để trống</span>`)
-			hasError = true;
-		}
-		else if (!emailReg.test(emailAdd)) {
-			$("#inputEmail").after (`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Email không hợp lệ</span>`);
 			hasError = true;
 		}
 		else if (!passReg.test(pwdVal)) {
@@ -248,6 +242,7 @@ function onLoadCartNumber() {
 		document.querySelector(".cart-icon span").textContent = productNumber;
 	}
 }
+
 function cartNumber(product) {
 	let productNumber = localStorage.getItem('cartNumber');
 	productNumber = parseInt(productNumber);
@@ -292,27 +287,53 @@ function cartNumber(product) {
 		let cartCost = localStorage.getItem("totalCost");
 		let cartItems = localStorage.getItem("productIncart");
 		cartItems = JSON.parse(cartItems);
-		let cartFrame = document.querySelector(".product-content");
+		let cartFrame = document.querySelector(".product-container");
 		if (cartItems && cartFrame) {
 			cartFrame.innerHTML = '';
 			Object.values(cartItems).map(item =>{
 				cartFrame.innerHTML += `
-				<div class="productInCart">
-					<img src="images/product_images/${item.tag}.jpg" class="img-fluid">
-					<span>${item.name}</span>
-						<i class="far fa-times-circle" type="button"></i>
-				</div>
-				<div class="priceQuantity">
-					<div class="priceInCart">${item.price}đ</div>
-					<div class="quantityInCart">
-						<button class="qty-desc">-</button>
-						<span id="qty">${item.inCart}</span>
-						<button class="qty-incre">+</button>
-					</div>
-					<div class="totalInCart">
-						${item.inCart * item.price}đ
-					</div>	
-				</div>	` 
+				<table class="cart">
+					<thead>
+						<tr>
+							<th class="product-thumbnail"> Sản phẩm </th>
+							<th class="product-name">
+								<span class="hidden-mb"> Tên sản phẩm </span>
+							</th>
+							<th class="product-price">
+								<span class="hidden-mb"> Giá thành </span>
+							</th>
+							<th class="product-quantity">
+								<span class="hidden-mb"> Số lượng </span>
+							</th>
+							<th class="product-subtotal"> Thành tiền </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="cart-item">
+							<td class="productInCart">
+								<img src="images/product_images/${item.tag}.jpg" class="img-fluid">		
+							</td>
+							<td class="productName">
+								<a href="product_detail.html" class="productLink">${item.name}</a>
+							</td>
+							<td class="productPrice">
+								<span class="priceInCart">${item.price}đ</span>
+							</td>
+							<td class="quantityInCart">
+								<button class="qty-desc">-</button>
+								<span id="qty">${item.inCart}</span>
+								<button class="qty-incre">+</button>
+							</td>
+							<td class="totalInCart">
+								${item.inCart * item.price}đ
+							</td>	
+							<td class="productRemove">
+								<i class="far fa-times-circle" type="button"></i>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+					` 
 			});
 			cartFrame.innerHTML += `
 				<div class="basketTotal">

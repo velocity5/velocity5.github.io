@@ -1,75 +1,46 @@
-.product-header {
-    display: flex;
-    margin: 0 auto;
-    border-bottom: 4px solid orange;
+.product-container table.cart {
+    width: 100%;
+   
 }
-.product-content {
-    margin-top: 20px;
-    margin-bottom: 50px;
+.cart thead tr th {
+    padding: 20px 23px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #FFC107;
+    color: #141c4b;
 }
-.product-cart {
-    margin-right: 90px;
+.product-container {
+    padding: 10px 0px;
+    text-align: center;
 }
-.product-cart, .product-cart, .product-cart {
-    margin-right: 4rem;
+.cart tbody tr td {
+    padding: 20px 0;
+    border-bottom: 1px solid #FFC107;
+    font-weight: 500;
+}
+.cart-item td.productName a {
+    text-decoration: none;
+    color: #273c75;
+}
+.cart-item td.productName a:hover {
+    color: #718093;
 }
 
-.productInCart {
-    display: flex;
-}
-.productInCart .fa-times-circle {
-    font-size: 20px;
-    color: #bcb4b4;
-    margin-left: 46rem;
-    margin-top: 3.5rem;
-}
-.productInCart img {
-    height: 150px;
-    padding-bottom: 10px;
-}
-.productInCart span {
-    padding-left: 4rem;
-    text-align: center;
-    margin-top: 2rem;
-}
-.priceQuantity {
-    display: flex;
-    margin-left: 24rem;
-}
-.priceInCart, .quantityInCart {
-    margin-top: -6rem;
-}
-.priceInCart {
-    margin-left: 1rem;
-}
-.quantityInCart {
-    margin-left: 5rem;
-    border: 1px solid #eeee;
-    height: 43px;
-}
-.quantityInCart button {
-    border: 0;
-    background: none;
-    width: auto;
-    padding: 2px 15px;
-    transition: all 0.4s ease 0s;
-    outline: none;
-    margin-top: 2px;
-}
-.totalInCart {
-    margin-left: 15rem;
-    margin-top: -6rem;
+.cart-item .productInCart img {
+    width: 85px;
+    border: 1px solid grey;
 }
 .basketTotal {
-    display: flex;
-    justify-content: flex-end;
     padding: 10px 0;
-    margin-right: 7.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.totalPrice {
+    width: 22%;
 }
 .checkOut {
     padding: 13px 10px;
     height: 48px;
-    margin-right: 8rem;
     border: none;
     font-size: 13px;
     font-weight: 600;
@@ -78,12 +49,7 @@
     background-color: #FFB800;
     color: white;
 }
-.basketTotalTitle {
-    width: 35%;
-}
-.totalPrice {
-    width: 10%;
-}
+
 .coupon-dropdown a {
     text-decoration: none;
     color: black;
