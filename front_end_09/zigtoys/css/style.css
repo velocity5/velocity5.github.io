@@ -649,14 +649,7 @@
         height: 40px;
         margin-left: 4.5rem;
     }
-    .md-form.mb-4 {
-        position: relative;
-    }
-    .md-form.mb-4 i {
-        position: absolute;
-        margin-left: 21rem;
-        top: 12px;
-    }
+    
     .modal-title {
         margin-top: 34px;
     }
@@ -679,6 +672,66 @@
     .modal-footer .forgot-pwd, p .not-member {
         text-decoration: none;
     }
+    /* validate email vs pwd */
+    .error {
+        display: flex;
+        margin-left: 5rem;
+        margin-top: 5px;
+        font-size: 13px;
+    }
+    .error .fa-exclamation-triangle {
+        margin-right: 5px;
+        margin-top: 3px;
+    }
+    .require-list ul li {
+        margin:0;
+        padding:0;
+        float: unset;
+        text-align: unset;
+        list-style-type:none;
+    }
+    .require-list h4 {
+        margin:0 0 10px 0;
+        padding:0;
+        font-weight:normal;
+    }
+    #psw-info {
+        position: absolute;
+        bottom: 24%;
+        right: 55px;
+        width: 300px;
+        padding: 15px;
+        background: #fefefe;
+        font-size: 0.785rem;
+        border-radius: 6px;
+        box-shadow:0 1px 3px #ccc;
+        border:1px solid #ddd;
+        display: none;
+    }
+    #psw-info::before {
+        content: "\25B2";
+        position:absolute;
+        top:-12px;
+        left:45%;
+        font-size:14px;
+        line-height:14px;
+        color:#ddd;
+        text-shadow:none;
+        display:block;
+    }
+    #psw-info .invalid {
+        background: url(../images/icon/icon_cancel.png) no-repeat 0 50%;
+        padding-left: 22px;
+        line-height: 24px;
+        color:#ec3f41;
+    }
+    #psw-info .valid {
+        background: url(../images/icon/icon_accept.png) no-repeat 0 50%;
+        padding-left: 22px;
+        line-height: 24px;
+        color: #3a7d34;
+    }
+    
     /* modal frame reset */
     .modal-footer .btn-reset {
         background-color: dodgerblue;
@@ -686,8 +739,6 @@
         height: 44px;
         border-radius: 40px;
     }
-    /* password requirements */
-    
     /* modal frame signup */
     .username, .mail-signup {
         border-radius: 6px;
@@ -701,10 +752,10 @@
     #female {
         margin-left: 4rem;
     }
-    .md-form.mb-3 {
+    .box-contain {
         position: relative;
     }
-    .md-form.mb-3 i {
+    .box-contain .fa-eye {
         position: absolute;
         margin-left: 21rem;
         top: 12px;

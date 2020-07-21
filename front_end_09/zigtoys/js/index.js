@@ -19,52 +19,59 @@ $(document).ready(function() {
     });
 
 });
- /*validate email*/
+ /*validate email password login*/
  $(document).ready(function() {
- 	$('#inputEmail').change(function() {
- 		let sEmail = $('#inputEmail').val();
- 		let filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
- 		if (!filter.test(sEmail)) {
- 			$("#error_email").text(sEmail+" is not valid email");
- 			sEmail.focus;
- 		} else {
- 			$("#error_email").text("");
- 		}
- 	});
- 	$("#btn-login").click(function(e) {
- 		let focusSet = false;
- 		let sEmail = $('#inputEmail').val();
- 		let filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
- 		if (!sEmail) {
- 		if ($("#inputEmail").parent().next(".validation").length == '') //only add if nothing input
- 			{
- 				$("#inputEmail").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter email address</div>");
- 			} 
- 			e.preventDefault();
- 			$("#inputEmail").focus();
- 			focusSet = true;
- 		} else {
- 			$("#inputEmail").parent().next(".validation").remove();
- 		}
- 		let psw = $('#inputPassword').val();
- 		if (!psw) {
- 			if ($("#inputPassword").parent().next(".validation").length == '') //only add if nothing input
- 			{
- 				$("#inputPassword").parent().after("<div class='validation' style='color:red;margin-bottom: 20px;'>Please enter password</div>");
- 			} 
- 			e.preventDefault();
- 			if (!focusSet) {
- 				$("#inputPassword").focus();
- 			}
- 		} else {
- 			$("#inputPassword").parent().next(".validation").remove();
- 		}
+ 	$("#btnLogin").click(function(e) {
+		 $(".error").hide();
+		 let hasError = false;
+
+		 let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		 let passReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
+
+		let emailAdd = $("#inputEmail").val();
+		let pwdVal = $('#inputPassword').val();
+		if (emailAdd == '' || pwdVal == '') {
+			$("#inputEmail").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Email không được để trống</span>`);
+			$("#inputPassword").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Mật khẩu không được để trống</span>`)
+			hasError = true;
+		}
+		else if (!emailReg.test(emailAdd)) {
+			$("#inputEmail").after (`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Email không hợp lệ</span>`);
+			hasError = true;
+		}
+		else if (!passReg.test(pwdVal)) {
+			$("#inputPassword").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Mật khẩu không chính xác</span>`);
+			hasError = true;
+		}
+		if (hasError == true) {
+			return false;
+		}
  	});
  });
-
- //validate password
+ //validate password signup
  $(document).ready(function() {
- 	$('input[type=password]').keyup(function() {
+	$("#btnSignup").click(function(e) {
+		$(".error").hide();
+		let hasError = false;
+		let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		let emailAdd = $('#formSignup-mail').val();
+		let pwdVal = $('#formSignup-pass').val();
+		let userName = $('#formUsername').val();
+		if (emailAdd == '' || pwdVal == '' || userName == '') {
+			$('#formSignup-mail').after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Vui lòng nhập email</span>`);
+			$('#formSignup-pass').after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Vui lòng nhập mật khẩu</span>`);
+			$('#formUsername').after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Vui lòng nhập tên người dùng</span>`);
+			hasError = true;
+		}
+		else if (!emailReg.test(emailAdd)) {
+			$("#formSignup-mail").after (`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Email không hợp lệ</span>`);
+			hasError = true;
+		}
+		if (hasError == true) {
+			return false;
+		}
+	});
+ 	$("#formSignup-pass").keyup(function() {
  		let psw = $(this).val();
  		//validate the length
  		if (psw.length < 8) {
@@ -94,17 +101,23 @@ $(document).ready(function() {
  		$('#psw-info').show();
  	}).blur(function() {
  		$('#psw-info').hide();
- 	})
+ 	});
  });
  // show-hide password
-$('.glyphicon-eye-open').on('click', 
+$('.fa-eye').on('click', 
 	function() {
-	$(this).toggleClass("glyphicon-eye-close");
+	$(this).toggleClass("fa-eye-slash");
 	let type = $("#inputPassword").attr("type");
 	if (type == "text") {
 		$('#inputPassword').attr("type", "password");
 	} else {
 		$('#inputPassword').attr("type", "text");
+	}
+	let typesingup = $("#formSignup-pass").attr("type");
+	if(typesingup == "text") {
+		$("#formSignup-pass").attr("type", "password");
+	} else {
+		$("#formSignup-pass").attr("type", "text");
 	}
 });
 // toggle searchbox menu
@@ -309,8 +322,7 @@ function cartNumber(product) {
 					<h5 class="totalPrice">
 						${cartCost}đ
 					</h5>
-				</div>
-			`
+				</div>	`
 		}
 	}
 onLoadCartNumber();
