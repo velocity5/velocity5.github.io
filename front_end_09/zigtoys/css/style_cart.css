@@ -47,16 +47,16 @@
 .quantityInCart {
     margin-left: 5rem;
     border: 1px solid #eeee;
-    height: 30px;
-    width: 100px;
+    height: 43px;
 }
 .quantityInCart button {
     border: 0;
     background: none;
     width: auto;
-    padding: 0 15px;
+    padding: 2px 15px;
     transition: all 0.4s ease 0s;
     outline: none;
+    margin-top: 2px;
 }
 .totalInCart {
     margin-left: 15rem;

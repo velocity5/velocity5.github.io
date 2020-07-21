@@ -36,7 +36,7 @@ block content
                         i.fab.fa-pinterest
                         i.fab.fa-facebook
                         a.btn.btn-theme-transparent
-                            i.far.fa-heart 
+                            i.far.fa-heart(title="Thêm vào yêu thích") 
                 .col-12.col-xs-12.col-sm-12.col-md-8
                     h2.product-title S.H.Figuarts Kamen Rider Zero One-Rising Hopper
                     .rating-product
@@ -52,12 +52,12 @@ block content
                     form.qty-cart 
                         span Số lượng
                         .quantity-number
-                            button.qty-desc -
-                            input(type="text", name="quantity", value="1", min="1",id="qty")
-                            button.qty-incre +
+                            button(type="button").qty-desc -
+                            span(id="qty") 1
+                            button(type="button").qty-incre +
                     .btn-group
                         button.btn-warning.addcart 
-                            i.fa.fa-shopping-cart  Thêm Vào Giỏ
+                            i.fa.fa-shopping-cart.add-cart  Thêm Vào Giỏ
                         button.btn-danger.buynow MUA NGAY
                     .description-tab
                         ul.nav.nav-tabs.tabs.tabs-hold(role="tablist")
@@ -140,7 +140,7 @@ block content
             .row.text-center.relate-product
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                     .thumbnail
-                        .product-image.hover-shadow
+                        .product-image
                             img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
                             .zoom
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1')
@@ -154,10 +154,10 @@ block content
                                 i.far.fa-star
                                 i.far.fa-star
                             p.price 1.500.000đ
-                            .buttons
-                                a.btn.btn-icon-left(href='#')
-                                    i.fa.fa-shopping-cart  Thêm vào giỏ
-                                a.btn.btn-icon-right(href='#')
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
                                     i.far.fa-heart
                 .modal.fade#quickview1(tabindex='-1' role='dialog' aria-hidden='true')
                     .modal-dialog.modal-lg(role='document')
@@ -188,7 +188,7 @@ block content
                                                     span.sr-only Next
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                     .thumbnail
-                        .product-image.hover-shadow
+                        .product-image
                             img.img-fluid.figure(src='images/product_images/geiz.png' alt)
                             .zoom
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2')
@@ -202,10 +202,10 @@ block content
                                 i.far.fa-star
                                 i.far.fa-star
                             p.price 1.200.000đ
-                            .buttons
-                                a.btn.btn-icon-left(href='#')
-                                    i.fa.fa-shopping-cart  Thêm vào giỏ
-                                a.btn.btn-icon-right(href='#')
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
                                     i.far.fa-heart
                 .modal.fade#quickview2(tabindex='-1' role='dialog' aria-hidden='true')
                     .modal-dialog.modal-lg(role='document')
@@ -236,7 +236,7 @@ block content
                                                     span.sr-only Next
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                     .thumbnail
-                        .product-image.hover-shadow
+                        .product-image
                             img.img-fluid.figure(src='images/product_images/val.jpg' alt)
                             .zoom
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview3')
@@ -250,10 +250,10 @@ block content
                                 i.far.fa-star
                                 i.far.fa-star
                             p.price 1.300.000đ
-                            .buttons
-                                a.btn.btn-icon-left(href='#')
-                                    i.fa.fa-shopping-cart  Thêm vào giỏ
-                                a.btn.btn-icon-right(href='#')
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
                                     i.far.fa-heart
                 .modal.fade#quickview3(tabindex='-1' role='dialog' aria-hidden='true')
                     .modal-dialog.modal-lg(role='document')

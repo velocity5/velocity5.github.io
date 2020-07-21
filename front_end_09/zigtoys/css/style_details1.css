@@ -18,7 +18,10 @@
   .share .btn i {
     border-left: 2px solid grey;
     padding-left: 23px;
-    color: #FFEB3B;
+    color: #f0932b;
+  }
+  .share .btn i:hover {
+    color: #e55039;
   }
  
   .product-title {
@@ -74,19 +77,24 @@
     height: 40px;
     transition: all 0.4s ease-in-out;
   }
+  button.qty-desc {
+    margin-right: 10px;
+    font-size: 20px;
+}
   .qty-cart {
     margin-bottom: 56px;
   }
   .btn-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   .btn-group .addcart, .btn-group .buynow {
     color: white;
     margin-bottom: 23px;
     border-radius: 6px;
-    width: 646px;
+    width: 190px;
     height: 48px;
+    margin-right: 10px;
   }
   .relate-product {
     margin-bottom: 100px;

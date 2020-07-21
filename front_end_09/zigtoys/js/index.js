@@ -292,9 +292,9 @@ function cartNumber(product) {
 				<div class="priceQuantity">
 					<div class="priceInCart">${item.price}đ</div>
 					<div class="quantityInCart">
-						<button class="qtyDesc">-</button>
-						<span>${item.inCart}</span>
-						<button class="qtyIncre">+</button>
+						<button class="qty-desc">-</button>
+						<span id="qty">${item.inCart}</span>
+						<button class="qty-incre">+</button>
 					</div>
 					<div class="totalInCart">
 						${item.inCart * item.price}đ
