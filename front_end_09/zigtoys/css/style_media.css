@@ -1,232 +1,193 @@
-    @media(max-width: 992px) {
-        .navbar-collapse.collapsing .navbar-nav {
-            display: block;
-            position: fixed;
-            top: 48%;
-            bottom: 0;
-            left: -45%;
-            transition: all 0.2s ease;
-        }
-        
-        .navbar-collapse.show .navbar-nav {
-            position: fixed;
-            top: 48%;
-            bottom: 0;
-            left: 0;
-            z-index: 2;
-            flex-direction: column;
-            height: auto;
-            width: 45%;
-            background-color:#fcc226;
-            transition: left 0.2s ease;
-            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-        }
-        .submenu {
-            width: 88%;
-        }
-        .justify-content-center .div-table .caption-content {
-            display: block;
-        }
-        .product-image {
-            width: auto;
-            margin-left: auto;
-        }
-        .thumbnail .zoom {
-            top: 40%;
-        }
-        .title-content {
-            width: 74%;
-            margin-left: 12%;
-        }
-        .benefit {
-            margin-bottom: 20px;
-        }
-        .subscribe-newsletter .form-control {
-            width: 190px;
-        }
-        .prev {
-            margin-left: 93%;
-        }
-        .card-admin span {
-            margin-left: auto;
-        }
-    }
 
-    @media(max-width: 768px) {
-        header {
-        text-align: left;
-        }
-        .col-md-1 p {
-        padding-top: 0;
-        }
-        header ul {
-        display: inline-block;
-        margin: 0 auto;
-        text-align: center;
-        float: none;
-        }
-        header ul li {
-            margin-left: 100px;
-        }
-        .info {
-            margin-top: 0;
-        }
-        .info li:first-child {
-            margin-left: 10px;
-        }
-        .navbar-nav {
-        display: block;
-        margin-left: 0;
-        }
-        .navbar-nav li a.nav-link {
-        border: none;
-        }
-        .navbar-nav li a.nav-link:hover {
-        background: #dddddda3;
-        color: #000;
-        border: none;
-        }
-        .heart-wrapper {
-            margin-right: 0;
-        }
-        i.fas.fa-search {
-            margin-right: 16rem;
-        }
-        .searchBox:hover > .searchInput {
-            width: 150px;
-        }
-        .searchBox {
-            width: 270px;
-            left: 20%;
-        }
-        .searchBox::before {
-            left: 1rem;
-        }
-        .searchBox .searchInput {
-            width: 150px;
-            margin-left: 15px;
-        }
-        .searchBox input[type="button"] {
-            margin-right: 12px;
-        }
-        .justify-content-center .div-table .caption-content {
-            display: block;
-        }
-        .caption .caption-content {
-            padding-top: 20%;
-        }
-        .subscribe .btn-outline-secondary.btn-subscribe {
-            margin-left: 30%;
-        }
-        .view {
-            margin-top: 120%;
-        }
-        .content {
-            width: auto;
-        }
-        .thumbnail .img-fluid {
-            max-height: 70%;
-        }
-        .thumbnail .zoom {
-            top: 34%;
-        }
-        .product-image {
-            height: 300px;
-        }
-        /* product title */
-        
-        .brand img {
-            margin-bottom: 20px;
-            width: 100px;
-        }
-        #indicators .carousel-inner {
-            width: auto;
-        }
-        .prev, .next {
-            transform: translate(-250%,50%);
-            left: 50%;
-            margin: 0 auto;
-        }
-        .card {
-            margin-bottom: 20px;
-        }
-        .card-admin span {
-            margin-left: 0px;
-        }
-        .title-info-footer, .title-support, 
-        .title-quick, .title-newsletter {
-            font-size: x-large;
-        }
-        .subscribe-newsletter .form-control {
-            width: 100%;
-        }
-        footer.bg-dark {
-            text-align: center;
-        }
-        ol.breadcrumb {
-            width: 28rem;
-            margin-left: 20px;
-        }
-        .product-header .product-cart-title {
-            margin-right: 50px;
-            
-        }
-    }
-    @media (max-width: 576px) { 
-        header .user-part ul li {
-            margin-left: 30px;
-        }
-        .info {
-            display: flex;
-            width: 400px;
-            margin-left: -13px;
-        }
-        .info li:nth-child(2) {
-            margin-left: 10px;
-        }
-        .view {
-            margin-top: 60%;
-        }
-        .view .btn-view {
-            height: auto;
-        }
-        .caption .caption-content {
-            padding-top: 10%;
-        }
-        .caption-title, .caption-subtitle {
-            font-size: 20px;
-        }
-        .subscribe .btn-outline-secondary.btn-subscribe {
-            margin-top: auto;
-            height: auto;
-            margin-left: 25%;
-        }
-        .heading h2 {
-            font-size: 20px;
-        }
-        #indicators .carousel-inner {
-            width: 100%;
-        }
-        #indicators .carousel-indicators > li {
-            margin-top: 20px;
-            margin-right: 5px;
-            margin-left: 0;
-        }
-        .prev, .next {
-            transform: translate(-180%,50%);
-        }
-        .card {
-            margin-left: 30px;
-        }
-        .card-admin span {
-            margin-left: 0px;
-        }
-        .title-content {
-            width: auto;
-            margin-left: auto;
-        }
-        .subscribe-newsletter .form-control {
-            width: 100%;
-        }
-        
+ @media (max-width: 991.98px) { 
+     .info-part {
+         font-size: 14px;
+         margin-top: 30px;
+         transition: all 0.3s ease-in-out;
      }
+     .info {
+        margin-top: 16px;
+    }
+    .info li:nth-child(2) {
+        margin-top: 30px;
+    }
+     .user-part {
+         margin-bottom: 10px;
+         transition: all 0.3s ease-in-out;
+     }
+     .navbar-brand img {
+        max-width: 150px;
+        margin-top: 30px;
+        margin-left: 30%;
+        transition: all 0.3s ease-in-out;
+     }
+     .fa-search {
+         margin-left: 0;
+         margin-right: 60%;
+         transition: all 0.3s ease-in-out;
+     }
+     .searchBox {
+        left: 12%;
+     }
+     .navbar-nav {
+         margin-left: 0;
+     }
+     .justify-content-center .div-table 
+     .caption-content {
+        display: block;
+        padding-top: 50%;
+     }
+     .justify-content-center .div-table 
+     .caption-content > .caption-subtitle {
+         margin-top: 0;
+     }
+     .subscribe .btn-outline-secondary.btn-subscribe {
+         margin-left: 34%;
+     }
+     .product-image {
+         margin-left: 10%;
+     }
+     .thumbnail .zoom {
+         top: 40%;
+     }
+     .product .product-title {
+        font-size: 18px;
+    }
+     .benefit {
+         margin-bottom: 40px;
+     }
+     .title-content h3 {
+         font-size: 16px;
+     }
+    #indicators .carousel-inner {
+        width: unset;
+    }
+     .prev {
+        margin-left: 90%;
+     }
+     .subscribe-newsletter .form-control {
+         width: 180px;
+     }
+     .subscribe-newsletter button {
+        width: 120px;
+    }
+  }
+@media (max-width: 767.98px) { 
+    .user-part {
+        margin-right: 20%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .info-part {
+        font-size: unset;
+        margin-top: 0;
+        margin-right: 14%;
+    }
+    .info li:first-child {
+        margin-left: 10px;
+    }
+    .info li:nth-child(2) {
+        margin-top: 0px;
+    }
+    .navbar-brand img {
+        max-width: 200px;
+        margin-top: 0;  
+    }
+    .fa-search {
+        margin-right: 20%;
+    }
+    .searchBox {
+        left: 28%;
+     }
+    .justify-content-center .div-table .caption-content {
+        padding-top: 30%;
+    }
+    .summer .view {
+        margin-top: 150%;
+    }
+    .thumbnail .zoom {
+        top: 36%;
+        font-size: 25px;
+        left: 64%;
+    }
+    .product .product-title {
+        font-size: 18px;
+    }
+    .thumbnail .group-btn .btn-icon-left {
+        font-size: 10px;
+    }
+    .card.hover-post-shadow {
+        margin-bottom: 20px;
+    }
+    .carousel-item img {
+        height: 400px;
+        width: 500px;
+    }
+    .title-info-footer, .title-support, 
+    .title-quick, .title-newsletter {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .bg-dark .info-footer, .support, .quick, .newsletter {
+        margin-top: 20px;
+    }
+    .add, .mail, .phone, .time {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+    .support-list, .quick-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .subscribe-newsletter .form-control {
+        width: 100%;
+    }
+    .subscribe-newsletter button {
+        margin-left: 36%;
+    }
+    .social-link {
+        display: flex;
+        justify-content: center;
+    }
+ }
+ @media (max-width: 627px) {
+    .product-image {
+        margin-left: -5%;
+        width: unset;
+    }
+    .thumbnail .zoom {
+        top: 32%;
+        left: 50%;
+    }
+    .thumbnail .group-btn .btn-icon-left {
+        font-size: 9px;
+    }
+    .product .product-title {
+        font-size: 16px;
+    }
+ }
+ @media (max-width: 575.98px) { 
+    .thumbnail .zoom {
+        top: 58%;
+        left: 47%;
+    }
+    .product .product-title {
+        font-size: 20px;
+        margin-right: 20px;
+    }
+    .group-btn, .rating, p.price {
+        margin-right: 20px;
+    }
+ }
+ @media (max-width: 512px) {
+    .navbar-brand img {
+        max-width: 130px;
+    }
+    .thumbnail .zoom {
+        top: 53%;
+    }
+ }

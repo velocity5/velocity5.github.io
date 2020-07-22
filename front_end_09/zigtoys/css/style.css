@@ -74,6 +74,10 @@
     .navbar-brand img {
         max-width: 190px;
     }
+    .wrap-all {
+        display: flex;
+        margin-right: 3rem;
+    }
     .heart-wrapper .btn i {
         color: #f0932b;
     }
@@ -81,12 +85,7 @@
         color: #e55039;
     }
     .heart-wrapper {
-        border-right: 1px solid grey;
-        margin-left: 3rem;
         height: 2rem;
-    }
-    .cart-wrapper {
-        margin-right: 3rem;
     }
     .cart-wrapper .btn i {
         color: black;
@@ -107,13 +106,13 @@
     }
     /* searchBox menu */
     .fa-search {
-        margin-left: 1rem;
+        margin-left: 3rem;
     }
     .searchBox {
         background-color: #ecf0f1;
         position: absolute;
         top: 60px;
-        left: 10%;
+        left: 4%;
         width: 350px;
         height: 60px;
         z-index: 10;

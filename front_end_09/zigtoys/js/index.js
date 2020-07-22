@@ -328,7 +328,7 @@ function cartNumber(product) {
 								${item.inCart * item.price}đ
 							</td>	
 							<td class="productRemove">
-								<i class="far fa-times-circle" type="button"></i>
+								<i class="far fa-times-circle" type="button" onclick="removeItem()"></i>
 							</td>
 						</tr>
 					</tbody>
@@ -345,6 +345,13 @@ function cartNumber(product) {
 					</h5>
 				</div>	`
 		}
+	}
+	function removeItem() {
+		$(".fa-times-circle").each(function() {
+			$(this).on('click', () => {
+				$(this).parents('.cart-item').remove();
+			})
+		})
 	}
 onLoadCartNumber();
 displayCart();

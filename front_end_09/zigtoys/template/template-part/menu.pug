@@ -1,17 +1,12 @@
 nav.navbar.navbar-expand-lg.navbar-light.bg-light
   button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navmenu' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
-  .heart-wrapper
-    a.btn.hidden-xs.hidden-sm(href)
-      i.far.fa-heart(style='font-size:24px')
   i.fas.fa-search  
   .searchBox
-      input.searchInput(type='text' placeholder='Bạn muốn tìm gì?' aria-label='Search')
-      input(type='button' value="Tìm kiếm")
+    input.searchInput(type='text' placeholder='Bạn muốn tìm gì?' aria-label='Search')
+    input(type='button' value="Tìm kiếm")
   .collapse.in.navbar-collapse#navmenu
     ul.navbar-nav
-      li.d-inline.d-lg-none
-        button.close.float-right(data-toggle='collapse' data-target='#navmenu') ×
       li.nav-item.active
         a.nav-link(href='index.html')
           | Trang chủ 
@@ -30,8 +25,12 @@ nav.navbar.navbar-expand-lg.navbar-light.bg-light
         a.nav-link(href='blog.html') Blog
       li.nav-item
         a.nav-link(href='contact.html') Liên hệ
-  .cart-wrapper
-    a.btn.btn-theme-transparent.cart-icon(href="cart.html")
-      span.badge.badge-pill-red 0
-      i.fa.fa-shopping-cart(style='font-size:24px')
-  
+  .wrap-all
+    .cart-wrapper
+      a.btn.btn-theme-transparent.cart-icon(href="cart.html")
+        span.badge.badge-pill-red 0
+        i.fa.fa-shopping-cart(style='font-size:24px')
+    .heart-wrapper
+      a.btn.hidden-xs.hidden-sm(href)
+        i.far.fa-heart(style='font-size:24px')
+    
