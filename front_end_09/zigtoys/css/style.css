@@ -334,12 +334,6 @@
         text-decoration: none;
         color: #232323;
     }
-    .hover-shadow {
-        transition: all 0.4s ease;
-    }
-    .hover-shadow:hover {
-        box-shadow: 0 0 15px 5px rgba(0,0,0,0.1);
-    }
     /* thumbnail zoom carousel */
     .product-control i {
         color: goldenrod;

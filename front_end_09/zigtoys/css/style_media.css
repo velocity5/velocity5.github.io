@@ -1,5 +1,32 @@
-
+@media (max-width: 1200px) { 
+    .info-part {
+        margin-top: 25px;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar-brand img {
+        max-width: 170px;
+        margin-left: 20%;
+        margin-top: 20px;
+    }
+    .user-part {
+        margin-bottom: 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .navbar-nav {
+        margin-left: 4rem;
+    }
+    .wrap-all {
+        margin-right: 1rem;
+    }
+    /* about us */
+    .breadcrumb {
+        max-width: 58rem;
+        margin-left: 42px;
+        transition: all 0.3s ease-in-out;
+    }
+ }
  @media (max-width: 991.98px) { 
+     /* homepage */
      .info-part {
          font-size: 14px;
          margin-top: 30px;
@@ -70,6 +97,26 @@
      }
      .subscribe-newsletter button {
         width: 120px;
+    }
+    /* about us */
+    .title-col {
+        padding: 2px;
+    }
+    .breadcrumb-contain .breadcrumb {
+        max-width: 52rem;
+        margin-left: 2px;
+    }
+  }
+  @media (max-width: 890px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 50rem;
+        margin-left: 3px;
+    }
+  }
+  @media (max-width: 857px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 44rem;
+        margin-left: 4px;
     }
   }
 @media (max-width: 767.98px) { 
@@ -153,6 +200,39 @@
         display: flex;
         justify-content: center;
     }
+    /* about us */
+    .breadcrumb {
+        max-width: 42rem;
+    }
+     .title-col h2 {
+        font-size: 25px;
+     }
+     .title-col {
+        padding: 5px;
+    }
+ }
+ @media (max-width: 745px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 40rem;
+        margin-left: 5px;
+    }
+ }
+ @media (max-width: 727px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 38rem;
+        margin-left: 6px;
+    }
+ }
+ @media (max-width: 680px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 35rem;
+        margin-left: 7px;
+    }
+ }
+ @media (max-width: 630px) {
+    .breadcrumb-contain .breadcrumb {
+        margin-left: 0;
+    }
  }
  @media (max-width: 627px) {
     .product-image {
@@ -170,6 +250,11 @@
         font-size: 16px;
     }
  }
+ @media (max-width: 590px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 33rem;
+    }
+ }
  @media (max-width: 575.98px) { 
     .thumbnail .zoom {
         top: 58%;
@@ -182,6 +267,19 @@
     .group-btn, .rating, p.price {
         margin-right: 20px;
     }
+    .title-col {
+        padding: 16px;
+    }
+ }
+ @media (max-width: 558px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 32rem;
+    }
+ }
+ @media (max-width: 543px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 30rem;
+    }
  }
  @media (max-width: 512px) {
     .navbar-brand img {
@@ -189,5 +287,10 @@
     }
     .thumbnail .zoom {
         top: 53%;
+    }
+ }
+ @media (max-width: 510px) {
+    .breadcrumb-contain .breadcrumb {
+        max-width: 28rem;
     }
  }
