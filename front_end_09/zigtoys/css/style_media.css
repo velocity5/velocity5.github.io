@@ -24,6 +24,33 @@
         margin-left: 42px;
         transition: all 0.3s ease-in-out;
     }
+    /* product */
+    .filter-contain {
+        margin-right: 7px;
+        max-width: 58rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .filter-contain .filter-title {
+        margin-right: 20px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .filter-contain a.delete {
+        margin-left: 10rem;
+        transition: all 0.3s ease-in-out;
+    }
+    /* product-detail */
+    #detail-tab, #descript-tab, #review-tab {
+        padding: 20px 32px;
+    }
+    /* blog */
+    .img-title {
+        max-width: 95%;
+    }
+    .img-side-title.post1, .img-side-title.post2 {
+        max-width: 90%;
+        margin-bottom: 9px;
+    }
  }
  @media (max-width: 991.98px) { 
      /* homepage */
@@ -90,7 +117,7 @@
         width: unset;
     }
      .prev {
-        margin-left: 90%;
+        margin-left: 85%;
      }
      .subscribe-newsletter .form-control {
          width: 180px;
@@ -106,6 +133,18 @@
         max-width: 52rem;
         margin-left: 2px;
     }
+    /* product */
+    .filter-contain {
+        margin-right: 5rem;
+        max-width: 53rem;
+    }
+    .filter-contain a.delete {
+        margin-left: 7rem;
+    }
+    /* produt detail */
+    #detail-tab, #descript-tab, #review-tab {
+        padding: 20px 9px;
+    } 
   }
   @media (max-width: 890px) {
     .breadcrumb-contain .breadcrumb {
@@ -292,5 +331,41 @@
  @media (max-width: 510px) {
     .breadcrumb-contain .breadcrumb {
         max-width: 28rem;
+    }
+    .md-form.check-remember {
+        transition: all 0.3s ease-in-out;
+    }
+ }
+ @media (max-width: 448px) {
+    .navbar-brand img {
+        max-width: 120px;
+    }
+    /* modal signup login v.v */
+    .username, .mail-signup, .mail-pass, .md-form.mb-3 #inputBirthday
+    {
+        margin-left: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .box-contain .fa-eye {
+        margin-left: 18rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .radio-group {
+        margin-left: 5rem;
+        transition: all 0.3s ease-in-out;
+    }
+    .md-form.check-remember {
+        margin-left: 1rem;
+        transition: all 0.3s ease-in-out;
+    }
+    /* */
+    .text-right {
+        margin-left: -40%;
+    }
+    #indicators .carousel-indicators > li {
+        height: 50px;
+    }
+    .breadcrumb-contain .breadcrumb {
+        max-width: 25rem;
     }
  }
