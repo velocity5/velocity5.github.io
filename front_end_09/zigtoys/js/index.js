@@ -149,11 +149,14 @@ $(document).ready(function(){
 let increBtn = document.querySelector(".qty-incre");
 let descBtn = document.querySelector(".qty-desc");
 let input = document.querySelector("#qty");
-    increBtn.addEventListener('click', (e) => {
+if(increBtn) {
+	increBtn.addEventListener('click', false ,(e) => {
         input.innerText = Number(input.innerText) + 1;
         return false;
     })
-    descBtn.addEventListener('click', (e) => {
+}
+if(descBtn) {
+	descBtn.addEventListener('click', false ,(e) => {
         input.innerText = Number(input.innerText);
             if(input.innerText > 0) {
                 input.innerText = Number(input.innerText) - 1;
@@ -162,7 +165,7 @@ let input = document.querySelector("#qty");
             }
             return false;
     }) 
-
+}   
 // Add2cart function
 let carts = document.querySelectorAll(".add-cart");
 let products = [
@@ -370,6 +373,6 @@ function cartNumber(product) {
 				$(this).parents('.cart-item').remove();
 			})
 		})
-	}
+	} 
 onLoadCartNumber();
 displayCart();
