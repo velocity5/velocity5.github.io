@@ -31,7 +31,8 @@
     width: 100%;
 }
 .submit button {
-    padding: 10px 25px 10px 25px;
+    width: 190px;
+    height: 48px;
     border-radius: 6px;
     background-color: #ffb727;
     color: white;

@@ -8,8 +8,7 @@
     bottom: 1.9rem;
     z-index: 10;
     padding: 16px;
-    width: 45rem;
-    border-radius: 4px;
+
 }
 .img-title span {
     font-size: 15px;
@@ -34,7 +33,6 @@
     z-index: 10;
     width: 92%;
     padding: 16px;
-    border-radius: 4px;
 }
 .img-side-title h4:hover, .img-side-title h4:active {
     color: #7f8c8d;

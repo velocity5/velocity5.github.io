@@ -33,7 +33,11 @@
         padding-top: 13%;
     }
     .navbar-nav {
-        margin-left: 10rem;
+        margin-left: 14%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
     }
     .navbar-nav li {
         font-family: 'Playfair Display', serif;
@@ -68,8 +72,7 @@
         cursor: pointer;
     }
     .navbar-nav li a.nav-link:hover {
-        border-bottom: 1px solid #c23616;
-        background-color: rgb(223, 217, 217,.2);
+        background-color: rgba(255, 165, 2,0.8);
     }
     .navbar-brand img {
         max-width: 190px;
@@ -160,9 +163,7 @@
         color: white;
     }
     .dropdown-menu.show a:hover {
-        background-color: #fad390;
-        border-bottom: 1px solid #E76F51;
-        border-bottom-width: thin;
+        background-color: rgba(255, 165, 2,0.8);
     }
     /* carousel slider img active*/
     .carousel-item img {

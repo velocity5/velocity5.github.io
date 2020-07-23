@@ -21,12 +21,6 @@
 .filter-one, .filter-two, .filter-three {
     width: 155px;
 } 
-.filter-title {
-    font-size: 20px;
-    margin-top: 10px;
-    font-weight: 200;
-    cursor: default;
-}
 .filter-contain .delete {
     text-decoration: none;
     color: #978e8e;
