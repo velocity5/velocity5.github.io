@@ -10,11 +10,10 @@
     padding: 16px;
     width: 45rem;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 .img-title span {
     font-size: 15px;
-    color: rgba(255, 255, 255, 0.5);
+    color: #ced6e0;
 }
 .img-title h2 {
     color: #f5f6fa;
@@ -36,7 +35,6 @@
     width: 92%;
     padding: 16px;
     border-radius: 4px;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 .img-side-title h4:hover, .img-side-title h4:active {
     color: #7f8c8d;
@@ -48,7 +46,7 @@
     bottom: 5.5%;
 }
 .post1 span, .post2 span {
-    color: #a4b0be;
+    color: #ced6e0;
     font-size: 15px;
 }
 .img-small h4 {
