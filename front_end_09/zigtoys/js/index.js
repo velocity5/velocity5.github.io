@@ -150,13 +150,13 @@ let increBtn = document.querySelector(".qty-incre");
 let descBtn = document.querySelector(".qty-desc");
 let input = document.querySelector("#qty");
 if(increBtn) {
-	increBtn.addEventListener('click', false ,(e) => {
+	increBtn.addEventListener('click',(event) => {
         input.innerText = Number(input.innerText) + 1;
         return false;
     })
 }
 if(descBtn) {
-	descBtn.addEventListener('click', false ,(e) => {
+	descBtn.addEventListener('click',(event) => {
         input.innerText = Number(input.innerText);
             if(input.innerText > 0) {
                 input.innerText = Number(input.innerText) - 1;

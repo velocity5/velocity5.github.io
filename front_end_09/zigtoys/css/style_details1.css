@@ -53,22 +53,24 @@
   /* quantity button */
   .qty-cart {
     display: flex;
+    margin-bottom: 56px;
   }
-  .qty-cart span {
+  .qty-cart span:nth-child(1) {
     margin-right: 5px;
     font-size: 14px;
     margin-top: 10px;
 }
-  .quantity-number {
-    font-weight: 500;
-    font-size: 16px;
-    width: 100px;
-    text-align: center;
-  }
   .qty-cart .quantity-number input {
     width: 30px;
     text-align: center;
     border: none;
+  }
+  .quantity-number {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    border: 1px solid #607D8B;
+    border-radius: 6px;  
   }
   .quantity-number button {
     border: none;
@@ -78,13 +80,11 @@
   }
   .quantity-number span {
     font-size: 16px;
+    font-weight: 500;
+    margin-top: 8px;
   }
-  button.qty-desc {
-    margin-right: 10px;
+  .quantity-number .qty-desc, .quantity-number .qty-incre {
     font-size: 20px;
-}
-  .qty-cart {
-    margin-bottom: 56px;
   }
   .btn-group {
     display: flex;

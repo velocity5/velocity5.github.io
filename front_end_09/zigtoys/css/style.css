@@ -383,7 +383,9 @@
     .btn-icon-right i {
         color: #ffc107;
     }
-
+    .space {
+        margin-bottom: 50px;
+    }
     /* rating section */
     .rating i {
         color: #FFEB3B;

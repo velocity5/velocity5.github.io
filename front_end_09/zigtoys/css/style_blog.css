@@ -91,3 +91,57 @@
 .hover-post-shadow:hover {
     box-shadow: 12px 8px 19px -5px rgba(0,0,0,0.75);
 }
+/* ----------------- */
+.img-blog {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog-content p, p.lastSentence {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.listSeries {
+    margin-left: 30px;
+}
+.listSeries a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.listSeries a:hover {
+    color: #5352ed;
+}
+.side-post {
+    margin-top: 30px;
+}
+.img-side-blog {
+    margin-top: 43px;
+    margin-left: 10%;
+}
+.img-side-blog img {
+    width: 300px;
+    height: 300px;
+}
+.side-title a, .side-title span {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.side-post .side-title {
+    position: absolute;
+    max-width: 300px;
+    padding: 5px;
+}
+.side-title {
+    display: grid;
+}
+.side-post .side-title a {
+    margin-top: -30%;
+}
+.side-post .side-title span {
+    margin-top: -16%;
+}
+.side-title a:hover {
+    color: #ced6e0;
+}

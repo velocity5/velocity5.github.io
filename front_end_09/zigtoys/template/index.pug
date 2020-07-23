@@ -1,6 +1,6 @@
 extends template-part/layout.pug
 block title
-    title Trang chủ
+    title ZIGToys - Trang chủ
 block content
     .slider_top
         #carouselIndicators.carousel.slide(data-ride='carousel')
@@ -9,7 +9,7 @@ block content
                 li(data-target='#carouselIndicators' data-slide-to='1')
             .carousel-inner
                 .carousel-item
-                    img.d-block.w-100(src='images/product_images/burning-falcon-ds.jpg' alt='First slide')
+                    img.w-100(src='images/product_images/burning-falcon-ds.jpg' alt='First slide')
                     .caption
                         .container.d-flex.justify-content-center
                             .div-table.summer
@@ -17,7 +17,7 @@ block content
                                     a.btn.btn-outline-secondary.btn-view(type='button', href="products.html") Xem Ngay  
                                         i.fas.fa-angle-right
                 .carousel-item.active.darken-img
-                    img.d-block.w-100(src='images/product_images/garo-1.jpg' alt='Second slide')
+                    img.w-100(src='images/product_images/garo-1.jpg' alt='Second slide')
                     .caption
                         .container.d-flex.justify-content-center
                             .div-table
@@ -59,7 +59,7 @@ block content
                     h2 Sản phẩm mới
                     hr.below
         .row.text-center
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.space
                 .thumbnail
                     .product-image
                         img.img-fluid.figure(src='images/product_images/01-Figure.jpg' alt)
@@ -69,11 +69,11 @@ block content
                         h4.product-title
                             a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Zero One 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                         p.price 1.000.000đ
                         .group-btn
                             button.btn.btn-icon-left
@@ -107,7 +107,7 @@ block content
                                             a.carousel-control-next.product-control(href='#product-id' role='button' data-slide='next')
                                                 i.fa.fa-chevron-circle-right.fa-2x
                                                 span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.space
                 .thumbnail
                     .product-image
                         img.img-fluid.figure(src='images/product_images/wolf-Figure.jpg' alt)
@@ -117,10 +117,10 @@ block content
                         h4.product-title
                             a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Vulcan 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                             i.far.fa-star
                         p.price 1.000.000đ
                         .group-btn
@@ -155,7 +155,7 @@ block content
                                             a.carousel-control-next.product-control(href='#product-id-2' role='button' data-slide='next')
                                                 i.fa.fa-chevron-circle-right.fa-2x
                                                 span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.space
                 .thumbnail
                     .product-image
                         img.img-fluid.figure(src='images/product_images/geiz.png' alt)
@@ -165,11 +165,11 @@ block content
                         h4.product-title
                             a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Geiz 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                         p.price 1.200.000đ
                         .group-btn
                             button.btn.btn-icon-left
@@ -203,7 +203,7 @@ block content
                                             a.carousel-control-next.product-control(href='#product-id-3' role='button' data-slide='next')
                                                 i.fa.fa-chevron-circle-right.fa-2x
                                                 span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.space
                 .thumbnail
                     .product-image
                         img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
@@ -213,8 +213,8 @@ block content
                         h4.product-title
                             a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Thouser 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                             i.far.fa-star
                             i.far.fa-star
                             i.far.fa-star
@@ -251,7 +251,7 @@ block content
                                             a.carousel-control-next.product-control(href='#product-id-4' role='button' data-slide='next')
                                                 i.fa.fa-chevron-circle-right.fa-2x
                                                 span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.space
                 .thumbnail
                     .product-image
                         img.img-fluid.figure(src='images/product_images/woz.jpg' alt)
@@ -261,9 +261,9 @@ block content
                         h4.product-title
                             a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Woz 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                             i.far.fa-star
                             i.far.fa-star
                         p.price 1.200.000đ
@@ -299,7 +299,7 @@ block content
                                             a.carousel-control-next.product-control(href='#product-id-5' role='button' data-slide='next')
                                                 i.fa.fa-chevron-circle-right.fa-2x
                                                 span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
+            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.space
                 .thumbnail
                     .product-image
                         img.img-fluid.figure(src='images/product_images/val.jpg' alt)
@@ -309,11 +309,11 @@ block content
                         h4.product-title
                             a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Valkyrie 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                         p.price 1.300.000đ
                         .group-btn
                             button.btn.btn-icon-left
@@ -376,11 +376,11 @@ block content
                         h4.product-title
                             a(href='details1.html') S.H.Figuarts <br>Kamen Rider Geiz Revive 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                         p.price 1.500.000đ
                         .group-btn
                             button.btn.btn-icon-left
@@ -424,11 +424,11 @@ block content
                         h4.product-title
                             a(href='details1.html') Mô Hình Gundam <br>Astray Red Frame Kai 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                         p.price 4.500.000đ
                         .group-btn
                             button.btn.btn-icon-left
@@ -472,9 +472,9 @@ block content
                         h4.product-title
                             a(href='details1.html') S.H.Figure <br>Red Go-buster 
                         .rating
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
                             i.far.fa-star
                             i.far.fa-star
                         p.price 1.000.000đ

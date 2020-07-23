@@ -7,7 +7,7 @@ block content
             .wrap_title
                 h2.title_banner Sản phẩm
     section
-        .container-fluid
+        .container
             .row
                 .col-12.col-xs-12.col-sm-12.col-md-12.breadcrumb-contain
                     ol.breadcrumb
@@ -17,42 +17,46 @@ block content
     section
         .container.filter-contain
             h3.filter-title Sắp xếp theo
-            select.browser-default.custom-select.filter-one
-                option(selected) Hàng mới về
-                option(value='1') Hàng bán chạy
-                option(value='2') Giá thấp - cao
-                option(value='3') Giá cao - thấp
-            select.browser-default.custom-select.filter-two
-                option(selected disabled) Sản phẩm
-                option(value='1') Figure
-                option(value='2') DX-Driver
-                option(value='3') Sản phẩm Khác
-            select.browser-default.custom-select.filter-three
-                option(selected disabled) Hãng
-                option(value='1') Bandai
-                option(value='2') Saban
-                option(value='3') Movic
-                option(value='4') Bioworld
+            .row
+                .col-12.col-sm-12.col-md-4.col-lg-4
+                    select.custom-select.filter-one#seclect1
+                        option(selected) Hàng mới về
+                        option(value='1') Hàng bán chạy
+                        option(value='2') Giá thấp - cao
+                        option(value='3') Giá cao - thấp
+                .col-12.col-sm-12.col-md-4.col-lg-4
+                    select.custom-select.filter-two#select2
+                        option(selected disabled) Sản phẩm
+                        option(value='1') Figure
+                        option(value='2') DX-Driver
+                        option(value='3') Sản phẩm Khác
+                .col-12.col-sm-12.col-md-4.col-lg-4
+                    select.custom-select.filter-three#select3
+                        option(selected disabled) Hãng
+                        option(value='1') Bandai
+                        option(value='2') Saban
+                        option(value='3') Movic
+                        option(value='4') Bioworld
             a(href="#" class="delete" type="submit") Bỏ lọc
     section
-        .container
+        .container-fluid
             .row.text-center.first-row
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .thumbnail.thumbnail-product
-                        .product-image.product-page-img
+                    .thumbnail-img
+                        .product-img
                             img.img-fluid.figure(src='images/product_images/01-Figure.jpg' alt)
-                            .zoom.zoom-product
+                            .zoom-product
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1')
                         .product.text-center
-                            h4.product-title.product-page-title
+                            h4.product-page-title
                                 a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Zero One 
-                            .rating.product-rate
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                            p.price.product-page-price 1.000.000đ
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.product-page-price 1.000.000đ
                             .group-btn
                                 button.btn.btn-icon-left
                                     i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
@@ -72,7 +76,7 @@ block content
                                                     li.active(data-target='#product-id' data-slide-to='0')
                                                     li(data-target='#product-id' data-slide-to='1')
                                                     li(data-target='#product-id' data-slide-to='2')
-                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                .carousel-inner.row.w-100(role='listbox')
                                                     .carousel-item.active
                                                         img.img-fluid.d-block.mx-auto(src='images/product_images/01-Figure.jpg' alt='ZeroOne')
                                                     .carousel-item
@@ -86,21 +90,21 @@ block content
                                                     i.fa.fa-chevron-circle-right.fa-2x
                                                     span.sr-only Next
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .thumbnail.thumbnail-product
-                        .product-image.product-page-img
+                    .thumbnail-img
+                        .product-img
                             img.img-fluid.figure(src='images/product_images/wolf-Figure.jpg' alt)
-                            .zoom.zoom-product
+                            .zoom-product
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2')
                         .product.text-center
-                            h4.product-title.product-page-title
+                            h4.product-page-title
                                 a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Vulcan 
-                            .rating.product-rate-sc
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
                                 i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                            p.price.product-page-price-sc 1.000.000đ
+                            p.product-page-price 1.000.000đ
                             .group-btn
                                 button.btn.btn-icon-left
                                     i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
@@ -134,21 +138,21 @@ block content
                                                     i.fa.fa-chevron-circle-right.fa-2x
                                                     span.sr-only Next
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .thumbnail.thumbnail-product
-                        .product-image.product-page-img
-                            img.img-fluid.figure(src='images/product_images/geiz.png' alt)
-                            .zoom.zoom-product
+                    .thumbnail-img
+                        .product-img
+                            img.img-fluid.figure(src='images/product_images/geiz.jpg' alt)
+                            .zoom-product
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview3')
                         .product.text-center
-                            h4.product-title.product-page-title
+                            h4.product-page-title
                                 a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Geiz 
-                            .rating.product-rate-tr
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                            p.price.product-page-price-tr 1.200.000đ
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.product-page-price 1.200.000đ
                             .group-btn
                                 button.btn.btn-icon-left
                                     i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
@@ -183,21 +187,21 @@ block content
                                                     span.sr-only Next
             .row.text-center.second-row
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .thumbnail.thumbnail-product
-                        .product-image.product-page-img
+                    .thumbnail-img
+                        .product-img
                             img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
-                            .zoom.zoom-product
+                            .zoom-product
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview4')
                         .product.text-center
-                            h4.product-title.product-page-title
+                            h4.product-page-title
                                 a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Thouser 
-                            .rating.product-rate-fr
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
                                 i.far.fa-star
                                 i.far.fa-star
                                 i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                            p.price.product-page-price-fr 1.500.000đ
+                            p.product-page-price 1.500.000đ
                             .group-btn
                                 button.btn.btn-icon-left
                                     i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
@@ -231,21 +235,21 @@ block content
                                                     i.fa.fa-chevron-circle-right.fa-2x
                                                     span.sr-only Next
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .thumbnail.thumbnail-product
-                        .product-image.product-page-img
+                    .thumbnail-img
+                        .product-img
                             img.img-fluid.figure(src='images/product_images/seven_sword_act.jpg' alt)
-                            .zoom.zoom-product
+                            .zoom-product
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview5')
                         .product.text-center
-                            h4.product-title.product-page-title
+                            h4.product-page-title
                                 a(href='product_detail.html') Mô Hình Gundam <br>Seven Sword Exclusive 
-                            .rating.product-rate
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                            p.price.product-page-price 8.500.000đ
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.product-page-price 8.500.000đ
                             .group-btn
                                 button.btn.btn-icon-left
                                     i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
@@ -279,21 +283,21 @@ block content
                                                     i.fa.fa-chevron-circle-right.fa-2x
                                                     span.sr-only Next
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
-                    .thumbnail.thumbnail-product
-                        .product-image.product-page-img
+                    .thumbnail-img
+                        .product-img
                             img.img-fluid.figure(src='images/product_images/red_beast.jpg' alt)
-                            .zoom.zoom-product
+                            .zoom-product
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview6')
                         .product.text-center
-                            h4.product-title.product-page-title
+                            h4.product-page-title
                                 a(href='product_detail.html') S.H.Figure <br>Red Go-buster 
                             .rating.product-rate-sc
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
                                 i.far.fa-star
                                 i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                                i.far.fa-star
-                            p.price.product-page-price-sc 1.000.000đ
+                            p.product-page-price 1.000.000đ
                             .group-btn
                                 button.btn.btn-icon-left
                                     i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
