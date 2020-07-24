@@ -1,0 +1,51 @@
+extends template-part/layout.pug
+block title
+    title Liên Hệ
+block content
+    section.main-contact
+        .container
+            .row
+                .col-12.col-xs-12.col-sm-12.col-md-4.info-col
+                    .contact
+                        .contact-icon
+                            i.fas.fa-headset 
+                        .contact-info
+                            h3 Liên Hệ Hotline:
+                            p (+84)1923-8564
+                    .contact
+                        .contact-icon
+                            i.fas.fa-map-marked-alt
+                        .contact-info
+                            h3 Địa chỉ:
+                            p 123 Lương Định Của,
+                            p Đống Đa, Hà Nội
+                    .contact
+                        .contact-icon
+                            i.fas.fa-envelope
+                        .contact-info
+                            h3 Email:
+                            p support@zigtoys.com
+                    .contact
+                        .contact-icon
+                            i.fas.fa-hourglass-start
+                        .contact-info
+                            h3 Thời gian làm việc:
+                            p Cả tuần. Từ 9:00 am - 10:00 pm <br>Nghỉ ngày lễ, Tết
+                .col-12.col-xs-12.col-sm-12.col-md-8.message-col.text-center
+                    h3.action Gửi tin cho chúng tôi
+                    form.comment-form
+                        .row
+                            .comment-form-name.col-md-6
+                                input(type="text",id="name", placeholder="Họ tên *")
+                            .comment-form-email.col-md-6
+                                input(type="email",id="email", placeholder="Email *")
+                        .row
+                            .comment-form-textarea.col-md-12
+                                textarea(type="text",id="comment", cols="40", rows="10",placeholder="Nội dung *")
+                            .submit.col-md-12
+                                button(type="submit",name="submit",id="submit") GỬI
+        .container-fluid.map.text-center
+            .row
+                .col-12.col-xs-12.col-sm-12.col-md-12
+                    .embed-responsive.embed-responsive-16by9
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.686567447595!2d105.83332771493221!3d21.00519758601116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac7f35dcfcd3%3A0xa4810c02ae0a992!2zUGjhu5EgTMawxqFuZyDEkOG7i25oIEPhu6dhLCDEkOG7kW5nIMSQYSwgSMOgIE7hu5lp!5e0!3m2!1sen!2s!4v1594873152410!5m2!1sen!2s' class="embed-responsive-item" width='600' height='600' frameborder='0' style='border:0;' allowfullscreen aria-hidden='false' tabindex='0')

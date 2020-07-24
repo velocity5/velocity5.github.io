@@ -1,0 +1,144 @@
+.img-big img {
+   position: relative;
+   margin-bottom: 30px; 
+}
+.img-big .img-title {
+    position: absolute;
+    bottom: 1.9rem;
+    z-index: 10;
+    padding: 16px;
+
+}
+.img-title span {
+    font-size: 15px;
+    color: #ced6e0;
+}
+.img-title h2 {
+    color: #f5f6fa;
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.img-title h2:hover, .img-title h2:active {
+    color: #7f8c8d;
+}
+.img-small img {
+    position: relative;
+    margin-bottom: 15px;
+}
+.img-small .img-side-title {
+    position: absolute;
+    z-index: 10;
+    width: 92%;
+    padding: 16px;
+}
+.img-side-title h4:hover, .img-side-title h4:active {
+    color: #7f8c8d;
+}
+.img-small .post1 {
+    bottom: 54%;
+}
+.img-small .post2 {
+    bottom: 5.5%;
+}
+.post1 span, .post2 span {
+    color: #ced6e0;
+    font-size: 15px;
+}
+.img-small h4 {
+    font-size: 18px;
+    color: #f5f6fa;
+    font-weight: 400;
+}
+/* recent post vs old post */
+.recent-post, .old-post {
+    margin-bottom: 10px;
+}
+.old-post {
+    margin-top: 30px;
+}
+.recent-post h2, .old-post h2 {
+    font-size: 30px;
+    margin-bottom: -14px;
+}
+.card-tag {
+    background-color: #FFAA55;
+    width: 68px;
+    height: 20px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: default;
+}
+.second-post-row {
+    margin-top: 30px;
+}
+.old-post-row {
+    margin-bottom: 50px;
+}
+/* hover effect */
+.hover-post-shadow {
+    transition: all 0.5s ease;
+}
+.hover-post-shadow:hover {
+    box-shadow: 12px 8px 19px -5px rgba(0,0,0,0.75);
+}
+/* ----------------- */
+.img-blog {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.blog-content p, p.lastSentence {
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.listSeries {
+    margin-left: 30px;
+}
+.listSeries a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.listSeries a:hover {
+    color: #5352ed;
+}
+.side-post {
+    margin-top: 30px;
+}
+.side-post h2 {
+    margin-left: 32px;
+}
+.img-side-blog {
+    margin-top: 43px;
+    margin-left: 10%;
+}
+.img-side-blog img {
+    width: 300px;
+    height: 300px;
+}
+.side-title a, .side-title span {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.side-post .side-title {
+    position: absolute;
+    max-width: 300px;
+    padding: 5px;
+}
+.side-title {
+    display: grid;
+}
+.side-post .side-title a {
+    margin-top: -30%;
+}
+.side-post .side-title span {
+    margin-top: -16%;
+}
+.side-title a:hover {
+    color: #ced6e0;
+}

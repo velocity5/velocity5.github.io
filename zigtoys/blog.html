@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Blog&Tips</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&amp;display=swap"/>
+    <link rel="stylesheet" href="css_fontawesome/all.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css"/>
+    <link href="vendor/aos/dist/aos.css" rel="stylesheet"/>
+    <link rel="icon" type="image/png" href="images/icon/favicon-16x16.png"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/style_media.css"/>
+    <link rel="stylesheet" href="css/style_about.css"/>
+    <link rel="stylesheet" href="css/style_product.css"/>
+    <link rel="stylesheet" href="css/style_details1.css"/>
+    <link rel="stylesheet" href="css/style_contact.css"/>
+    <link rel="stylesheet" href="css/style_cart.css"/>
+    <link rel="stylesheet" href="css/style_blog.css"/>
+  </head>
+  <body>
+    <header class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 user-part">
+            <ul>
+              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login">Đăng Nhập</a></li>
+              <li class="nav-item"><a class="nav-link dangky" href="#" data-toggle="modal" data-target="#signup">Đăng Ký</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-xs-12 d-flex justify-content-center logo"><a class="navbar-brand pt-3" href="index.html"><img src="images/icon/logo2.jpg" title="Logo" alt="Logo"/></a></div>
+          <div class="col-md-3 col-xs-12 pt-2 info-part">
+            <ul class="info">
+              <li class="nav-item"><a href="#"><i class="fas fa-phone-alt"> (+84)1923-8564</i></a></li>
+              <li class="nav-item"><a href="#"><i class="fa fa-envelope"> support@zigtoys.com</i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-login">
+            <div class="text-center">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title w-100 font-weight-bold">ĐĂNG NHẬP</h4>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-3 box-contain">
+                <input class="form-control validate username" id="inputUser" type="text" placeholder="Tên người dùng*"/>
+              </div>
+              <div class="md-form mb-4 box-contain">
+                <input class="form-control validate mail-pass" id="inputPassword" type="password" placeholder="Mật khẩu*"/><i class="far fa-eye"></i>
+              </div>
+              <div class="md-form check-remember">
+                <input id="remember_me" type="checkbox"/>
+                <label for="remember_me">Ghi nhớ đăng nhập</label>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default btn-login" id="btnLogin">ĐĂNG NHẬP</button><a class="forgot-pwd" href="#" data-toggle="modal" data-target="#reset" data-dismiss="modal">Quên mật khẩu?</a>
+            </div>
+            <p class="text-center">Chưa có tài khoản? <a class="not-member" href="#" data-target="#signup" data-toggle="modal" data-dismiss="modal">Đăng Ký</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="reset" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-reset">
+            <div class="text-center">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title w-100 font-weight-bold">QUÊN MẬT KHẨU</h4>
+              <p class="modal-subtitle font-weight-normal">Hãy để đó cho chúng tôi</p>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-3">
+                <input class="form-control validate mail-login" id="formReset" type="email" placeholder="Email*"/>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-info btn-reset">ĐẶT LẠI MẬT KHẨU</button>
+              <p>Quay về <a class="forgot-pwd" href="#" data-toggle="modal" data-target="#login" data-dismiss="modal">Đăng Nhập</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content modal-signup">
+            <div class="text-center">
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+              <h4 class="modal-title w-100 font-weight-bold">ĐĂNG KÝ</h4>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-3 box-contain">
+                <input class="form-control username" id="formUsername" type="text" placeholder="Tên người dùng*"/>
+              </div>
+              <div class="md-form mb-3 box-contain">
+                <input class="form-control validate mail-signup" id="formSignup-mail" type="email" placeholder="Email*"/>
+              </div>
+              <div class="md-form mb-3 box-contain">
+                <input class="form-control validate mail-pass" id="formSignup-pass" type="password" placeholder="Mật khẩu*"/><i class="far fa-eye"></i>
+              </div>
+              <div class="md-form mb-3 radio-group">
+                <input id="male" type="radio" name="gender" value="male"/>
+                <label for="male">Nam</label>
+                <input id="female" type="radio" name="gender" value="female"/>
+                <label for="female">Nữ</label>
+              </div>
+              <div class="md-form mb-3">
+                <input id="inputBirthday" type="date" name="inputBirthday" autofocus="autofocus"/>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-default btn-signup" id="btnSignup">ĐĂNG KÝ</button>
+            </div>
+            <div class="or-seperator"></div>
+            <div class="d-flex justify-content-center">
+              <button class="btn btn-default btn-google">ĐĂNG NHẬP BẰNG <i class="fab fa-google"></i></button>
+            </div>
+            <p class="text-center already-acc">Đã có tài khoản? <a class="is-member" href="#" data-target="#login" data-toggle="modal" data-dismiss="modal">Đăng Nhập</a></p>
+            <div class="require-list" id="psw-info">
+              <h4> Mật khẩu cần thỏa mãn điều kiện:</h4>
+              <ul>
+                <li class="invalid" id="letter">Ít nhất <strong>1 chữ cái</strong></li>
+                <li class="invalid" id="capital">Ít nhất <strong>1 chữ hoa</strong></li>
+                <li class="invalid" id="number">Ít nhất <strong>1 số</strong></li>
+                <li class="invalid" id="length">Tối thiểu <strong>8 ký tự</strong></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><i class="fas fa-search"> </i>
+      <div class="searchBox">
+        <input class="searchInput" type="text" placeholder="Bạn muốn tìm gì?" aria-label="Search"/>
+        <input type="button" value="Tìm kiếm"/>
+      </div>
+      <div class="collapse in navbar-collapse" id="navmenu">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
+          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản Phẩm  </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô hình Figures</a><a class="dropdown-item" href="#">DX-Drivers</a><a class="dropdown-item" href="#">Sản phẩm khác</a></div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <div class="wrap-all">
+        <div class="cart-wrapper"><a class="btn btn-theme-transparent cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+        <div class="heart-wrapper"><a class="btn hidden-xs hidden-sm" href="href"><i class="far fa-heart" style="font-size:24px"></i></a></div>
+      </div>
+    </nav>
+    <section>
+      <div class="container-fluid text-center banner-products background-top">
+        <div class="wrap_title">
+          <h2 class="title_banner">Blog&Tips</h2>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 breadcrumb-contain">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="black-text" href="index.html">Trang chủ </a></li>
+              <li class="breadcrumb-item active">Blog&Tips</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container post-grid">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-7 col-md-8" data-aos="fade-right" data-duration="1000" data-aos-easing="ease-out-sine"><a class="img-big" href="blog-detail.html"><img class="img-fluid" src="images/product_images/gundam.svg" alt="Gundam"/>
+              <div class="img-title">
+                <h2>Chia sẻ kinh nghiệm chơi mô hình Gundam (P1)</h2><span class="post-date">25 Th6, 2020</span>
+              </div></a></div>
+          <div class="col-12 col-xs-12 col-sm-5 col-md-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-duration="1000" data-aos-easing="ease-out-sine"><a class="img-small" href="blog-detail.html"><img class="img-fluid" src="images/product_images/brain.jpg" alt="Kamen Rider"/>
+              <div class="img-side-title post1">
+                <h4>Giới thiệu các S.H.Figuarts Kamen Rider ngoài series đẹp mê ly</h4><span class="post-date">23 Th6, 2020</span>
+              </div></a><a class="img-small" href="blog-detail.html"><img class="img-fluid" src="images/product_images/product_cabin.jpg" alt="Cabin Figure"/>
+              <div class="img-side-title post2">
+                <h4>Chiêm ngưỡng tủ đựng Figure của 1 fan cuồng</h4><span class="post-date">26 Th6, 2020</span>
+              </div></a></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 recent-post">
+            <h2 class="recent-post-title">Bài viết gần đây</h2>
+            <hr class="post-split"/>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/necklace_oz.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">PHỤ KIỆN</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Những phụ kiện độc và hiếm chỉ có tại ZIG Toys</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>23 Th06, 2020</span></h6>
+                <p class="card-text">Hôm nay, Ad sẽ giới thiệu cho các bạn một số hàng "độc" để bạn bổ sung vào bộ sưu tập</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="card hover-post-shadow"><a class="link-post" href="error.html"><img class="img-fluid" src="images/product_images/evol.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">SỰ KIỆN</h6>
+                <h5 class="card-title"> <a class="link-title" href="error.html">GiveAway mô hình figure Nezuko Kamado-Kimetsu no Yaiba</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>27 Th06, 2020</span></h6>
+                <p class="card-text">Nhân dịp kỷ niệm 2 năm thành lập công ty, ZIG Toys tổ chức chương trình GIVE AWAY</p><a class="readmore" href="error.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/cushion.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">TIN TỨC</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Hé lộ sản phẩm gối đệm tay Izu cho người dùng máy tính</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>29 Th06, 2020</span></h6>
+                <p class="card-text">Mới đây, Bandai đã hé lộ vài hình ảnh và thông tin liên quan đến gối đệm tay Izu</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row second-post-row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/grand.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">SỰ KIỆN</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Mini game giải đố có thưởng  </a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>1 Th07, 2020</span></h6>
+                <p class="card-text">Giải 1 câu trúng ngay quà khủng từ ZIGToys</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-duration="2000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/zero-2.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">TIN TỨC</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Phân tích belt driver Zero-Two - Kamen Rider Zero-One</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>3 Th07, 2020</span></h6>
+                <p class="card-text">Mới đây, Bandai đã hé lộ vài hình ảnh và thông tin liên quan đến gối đệm tay Izu</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="fade-up" data-aos-duration="3000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/gd.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">TIN TỨC</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Đôi nét về Gundam Earthree</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>5 Th07, 2020</span></h6>
+                <p class="card-text">Mới đây, Bandai đã hé lộ vài hình ảnh và thông tin liên quan đến gối đệm tay Izu</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row old-post-row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 old-post">
+            <h2 class="old-post-title">Bài viết cũ hơn</h2>
+            <hr class="post-split"/>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/necklace_oz.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">PHỤ KIỆN</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Những phụ kiện độc và hiếm chỉ có tại ZIG Toys</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>23 Th05, 2020</span></h6>
+                <p class="card-text">Hôm nay, Ad sẽ giới thiệu cho các bạn một số hàng "độc" để bạn bổ sung vào bộ sưu tập</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="card hover-post-shadow"><a class="link-post" href="error.html"><img class="img-fluid" src="images/product_images/evol.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">SỰ KIỆN</h6>
+                <h5 class="card-title"> <a class="link-title" href="error.html">GiveAway mô hình figure Nezuko Kamado-Kimetsu no Yaiba</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>27 Th05, 2020</span></h6>
+                <p class="card-text">Nhân dịp kỷ niệm 2 năm thành lập công ty, ZIG Toys tổ chức chương trình GIVE AWAY</p><a class="readmore" href="error.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-4" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="card hover-post-shadow"><a class="link-post" href="blog-detail.html"><img class="img-fluid" src="images/product_images/cushion.jpg" alt="alt"/></a>
+              <div class="card-body">
+                <h6 class="card-tag">TIN TỨC</h6>
+                <h5 class="card-title"> <a class="link-title" href="blog-detail.html">Hé lộ sản phẩm gối đệm tay Izu cho người dùng máy tính</a></h5>
+                <h6 class="card-admin"><i class="fas fa-user-circle"> </i><span>Admin -  </span><span>29 Th05, 2020</span></h6>
+                <p class="card-text">Mới đây, Bandai đã hé lộ vài hình ảnh và thông tin liên quan đến gối đệm tay Izu</p><a class="readmore" href="blog-detail.html">Đọc thêm</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-xs-12 info-footer">
+            <h4 class="title-info-footer">Thông tin cửa hàng</h4>
+            <h5 class="add">Địa chỉ: <span>123 Lương Định Của</span></h5>
+            <h5 class="phone">Điện thoại: <span>(+84)1923-8564</span></h5>
+            <h5 class="mail">Email: <span>support@zigtoys.com</span></h5>
+            <h5 class="time">Thời gian làm việc: <br><span>Cả tuần. Từ 9:00 am - 10:00 pm.<br> Nghỉ ngày lễ, Tết</span></h5>
+          </div>
+          <div class="col-md-3 col-xs-12 support">
+            <h4 class="title-support">Hỗ trợ khách hàng</h4>
+            <ul class="support-list">
+              <li><a class="link-support" href="#">Câu hỏi thường gặp</a></li>
+              <li><a class="link-support" href="#">Phương thức thanh toán</a></li>
+              <li><a class="link-support" href="#">Phương thức vận chuyển</a></li>
+              <li><a class="link-support" href="#">Hướng dẫn mua hàng & đổi trả</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-12 quick">
+            <h4 class="title-quick">Liên kết nhanh</h4>
+            <ul class="quick-list">
+              <li><a class="quick-link" href="about.html">Về ZIG Toys</a></li>
+              <li><a class="quick-link" href="products.html">Sản phẩm</a></li>
+              <li><a class="quick-link" href="blog.html">Blog&Tips</a></li>
+              <li><a class="quick-link" href="index.html">Trang chủ    </a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-xs-12 newsletter">
+            <h4 class="title-newsletter">Đăng ký nhận tin</h4>
+            <form action="#">
+              <div class="form-group subscribe-newsletter">
+                <input class="form-control" type="email" placeholder="Nhập email của bạn"/>
+                <button class="btn btn-warning" type="submit">Đăng Ký</button>
+              </div>
+            </form>
+            <div class="social-link"><a href="#"><i class="fab fa-facebook-square" style="font-size:30px"></i></a><a href="#"><i class="fab fa-youtube" style="font-size:30px"></i></a><a href="#"><i class="fab fa-instagram" style="font-size:30px"></i></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <hr class="divider"/>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h6 class="copyright">Copyright&copy;2020 by MinhTran. All Rights Reserved.</h6>
+          </div>
+        </div>
+      </div>
+    </footer><a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
+    <script src="js/jquery-3.5.0.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js"></script>
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script src="vendor/aos/dist/aos.js"></script>
+  </body>
+</html>
