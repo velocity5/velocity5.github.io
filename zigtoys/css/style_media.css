@@ -126,7 +126,6 @@
         .justify-content-center .div-table 
         .caption-content {
             display: block;
-            padding-top: 50%;
         }
         .justify-content-center .div-table 
         .caption-content > .caption-subtitle {
@@ -238,11 +237,8 @@
         .searchBox {
             left: 33%;
         }
-        .justify-content-center .div-table .caption-content {
-            padding-top: 30%;
-        }
         .summer .view {
-            margin-top: 150%;
+            margin-top: 50%;
         }
         .thumbnail .zoom {
             top: 36%;
@@ -520,6 +516,20 @@
     @media (max-width: 451px) {
         #detail-tab, #descript-tab, #review-tab {
             padding: 18px 4.5px;
+        }
+    }
+    @media (max-width: 449px) {
+        .caption-content h4, .caption-content h2 {
+            font-size: 20px;
+        }
+        .caption-title span {
+            font-size: 30px;
+        }
+        .caption-content {
+            margin-top: 20%;
+        }
+        .subscribe .btn-outline-secondary.btn-subscribe {
+            margin-left: 30%;
         }
     }
     @media (max-width: 448px) {

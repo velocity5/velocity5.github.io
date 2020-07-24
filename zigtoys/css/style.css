@@ -166,9 +166,17 @@
         background-color: rgba(255, 165, 2,0.8);
     }
     /* carousel slider img active*/
-    .carousel-item img {
-        max-height: 571px;
-        object-fit: cover;
+    .carousel-item .first-slide {
+        background-image: url("../images/product_images/burning-falcon-ds.jpg");
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+    .first-slide, .second-slide {
+        height: 300px;
+        width: 100%;
     }
     .carousel-item .caption {
         position: absolute;
@@ -180,19 +188,20 @@
     .justify-content-center .div-table .caption-content {
         display: flex;
         flex-direction: row;
+        text-shadow: -3px 8px 5px rgba(0,0,0,0.28);
     }
     .justify-content-center .div-table .caption-content > .caption-subtitle {
         margin-top: 28px;
     }
     .caption .caption-content {
-        padding-top: 33%;
+        padding-top: 10%;
         text-align: center;
-        color: white;
+        color: #f7f1e3;
     }
     .caption-title span {
         font-size: 60px;
         font-family: 'Rufina', serif;
-        color: #EDAB01;
+        color: #f6b93b;
     }
     .subscribe input[type="email"] {
         width: 100%;
@@ -228,15 +237,18 @@
         background-color: transparent;
         border: 1px solid #ffc107;
     }
-    .darken-img img {
-        filter: brightness(50%);
-    }
     /*carousel slider img non-active*/
-    .summer {
-        margin-top: 15%;
+    .carousel-item .second-slide {
+        background-image: url("../images/product_images/garo-1.jpg");
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        filter: brightness(0.8)
     }
-    .view {
-        margin-top: 200%;
+    .summer {
+        margin-top: 10%;
     }
     .view .btn-view {
         color: white;
