@@ -1,7 +1,7 @@
 ﻿/* click menu out */
-/*$(document).on('click', function() {
+$(document).on('click', function() {
 	$('.collapse').collapse('hide');
-}); */
+});
 /*Scroll to top when arrow up clicked*/
 $(window).scroll(function() {
     var height = $(window).scrollTop();
@@ -376,3 +376,7 @@ function cartNumber(product) {
 	} 
 onLoadCartNumber();
 displayCart();
+
+$(function() {
+	AOS.init();
+});

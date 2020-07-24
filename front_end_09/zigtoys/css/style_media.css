@@ -54,6 +54,16 @@
             max-width: 90%;
             margin-bottom: 9px;
         }
+        /* blog detail */
+        .side-post .img-side-blog .img-fluid:nth-child(1) {
+            margin-top: 27px;
+        }
+        .side-post .img-side-blog .side-title {
+            margin-top: -6%;
+        }
+        .side-post .img-side-blog .side-title a, .side-post .img-side-blog .side-title span {
+            padding: 5px;
+        }
     }
     @media (max-width: 1014px) {
         .navbar-nav {
@@ -285,6 +295,31 @@
             font-size: 14px;
             margin-bottom: 0;
         }
+        /* blog detail */
+        .container-fluid .side-post {
+            margin-top: auto;
+        }
+        .container-fluid .side-post h2 {
+            margin-left: auto;
+        }
+        .side-post .img-side-blog {
+            margin-left: auto;
+            margin-top: auto;
+        }
+        .side-post .img-side-blog img {
+            width: 100%;
+            height: auto;
+        }
+        .side-post .img-side-blog .side-title {
+            margin-top: -3%;
+        }
+        .side-post .img-side-blog .side-title a, 
+        .side-post .img-side-blog .side-title span {
+            font-size: 20px;
+        }
+        .side-post .img-side-blog .side-title a {
+            margin-top: -40%;
+        }
     }
     @media (max-width: 745px) {
         .breadcrumb-contain .breadcrumb {
@@ -370,6 +405,27 @@
         }
         .img-small .img-side-title h4 {
             font-size: 20px;
+        }
+        .container-fluid .side-post h2 {
+            margin-left: 0;
+        }
+        .side-post .img-side-blog img {
+            width: 100%;
+            height: auto;
+        }
+        .side-post .img-side-blog {
+            margin-top: 20px;
+            margin-left: 0;
+        }
+        .container-fluid .side-post .side-title {
+            max-width: 100%;
+        }
+        .container-fluid .side-post .side-title a {
+            font-size: 20px;
+            margin-top: -17%;
+        }
+        .container-fluid .side-post .side-title span {
+            margin-top: -10%;
         }
     }
     @media (max-width: 558px) {
@@ -489,6 +545,11 @@
         .thumbnail-img .product-img 
         .zoom-product {
         margin-top: -45%;
+        }
+    }
+    @media (max-width: 320px) {
+        .box-contain .fa-eye {
+            margin-left: 13rem;
         }
     }
 }

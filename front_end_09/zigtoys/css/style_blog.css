@@ -111,6 +111,9 @@
 .side-post {
     margin-top: 30px;
 }
+.side-post h2 {
+    margin-left: 32px;
+}
 .img-side-blog {
     margin-top: 43px;
     margin-left: 10%;
