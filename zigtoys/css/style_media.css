@@ -1,18 +1,4 @@
-    @media (max-width: 2000px) {
-        .thumbnail-img .product-img .zoom-product {
-            margin-top: -20%;
-        }
-    }
-    @media (max-width: 1900px) {
-        .product-image {
-            margin-left: 32%;
-        }
-        .thumbnail .zoom {
-            margin-top: -20%;
-        }
-    }
-    
-    @media (max-width: 1200px) { 
+      @media (max-width: 1200px) { 
         .info-part {
             margin-top: 25px;
             transition: all 0.3s ease-in-out;
