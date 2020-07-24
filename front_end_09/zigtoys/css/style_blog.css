@@ -1,5 +1,4 @@
 .img-big img {
-   border-radius: 6px;
    position: relative;
    margin-bottom: 30px; 
 }
@@ -25,7 +24,6 @@
 }
 .img-small img {
     position: relative;
-    border-radius: 6px;
     margin-bottom: 15px;
 }
 .img-small .img-side-title {
