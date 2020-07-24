@@ -168,6 +168,7 @@
     /* carousel slider img active*/
     .carousel-item img {
         max-height: 571px;
+        object-fit: cover;
     }
     .carousel-item .caption {
         position: absolute;
@@ -362,12 +363,6 @@
         color: white;
     }
     /* button hover */
-    .group-btn .btn-icon-right {
-        opacity: 0;
-    }
-    .thumbnail:hover .btn-icon-right {
-        opacity: 1;
-    }
     .group-btn .btn-icon-left:hover {
         background-color: darkorange;
     }

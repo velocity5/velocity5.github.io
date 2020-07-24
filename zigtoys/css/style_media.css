@@ -1,3 +1,17 @@
+    @media (max-width: 2000px) {
+        .thumbnail-img .product-img .zoom-product {
+            margin-top: -20%;
+        }
+    }
+    @media (max-width: 1900px) {
+        .product-image {
+            margin-left: 32%;
+        }
+        .thumbnail .zoom {
+            margin-top: -20%;
+        }
+    }
+    
     @media (max-width: 1200px) { 
         .info-part {
             margin-top: 25px;
@@ -294,6 +308,10 @@
         .title-col {
             padding: 5px;
         }
+         /* product detail */
+         #detail-tab, #descript-tab, #review-tab {
+             padding: 20px 17.5px;
+         }
         /* blog */
         .img-big .img-title {
             margin-bottom: 4rem;
@@ -433,11 +451,12 @@
             max-width: 100%;
         }
         .container-fluid .side-post .side-title a {
-            font-size: 20px;
-            margin-top: -17%;
+            font-size: 19px;
+            margin-top: -26%;
         }
         .container-fluid .side-post .side-title span {
             margin-top: -10%;
+            font-size: 16px;
         }
     }
     @media (max-width: 558px) {
@@ -496,7 +515,7 @@
     }
     @media (max-width: 472px) {
         #detail-tab, #descript-tab, #review-tab {
-            padding: 18px 6px;
+            padding: 18px 7px;
         }
     }
     @media (max-width: 458px) {
@@ -504,9 +523,9 @@
             padding: 18px 5px;
         }
     }
-    @media (max-width: 452px) {
+    @media (max-width: 451px) {
         #detail-tab, #descript-tab, #review-tab {
-            padding: 18px 0px;
+            padding: 18px 4.5px;
         }
     }
     @media (max-width: 448px) {
@@ -543,6 +562,26 @@
         .error {
             margin-left: 1rem;
         }
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 4px;
+        }
+    }
+    @media (max-width: 414px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 22px 9px;
+            font-size: 13px;
+        }
+    }
+    @media (max-width: 411px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 8.5px;
+            font-size: 13px;
+        }
+    }
+    @media (max-width: 410px) {
+        .description-tab ul li a {
+            font-size: 14px;
+        }
     }
     @media (max-width: 400px) {
         .user-part {
@@ -572,10 +611,22 @@
         .box-contain .fa-eye {
             margin-left: 16rem;
         }
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 13px;
+            font-size: 10px;
+        }
+    }
+    @media (max-width: 390px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 12px;
+        }
     }
     @media (max-width: 388px) {
         .box-contain .fa-eye {
             margin-left: 15rem;
+        }
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 13px;
         }
     }
     @media (max-width: 375px) {
