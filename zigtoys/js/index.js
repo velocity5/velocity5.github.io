@@ -149,11 +149,12 @@ $(document).ready(function(){
 let increBtn = document.querySelector(".qty-incre");
 let descBtn = document.querySelector(".qty-desc");
 let input = document.querySelector("#qty");
+let incartInput = document.querySelector("#quanty");
 if(increBtn) {
 	increBtn.addEventListener('click',(event) => {
-        input.innerText = Number(input.innerText) + 1;
+		input.innerText = Number(input.innerText) + 1;
         return false;
-    })
+	})
 }
 if(descBtn) {
 	descBtn.addEventListener('click',(event) => {
@@ -163,8 +164,8 @@ if(descBtn) {
             } if(input.innerText < 1) {
                 input.innerText = 1;
             }
-            return false;
-    }) 
+			return false;
+	})
 }   
 // Add2cart function
 let carts = document.querySelectorAll(".add-cart");
@@ -342,7 +343,7 @@ function cartNumber(product) {
 							</td>
 							<td class="quantityInCart">
 								<button class="qty-desc">-</button>
-								<span id="qty">${item.inCart}</span>
+								<span id="quanty">${item.inCart}</span>
 								<button class="qty-incre">+</button>
 							</td>
 							<td class="totalInCart">

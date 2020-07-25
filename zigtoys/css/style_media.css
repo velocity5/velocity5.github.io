@@ -255,7 +255,7 @@
             margin-bottom: 20px;
         }
         .carousel-item img {
-            height: 400px;
+            height: auto;
             width: 500px;
         }
         .title-info-footer, .title-support, 
@@ -454,9 +454,27 @@
             max-width: 32rem;
         }
     }
+    @media (max-width: 554px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 16px;
+        }
+    }
     @media (max-width: 543px) {
         .breadcrumb-contain .breadcrumb {
             max-width: 30rem;
+        }
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 15px;
+        }
+    }
+    @media (max-width: 536px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 13px;
+        }
+    }
+    @media (max-width: 523px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 10px;
         }
     }
     @media (max-width: 520px) {
@@ -481,6 +499,11 @@
             transition: all 0.3s ease-in-out;
         }
     }
+    @media (max-width: 502px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 8px;
+        }
+    }
     @media (max-width: 500px) {
         .username, .mail-signup, .mail-pass, .md-form.mb-3 #inputBirthday {
             margin-left: 2.5rem;
@@ -498,9 +521,14 @@
             margin-left: 2.5rem;
         }
     }
+    @media (max-width: 487px) {
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 6px;
+        }
+    }
     @media (max-width: 479px) {
         #detail-tab, #descript-tab, #review-tab {
-            padding: 19px 8px;
+            padding: 19px 6px;
         }
     }
     @media (max-width: 472px) {
