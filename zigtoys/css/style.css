@@ -558,7 +558,7 @@
         cursor: pointer;
         transform: rotate(270deg);
         position: fixed;
-        bottom: 50px;
+        bottom: 80px;
         right: 10px;
         background-color: rgba(253, 203, 110,0.6);
         color: #fff;
