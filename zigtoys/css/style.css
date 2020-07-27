@@ -12,71 +12,43 @@
     }
     header .nav-link {
         padding: 10px;
-        margin-top: 24px;
-        font-size: 16px;
-        margin-left: 10px;
     }
-    .navbar.navbar-expand-lg.navbar-light {
-        background-color: #fcc226!important;
-    }
-    .user-part {
-        margin-top: 10px;
+    .info-part span a {
+        color: #fff;
+        font-size: 13px;
     } 
+   .navbar {
+       font-size: 18px;
+       background-color: orange;
+       border: 1px solid grey;
+       padding-bottom: 10px;
+   }
+  .navbar-brand img {
+      max-width: 150px;
+  }
+  .navbar-nav .nav-item {
+      padding: 10px 20px;
+  }
+  .navbar-nav li {
+      border-bottom: 2px solid transparent;
+      line-height: 30px;
+      overflow: hidden;
+  }
+  .navbar-nav li:hover, .navbar-nav li.active {
+      border-color: crimson;
+      background-color: rgba(211, 84, 0,0.3);
+  }
     .info {
         margin-top: 24px;
     }
-    .info li:first-child {
-        margin-bottom: 10px;
-    }
-    .col-md-1 p {
-        font-weight: bold;
-        padding-top: 13%;
-    }
-    .navbar-nav {
-        margin-left: 14%;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-    }
-    .navbar-nav li {
-        font-family: 'Playfair Display', serif;
-        padding: 0 30px 0 0;
-    }
-    .nav-item .fa-phone-alt, .nav-item a > .fa-envelope {
-        color: white;
-    }
     .nav-item .dangnhap {
-        color: #FA5;
-        }
-    .nav-link.dangnhap:hover {
-        color: rgb(168, 125, 81);
-    }
-    .nav-item .dangky {
         color: white;
-        background-color: transparent;
-        border: 1px solid orange;
-        padding: 10px 25px 10px 25px;
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.75);
+        font-size: 13px;
     }
-    .nav-link.dangky:hover {
-        background-color: orange;
+    .nav-link.dangnhap:hover {
+        color: rgb(187, 185, 184);
     }
-    .nav-link.dangky:active, .nav-link.dangnhap:active {
-        color: rgb(232, 225, 225,.6);
-    }
-    .navbar-nav li a.nav-link {
-        color: white !important;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    .navbar-nav li a.nav-link:hover {
-        background-color: rgba(255, 165, 2,0.8);
-    }
-    .navbar-brand img {
-        max-width: 190px;
-    }
+    
     .wrap-all {
         display: flex;
         margin-right: 3rem;
@@ -96,10 +68,6 @@
     .cart-wrapper .btn i:hover {
         color: rgba(138, 133, 133, 0.5);
     }
-    .navbar-toggler {
-        color: rgba(255, 255, 255, .5);
-        border-color: rgba(255, 255, 255, .1);
-    }
     .badge-pill-red {
         background: red;
         border-radius: 50%;
@@ -107,55 +75,11 @@
         float: right;
         margin-left: -5px;
     }
-    /* searchBox menu */
-    .fa-search {
-        margin-left: 3rem;
-    }
-    .searchBox {
-        background-color: #ecf0f1;
-        position: absolute;
-        top: 60px;
-        left: 4%;
-        width: 350px;
-        height: 60px;
-        z-index: 10;
-        line-height: 17px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
-        border-top: 4px solid #e67e22;
-        display: none;
-    }
-    .searchBox::before {
-        content: "";
-        position: absolute;
-        top: -32px;
-        left: 13px;
-        border-left: 12px solid transparent;
-        border-right: 12px solid transparent;
-        border-top: 14px solid transparent;
-        border-bottom: 14px solid #e67e22;
-    }
-    .searchBox .searchInput {
-        width: 200px;
-        padding: 5px 10px;
-        margin-left: 23px;
-        border: 1px solid #f39c12;
-        margin-top: 12px;
-        font-family: 'Playfair Display', serif;
-        outline: none;
-    }
-    .searchBox input[type="button"] {
-        width: 80px;
-        padding: 5px 0;
-        background: #f39c12;
-        color: #fff;
-        margin-left: -6px;
-        border: 1px solid #f39c12;
-        outline: none;
-        cursor: pointer;
-    }
+    /* searchBar */
+
     /* submenu navbar */
     .dropdown-menu.show {
-        background-color: #fcc226;
+        background-color: rgba(230, 126, 34,1.0);
         border-color: #0c2461;
         border-radius: 3px;
     }
@@ -325,8 +249,8 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-left: -20px;
-        margin-top: -25%;
+        margin-left: -10px;
+        margin-top: -34%;
         opacity: 0;
         font-size: 30px;
         color: #ecebeb;
@@ -369,7 +293,6 @@
         padding: 10px 12px;
         font-size: 12px;
         line-height: 18px;
-        text-transform: uppercase;
         border: solid 1px #c9bcbc;
         background-color: #ffc107;
         color: white;
@@ -407,53 +330,7 @@
         padding: 40px 0;
         margin-top: 20px;
     }
-    /* testimonial section */
-    .review-bg {
-        background-color: #cfcdcd;
-    }
-    .review-indicators {
-        top: -30%;
-    }
-    #indicators .carousel-indicators > li:nth-child(1) {
-        background-image: url(../images/icon/jimmy_fallon.jpg);
-    }
-    #indicators .carousel-indicators > li:nth-child(2) {
-        background-image: url(../images/icon/will_smith.jpg);
-    }
-    #indicators .carousel-indicators > li:nth-child(3) {
-        background-image: url(../images/icon/angel_asher.jpg);
-    }
-    #indicators .carousel-indicators > li {
-        width: 70px;
-        height: 70px;
-        border: 0;
-        border-radius: 50%;
-        transition: all 0.4s ease-in-out;
-        margin: 0 15px;
-        background: center no-repeat;
-        background-size: cover;
-        filter: opacity(0.6);
-    }
-    #indicators .review-indicators li.active {
-        transform: scale(1.2);
-        filter: opacity(1);
-    }
-    #indicators .carousel-inner {
-        width: 60%;
-        margin: auto;
-        padding: 25px 0 15px;
-    }
-    .carousel-inner strong span {
-        font-weight: normal;
-    }
-    #indicators .carousel-item p {
-        padding: 10px;
-        font-size: 16px;
-        font-style: italic;
-        font-weight: bold;
-        font-family: 'Playfair Display', serif;
-    }
-    /* end testimonial */
+
     /* benefit section */
     .icon {
         height: 80px;

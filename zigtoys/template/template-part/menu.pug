@@ -1,36 +1,37 @@
-nav.navbar.navbar-expand-lg.navbar-light.bg-light
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navmenu' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+nav.navbar.navbar-expand-lg.navbar-dark.primary-color
+  //  Navbar brand 
+  a.navbar-brand(href='index.html')
+    img(src="images/icon/logo2.jpg", alt="")
+  //  Collapse button 
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#mobileToggle' aria-controls='basicExampleNav' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
-  i.fas.fa-search  
-  .searchBox
-    input.searchInput(type='text' placeholder='Bạn muốn tìm gì?' aria-label='Search')
-    input(type='button' value="Tìm kiếm")
-  .collapse.in.navbar-collapse#navmenu
-    ul.navbar-nav
-      li.nav-item.active
+  //  Collapsible content 
+  .collapse.navbar-collapse#mobileToggle
+    ul.navbar-nav.mr-auto
+      li.nav-item
         a.nav-link(href='index.html')
-          | Trang chủ 
+          | Trang Chủ
           span.sr-only (current)
       li.nav-item
         a.nav-link(href='about.html') Về ZIGToys
-      li.nav-item.dropdown
-        a.nav-link.dropdown-toggle#navbarDropdown(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false').
-        
-          Sản Phẩm  
-        .dropdown-menu(aria-labelledby='navbarDropdown')
-          a.dropdown-item(href='products.html') Mô hình Figures
-          a.dropdown-item(href='#') DX-Drivers
-          a.dropdown-item(href='#') Sản phẩm khác
+          li.nav-item.dropdown
+            a.nav-link.dropdown-toggle#navbarDropdown(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href="#") Sản Phẩm
+            .dropdown-menu.dropdown-primary(aria-labelledby='navbarDropdown')
+              a.dropdown-item(href='products.html') Mô Hình Figures
+              a.dropdown-item(href='#') Thăt Lưng DX-Drivers
+              a.dropdown-item(href='#') Phụ Kiện Liên Quan
       li.nav-item
         a.nav-link(href='blog.html') Blog
       li.nav-item
-        a.nav-link(href='contact.html') Liên hệ
-  .wrap-all
-    .cart-wrapper
-      a.btn.btn-theme-transparent.cart-icon(href="cart.html")
-        span.badge.badge-pill-red 0
-        i.fa.fa-shopping-cart(style='font-size:24px')
-    .heart-wrapper
-      a.btn.hidden-xs.hidden-sm(href)
-        i.far.fa-heart(style='font-size:24px')
-    
+        a.nav-link(href='contact.html') Liên Hệ
+    form.form-inline
+      .md-form.my-0
+        input.form-control(type='text' placeholder='Tìm kiếm' aria-label='Search')
+    .wrap-all
+      .cart-wrapper
+        a.btn.cart-icon(href="cart.html")
+          span.badge.badge-pill-red 0
+          i.fa.fa-shopping-cart(style='font-size:24px')
+      .heart-wrapper
+        a.btn(href)
+          i.far.fa-heart(style='font-size:24px')

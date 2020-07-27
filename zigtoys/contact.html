@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Liên Hệ</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&amp;display=swap"/>
     <link rel="stylesheet" href="css_fontawesome/all.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"/>
@@ -26,17 +24,10 @@
     <header class="bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-md-3 col-xs-12 user-part">
+          <div class="col-md-6 col-xs-12 info-part d-flex justify-content-start"><span class="quick-phone"><a class="nav-link phone-number" href="#"> <i class="fas fa-phone-alt"> (+84)1923-8564</i></a></span><span class="quick-mail"><a class="nav-link email" href="#"><i class="far fa-envelope"> support@zigtoys.com</i></a></span></div>
+          <div class="col-md-6 col-xs-12 user-part">
             <ul>
-              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login">Đăng Nhập</a></li>
-              <li class="nav-item"><a class="nav-link dangky" href="#" data-toggle="modal" data-target="#signup">Đăng Ký</a></li>
-            </ul>
-          </div>
-          <div class="col-md-6 col-xs-12 d-flex justify-content-center logo"><a class="navbar-brand pt-3" href="index.html"><img src="images/icon/logo2.jpg" title="Logo" alt="Logo"/></a></div>
-          <div class="col-md-3 col-xs-12 pt-2 info-part">
-            <ul class="info">
-              <li class="nav-item"><a href="#"><i class="fas fa-phone-alt"> (+84)1923-8564</i></a></li>
-              <li class="nav-item"><a href="#"><i class="fa fa-envelope"> support@zigtoys.com</i></a></li>
+              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login">Đăng Nhập | Đăng Ký </a></li>
             </ul>
           </div>
         </div>
@@ -135,26 +126,30 @@
         </div>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><i class="fas fa-search"> </i>
-      <div class="searchBox">
-        <input class="searchInput" type="text" placeholder="Bạn muốn tìm gì?" aria-label="Search"/>
-        <input type="button" value="Tìm kiếm"/>
-      </div>
-      <div class="collapse in navbar-collapse" id="navmenu">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sản Phẩm  </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô hình Figures</a><a class="dropdown-item" href="#">DX-Drivers</a><a class="dropdown-item" href="#">Sản phẩm khác</a></div>
-          </li>
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <!--  Navbar brand --><a class="navbar-brand" href="index.html"><img src="images/icon/logo2.jpg" alt=""/></a>
+      <!--  Collapse button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <!--  Collapsible content -->
+      <div class="collapse navbar-collapse" id="mobileToggle">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Sản Phẩm</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô Hình Figures</a><a class="dropdown-item" href="#">Thăt Lưng DX-Drivers</a><a class="dropdown-item" href="#">Phụ Kiện Liên Quan</a></div>
+              </li></a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Liên hệ</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
         </ul>
-      </div>
-      <div class="wrap-all">
-        <div class="cart-wrapper"><a class="btn btn-theme-transparent cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
-        <div class="heart-wrapper"><a class="btn hidden-xs hidden-sm" href="href"><i class="far fa-heart" style="font-size:24px"></i></a></div>
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Search"/>
+          </div>
+        </form>
+        <div class="wrap-all">
+          <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+          <div class="heart-wrapper"><a class="btn" href="href"><i class="far fa-heart" style="font-size:24px"></i></a></div>
+        </div>
       </div>
     </nav>
     <section class="main-contact">

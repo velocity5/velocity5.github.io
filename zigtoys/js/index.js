@@ -1,7 +1,20 @@
-﻿/* click menu out */
-$(document).on('click', function() {
-	$('.collapse').collapse('hide');
-});
+﻿/* toggle menu */
+/* active class navmenu */
+$(document).ready(function() {
+	let url = window.location.href;
+	url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+	url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("?"));
+	url = url.substr(url.lastIndexOf("/") + 1);
+	if (url == "") {
+		url = 'index.html';
+	}
+	$('.navbar-nav li').each(function() {
+		let href = $(this).find('a').attr("href");
+		if (url == href) {
+			$(this).addClass("active");
+		}
+	})
+})
 /*Scroll to top when arrow up clicked*/
 $(window).scroll(function() {
     var height = $(window).scrollTop();

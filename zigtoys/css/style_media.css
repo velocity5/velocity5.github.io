@@ -1,11 +1,4 @@
-      @media (max-width: 1038px) {
-          .product-image {
-              margin: 0 auto;
-          }
-          .thumbnail .zoom {
-            margin-top: -32%;
-          }
-      }
+
       @media (max-width: 1200px) { 
         .info-part {
             margin-top: 25px;

@@ -1,23 +1,17 @@
 header.bg-dark
   .container
     .row
-      .col-md-3.col-xs-12.user-part
+      .col-md-6.col-xs-12.info-part.d-flex.justify-content-start
+        span.quick-phone
+          a.nav-link.phone-number(href="#") 
+            i.fas.fa-phone-alt  (+84)1923-8564
+        span.quick-mail
+          a.nav-link.email(href="#")
+            i.far.fa-envelope  support@zigtoys.com
+      .col-md-6.col-xs-12.user-part
         ul
           li.nav-item
-            a.nav-link.dangnhap(href='#' data-toggle='modal' data-target='#login') Đăng Nhập
-          li.nav-item
-            a.nav-link.dangky(href='#' data-toggle='modal' data-target='#signup') Đăng Ký
-      .col-md-6.col-xs-12.d-flex.justify-content-center.logo
-        a.navbar-brand.pt-3(href='index.html')
-          img(src='images/icon/logo2.jpg' title='Logo' alt='Logo')
-      .col-md-3.col-xs-12.pt-2.info-part
-        ul.info
-          li.nav-item
-            a(href="#")
-              i.fas.fa-phone-alt  (+84)1923-8564
-          li.nav-item
-            a(href='#')
-              i.fa.fa-envelope  support@zigtoys.com
+            a.nav-link.dangnhap(href='#' data-toggle='modal' data-target='#login') Đăng Nhập | Đăng Ký 
   .modal.fade#login(tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
     .modal-dialog(role='document')
       .modal-content.modal-login
