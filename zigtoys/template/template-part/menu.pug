@@ -1,4 +1,4 @@
-nav.navbar.navbar-expand-lg.navbar-dark.primary-color
+nav.navbar.navbar-expand-lg.navbar-dark.primary-color.sticky-top
   //  Navbar brand 
   a.navbar-brand(href='index.html')
     img(src="images/icon/logo2.jpg", alt="")
@@ -14,19 +14,22 @@ nav.navbar.navbar-expand-lg.navbar-dark.primary-color
           span.sr-only (current)
       li.nav-item
         a.nav-link(href='about.html') Về ZIGToys
-          li.nav-item.dropdown
-            a.nav-link.dropdown-toggle#navbarDropdown(data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href="#") Sản Phẩm
-            .dropdown-menu.dropdown-primary(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='products.html') Mô Hình Figures
-              a.dropdown-item(href='#') Thăt Lưng DX-Drivers
-              a.dropdown-item(href='#') Phụ Kiện Liên Quan
+      li.nav-item
+        a.nav-link(href="products.html") Sản Phẩm 
+          i.fas.fa-caret-down
+        ul.submenu
+          li
+            a.submenu-item(href='products.html') Mô hình Figures
+          li
+            a.submenu-item(href='#') Phụ kiện liên quan
       li.nav-item
         a.nav-link(href='blog.html') Blog
       li.nav-item
         a.nav-link(href='contact.html') Liên Hệ
-    form.form-inline
-      .md-form.my-0
-        input.form-control(type='text' placeholder='Tìm kiếm' aria-label='Search')
+      form.form-inline.form-search
+        input.form-input(type='text' placeholder='Tìm kiếm')
+        a.searchLink(href="#")
+          i.fas.fa-search.search-icon
     .wrap-all
       .cart-wrapper
         a.btn.cart-icon(href="cart.html")

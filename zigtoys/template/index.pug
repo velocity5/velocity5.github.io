@@ -3,11 +3,10 @@ block title
     title ZIGToys - Trang chủ
 block content
     .slider_top
-        #bannerIndicators.carousel.slide(data-ride='carousel')
-            .carousel-inner
+        #bannerIndicators.carousel.slide(data-ride='carousel' data-interval='7000')
+            .carousel-inner(role="listbox")
                 .carousel-item
-                    .d-flex.align-items-center.justify-content-center
-                        .first-slide
+                    .img-slide1    
                     .caption
                         .container.d-flex.justify-content-center
                             .div-table.summer
@@ -15,8 +14,7 @@ block content
                                     a.btn.btn-outline-secondary.btn-view(type='button', href="products.html") Xem Ngay  
                                         i.fas.fa-angle-right
                 .carousel-item.active
-                    .d-flex.align-items-center.justify-content-center
-                        .second-slide
+                    .img-slide2
                     .caption
                         .container.d-flex.justify-content-center
                             .div-table

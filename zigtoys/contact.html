@@ -126,7 +126,7 @@
         </div>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+    <nav class="navbar navbar-expand-lg navbar-dark primary-color sticky-top">
       <!--  Navbar brand --><a class="navbar-brand" href="index.html"><img src="images/icon/logo2.jpg" alt=""/></a>
       <!--  Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -134,18 +134,19 @@
       <div class="collapse navbar-collapse" id="mobileToggle">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">Sản Phẩm</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="products.html">Mô Hình Figures</a><a class="dropdown-item" href="#">Thăt Lưng DX-Drivers</a><a class="dropdown-item" href="#">Phụ Kiện Liên Quan</a></div>
-              </li></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Sản Phẩm <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu">
+              <li><a class="submenu-item" href="products.html">Mô hình Figures</a></li>
+              <li><a class="submenu-item" href="#">Phụ kiện liên quan</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+          <form class="form-inline form-search">
+            <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
+          </form>
         </ul>
-        <form class="form-inline">
-          <div class="md-form my-0">
-            <input class="form-control" type="text" placeholder="Tìm kiếm" aria-label="Search"/>
-          </div>
-        </form>
         <div class="wrap-all">
           <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
           <div class="heart-wrapper"><a class="btn" href="href"><i class="far fa-heart" style="font-size:24px"></i></a></div>

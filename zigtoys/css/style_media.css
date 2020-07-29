@@ -1,20 +1,11 @@
 
       @media (max-width: 1200px) { 
-        .info-part {
-            margin-top: 25px;
-            transition: all 0.3s ease-in-out;
-        }
-        .navbar-brand img {
-            max-width: 170px;
-            margin-left: 20%;
-            margin-top: 20px;
-        }
         .user-part {
             margin-bottom: 20px;
             transition: all 0.3s ease-in-out;
         }
-        .navbar-nav {
-            margin-left: 1%;
+        .navbar-nav .nav-item {
+            padding: 5px 0;
         }
         .wrap-all {
             margin-right: 0rem;
@@ -82,10 +73,15 @@
         }
     }
     @media (max-width: 991.98px) { 
+        .resize .navbar-toggler {
+            margin-top: -2rem;
+        }
+        .resize .navbar-brand img {
+            margin-top: -1rem;
+        }
         /* homepage */
         .info-part {
             font-size: 14px;
-            margin-top: 30px;
             transition: all 0.3s ease-in-out;
         }
         .info {
@@ -96,21 +92,6 @@
         }
         .user-part {
             margin-bottom: 10px;
-            transition: all 0.3s ease-in-out;
-        }
-        .navbar-brand img {
-            max-width: 150px;
-            margin-top: 30px;
-            margin-left: 30%;
-            transition: all 0.3s ease-in-out;
-        }
-        .fa-search {
-            margin-left: 0;
-            margin-right: 60%;
-            transition: all 0.3s ease-in-out;
-        }
-        .searchBox {
-            left: 15%;
             transition: all 0.3s ease-in-out;
         }
         .navbar-nav {
@@ -163,14 +144,28 @@
             margin-left: 2px;
         }
         /* product */
-        .filter-contain {
-            margin-right: 5rem;
-            max-width: 53rem;
+        .filter-row #product_filter-icon {
+            position: fixed;
+            left: 0;
+            font-size: 13px;
+            z-index: 20;
+            color: white;
+            background: orange;
+            width: 2rem;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2px;
+        }
+        #product-close {
+            display: block;
         }
         /* produt detail */
         #detail-tab, #descript-tab, #review-tab {
             padding: 20px 9px;
         } 
+
     }
     @media (max-width: 916px) {
         .container.filter-contain {
@@ -204,15 +199,11 @@
             font-size: 13px;
         }
     @media (max-width: 767px) { 
-        .user-part {
-            margin-right: 20%;
-            margin-bottom: 0;
-            margin-top: 0;
+        .resize .navbar-brand img {
+            margin-top: -2rem;
         }
-        .info-part {
-            font-size: unset;
-            margin-top: 0;
-            margin-right: 14%;
+        .user-part {
+            margin-top: -2.4rem;
         }
         .info li:first-child {
             margin-left: 10px;
