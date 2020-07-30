@@ -164,14 +164,15 @@ block content
                             button.apply(type="button") Áp dụng
                             button.reset(type="button") Bỏ lọc 
                         #product-close
-                            button.close(type="button") Đóng
-                .col-12.col-xs-12.col-sm-9.col-md-9.col-lg-9.col-xl-9
+                            button.close(type="button" style="display:none") Đóng
+                .col-12.col-xs-12.col-sm-9.col-md-12.col-lg-9.col-xl-9
                     .sort-bar
                         span.sortby Sắp xếp theo:
-                        select.select-box
-                            option(value="1") Bán chạy
-                            option(value="2") Giá Thấp - Cao
-                            option(value="3") Giá Cao - Thấp
+                        select#productSelectBox
+                            option(value="bestSeller" select="selected") Bán chạy
+                            option(value="lowHigh") Giá Thấp - Cao
+                            option(value="highLow") Giá Cao - Thấp
+                        i.fa.fa-chevron-down.sortIcon
                     .row.text-center.first-row
                         .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4
                             .thumbnail-img

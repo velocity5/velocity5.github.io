@@ -426,7 +426,7 @@ $('#product_filter-icon').click(function() {
 	$("#product-filter").removeClass("isClose");
 	$(".darkLayer").css("display","block");
 });
-$("#btn-close").click(function() {
+$(" #product-close button").click(function() {
 	$("#product-filter").addClass("isClose");
 	$(".darkLayer").css("display","none");
 });

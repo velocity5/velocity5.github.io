@@ -3,10 +3,6 @@ block title
     title Chi tiết sản phẩm
 block content
     section
-        .container-fluid.text-center.banner-products.background-top
-            .wrap_title
-                h2.title_banner Sản phẩm
-    section
         .container
             .row
                 .col-12.col-xs-12.col-sm-12.col-md-12.breadcrumb-contain
@@ -145,7 +141,8 @@ block content
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                     .thumbnail
                         .product-image
-                            img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
                             .zoom
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1')
                         .product.text-center
@@ -193,7 +190,8 @@ block content
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                     .thumbnail
                         .product-image
-                            img.img-fluid.figure(src='images/product_images/geiz.png' alt)
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/geiz.png' alt)
                             .zoom
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2')
                         .product.text-center
@@ -241,7 +239,8 @@ block content
                 .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4
                     .thumbnail
                         .product-image
-                            img.img-fluid.figure(src='images/product_images/val.jpg' alt)
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/val.jpg' alt)
                             .zoom
                                 i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview3')
                         .product.text-center
