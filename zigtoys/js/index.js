@@ -434,6 +434,8 @@ $(".darkLayer").click(function() {
 	$(this).css("display","none");
 	$("#product-filter").addClass("isClose");
 });
+/* address plugin */
+
 /* live chat */
 /*var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
@@ -445,7 +447,3 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })(); */
 /* background responsive */
-$(window).resize(function() {
-	let h = $(window).height();
-	$(".slider_top").css({'height': h});
-})

@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/style_address.css"/>
     <link rel="stylesheet" href="css/style_contact.css"/>
     <link rel="stylesheet" href="css/style_cart.css"/>
+    <link rel="stylesheet" href="css/style_checkout.css"/>
     <link rel="stylesheet" href="css/style_blog.css"/>
   </head>
   <body>
@@ -161,9 +162,49 @@
             <ul class="progressbar">
               <li class="complete">Đăng nhập</li>
               <li class="active">Địa chỉ giao hàng</li>
-              <li>Thanh toán & đặt mua</li>
+              <li>Thanh toán</li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 addressWrap text-center">
+            <form id="addForm" name="addForm">
+              <div class="infoGroup">
+                <input type="text" placeholder="Họ tên *"/>
+              </div>
+              <div class="infoGroup">
+                <input type="number" placeholder="Điện thoại *"/>
+              </div>
+              <div class="infoGroup">
+                <select name="city" required="required">
+                  <option value="value">Tỉnh / Thành phố</option>
+                  <option value="hn">Hà Nội</option>
+                </select>
+              </div>
+              <div class="infoGroup">
+                <select name="district" required="required">
+                  <option value="value">Quận / Huyện</option>
+                  <option value="ds">Quận Thanh Xuân</option>
+                </select>
+              </div>
+              <div class="infoGroup">
+                <select name="ward" required="required">
+                  <option value="value">Phường / Xã</option>
+                  <option value="ds">Phường Hạ Đình</option>
+                </select>
+              </div>
+              <div class="infoGroup">
+                <textarea id="detail" name="addDetail" placeholder="Nhập địa chỉ của bạn *" required="required"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 text-center buttonContain"><a class="processBtn" href="checkout.html" type="butotn">Giao đến địa chỉ này </a></div>
         </div>
       </div>
     </section>

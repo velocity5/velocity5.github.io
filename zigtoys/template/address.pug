@@ -9,4 +9,32 @@ block content
                     ul.progressbar
                         li.complete Đăng nhập
                         li.active Địa chỉ giao hàng
-                        li Thanh toán & đặt mua
+                        li Thanh toán
+    section
+        .container
+            .row
+                .col-12.col-xs-12.col-sm-12.col-md-12.addressWrap.text-center
+                    form(id="addForm" name="addForm")
+                        .infoGroup
+                            input(type="text", placeholder="Họ tên *")
+                        .infoGroup
+                            input(type="number", placeholder="Điện thoại *")
+                        .infoGroup
+                            select(name='city' required)
+                                option(value) Tỉnh / Thành phố
+                                option(value="hn") Hà Nội
+                        .infoGroup
+                            select(name='district' required)
+                                option(value) Quận / Huyện
+                                option(value="ds") Quận Thanh Xuân
+                        .infoGroup
+                            select(name='ward' required)
+                                option(value) Phường / Xã
+                                option(value="ds") Phường Hạ Đình
+                        .infoGroup
+                            textarea#detail(name="addDetail", placeholder="Nhập địa chỉ của bạn *" required)
+            .row
+               .col-12.col-xs-12.col-sm-12.col-md-12.text-center.buttonContain
+                    a.processBtn(href="checkout.html", type="butotn") Giao đến địa chỉ này 
+                    
+                       
