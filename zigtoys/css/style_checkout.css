@@ -7,11 +7,20 @@
     font-size: 18px;
     margin-bottom: 10px;
 }
+.payment-list li:first-child {
+    margin-left: -2.5rem;
+}
 .atms {
     display: flex;
     justify-content: flex-end;
-    list-style: none;
     overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.digis {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
 }
 .atms .atm {
     width: 25%;
@@ -27,6 +36,15 @@
 .atms .atm:hover {
     box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
     border-color: rgba(243,156,18,1);
+}
+.digi img {
+    border: none;
+    max-width: 60px;
+    margin: 5px 30px 5px;
+    cursor: pointer;
+}
+.digi img:hover {
+    box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);
 }
 .addTitle a:hover, .productTitle a:hover {
     box-shadow: 0px 0px 20px -10px rgba(0,0,0,0.75);

@@ -434,8 +434,11 @@ $(".darkLayer").click(function() {
 	$(this).css("display","none");
 	$("#product-filter").addClass("isClose");
 });
-/* address plugin */
-
+/* checkout radio button show/hide */
+$('input[type="radio"]').on('change' ,function() {
+	$('.atms').toggle(this.value === "transfer" && this.checked);
+	$('.digis').toggle(this.value === "digiwallet" && this.checked);
+}).change();
 /* live chat */
 /*var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){

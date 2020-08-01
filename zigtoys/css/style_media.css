@@ -1,4 +1,3 @@
-
       @media (max-width: 1200px) { 
         .user-part {
             margin-bottom: 20px;
@@ -438,6 +437,11 @@
     @media (max-width: 554px) {
         #detail-tab, #descript-tab, #review-tab {
             padding: 20px 16px;
+        }
+    }
+    @media (max-width: 549px) {
+        .payment-list .atms .atm {
+            width: auto;
         }
     }
     @media (max-width: 543px) {
