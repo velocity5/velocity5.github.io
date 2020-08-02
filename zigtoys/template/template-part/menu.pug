@@ -1,13 +1,13 @@
-nav.navbar.navbar-expand-lg.navbar-dark.primary-color.sticky-top
-  //  Navbar brand 
-  a.navbar-brand(href='index.html')
-    img(src="images/icon/logo2.jpg", alt="")
-  //  Collapse button 
-  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#mobileToggle' aria-controls='basicExampleNav' aria-expanded='false' aria-label='Toggle navigation')
-    span.navbar-toggler-icon
-  //  Collapsible content 
-  .collapse.navbar-collapse#mobileToggle
-    ul.navbar-nav.mr-auto
+nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
+  a.navbar-brand.order-lg-0.ml-lg-0.ml-2(href='index.html')
+    img(src="images/icon/logo2.jpg", alt="Logo")
+  button.navbar-toggler.align-self-start(type='button')
+    .animatedIcon
+      span
+      span
+      span
+  .collapse.navbar-collapse.p-3.p-lg-0.mt-lg-0.d-flex.flex-column.flex-lg-row.flex-xl-row.justify-content-lg-end.bg-sidebar.mobileMenu#mobileToggle
+    ul.navbar-nav
       li.nav-item
         a.nav-link(href='index.html')
           | Trang Chủ
@@ -26,7 +26,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.primary-color.sticky-top
         a.nav-link(href='blog.html') Blog
       li.nav-item
         a.nav-link(href='contact.html') Liên Hệ
-      form.form-inline.form-search
+    form.form-inline.form-search.my-2.my-lg-0.align-self-stretch
         input.form-input(type='text' placeholder='Tìm kiếm')
         a.searchLink(href="#")
           i.fas.fa-search.search-icon
@@ -38,3 +38,17 @@ nav.navbar.navbar-expand-lg.navbar-dark.primary-color.sticky-top
       .heart-wrapper
         a.btn(href)
           i.far.fa-heart(style='font-size:24px')
+
+  form.form-inline.form-searchMobile.my-2.my-lg-0
+    input.form-input(type='text' placeholder='Tìm kiếm')
+    a.searchLink(href="#")
+      i.fas.fa-search.search-icon
+  .wrapMobile
+    .cartMobile
+      a.btn.cart-iconMobile(href="cart.html")
+        span.badge.badge-pill-red.badgeMobile 0
+        i.fa.fa-shopping-cart(style='font-size:24px')
+    .heartMobile
+      a.btn(href="#")
+        i.far.fa-heart(style='font-size:24px')
+.backgroundOverlay

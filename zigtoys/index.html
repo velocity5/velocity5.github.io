@@ -23,13 +23,13 @@
     <link rel="stylesheet" href="css/style_blog.css"/>
   </head>
   <body>
-    <header class="bg-dark">
+    <header class="bg-header">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 col-xs-12 info-part d-flex justify-content-start"><span class="quick-phone"><a class="nav-link phone-number" href="#"> <i class="fas fa-phone-alt"> (+84)1923-8564</i></a></span><span class="quick-mail"><a class="nav-link email" href="#"><i class="far fa-envelope"> support@zigtoys.com</i></a></span></div>
-          <div class="col-md-6 col-xs-12 user-part">
+          <div class="col-12 col-sm-12 col-xs-12 col-md-6 info-part d-flex justify-content-start"><span class="quick-phone"><a class="nav-link phone-number" href="#"> <i class="fas fa-phone-alt"> (+84)1923-8564</i></a></span><span class="quick-mail"><a class="nav-link email" href="#"><i class="far fa-envelope"> support@zigtoys.com</i></a></span></div>
+          <div class="col-12 col-sm-12 col-xs-12 col-md-6 user-part">
             <ul>
-              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login">Đăng Nhập | Đăng Ký </a></li>
+              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login"> <i class="far fa-user-circle"> Đăng Nhập | Đăng Ký </i></a></li>
             </ul>
           </div>
         </div>
@@ -128,13 +128,12 @@
         </div>
       </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark primary-color sticky-top">
-      <!--  Navbar brand --><a class="navbar-brand" href="index.html"><img src="images/icon/logo2.jpg" alt=""/></a>
-      <!--  Collapse button -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <!--  Collapsible content -->
-      <div class="collapse navbar-collapse" id="mobileToggle">
-        <ul class="navbar-nav mr-auto">
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-sm-start sticky-top"><a class="navbar-brand order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo2.jpg" alt="Logo"/></a>
+      <button class="navbar-toggler align-self-start" type="button">
+        <div class="animatedIcon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-sidebar mobileMenu" id="mobileToggle">
+        <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Sản Phẩm <i class="fas fa-caret-down"></i></a>
@@ -145,16 +144,24 @@
           </li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
-          <form class="form-inline form-search">
-            <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
-          </form>
         </ul>
+        <form class="form-inline form-search my-2 my-lg-0 align-self-stretch">
+          <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
+        </form>
         <div class="wrap-all">
           <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
           <div class="heart-wrapper"><a class="btn" href="href"><i class="far fa-heart" style="font-size:24px"></i></a></div>
         </div>
       </div>
+      <form class="form-inline form-searchMobile my-2 my-lg-0">
+        <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
+      </form>
+      <div class="wrapMobile">
+        <div class="cartMobile"><a class="btn cart-iconMobile" href="cart.html"><span class="badge badge-pill-red badgeMobile">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+        <div class="heartMobile"><a class="btn" href="#"><i class="far fa-heart" style="font-size:24px"></i></a></div>
+      </div>
     </nav>
+    <div class="backgroundOverlay"></div>
     <div class="slider_top">
       <div class="carousel slide" id="bannerIndicators" data-ride="carousel" data-interval="7000">
         <div class="carousel-inner" role="listbox">

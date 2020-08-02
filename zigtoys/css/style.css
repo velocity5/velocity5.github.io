@@ -3,6 +3,9 @@
         overflow-x: hidden;
     }
     /* navbar menu */
+    .bg-header {
+        background-color: #7f8c8d;
+    }
     header ul {
         list-style-type: none;
         margin: 0;
@@ -22,52 +25,47 @@
     } 
    .navbar {
        font-size: 18px;
-       background-color: orange;
-       border: 1px solid grey;
+       background-color: #EAB543;
        padding-bottom: 10px;
        transition: all 0.4s linear;
    }
-   .navbar.resize {
-       height: 70px;
-   }
-  .navbar-brand img {
-      max-width: 150px;
-  }
-  .navbar-nav .nav-item {
-      padding: 10px 20px;
-  }
-  .navbar-nav li {
-      border-bottom: 2px solid transparent;
-      line-height: 30px;
-      overflow: hidden;
-  }
-  .navbar-nav li:hover, .navbar-nav li.active, .subactive {
-      border-color: crimson;
-      background-color: rgba(211, 84, 0,0.3);
-  }
-  .navbar-nav li ul {
-      display: none;
-  }
-  .submenu {
-      position: absolute;
-      background-color: #FF9800;
-      z-index: 1;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  }
-  .submenu li:hover {
-      background-color: rgba(211, 84, 0,0.3);
-  }
-  .submenu li a {
-    display: block;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-  }
-
-  .navbar-nav li:hover .submenu {
-      display: block;
-  }
+    .navbar-brand img {
+        max-width: 150px;
+    }
+    .navbar-nav .nav-item {
+        padding: 10px 20px;
+    }
+    .navbar-nav li {
+        border-bottom: 2px solid transparent;
+        line-height: 30px;
+        overflow: hidden;
+    }
+    .navbar-nav li:hover, .navbar-nav li.active, .subactive {
+        border-color: crimson;
+        background-color: rgba(211, 84, 0,0.3);
+    }
+    .navbar-nav li ul {
+        display: none;
+    }
+    .submenu {
+        position: absolute;
+        background-color: #EAB543;
+        z-index: 1;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .submenu li:hover {
+        background-color: rgba(211, 84, 0,0.3);
+    }
+    .submenu li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    .navbar-nav li:hover .submenu {
+        display: block;
+    }
     .info {
         margin-top: 24px;
     }
@@ -78,10 +76,9 @@
     .nav-link.dangnhap:hover {
         color: rgb(187, 185, 184);
     }
-    
     .wrap-all {
         display: flex;
-        margin-right: 3rem;
+        /*margin-right: 3rem;*/
     }
     .heart-wrapper .btn i {
         color: #f0932b;
@@ -104,6 +101,52 @@
         color: white;
         float: right;
         margin-left: -5px;
+    }
+    .form-searchMobile, .wrapMobile {
+        display: none;
+    }
+    /* animate hamburger */
+    .animatedIcon {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        margin: 0;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+    .animatedIcon span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        background-color: beige;
+    }
+    .animatedIcon span:nth-child(1) {
+        top: 0;
+    }
+    .animatedIcon span:nth-child(2) {
+        top: 10px;
+    }
+    .animatedIcon span:nth-child(3) {
+        top: 20px;
+    }
+    .animatedIcon.openIcon span:nth-child(1) {
+        top: 11px;
+        transform: rotate(135deg);
+    }
+    .animatedIcon.openIcon span:nth-child(2) {
+        opacity: 0;
+        left: -60px;
+    }
+    .animatedIcon.openIcon span:nth-child(3) {
+        top: 11px;
+        transform: rotate(-135deg);
     }
     /* searchBar */
    .form-search .search-icon {
@@ -135,7 +178,6 @@
         background-color: rgba(255, 165, 2,0.8);
     }
     /* carousel slider img active*/
-
     .carousel-item .img-slide1 {
         background-image: url(../images/product_images/burning-falcon-ds.jpg);
         height: 100vh;
@@ -143,7 +185,6 @@
         background-size: cover;
         position: relative;
     }
-    
     .carousel-item img {
         width: 100%;
         height: auto;

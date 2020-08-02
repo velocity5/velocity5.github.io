@@ -1,11 +1,8 @@
-﻿/* resize menu */
-$(window).scroll(function() {
-	currentPosition = $('html,body').scrollTop();
-	if (currentPosition > 100) {
-		$('.navbar.sticky-top').addClass('resize');
-	} else $('.navbar.sticky-top').removeClass('resize');
-})
-/* toggle menu */
+﻿/* toggle menu */
+$('.navbar-toggler, .backgroundOverlay').click(function() {
+	$('.mobileMenu, .backgroundOverlay').toggleClass('slide');
+	$('.animatedIcon, .backgroundOverlay').toggleClass('openIcon');
+});
 
 /* active class navmenu */
 $(document).ready(function() {
@@ -284,6 +281,7 @@ function onLoadCartNumber() {
 	let productNumber = localStorage.getItem('cartNumber');
 	if(productNumber) {
 		document.querySelector(".cart-icon span").textContent = productNumber;
+		document.querySelector(".cart-iconMobile span").textContent = productNumber;
 	}
 }
 
@@ -293,9 +291,11 @@ function cartNumber(product) {
 	if(productNumber) {
 		localStorage.setItem('cartNumber', productNumber + 1);
 		document.querySelector(".cart-icon span").textContent = productNumber + 1;
+		document.querySelector(".cart-iconMobile span").textContent = productNumber + 1;
 	} else {
 		localStorage.setItem('cartNumber', 1);
 		document.querySelector(".cart-icon span").textContent = 1;
+		document.querySelector(".cart-iconMobile span").textContent = 1;
 	}
 	setItems(product);
 }
@@ -434,11 +434,12 @@ $(".darkLayer").click(function() {
 	$(this).css("display","none");
 	$("#product-filter").addClass("isClose");
 });
-/* checkout radio button show/hide */
+/* checkout radio button show/hide and active or not? */
 $('input[type="radio"]').on('change' ,function() {
 	$('.atms').toggle(this.value === "transfer" && this.checked);
 	$('.digis').toggle(this.value === "digiwallet" && this.checked);
 }).change();
+
 /* live chat */
 /*var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
