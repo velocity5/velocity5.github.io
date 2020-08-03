@@ -234,15 +234,12 @@
         background-color: transparent;
         border: 1px solid #ffc107;
     }
-    .btn-subscribe:focus {
-        outline-color: #ffc107;
-    }
     .subscribe .btn-outline-secondary.btn-subscribe:hover {
         background-color: #ffc107;
     }
     /*carousel slider img non-active*/
     .summer {
-        padding-top: 30%;
+        padding-top: 45%;
     }
     .view .btn-view {
         color: white;
@@ -252,6 +249,7 @@
         border-radius: 4px;
         line-height: 36px;
         font-weight: 700;
+        margin-left: 2rem;
         height: 48px;
         width: 130px;
         background-color: transparent;

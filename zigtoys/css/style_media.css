@@ -52,6 +52,9 @@
         }
     }
     @media (max-width: 1039px) {
+        .collapse .navbar-nav {
+            font-size: 13px;
+        }
         .payment-list span.radio-fake {
             left: 24%;
         }
@@ -135,17 +138,16 @@
             font-size: 1rem;
             border: none;
             height: 40px;
-            border-radius: 50px;
+            transition: all 0.3s ease-in-out;
         }
         .form-searchMobile input:focus {
             outline: none;
         }
         .form-searchMobile .searchLink {
             font-size: 1rem;
-            margin-left: -1.5rem;
+            margin-left: -2.5rem;
             color: beige;
             cursor: pointer;
-            border-radius: 50%;
             width: 40px;
             height: 40px;
             background-color: rgb(24 25 25);
@@ -303,12 +305,6 @@
             max-width: 200px;
             margin-top: 0;  
         }
-        .fa-search {
-            margin-right: 20%;
-        }
-        .searchBox {
-            left: 33%;
-        }
         .summer .view {
             margin-top: 50%;
         }
@@ -420,6 +416,15 @@
         span.customStreet {
             padding: 2px;
             text-align: justify;
+        }
+    }
+    @media (max-width: 754px) {
+        .form-searchMobile {
+            margin-left: 35%;
+        }
+        .wrapMobile {
+            margin-bottom: 5px;
+            margin-left: 73%;
         }
     }
     @media (max-width: 745px) {
@@ -707,8 +712,41 @@
             padding: 22px 9px;
             font-size: 13px;
         }
+        .form-searchMobile, .wrapMobile {
+            display: none;
+        }
+        .mobileMenu {
+            width: auto;
+        }
+        .collapse .navbar-nav {
+            font-size: unset;
+        }
+        .navbar-toggler {
+            margin-left: 85%;
+            margin-top: -3rem;
+        }
+        .form-search input, .wrap-all {
+            display: flex;
+            align-self: flex-start;
+        }
+        .summer .view {
+            margin-top: -10%;
+            margin-left: -10%;
+        }
+        .caption .caption-content {
+            padding-top: 0;
+        }
+        .caption-content h4, .caption-content h2{
+            font-size: 13px;
+        }
+        .subscribe .btn-outline-secondary.btn-subscribe {
+            margin-left: 10%;
+        }
     }
     @media (max-width: 411px) {
+        #psw-info {
+            right: 10px;
+        }
         #detail-tab, #descript-tab, #review-tab {
             padding: 20px 8.5px;
             font-size: 13px;
@@ -769,14 +807,26 @@
         .user-part {
             margin-right: 50px;
         }
-        .info-part {
-            margin-bottom: 20px;
-        }
         .info li:first-child {
             margin-right: 20px;
         }
         .container-fluid .side-post .side-title a {
             margin-top: -27%;
+        }
+    }
+    @media (max-width: 360px) {
+        .info-part {
+            margin-bottom: unset;
+        }
+        .navbar-toggler {
+            margin-left: 80%;
+            margin-top: -3.5rem;
+        }
+        .navbar-brand img {
+            margin-left: auto;
+        }
+        .subscribe .btn-outline-secondary.btn-subscribe {
+            margin-top: 0;
         }
     }
     @media (max-width: 355px) {
