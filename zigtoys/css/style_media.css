@@ -108,6 +108,9 @@
             margin-left: 90%;
             margin-top: -4rem;
         }
+        .navbar-toggler:focus {
+            outline: 0;
+        }
         .navbar-nav .nav-item {
             margin-right: 8rem;
         }
@@ -325,7 +328,7 @@
         }
         .carousel-item img {
             height: auto;
-            width: 500px;
+            width: 100%;
         }
         .title-info-footer, .title-support, 
         .title-quick, .title-newsletter {
