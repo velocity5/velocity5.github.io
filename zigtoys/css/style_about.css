@@ -11,7 +11,7 @@
     left: 50%;
 }
 .breadcrumb {
-    background: #fcc226;
+    background: transparent;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
@@ -20,13 +20,14 @@
 .breadcrumb .breadcrumb-item a {
     text-decoration: none;
     color: black;
+    font-weight: 700;
 }
 .breadcrumb-item + .breadcrumb-item::before {
-    content: "•";
-    color: white;
+    content: "»";
+    color: black;
 }
 .breadcrumb .breadcrumb-item a:hover {
-    color: rgb(158, 154, 154);
+    color: rgba(243, 156, 18,0.5);
 }
 .about-main .row {
     margin-bottom: 50px;

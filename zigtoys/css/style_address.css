@@ -67,7 +67,8 @@ textarea#detail {
     background: #fff;
 }
 .buttonContain {
-    margin-top: 20px;
+    display: flex;
+    margin-left: 17.5rem;
     margin-bottom: 50px;
 }
 a.processBtn {

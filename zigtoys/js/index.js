@@ -327,78 +327,8 @@ function cartNumber(product) {
 			localStorage.setItem("totalCost", product.price);
 		}	
 	}
-	function displayCart() {
-		let cartCost = localStorage.getItem("totalCost");
-		let cartItems = localStorage.getItem("productIncart");
-		cartItems = JSON.parse(cartItems);
-		let cartFrame = document.querySelector(".product-container");
-		if (cartItems && cartFrame) {
-			cartFrame.innerHTML = '';
-			Object.values(cartItems).map(item =>{
-				cartFrame.innerHTML += `
-				<table class="cart">
-					<thead>
-						<tr>
-							<th class="product-thumbnail"> Sản phẩm </th>
-							<th class="product-name">
-								<span class="hidden-mb"> Tên sản phẩm </span>
-							</th>
-							<th class="product-price">
-								<span class="hidden-mb"> Giá thành </span>
-							</th>
-							<th class="product-quantity">
-								<span class="hidden-mb"> Số lượng </span>
-							</th>
-							<th class="product-subtotal"> Thành tiền </th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr class="cart-item">
-							<td class="productInCart">
-								<img src="images/product_images/${item.tag}.jpg" class="img-fluid">		
-							</td>
-							<td class="productName">
-								<a href="product_detail.html" class="productLink">${item.name}</a>
-							</td>
-							<td class="productPrice">
-								<span class="priceInCart">${item.price}đ</span>
-							</td>
-							<td class="quantityInCart">
-								<button class="qty-desc">-</button>
-								<span id="quanty">${item.inCart}</span>
-								<button class="qty-incre">+</button>
-							</td>
-							<td class="totalInCart">
-								${item.inCart * item.price}đ
-							</td>	
-							<td class="productRemove">
-								<i class="far fa-times-circle" type="button" onclick="removeItem()"></i>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-					` 
-			});
-			cartFrame.innerHTML += `
-				<div class="basketTotal">
-					<h4 class="basketTotalTitle">
-						TỔNG TIỀN
-					</h4>
-					<h5 class="totalPrice">
-						${cartCost}đ
-					</h5>
-				</div>	`
-		}
-	}
-	function removeItem() {
-		$(".fa-times-circle").each(function() {
-			$(this).on('click', () => {
-				$(this).parents('.cart-item').remove();
-			})
-		})
-	} 
 onLoadCartNumber();
-displayCart();
+
 
 $(function() {
 	AOS.init();

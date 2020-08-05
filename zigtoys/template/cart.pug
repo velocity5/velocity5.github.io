@@ -13,9 +13,27 @@ block content
     section
         .container
             .row
-                .col-12.col-sm-12
+                .col-12.col-sm-12.col-md-12
                     .product-container
-                        
+                        .table#cart-table
+                            .tr
+                                .th Sản phẩm
+                                .th Đơn giá
+                                .th Số lượng
+                                .th Tổng giá
+                                .th.cart-del
+                            .tr.cart-row
+                                .td
+                                    .cart-item-img
+                                        img(src="images/product_images/01-Figure.jpg", alt="ZeroOne")
+                                .td S.H.Figuart <br />Kamen Rider Zero One
+                                .td 1.000.000đ
+                                .td
+                                    .cart-quantity
+                                        button.cart-minus(type="button") -
+                                        span.numberCurrent 1
+                                        button.cart-plus(type="button") +
+                                
                             
 
             .row

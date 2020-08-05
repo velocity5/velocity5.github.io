@@ -34,327 +34,329 @@ block content
                 a.carousel-control-next(href='#bannerIndicators' role='button' data-slide='next')
                     span.carousel-control-next-icon(aria-hidden='true')
                     span.sr-only Next
-    section.container#about
-        .row.text-center
-            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                .box.heading
-                    h2 Giới thiệu về ZIGToys
-                    hr.below
-        .row.text-center
-            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                .box.content
-                    p(data-aos="fade-up" data-aos-duration="3000") Là đơn vị chuyên cung cấp các sản phẩm mô hình đồ chơi và một số sản phẩm khác của các hãng Bandai và Saban Hasbro.   
-                    p(data-aos="fade-up" data-aos-duration="2000") ZIGToys luôn đặt giá trị cốt lõi là sự 
-                        b UY TÍN 
-                        span và 
-                        b TÍN NHIỆM 
-                        span về giá cả.
-                .view-more
-                    a.btn-more(href='about.html') Xem Chi Tiết 
-                        i.fas.fa-angle-right
+    section
+        .container#about
+            .row.text-center
+                .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .box.heading
+                        h2 Giới thiệu về ZIGToys
+                        hr.below
+            .row.text-center
+                .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .box.content
+                        p(data-aos="fade-up" data-aos-duration="3000") Là đơn vị chuyên cung cấp các sản phẩm mô hình đồ chơi và một số sản phẩm khác của các hãng Bandai và Saban Hasbro.   
+                        p(data-aos="fade-up" data-aos-duration="2000") ZIGToys luôn đặt giá trị cốt lõi là sự 
+                            b UY TÍN 
+                            span và 
+                            b TÍN NHIỆM 
+                            span về giá cả.
+                    .view-more
+                        a.btn-more(href='about.html') Xem Chi Tiết 
+                            i.fas.fa-angle-right
 
-    section.container
-        .row.text-center
-            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                .box.heading
-                    h2 Sản phẩm mới
-                    hr.below
-        .row.text-center
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4.space
-                .thumbnail(data-aos="flip-left" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/01-Figure.jpg' alt)
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Zero One 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                        p.price 1.000.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview1(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id' data-slide-to='0')
-                                                li(data-target='#product-id' data-slide-to='1')
-                                                li(data-target='#product-id' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/01-Figure.jpg' alt='ZeroOne')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act1.jpg' alt='ZeroOne')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act2.jpg' alt='ZeroOne')
-                                            a.carousel-control-prev.product-control(href='#product-id' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4.space
-                .thumbnail(data-aos="flip-right" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/wolf-Figure.jpg' alt)
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Vulcan 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.far.fa-star
-                        p.price 1.000.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview2(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-2.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-2' data-slide-to='0')
-                                                li(data-target='#product-id-2' data-slide-to='1')
-                                                li(data-target='#product-id-2' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/wolf-Figure.jpg' alt='Vulcan')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan.jpg' alt='Vulcan')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan-act.jpg' alt='Vulcan')
-                                            a.carousel-control-prev.product-control(href='#product-id-2' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-2' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4.space
-                .thumbnail(data-aos="flip-left" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/geiz.png' alt)
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview3' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Geiz 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                        p.price 1.200.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview3(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-3.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-3' data-slide-to='0')
-                                                li(data-target='#product-id-3' data-slide-to='1')
-                                                li(data-target='#product-id-3' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/geiz.jpg' alt='Geiz')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/geiz-act-1.jpg' alt='Geiz')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/geiz-act-2.jpg' alt='Geiz')
-                                            a.carousel-control-prev.product-control(href='#product-id-3' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-3' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4.space
-                .thumbnail(data-aos="flip-left" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview4' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Thouser 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                        p.price 1.500.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview4(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-4.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-4' data-slide-to='0')
-                                                li(data-target='#product-id-4' data-slide-to='1')
-                                                li(data-target='#product-id-4' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-fig.jpg' alt='Thouser')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-act.jpg' alt='Thouser')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-act-2.jpg' alt='Thouser')
-                                            a.carousel-control-prev.product-control(href='#product-id-4' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-4' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4.space
-                .thumbnail(data-aos="flip-right" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/woz.jpg' alt)
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview5' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Woz 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.far.fa-star
-                            i.far.fa-star
-                        p.price 1.200.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview5(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-5.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-5' data-slide-to='0')
-                                                li(data-target='#product-id-5' data-slide-to='1')
-                                                li(data-target='#product-id-5' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/woz.jpg' alt='Woz')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/woz-act.jpg' alt='Woz')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/woz-act-1.jpg' alt='Woz')
-                                            a.carousel-control-prev.product-control(href='#product-id-5' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-5' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4.space
-                .thumbnail(data-aos="flip-left" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/val.jpg' alt)
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview6' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Valkyrie 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                        p.price 1.300.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview6(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-6.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-6' data-slide-to='0')
-                                                li(data-target='#product-id-6' data-slide-to='1')
-                                                li(data-target='#product-id-6' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/val.jpg' alt='Valkyrie')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/val-act.jpg' alt='Valkyrie')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/val-act-1.jpg' alt='Valkyrie')
-                                            a.carousel-control-prev.product-control(href='#product-id-6' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-6' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-    section.container.brand
+    section
+        .container
+            .row.text-center
+                .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .box.heading
+                        h2 Sản phẩm mới
+                        hr.below
+            .row.text-center
+                .col-12.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.space
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/01-Figure.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview1' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Zero One 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.price 1.000.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview1(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id' data-slide-to='0')
+                                                    li(data-target='#product-id' data-slide-to='1')
+                                                    li(data-target='#product-id' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/01-Figure.jpg' alt='ZeroOne')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act1.jpg' alt='ZeroOne')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/01-figure-act2.jpg' alt='ZeroOne')
+                                                a.carousel-control-prev.product-control(href='#product-id' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.space
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/wolf-Figure.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview2' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Vulcan 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            p.price 1.000.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview2(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-2.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-2' data-slide-to='0')
+                                                    li(data-target='#product-id-2' data-slide-to='1')
+                                                    li(data-target='#product-id-2' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/wolf-Figure.jpg' alt='Vulcan')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan.jpg' alt='Vulcan')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/vulcan-act.jpg' alt='Vulcan')
+                                                a.carousel-control-prev.product-control(href='#product-id-2' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-2' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.space
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/geiz.png' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview3' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Geiz 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.price 1.200.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview3(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-3.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-3' data-slide-to='0')
+                                                    li(data-target='#product-id-3' data-slide-to='1')
+                                                    li(data-target='#product-id-3' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz.jpg' alt='Geiz')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz-act-1.jpg' alt='Geiz')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz-act-2.jpg' alt='Geiz')
+                                                a.carousel-control-prev.product-control(href='#product-id-3' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-3' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.space
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/thouser-fig.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview4' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Thouser 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                            p.price 1.500.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview4(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-4.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-4' data-slide-to='0')
+                                                    li(data-target='#product-id-4' data-slide-to='1')
+                                                    li(data-target='#product-id-4' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-fig.jpg' alt='Thouser')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-act.jpg' alt='Thouser')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/thouser-act-2.jpg' alt='Thouser')
+                                                a.carousel-control-prev.product-control(href='#product-id-4' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-4' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.space
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/woz.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview5' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Woz 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                                i.far.fa-star
+                            p.price 1.200.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview5(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-5.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-5' data-slide-to='0')
+                                                    li(data-target='#product-id-5' data-slide-to='1')
+                                                    li(data-target='#product-id-5' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/woz.jpg' alt='Woz')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/woz-act.jpg' alt='Woz')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/woz-act-1.jpg' alt='Woz')
+                                                a.carousel-control-prev.product-control(href='#product-id-5' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-5' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.space
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/val.jpg' alt)
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview6' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='product_detail.html') S.H.Figuarts <br>Kamen Rider Valkyrie 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.price 1.300.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview6(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-6.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-6' data-slide-to='0')
+                                                    li(data-target='#product-id-6' data-slide-to='1')
+                                                    li(data-target='#product-id-6' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/val.jpg' alt='Valkyrie')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/val-act.jpg' alt='Valkyrie')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/val-act-1.jpg' alt='Valkyrie')
+                                                a.carousel-control-prev.product-control(href='#product-id-6' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-6' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+    section.brand
         .container
             .brand-owl.owl-carousel
                 .brand-item
@@ -366,294 +368,314 @@ block content
                 .brand-item
                     img.img-fluid(src="images/brand_images/bioworld.png", alt="Bio World", title="Bio World")
 
-    section.container
-        .row.text-center
-            .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12
-               .box.heading
-                    h2 Sản phẩm bán chạy
-                    hr.below
-        .row.text-center
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4
-                .thumbnail(data-aos="fade-up" data-aos-duration="1000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/geiz_revive1.jpg' alt="Geiz Revive")
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview7' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='details1.html') S.H.Figuarts <br>Kamen Rider Geiz Revive 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                        p.price 1.500.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview7(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-7.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-7' data-slide-to='0')
-                                                li(data-target='#product-id-7' data-slide-to='1')
-                                                li(data-target='#product-id-7' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/geiz_revive1.jpg' alt='Geiz Revive')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/geiz_revive2.jpg' alt='Geiz Revive')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/geiz_revive3.jpg' alt='Geiz Revive')
-                                            a.carousel-control-prev.product-control(href='#product-id-7' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-7' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next 
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4
-                .thumbnail(data-aos="fade-up" data-aos-duration="2000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/gundam_metal_2.jpg' alt="Metal Build Gundam Astray Red Frame Kai")
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview8' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='details1.html') Mô Hình Gundam <br>Astray Red Frame Kai 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                        p.price 4.500.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview8(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-8.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-8' data-slide-to='0')
-                                                li(data-target='#product-id-8' data-slide-to='1')
-                                                li(data-target='#product-id-8' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/gundam_metal.jpg' alt='Metal Build Gundam Astray Red Frame Kai')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/gundam_metal_1.jpg' alt='Metal Build Gundam Astray Red Frame Kai')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/gundam_metal_2.jpg' alt='Metal Build Gundam Astray Red Frame Kai')
-                                            a.carousel-control-prev.product-control(href='#product-id-8' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-8' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-            .col-12.col-xs-12.col-sm-4.col-md-4.col-lg-4.col-xl-4
-                .thumbnail(data-aos="fade-up" data-aos-duration="3000")
-                    .product-image
-                        a(href="product_detail.html")
-                            img.img-fluid.figure(src='images/product_images/red_beast.jpg' alt="Red Go-buster")
-                        .zoom
-                            i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview9' title='XEM NHANH')
-                    .product.text-center
-                        h4.product-title
-                            a(href='details1.html') S.H.Figure <br>Red Go-buster 
-                        .rating
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.fas.fa-star
-                            i.far.fa-star
-                        p.price 1.000.000đ
-                        .group-btn
-                            button.btn.btn-icon-left
-                                i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
-                            button.btn.btn-icon-right
-                                i.far.fa-heart
-            .modal.fade#quickview9(tabindex='-1' role='dialog' aria-hidden='true')
-                .modal-dialog.modal-lg(role='document')
-                    .modal-content
-                        .modal-header
-                            button.close(type='button' data-dismiss='modal' title='Close')
-                                span(aria-hidden='true') ×
-                            .modal-body
-                                .row
-                                    .col-lg-12
-                                        #product-id-9.carousel.slide(data-ride='carousel')
-                                            ol.carousel-indicators
-                                                li.active(data-target='#product-id-9' data-slide-to='0')
-                                                li(data-target='#product-id-9' data-slide-to='1')
-                                                li(data-target='#product-id-9' data-slide-to='2')
-                                            .carousel-inner.row.w-100.mx-auto(role='listbox')
-                                                .carousel-item.active
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast.jpg' alt='Red Go-buster')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast1.jpg' alt='Red Go-buster')
-                                                .carousel-item
-                                                    img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast_gun.jpg' alt='Red Go-buster')
-                                            a.carousel-control-prev.product-control(href='#product-id-9' role='button' data-slide='prev')
-                                                i.fa.fa-chevron-circle-left.fa-2x
-                                                span.sr-only Previous
-                                            a.carousel-control-next.product-control(href='#product-id-9' role='button' data-slide='next')
-                                                i.fa.fa-chevron-circle-right.fa-2x
-                                                span.sr-only Next
-        .row.text-center
-            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                .view-more
-                    a.btn-more(href='products.html') Xem Toàn Bộ Sản Phẩm 
-                        i.fas.fa-angle-right
-    section.container-fluid.benefit.text-center
-        .row
-            .col-md-4.col-sm-4.col-xs-6.mt-5.icon-box(data-aos="zoom-in" data-aos-duration="1000")
-                .icon.truck
-                    i.fas.fa-truck
-                .title-content
-                    h3 Miễn phí giao hàng
-                    p Cho đơn hàng trên 500.000đ
-            .col-md-4.col-sm-4.col-xs-6.mt-5.icon-box(data-aos="zoom-in" data-aos-duration="1000")
-                .icon.box
-                    i.fas.fa-box-open
-                .title-content
-                    h3 Đổi-Trả dễ dàng
-                    p 30 ngày với hàng nguyên tem
-            .col-md-4.col-sm-4.col-xs-6.mt-5.icon-box(data-aos="zoom-in" data-aos-duration="1000")
-                .icon.quality
-                    i.fas.fa-thumbs-up
-                .title-content
-                    h3 Đảm bảo chất lượng
-                    p 100% hàng chính hãng
-    section.container.blog.text-center
-        .row
-            .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12
-               .box.heading
-                    h2 Blog&Tips
-                    hr.below
-        .row.carousel.slide#postIndicators(data-ride='carousel')
-            .container
-                .row
-                    .col-12.col-xs-12.col-sm-12.col-md-12.text-right
-                        a.carousel-control-prev.product-control.prev(href='#postIndicators' role='button' data-slide='prev')
-                            i.fa.fa-chevron-circle-left.fa-2x
-                            span.sr-only Previous
-                        a.carousel-control-next.product-control.next(href='#postIndicators' role='button' data-slide='next')
-                            i.fa.fa-chevron-circle-right.fa-2x
-                            span.sr-only Next
-            .container.carousel-inner
-                .carousel-item.active.no-wrap
-                    .row.row-equal
-                        .col-md-4(data-aos="slide-right" data-aos-duration="1000")
-                            .card.hover-post-shadow
-                                a.link-post(href="blog-detail.html")
-                                    img.img-fluid(src='images/product_images/content-writer.jpg' alt)
-                                .card-body
-                                    h6.card-tag TIN TỨC
-                                    h5.card-title 
+    section
+        .container
+            .row.text-center
+                .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                    .box.heading
+                        h2 Sản phẩm bán chạy
+                        hr.below
+            .row.text-center
+                .col-12.col-xs-12.col-sm-6.col-md-3.col-lg-3
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/geiz_revive1.jpg' alt="Geiz Revive")
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview7' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='details1.html') S.H.Figuarts <br>Kamen Rider Geiz Revive 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.price 1.500.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview7(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-7.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-7' data-slide-to='0')
+                                                    li(data-target='#product-id-7' data-slide-to='1')
+                                                    li(data-target='#product-id-7' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz_revive1.jpg' alt='Geiz Revive')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz_revive2.jpg' alt='Geiz Revive')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/geiz_revive3.jpg' alt='Geiz Revive')
+                                                a.carousel-control-prev.product-control(href='#product-id-7' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-7' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-3.col-lg-3
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/gundam_metal_2.jpg' alt="Metal Build Gundam Astray Red Frame Kai")
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview8' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='details1.html') Mô Hình Gundam <br>Astray Red Frame Kai 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                            p.price 4.500.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview8(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-8.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-8' data-slide-to='0')
+                                                    li(data-target='#product-id-8' data-slide-to='1')
+                                                    li(data-target='#product-id-8' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/gundam_metal.jpg' alt='Metal Build Gundam Astray Red Frame Kai')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/gundam_metal_1.jpg' alt='Metal Build Gundam Astray Red Frame Kai')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/gundam_metal_2.jpg' alt='Metal Build Gundam Astray Red Frame Kai')
+                                                a.carousel-control-prev.product-control(href='#product-id-8' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-8' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next
+                .col-12.col-xs-12.col-sm-6.col-md-3.col-lg-3
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/red_beast.jpg' alt="Red Go-buster")
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview9' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='details1.html') S.H.Figure <br>Red Go-buster 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            p.price 1.000.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview9(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-9.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-9' data-slide-to='0')
+                                                    li(data-target='#product-id-9' data-slide-to='1')
+                                                    li(data-target='#product-id-9' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast.jpg' alt='Red Go-buster')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast1.jpg' alt='Red Go-buster')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast_gun.jpg' alt='Red Go-buster')
+                                                a.carousel-control-prev.product-control(href='#product-id-9' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-9' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next              
+                .col-12.col-xs-12.col-sm-6.col-md-3.col-lg-3
+                    .thumb-card
+                        .product-image
+                            a(href="product_detail.html")
+                                img.img-fluid.figure(src='images/product_images/gundam-blue.jpg' alt="Gundam")
+                            .zoom
+                                i.fas.fa-search-plus(data-toggle='modal' data-target='#quickview10' title='XEM NHANH')
+                        .product-content
+                            h4.product-title
+                                a(href='details1.html') Mô hình Gundam <br>Spirits RX-0 Unicorn 
+                            .rating
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.fas.fa-star
+                                i.far.fa-star
+                            p.price 7.000.000đ
+                            .group-btn
+                                button.btn.btn-icon-left
+                                    i.fa.fa-shopping-cart.add-cart  Thêm vào giỏ
+                                button.btn.btn-icon-right
+                                    i.far.fa-heart
+                .modal.fade#quickview10(tabindex='-1' role='dialog' aria-hidden='true')
+                    .modal-dialog.modal-lg(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' title='Close')
+                                    span(aria-hidden='true') ×
+                                .modal-body
+                                    .row
+                                        .col-lg-12
+                                            #product-id-10.carousel.slide(data-ride='carousel')
+                                                ol.carousel-indicators
+                                                    li.active(data-target='#product-id-10' data-slide-to='0')
+                                                    li(data-target='#product-id-10' data-slide-to='1')
+                                                    li(data-target='#product-id-10' data-slide-to='2')
+                                                .carousel-inner.row.w-100.mx-auto(role='listbox')
+                                                    .carousel-item.active
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast.jpg' alt='Red Go-buster')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast1.jpg' alt='Red Go-buster')
+                                                    .carousel-item
+                                                        img.img-fluid.d-block.mx-auto(src='images/product_images/red_beast_gun.jpg' alt='Red Go-buster')
+                                                a.carousel-control-prev.product-control(href='#product-id-10' role='button' data-slide='prev')
+                                                    i.fa.fa-chevron-circle-left.fa-2x
+                                                    span.sr-only Previous
+                                                a.carousel-control-next.product-control(href='#product-id-10' role='button' data-slide='next')
+                                                    i.fa.fa-chevron-circle-right.fa-2x
+                                                    span.sr-only Next                             
+    section
+        .container-fluid.benefit.text-center
+            .row
+                .col-md-4.col-sm-4.col-xs-6.icon-box
+                    .icon.truck
+                        i.fas.fa-truck
+                    .title-content
+                        h3 Miễn phí giao hàng
+                        p Cho đơn hàng trên 500.000đ
+                .col-md-4.col-sm-4.col-xs-6.icon-box
+                    .icon.box
+                        i.fas.fa-box-open
+                    .title-content
+                        h3 Đổi-Trả dễ dàng
+                        p 30 ngày với hàng nguyên tem
+                .col-md-4.col-sm-4.col-xs-6.icon-box
+                    .icon.quality
+                        i.fas.fa-thumbs-up
+                    .title-content
+                        h3 Đảm bảo chất lượng
+                        p 100% hàng chính hãng
+    section
+        .container.blog.text-center
+            .row
+                .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12
+                    .box.heading
+                        h2 Zig Blog
+                        hr.below
+            .row
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .blog-post
+                        .row
+                            .col-xl-6.col-lg-12
+                                .blog-image
+                                    a.link-post(href="blog-detail.html")
+                                        img(src="images/product_images/content-writer.jpg", alt="Tuyển CTV")
+                            .col-xl-6.col-lg-12
+                                .blog-title
+                                    h6.blog-tag TIN TỨC
+                                    h5.blog-heading
                                         a.link-title(href="blog-detail.html") ZIG Toys tuyển CTV viết bài blog cho Website
-                                    h6.card-admin
+                                    h6.blog-author
                                         i.fas.fa-user-circle  
-                                        span Admin -   
+                                        span Admin |   
                                         span 26/06/2020
-                                    p.card-text Cần tuyển CTV viết blog cho trang web, nhuận bút tùy vào lượt xem và lượt truy cập. Công việc hoàn toàn online, thời gian linh động
-                                    a.readmore(href='blog-detail.html') Đọc thêm
-                        .col-md-4(data-aos="slide-up" data-aos-duration="1000")
-                            .card.hover-post-shadow
-                                a.link-post(href="blog-detail.html")
-                                    img.img-fluid(src='images/product_images/ultraman-zero.jpg' alt)
-                                .card-body
-                                    h6.card-tag MẸO VẶT
-                                    h5.card-title 
+                                    p.blog-text Cần tuyển CTV viết blog cho trang web, nhuận bút tùy vào lượt xem và lượt truy cập. Công việc hoàn toàn online,...
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .blog-post
+                        .row
+                            .col-xl-6.col-lg-12
+                                .blog-image
+                                    a.link-post(href="blog-detail.html")
+                                        img(src="images/product_images/ultraman-zero.jpg", alt="Cách bảo quản figure")
+                            .col-xl-6.col-lg-12
+                                .blog-title
+                                    h6.blog-tag MẸO VẶT
+                                    h5.blog-heading
                                         a.link-title(href="blog-detail.html") Mẹo bảo quản Figure được bền đẹp
-                                    h6.card-admin
-                                        i.fas.fa-user-circle 
-                                        span Admin -   
+                                    h6.blog-author
+                                        i.fas.fa-user-circle  
+                                        span Admin |   
                                         span 25/06/2020
-                                    p.card-text Hôm nay, Ad sẽ giới thiệu cho các bạn vài mẹo hay để bảo quản Figure được như lúc mới "tậu", 
-                                    a.readmore(href='blog-detail.html') Đọc thêm
-                        .col-md-4(data-aos="slide-left" data-aos-duration="1000")
-                            .card.hover-post-shadow
-                                a.link-post(href="blog-detail.html")
-                                    img.img-fluid(src='images/product_images/gd.jpg' alt)
-                                .card-body
-                                    h6.card-tag MẸO VẶT
-                                    h5.card-title 
-                                        a.link-title(href="blog-detail.html") Chia sẻ kinh nghiệm chơi mô hình Gundam                  
-                                    h6.card-admin
-                                        i.fas.fa-user-circle 
-                                        span Admin -  
+                                    p.blog-text.winkie-face Hôm nay, Ad sẽ giới thiệu cho các bạn vài mẹo hay để bảo quản Figure được như lúc mới "tậu"
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .blog-post
+                        .row
+                            .col-xl-6.col-lg-12
+                                .blog-image
+                                    a.link-post(href="blog-detail.html")
+                                        img(src="images/product_images/gd.jpg", alt="Lựa mô hình")
+                            .col-xl-6.col-lg-12
+                                .blog-title
+                                    h6.blog-tag MẸO VẶT
+                                    h5.blog-heading
+                                        a.link-title(href="blog-detail.html") Chia sẻ kinh nghiệm chơi mô hình Gundam
+                                    h6.blog-author
+                                        i.fas.fa-user-circle  
+                                        span Admin |   
                                         span 23/06/2020
-                                    p.card-text Hôm nay Ad sẽ gửi tới bạn đọc 1 số kinh nghiệm khi chơi mô hình Gundam 
-                                    a.readmore(href='blog-detail.html') Đọc thêm
-                .carousel-item
-                    .row.row-equal
-                        .col-md-4
-                            .card.hover-post-shadow
-                                a.link-post(href="blog-detail.html")
-                                    img.img-fluid(src='images/product_images/cushion.jpg' alt)
-                                .card-body
-                                    h6.card-tag TIN TỨC
-                                    h5.card-title 
-                                        a.link-title(href="blog-detail.html") Bandai tung ra sản phẩm gối đệm tay Izu-Kamen Rider 01
-                                    h6.card-admin
-                                        i.fas.fa-user-circle 
-                                        span Admin -  
-                                        span 23/06/2020
-                                    p.card-text Bài viết này sẽ giải thích tên gọi và sự khác nhau giữa 2 dòng Figure, rất thích hợp
-                                    a.readmore(href='blog-detail.html') Đọc thêm
-                        .col-md-4
-                            .card.hover-post-shadow
-                                a.link-post(href="blog-detail.html")
-                                    img.img-fluid(src='images/product_images/necklace_oz.jpg' alt)
-                                .card-body
-                                    h6.card-tag PHỤ KIỆN
-                                    h5.card-title 
+                                    p.blog-text Hôm nay Ad sẽ gửi tới bạn đọc 1 số kinh nghiệm khi chơi mô hình Gundam,...
+                .col-xl-6.col-lg-6.col-md-6.col-sm-6
+                    .blog-post
+                        .row
+                            .col-xl-6.col-lg-12
+                                .blog-image
+                                    a.link-post(href="blog-detail.html")
+                                        img(src="images/product_images/necklace_oz.jpg", alt="Phụ kiện")
+                            .col-xl-6.col-lg-12
+                                .blog-title
+                                    h6.blog-tag PHỤ KIỆN
+                                    h5.blog-heading
                                         a.link-title(href="blog-detail.html") Những phụ kiện độc và hiếm chỉ có tại ZIG Toys
-                                    h6.card-admin
-                                        i.fas.fa-user-circle 
-                                        span Admin -  
-                                        span 23/06/2020
-                                    p.card-text Bài viết này sẽ giải thích tên gọi và sự khác nhau giữa 2 dòng Figure, rất thích hợp 
-                                    a.readmore(href='blog-detail.html') Đọc thêm
-                        .col-md-4
-                            .card.hover-post-shadow
-                                a.link-post(href="error.html")
-                                    img.img-fluid(src='images/product_images/evol.jpg' alt)
-                                .card-body
-                                    h6.card-tag SỰ KIỆN
-                                    h5.card-title 
-                                        a.link-title(href="error.html") GiveAway mô hình figure Nezuko Kamado-Kimetsu no Yaiba
-                                    h6.card-admin
-                                        i.fas.fa-user-circle 
-                                        span Admin -  
-                                        span 27/06/2020
-                                    p.card-text Nhân dịp kỷ niệm 2 năm thành lập công ty, ZIG Toys tổ chức chương trình GIVE AWAY
-                                    a.readmore(href='error.html') Đọc thêm
-        .row.text-center
-            .col-12.col-lg-12.col-md-12.col-sm-12.col-xs-12
-                .view-more
-                    a.btn-more(href='blog.html') Xem Toàn Bộ Bài Viết 
-                        i.fas.fa-angle-right
-            
+                                    h6.blog-author
+                                        i.fas.fa-user-circle  
+                                        span Admin |   
+                                        span 22/06/2020
+                                    p.blog-text.smiley-face Cùng điểm qua những phụ kiện độc và hiếm mà ZIG Toys vừa cất công sưu tầm được nào
+
+
+                
+            .row.text-center
+                .col-12
+                    .view-more
+                        a.btn-more(href='blog.html') Xem Toàn Bộ Bài Viết 
+                            i.fas.fa-angle-right
+                
 
