@@ -1,56 +1,89 @@
-.product-container table.cart {
+/* table cart*/
+table {
     width: 100%;
-   
 }
-.cart thead tr th {
-    padding: 20px 23px;
-    font-size: 14px;
-    text-transform: uppercase;
-    border-bottom: 2px solid #FFC107;
-    color: #141c4b;
+table tr th {
+    padding: 0.5rem 1rem 0.5rem 0.1rem;
+    font-family: "Roboto" ,sans-serif;
+    font-weight: 600;
+    background: beige;
 }
-.quantityInCart button {
+table .cart-row td {
+    padding: 20px 0;
+}
+.cart-row td a {
+    text-decoration: none;
+    color: #000;
+}
+.cart-row td a:hover {
+    color: #FFB800;
+}
+.cart-img-product img {
+    width: 100px;
+    height: auto;
+}
+.cart-qty {
+    display: flex;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: 1px solid lightgrey;
+    width: 100px;
+}
+.cart-qty i {
+    font-size: 10px;
+    padding: 0.5rem;
+    margin-left: 0.2rem;
+}
+.qty-minus, .qty-plus {
     border: none;
-    background: none;
-    transition: all 0.4s ease-in-out;
-    margin-left: 10px;
+    background: transparent;
 }
-.product-container {
-    padding: 10px 0px;
+.qty-minus:focus, .qty-plus:focus {
+    outline: none;
+}
+.numberInCart {
+    width: 30px;
+    border: none;
     text-align: center;
 }
-.cart tbody tr td {
-    padding: 20px 0;
-    border-bottom: 1px solid #FFC107;
-    font-weight: 500;
+.delItem {
+    background: transparent;
+    border: none;
 }
-.cart-item td.productName a {
-    text-decoration: none;
-    color: #273c75;
+.delItem:focus {
+    outline: none;
 }
-.cart-item td.productName a:hover {
-    color: #718093;
+.delItem:hover .fa-trash-alt {
+    color: lightgrey;
 }
-.cart-item .productInCart img {
-    width: 85px;
-    border: 1px solid grey;
+/* check out frame */
+.billCart {
+    margin-top: 20px;
 }
-.basketTotal {
-    padding: 10px 0;
-    display: flex;
-    justify-content: space-between;
+.previewCost {
+    border: 1px solid lightgray;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin-bottom: 50px;
 }
-.totalPrice {
-    width: 22%;
+p.titlePreview {
+    text-align: center;
+}
+p.titlePreview, p.previewSum span:first-child {
+    font-weight: 600;
+    font-family: "Roboto" ,sans-serif;
+}
+ 
+.bill-detail p {
+    font-family: 'Roboto' ,sans-serif;
 }
 .checkOut {
     padding: 13px 10px;
     height: 48px;
+    width: 100%;
     border: none;
     font-size: 13px;
-    font-weight: 600;
+    font-weight: 700;
+    font-family: 'Roboto' ,sans-serif;
     border-radius: 6px;
-    margin-bottom: 50px;
     background-color: #FFB800;
     color: white;
 }
@@ -65,7 +98,11 @@
 #discount-code {
     width: 200px;
 }
+.discount-rate {
+    margin-left: 1rem;
+}
 .applyCoupon {
+    font-family: 'Roboto' ,sans-serif;
     margin-top: 5px;
     width: 100px;
     height: 38px;
@@ -75,4 +112,12 @@
     border-radius: 6px;
     background-color: #fed330;
     color: white;
+}
+/* currency sign */
+td.cart-price:after, td.cart-sum:after, 
+.bill-detail p:after, .discount p:last-child:after,
+.previewSum span:last-child:after {
+    content: '\20AB';
+    margin-left: 5px;
+    font-weight: 600;
 }

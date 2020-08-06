@@ -177,35 +177,41 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-12">
+          <div class="col-12">
             <div class="product-container">
-              <div class="table" id="cart-table">
-                <div class="tr">
-                  <div class="th">Sản phẩm</div>
-                  <div class="th">Đơn giá</div>
-                  <div class="th">Số lượng</div>
-                  <div class="th">Tổng giá</div>
-                  <div class="th cart-del"></div>
-                </div>
-                <div class="tr cart-row">
-                  <div class="td">
-                    <div class="cart-item-img"><img src="images/product_images/01-Figure.jpg" alt="ZeroOne"/></div>
-                  </div>
-                  <div class="td">S.H.Figuart <br />Kamen Rider Zero One</div>
-                  <div class="td">1.000.000đ</div>
-                  <div class="td">
-                    <div class="cart-quantity">
-                      <button class="cart-minus" type="button">-</button><span class="numberCurrent">1</span>
-                      <button class="cart-plus" type="button">+</button>
+              <table id="cart-table">
+                <tr>
+                  <th></th>
+                  <th>Tên Sản Phẩm</th>
+                  <th class="cart-price">Đơn Giá</th>
+                  <th>Số Lượng</th>
+                  <th class="cart-sum">Tổng Giá</th>
+                  <th class="cart-del"> </th>
+                </tr>
+                <tr class="cart-row">
+                  <td>
+                    <div class="cart-img-product"><img src="images/product_images/01-Figure.jpg" alt="alt"/></div>
+                  </td>
+                  <td> <a href="product_detail.html">S.H.Figuart<br /> Kamen Rider Zero One</a></td>
+                  <td class="cart-price">1000000</td>
+                  <td class="product-qty">
+                    <div class="cart-qty">
+                      <button class="qty-minus"><i class="fas fa-minus"></i></button>
+                      <input class="numberInCart" type="text" value="1"/>
+                      <button class="qty-plus"><i class="fas fa-plus"></i></button>
                     </div>
-                  </div>
-                </div>
-              </div>
+                  </td>
+                  <td class="cart-sum"> </td>
+                  <td>
+                    <button class="delItem"><i class="far fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-12 col-md-6 mb-3 coupon-dropdown"><a class="dark-grey-text d-flex-justify-content-between" data-toggle="collapse" href="#collapseCoupon" aria-expanded="false" aria-controls="collapseCoupon">Mã Khuyến Mãi (nếu có)<span><i class="fas fa-chevron-down pt-1"></i></span></a>
+        <div class="row billCart">
+          <div class="col-12 col-md-4 col-sm-6 mb-3 coupon-dropdown"><a class="dark-grey-text d-flex-justify-content-between" data-toggle="collapse" href="#collapseCoupon" aria-expanded="false" aria-controls="collapseCoupon">Mã Khuyến Mãi (nếu có)<span><i class="fas fa-chevron-down pt-1"></i></span></a>
             <div class="collapse" id="collapseCoupon">
               <div class="mt-3">
                 <div class="md-form md-outline mb-0">
@@ -215,8 +221,19 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 d-flex justify-content-end">
-            <button class="checkOut" type="submit">TIẾN HÀNH ĐẶT HÀNG</button>
+          <div class="col-12 col-md-8 col-sm-6 d-flex justify-content-end">
+            <div class="previewCost">
+              <p class="titlePreview">Tạm Tính</p>
+              <div class="bill-detail">
+                <p>Giá thành</p>
+              </div>
+              <div class="discount">
+                <p>Giảm giá<span class="discount-rate"></span></p>
+                <p>0</p>
+              </div>
+              <p class="previewSum"> <span>Tổng cộng: </span><span></span></p>
+              <button class="checkOut" type="submit">TIẾN HÀNH ĐẶT HÀNG</button>
+            </div>
           </div>
         </div>
       </div>

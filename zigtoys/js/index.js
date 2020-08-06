@@ -192,83 +192,26 @@ let products = [
 	{
 		id: "1",
 		tag: "01-Figure",
-		brand: "Bandai",
 		name: "S.H.Figuarts <br /> Kamen Rider Zero One",
-		size: "15",
+		url: "./images/product_images/01-Figure.jpg",
 		inCart: 0,
-		price: 1000000
+		price: 1000000,
 	},
 	{
 		id: "2",
 		tag: "wolf-Figure",
-		brand: "Bandai",
 		name: "S.H.Figuarts <br /> Kamen Rider Vulcan",
-		size: "15",
+		url: "./images/product_images/wolf-Figure.jpg",
 		price: 1000000,
-		inCart: 0
+		inCart: 0,
 	},
 	{
 		id: "3",
 		tag: "geiz",
-		brand: "Bandai",
 		name: "S.H.Figuarts <br /> Kamen Rider Geiz",
-		size: "15",
+		url: "./images/product_images/geiz.jpg",
 		price: 1200000,
-		inCart: 0
-	},
-	{
-		id: "4",
-		tag: "thouser-fig",
-		brand: "Bandai",
-		name: "S.H.Figuarts <br /> Kamen Rider Thouser",
-		size: "15",
-		price: 1500000,
-		inCart: 0
-	},
-	{
-		id: "5",
-		tag: "woz",
-		brand: "Bandai",
-		name: "S.H.Figuarts <br /> Kamen Rider Woz",
-		size: "15",
-		price: 1200000,
-		inCart: 0
-	},
-	{
-		id: "6",
-		tag: "val",
-		brand: "Bandai",
-		name: "S.H.Figuarts <br /> Kamen Rider Valkyrie",
-		size: "15",
-		price: 1300000,
-		inCart: 0
-	},
-	{
-		id: "7",
-		tag: "geiz_revive1",
-		brand: "Bandai",
-		name: "S.H.Figuarts <br /> Kamen Rider Geiz Revive",
-		size: "15",
-		price: 1500000,
-		inCart: 0
-	},
-	{
-		id: "8",
-		tag: "gundam_metal_2",
-		brand: "Bandai",
-		name: "Mô Hình Gundam <br /> Astray Red Frame Kai",
-		size: "18",
-		price: 4500000,
-		inCart: 0
-	},
-	{
-		id: "9",
-		tag: "red_beast",
-		brand: "Bandai",
-		name: "S.H.Figure <br /> Red Go-buster",
-		size: "15",
-		price: 1000000,
-		inCart: 0
+		inCart: 0,
 	}
 ]
 for(let i = 0; i < carts.length; i++) {
@@ -284,7 +227,140 @@ function onLoadCartNumber() {
 		document.querySelector(".cart-iconMobile span").textContent = productNumber;
 	}
 }
+/* cart table */
+let table = $('#cart-table');
+function generateTable(arr) {
+	let tHead = `<tr>
+		<th></th>
+		<th>Tên Sản Phẩm</th>
+		<th class="cart-price">Đơn Giá</th>
+		<th>Số Lượng</th>
+		<th class="cart-sum">Tổng Giá</th>
+		<th class="cart-del"></th>
+	</tr>
+	`;
+	let tData = arr.map((obj) => {
+		return `
+		<tr class="cart-row" data-id="${obj.id}">
+			<td>
+				<div class="cart-img-product">
+					<img src="${obj.url}" alt="${obj.name}"/>
+				</div>
+			</td>
+			<td>
+				<a href="product_detail.html">${obj.name}</a>
+			</td>
+			<td class="cart-price">
+				${obj.price}
+			</td>
+			<td class="product-qty">
+				<div class="cart-qty">
+					<button class="qty-minus">
+						<i class="fas fa-minus"></i>
+					</button>
+					<input type="text" value="1" class="numberInCart">
+					<button class="qty-plus">
+						<i class="fas fa-plus"></i>
+					</button>
+				</div>
+			</td>
+			<td class="cart-sum"></td>
+			<td>
+				<button class="delItem">
+					<i class="far fa-trash-alt"></i>
+				</button>
+			</td>
+		</tr>
+		`;
+	});
+	table.html(tHead + tData.join(""));
+}
+generateTable(products);
+/* cart del function */
+var delBtn = document.getElementsByClassName("fa-trash-alt");
+for(i=0; i < delBtn.length; i++) {
+	var button = delBtn[i];
+	button.addEventListener('click', (e) => {
+		var btnClicked = e.target
+		btnClicked.closest(".cart-row").remove();
+		updateCartTotal();
+	})
+}
+/* cart quantity button */
+$('.qty-minus').each(function() {
+	$(this).on('click', () => {
+		let updateQty = Number($(this).next('input').attr('value'));
+		if(updateQty > 1) {
+			updateQty--;
+		}
+		$(this).next('input').attr('value',updateQty);
+		$(this).next('input').val(updateQty);
+		updateCartSum(this, updateQty);
+		updateCartTotal();
+	});
+})
+$('.qty-plus').each(function() {
+	$(this).on('click', () => {
+		let updateQty = Number($(this).prev('input').attr('value'));
+		updateQty++;
+		$(this).prev('input').attr('value',updateQty);
+		$(this).prev('input').val(updateQty);
+		updateCartSum(this, updateQty);
+		updateCartTotal();
+	});
+})
 
+$('.cart-qty input').each(function() {
+	$(this).change(function() {
+		let currentQty = $(this).val();
+		$(this).attr('value',currentQty);
+		updateCartSum(this, currentQty);
+		updateCartTotal();
+	});
+});
+/* update cart total */
+let sum = 0, total, discount, discountRate=0;
+function updateCartTotal() {
+	sum = 0;
+	$('td.cart-sum').each(function() {
+		sum += Number($(this).text().replace(/\./g, ""));
+	});
+	discount = sum*discountRate/100;
+	total = sum - discount;
+	$('.bill-detail p').text(sum.toLocaleString('vi'));
+	$('.bill-detail p').text(discount.toLocaleString('vi'));
+	$('.previewSum span:last-child').text(total.toLocaleString('vi'));
+}
+/* end update cart total */
+/* update price */
+$('td.cart-price').each(function() {
+	let item = $(this).text();
+	sum += Number($(this).text());
+	discount = sum*discountRate/100;
+	total = sum - discount;
+	let qty = $(this).next('td').find('input').attr('value');
+	let cartSum = (Number(item)*Number(qty)).toLocaleString('vi');
+	let numb = Number(item).toLocaleString('vi');
+	$(this).text(numb);
+	$(this).siblings('.cart-sum').text(cartSum);
+	$('.titlePreview .bill-detail p').text(sum.toLocaleString('vi'));
+	$('.previewSum span:last-child').text(total.toLocaleString('vi'));
+});
+/* update cart sum */
+function updateCartSum(currentItem,currentQty) {
+	let item = $(currentItem).parents('.product-qty').siblings('.cart-price').text().replace(/\./g, "");
+	let cartSum = (Number(item)*currentQty).toLocaleString('vi');
+	$(currentItem).parents('.product-qty').siblings('.cart-sum').text(cartSum);
+}
+/* end update cart sum */
+/* apply coupon */
+$('.applyCoupon').on('click', () => {
+	discountRate = $(this).prev('input').val();
+	$('.discount-rate').text(discountRate + '%');
+	$('.discount p:last-child').text(discount.toLocaleString('vi'));
+	updateCartTotal();
+})
+/* end apply coupon */
 function cartNumber(product) {
 	let productNumber = localStorage.getItem('cartNumber');
 	productNumber = parseInt(productNumber);

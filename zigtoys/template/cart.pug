@@ -13,31 +13,37 @@ block content
     section
         .container
             .row
-                .col-12.col-sm-12.col-md-12
+                .col-12
                     .product-container
-                        .table#cart-table
-                            .tr
-                                .th Sản phẩm
-                                .th Đơn giá
-                                .th Số lượng
-                                .th Tổng giá
-                                .th.cart-del
-                            .tr.cart-row
-                                .td
-                                    .cart-item-img
-                                        img(src="images/product_images/01-Figure.jpg", alt="ZeroOne")
-                                .td S.H.Figuart <br />Kamen Rider Zero One
-                                .td 1.000.000đ
-                                .td
-                                    .cart-quantity
-                                        button.cart-minus(type="button") -
-                                        span.numberCurrent 1
-                                        button.cart-plus(type="button") +
-                                
-                            
+                        table#cart-table
+                            tr
+                                th
+                                th Tên Sản Phẩm
+                                th.cart-price Đơn Giá
+                                th Số Lượng
+                                th.cart-sum Tổng Giá
+                                th.cart-del 
+                            tr.cart-row
+                                td
+                                    .cart-img-product
+                                        img(src="images/product_images/01-Figure.jpg", alt)
+                                td 
+                                    a(href="product_detail.html") S.H.Figuart<br /> Kamen Rider Zero One
+                                td.cart-price 1000000
+                                td.product-qty
+                                    .cart-qty
+                                        button.qty-minus
+                                            i.fas.fa-minus
+                                        input(type="text" value="1").numberInCart
+                                        button.qty-plus
+                                            i.fas.fa-plus
+                                td.cart-sum 
+                                td
+                                    button.delItem
+                                        i.far.fa-trash-alt
 
-            .row
-                .col-12.col-md-6.mb-3.coupon-dropdown
+            .row.billCart
+                .col-12.col-md-4.col-sm-6.mb-3.coupon-dropdown
                     a.dark-grey-text.d-flex-justify-content-between(data-toggle="collapse", href="#collapseCoupon", aria-expanded="false" aria-controls="collapseCoupon")
                         | Mã Khuyến Mãi (nếu có)
                         span
@@ -47,5 +53,16 @@ block content
                             .md-form.md-outline.mb-0
                                 input(type="text", placeholder="Mời nhập mã")#discount-code.form-control.font-weight-light
                                 button(type="submit" class="applyCoupon") ÁP DỤNG
-                .col-12.col-md-6.d-flex.justify-content-end
-                    button(type="submit" class="checkOut") TIẾN HÀNH ĐẶT HÀNG
+                .col-12.col-md-8.col-sm-6.d-flex.justify-content-end
+                    .previewCost
+                        p.titlePreview Tạm Tính
+                        .bill-detail
+                            p Giá thành
+                        .discount
+                            p Giảm giá
+                                span.discount-rate
+                            p 0
+                        p.previewSum 
+                            span Tổng cộng: 
+                            span
+                        button(type="submit" class="checkOut") TIẾN HÀNH ĐẶT HÀNG
