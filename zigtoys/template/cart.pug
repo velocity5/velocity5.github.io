@@ -3,7 +3,7 @@ block title
     title Giỏ hàng
 block content
     section
-        .container-fluid
+        .container
             .row
                 .col-12.col-xs-12.col-sm-12.col-md-12.breadcrumb-contain
                     ol.breadcrumb
@@ -18,16 +18,16 @@ block content
                         table#cart-table
                             tr
                                 th
-                                th Tên Sản Phẩm
+                                th.cart-name Tên Sản Phẩm
                                 th.cart-price Đơn Giá
-                                th Số Lượng
+                                th.cart-quanty Số Lượng
                                 th.cart-sum Tổng Giá
                                 th.cart-del 
                             tr.cart-row
                                 td
                                     .cart-img-product
                                         img(src="images/product_images/01-Figure.jpg", alt)
-                                td 
+                                td.cart-name 
                                     a(href="product_detail.html") S.H.Figuart<br /> Kamen Rider Zero One
                                 td.cart-price 1000000
                                 td.product-qty

@@ -46,6 +46,7 @@ table .cart-row td {
 .numberInCart {
     width: 30px;
     border: none;
+    background: transparent;
     text-align: center;
 }
 .delItem {
@@ -74,10 +75,11 @@ table .cart-row td {
 p.titlePreview {
     text-align: center;
 }
-p.titlePreview, p.previewSum span:first-child {
+p.titlePreview, p.previewSum span, td.cart-price {
     font-weight: 600;
     font-family: "Roboto" ,sans-serif;
-} 
+}
+ 
 .bill-detail span:first-child {
     font-family: 'Roboto' ,sans-serif;
     font-weight: 500;

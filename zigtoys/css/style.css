@@ -544,7 +544,10 @@
         margin-top: 20px;
     }
     .subscribe-newsletter button {
+        font-family: 'Roboto' ,sans-serif;
+        font-weight: 500;
         color: white;
+        background: #ffb727;
         height: 48px;
         width: 130px;
     }

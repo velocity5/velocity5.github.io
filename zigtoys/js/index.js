@@ -232,9 +232,9 @@ let table = $('#cart-table');
 function generateTable(arr) {
 	let tHead = `<tr>
 		<th></th>
-		<th>Tên Sản Phẩm</th>
+		<th class="cart-name">Tên Sản Phẩm</th>
 		<th class="cart-price">Đơn Giá</th>
-		<th>Số Lượng</th>
+		<th class="cart-quanty">Số Lượng</th>
 		<th class="cart-sum">Tổng Giá</th>
 		<th class="cart-del"></th>
 	</tr>
@@ -247,7 +247,7 @@ function generateTable(arr) {
 					<img src="${obj.url}" alt="${obj.name}"/>
 				</div>
 			</td>
-			<td>
+			<td class="cart-name">
 				<a href="product_detail.html">${obj.name}</a>
 			</td>
 			<td class="cart-price">

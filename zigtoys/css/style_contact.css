@@ -31,6 +31,8 @@
     width: 100%;
 }
 .submit button {
+    font-family: 'Roboto' ,sans-serif;
+    font-weight: 600;
     width: 190px;
     height: 48px;
     border-radius: 6px;
