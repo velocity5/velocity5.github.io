@@ -11,6 +11,9 @@ table tr th {
 table .cart-row td {
     padding: 20px 0;
 }
+.cart-row {
+    border-bottom: 1.5px solid beige;
+}
 .cart-row td a {
     text-decoration: none;
     color: #000;
@@ -57,12 +60,16 @@ table .cart-row td {
 }
 /* check out frame */
 .billCart {
-    margin-top: 20px;
+    margin: 20px 0;
+    padding: 0;
 }
-.previewCost {
+.previewCost, .couponBox {
     border: 1px solid lightgray;
     padding: 1.5rem 2rem 1.5rem 2rem;
     margin-bottom: 50px;
+}
+.couponBox {
+    margin-bottom: 20px;
 }
 p.titlePreview {
     text-align: center;
@@ -70,13 +77,12 @@ p.titlePreview {
 p.titlePreview, p.previewSum span:first-child {
     font-weight: 600;
     font-family: "Roboto" ,sans-serif;
-}
- 
-.bill-detail p {
+} 
+.bill-detail span:first-child {
     font-family: 'Roboto' ,sans-serif;
+    font-weight: 500;
 }
 .checkOut {
-    padding: 13px 10px;
     height: 48px;
     width: 100%;
     border: none;
@@ -87,13 +93,8 @@ p.titlePreview, p.previewSum span:first-child {
     background-color: #FFB800;
     color: white;
 }
-
-.coupon-dropdown a {
-    text-decoration: none;
-    color: black;
-}
-.coupon-dropdown a:hover {
-    color: rgb(128, 124, 124);
+.checkOut:hover {
+    background-color: rgb(248 185 26 / 0.8);
 }
 #discount-code {
     width: 200px;
@@ -101,21 +102,25 @@ p.titlePreview, p.previewSum span:first-child {
 .discount-rate {
     margin-left: 1rem;
 }
+.discount, .bill-detail, .previewSum {
+    display: flex;
+    justify-content: space-between;
+}
 .applyCoupon {
     font-family: 'Roboto' ,sans-serif;
-    margin-top: 5px;
-    width: 100px;
+    margin-top: 20px;
+    width: 200px;
     height: 38px;
     font-size: 13px;
     font-weight: 200;
     border: none;
     border-radius: 6px;
-    background-color: #fed330;
+    background-color: #FFB800;
     color: white;
 }
 /* currency sign */
 td.cart-price:after, td.cart-sum:after, 
-.bill-detail p:after, .discount p:last-child:after,
+.bill-detail span:last-child:after, .discount p:last-child:after,
 .previewSum span:last-child:after {
     content: '\20AB';
     margin-left: 5px;

@@ -405,6 +405,10 @@
         .comment-form .submit {
             margin-bottom: 20px;
         }
+        /* cart */
+        .cart-img-product img {
+            display: none;
+        }
         /* checkout */
         .atms .atm {
             margin: 1rem;
@@ -614,6 +618,9 @@
         }
         .check-remember {
             margin-left: 2.5rem;
+        }
+        .form-searchMobile, .wrapMobile {
+            display: none;
         }
     }
     @media (max-width: 487px) {

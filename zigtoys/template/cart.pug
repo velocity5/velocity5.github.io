@@ -13,7 +13,7 @@ block content
     section
         .container
             .row
-                .col-12
+                .col-12.col-sm-12
                     .product-container
                         table#cart-table
                             tr
@@ -41,28 +41,28 @@ block content
                                 td
                                     button.delItem
                                         i.far.fa-trash-alt
-
-            .row.billCart
-                .col-12.col-md-4.col-sm-6.mb-3.coupon-dropdown
-                    a.dark-grey-text.d-flex-justify-content-between(data-toggle="collapse", href="#collapseCoupon", aria-expanded="false" aria-controls="collapseCoupon")
-                        | Mã Khuyến Mãi (nếu có)
-                        span
-                            i.fas.fa-chevron-down.pt-1
-                    .collapse#collapseCoupon
-                        .mt-3
-                            .md-form.md-outline.mb-0
-                                input(type="text", placeholder="Mời nhập mã")#discount-code.form-control.font-weight-light
-                                button(type="submit" class="applyCoupon") ÁP DỤNG
-                .col-12.col-md-8.col-sm-6.d-flex.justify-content-end
-                    .previewCost
-                        p.titlePreview Tạm Tính
-                        .bill-detail
-                            p Giá thành
-                        .discount
-                            p Giảm giá
-                                span.discount-rate
-                            p 0
-                        p.previewSum 
-                            span Tổng cộng: 
-                            span
-                        button(type="submit" class="checkOut") TIẾN HÀNH ĐẶT HÀNG
+                    .billCart.container
+                        .row
+                            .col-sm-6.col-md-6.col-xs-12
+                                .couponBox
+                                    p.boldText
+                                        | Mã Khuyến Mãi (nếu có)
+                                    .inputCoupon
+                                        .mt-3
+                                            .md-form.md-outline.mb-0
+                                                input(type="text", placeholder="Mời nhập mã")#discount-code.form-control.font-weight-light
+                                                button(type="submit" class="applyCoupon") ÁP DỤNG
+                            .col-sm-6.col-md-6.col-xs-12
+                                .previewCost
+                                    p.titlePreview Thành Tiền
+                                    .bill-detail
+                                        span Tạm Tính
+                                        span
+                                    .discount
+                                        span Giảm giá
+                                            span.discount-rate
+                                        p 0
+                                    p.previewSum 
+                                        span Tổng cộng: 
+                                        span
+                                    button(type="submit" class="checkOut") TIẾN HÀNH ĐẶT HÀNG

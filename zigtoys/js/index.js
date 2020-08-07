@@ -327,8 +327,8 @@ function updateCartTotal() {
 	});
 	discount = sum*discountRate/100;
 	total = sum - discount;
-	$('.bill-detail p').text(sum.toLocaleString('vi'));
-	$('.bill-detail p').text(discount.toLocaleString('vi'));
+	$('.bill-detail span:last-child').text(sum.toLocaleString('vi'));
+	$('.bill-detail span:last-child').text(discount.toLocaleString('vi'));
 	$('.previewSum span:last-child').text(total.toLocaleString('vi'));
 }
 /* end update cart total */
@@ -343,7 +343,7 @@ $('td.cart-price').each(function() {
 	let numb = Number(item).toLocaleString('vi');
 	$(this).text(numb);
 	$(this).siblings('.cart-sum').text(cartSum);
-	$('.titlePreview .bill-detail p').text(sum.toLocaleString('vi'));
+	$('.bill-detail span:last-child').text(sum.toLocaleString('vi'));
 	$('.previewSum span:last-child').text(total.toLocaleString('vi'));
 });
 /* update cart sum */
@@ -356,7 +356,7 @@ function updateCartSum(currentItem,currentQty) {
 /* apply coupon */
 $('.applyCoupon').on('click', () => {
 	discountRate = $(this).prev('input').val();
-	$('.discount-rate').text(discountRate + '%');
+	$('.discount span.discount-rate').text(discountRate + '%');
 	$('.discount p:last-child').text(discount.toLocaleString('vi'));
 	updateCartTotal();
 })
@@ -457,3 +457,7 @@ s1.setAttribute('crossorigin','*');
 s0.parentNode.insertBefore(s1,s0);
 })(); */
 /* background responsive */
+/* redirect button */
+$(".checkOut").click(function () {
+	location.href= "checkout.html";
+});

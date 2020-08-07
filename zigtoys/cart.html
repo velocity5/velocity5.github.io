@@ -177,7 +177,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12 col-sm-12">
             <div class="product-container">
               <table id="cart-table">
                 <tr>
@@ -208,31 +208,33 @@
                 </tr>
               </table>
             </div>
-          </div>
-        </div>
-        <div class="row billCart">
-          <div class="col-12 col-md-4 col-sm-6 mb-3 coupon-dropdown"><a class="dark-grey-text d-flex-justify-content-between" data-toggle="collapse" href="#collapseCoupon" aria-expanded="false" aria-controls="collapseCoupon">Mã Khuyến Mãi (nếu có)<span><i class="fas fa-chevron-down pt-1"></i></span></a>
-            <div class="collapse" id="collapseCoupon">
-              <div class="mt-3">
-                <div class="md-form md-outline mb-0">
-                  <input class="form-control font-weight-light" type="text" placeholder="Mời nhập mã" id="discount-code"/>
-                  <button class="applyCoupon" type="submit">ÁP DỤNG</button>
+            <div class="billCart container">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-12">
+                  <div class="couponBox">
+                    <p class="boldText">Mã Khuyến Mãi (nếu có)</p>
+                    <div class="inputCoupon">
+                      <div class="mt-3">
+                        <div class="md-form md-outline mb-0">
+                          <input class="form-control font-weight-light" type="text" placeholder="Mời nhập mã" id="discount-code"/>
+                          <button class="applyCoupon" type="submit">ÁP DỤNG</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-12">
+                  <div class="previewCost">
+                    <p class="titlePreview">Thành Tiền</p>
+                    <div class="bill-detail"><span>Tạm Tính</span><span></span></div>
+                    <div class="discount"><span>Giảm giá<span class="discount-rate"></span></span>
+                      <p>0</p>
+                    </div>
+                    <p class="previewSum"> <span>Tổng cộng: </span><span></span></p>
+                    <button class="checkOut" type="submit">TIẾN HÀNH ĐẶT HÀNG</button>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-8 col-sm-6 d-flex justify-content-end">
-            <div class="previewCost">
-              <p class="titlePreview">Tạm Tính</p>
-              <div class="bill-detail">
-                <p>Giá thành</p>
-              </div>
-              <div class="discount">
-                <p>Giảm giá<span class="discount-rate"></span></p>
-                <p>0</p>
-              </div>
-              <p class="previewSum"> <span>Tổng cộng: </span><span></span></p>
-              <button class="checkOut" type="submit">TIẾN HÀNH ĐẶT HÀNG</button>
             </div>
           </div>
         </div>
