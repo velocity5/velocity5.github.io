@@ -140,7 +140,7 @@ $('.fa-eye').on('click',
 });
 // owl carousel
 $(document).ready(function(){
-	$(".owl-carousel").owlCarousel({
+	$(".brand-owl").owlCarousel({
 		loop:true,
         margin:20,
         dots: false,
@@ -160,6 +160,28 @@ $(document).ready(function(){
 			},
 			768:{
 				items:4,
+			}
+		}
+	});
+	$("#relate-product").owlCarousel({
+		loop:true,
+		margin:20,
+		nav: true,
+		navText:["<i class='fas fa-chevron-circle-left fa-2x'></i>","<i class='fa fa-chevron-circle-right fa-2x'></i>"],
+		dots: false,
+		autoplay:true,
+        autoplayTimeout:3000,
+		autoplaySpeed: 1500,
+		responsiveClass:true,
+		responsive: {
+			0:{
+				items:1,
+			},
+			480:{
+				items:2,
+			},
+			550:{
+				items:3,
 			}
 		}
 	});
