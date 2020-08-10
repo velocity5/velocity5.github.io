@@ -198,9 +198,6 @@
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 34%;
         }
-        .product-image {
-            margin-left: 10%;
-        }
         .thumbnail .zoom {
             top: 40%;
         }
@@ -470,48 +467,13 @@
             margin-left: 0;
         }
     }
-    @media (max-width: 627px) {
-        .product-image {
-            margin-left: -5%;
-            width: unset;
-        }
-        .thumbnail .zoom {
-            top: 32%;
-            left: 50%;
-        }
-        .thumbnail .group-btn .btn-icon-left {
-            font-size: 9px;
-        }
-        .product .product-title {
-            font-size: 16px;
-        }
-    }
+   
     @media (max-width: 590px) {
         .breadcrumb-contain .breadcrumb {
             max-width: 33rem;
         }
-        .thumbnail-img .product-img .zoom-product {
-            margin-top: -80%;
-        }
     }
     @media (max-width: 575.98px) { 
-        .thumbnail .zoom {
-            top: 58%;
-            left: 47%;
-        }
-        .thumbnail-img .product-img .zoom-product {
-            margin-top: -22%;
-        }
-        .thumbnail-img {
-            margin-bottom: 50px;
-        }
-        .product .product-title {
-            font-size: 20px;
-            margin-right: 20px;
-        }
-        .group-btn, .rating, p.price {
-            margin-right: 20px;
-        }
         .title-col {
             padding: 16px;
         }
@@ -672,12 +634,6 @@
             display: unset;
             width: auto;
         }
-        .owl-nav .owl-prev > i, .owl-nav .owl-next > i {
-            font-size: 50px;
-        }
-        #relate-product .owl-nav .owl-prev, #relate-product .owl-nav .owl-next {
-            opacity: 1;
-        }
     }
     @media (max-width: 449px) {
         .caption-content h4, .caption-content h2 {
@@ -739,9 +695,6 @@
     @media (max-width: 430px) {
         .payment-list span.radio-fake {
             left: 23%;
-        }
-        #detail-tab, #descript-tab, #review-tab {
-            padding: 19px 13.9px 19px;
         }
     }
     @media (max-width: 420px) {
