@@ -161,10 +161,10 @@
     color:#fff;
     text-decoration: none;
   }
-.nav-tabs .active {
+.tabs-hold .active {
   background: #e74c3c;
 }
-  .tab-content {
+.tab__detail {
     background: #fdfdfd;
     line-height: 25px;
     border: 1px solid #ddd;
