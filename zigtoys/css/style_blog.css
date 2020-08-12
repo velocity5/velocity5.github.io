@@ -15,22 +15,23 @@
 }
 .img-title h2 {
     color: #f5f6fa;
-    font-size: 20px;
-    margin-bottom: 0;
-    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    text-shadow: 1px 1px 0 #000;
+    font-weight: 700;
 }
 .img-title h2:hover, .img-title h2:active {
     color: #7f8c8d;
 }
 .img-small img {
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 22px;
 }
 .img-small .img-side-title {
     position: absolute;
     z-index: 10;
     width: 92%;
-    padding: 16px;
+    padding: 10px 16px;
 }
 .img-side-title h4:hover, .img-side-title h4:active {
     color: #7f8c8d;
@@ -48,18 +49,23 @@
 .img-small h4 {
     font-size: 18px;
     color: #f5f6fa;
-    font-weight: 400;
+    font-weight: 600;
+    line-height: 20px;
+    text-shadow: 1px 1px 0 #000;
 }
-/* recent post vs old post */
-.recent-post, .old-post {
-    margin-bottom: 10px;
+/* recent post */
+.card img {
+    height: 300px;
+    width: 100%;
 }
-.old-post {
-    margin-top: 30px;
+.recent-post {
+    margin-bottom: 20px;
 }
-.recent-post h2, .old-post h2 {
+.recent-post h2 {
+    text-transform: capitalize;
     font-size: 30px;
-    margin-bottom: -14px;
+    font-weight: 600;
+    font-family: 'Roboto' ,sans-serif;
 }
 .blog-tag {
     background-color: #FFAA55;
@@ -71,11 +77,11 @@
     padding: 3px;
     cursor: default;
 }
-.second-post-row {
-    margin-top: 30px;
-}
-.old-post-row {
+.post-row {
     margin-bottom: 50px;
+}
+.post-row > div {
+    margin-bottom: 20px;
 }
 /* hover effect */
 .hover-post-shadow {
@@ -93,12 +99,34 @@
     font-size: 20px;
     padding: 10px 20px;
 }
-
+/* side bar */
+.group-search {
+    display: flex;
+    position: relative;
+}
+.btn-search {
+    position: absolute;
+    right: 35px;
+    height: 38px;
+    display: block;
+    border: none;
+    background: #f0f0f0;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.searchField {
+    display: block;
+    border-width: 0;
+    box-shadow: 0px 15px 45px -9px rgba(0,0,0,.2);
+    padding: 16px 20px 16px 20px;
+    transition: .3s all ease-in-out;
+}
 .sameSeries-title {
     font-size: 20px;
 }
 .listSeries {
-    margin-left: 30px;
+    margin-left: 20px;
+    list-style: none;
 }
 .listSeries a {
     text-decoration: none;
@@ -107,7 +135,7 @@
 }
 
 .listSeries a:hover {
-    color: #5352ed;
+    color: rgba(243, 156, 18,0.5);
 }
 .sameSeries {
     padding: 20px;
@@ -116,15 +144,40 @@
     margin-top: 30px;
 }
 .side-post h2 {
-    margin-left: 32px;
+    margin-left: 10px;
 }
-.img-side-blog {
-    margin-top: 25%;
-    margin-left: 10%;
+.widgetTitle {
+    font-size: 16px;
+    color: #505050;
+    margin-bottom: 12px;
 }
-.img-side-blog img {
-    width: 300px;
-    height: 300px;
+.categories ul {
+    list-style: none;
+}
+.categories ul li a {
+    text-decoration: none;
+    color: #7f8c8d;
+}
+.categories ul li a:hover {
+    color: rgba(243, 156, 18,0.5);
+}
+.categories li {
+    padding: 12px 1px;
+    border-bottom: 1px solid #e3e3e3;
+    text-transform: uppercase;
+}
+.tags a {
+    text-decoration: none;
+    padding: 5px 15px 5px 15px;
+    background: #ecf0f1;
+    border-radius: 3px;
+    color: #34495e;
+    margin: 5px;
+    transition: all 0.4s ease;
+    display: inline-block;
+}
+.tags a:hover {
+    background: rgba(243, 156, 18,1);
 }
 .side-title a, .side-title span {
     text-decoration: none;
@@ -147,4 +200,38 @@
 }
 .side-title a:hover {
     color: #ced6e0;
+}
+.blog-body {
+    padding: 10px 10px;
+}
+/* comment blog */
+.form-title {
+    margin-bottom: 20px;
+}
+.comment-blog-name input, 
+.comment-blog-email input, .comment-blog-cmt textarea {
+    width: 100%;
+    border: 1px solid #e7e7e7;
+    background: #f8f8f8;
+    color: #666666;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    line-height: 22px;
+    font-size: 16px;
+}
+.comment-blog-name input:focus, .comment-blog-email input:focus,
+.comment-blog-cmt textarea:focus {
+    outline-color: #f39c12;
+}
+.submit-wrap {
+    text-align: center;
+    margin: 40px 0;
+}
+.btn-submit {
+    border: 1px solid #f39c12;
+    text-transform: capitalize;
+}
+.btn-submit:hover {
+    background-color: #f39c12;
+    color: beige;
 }
