@@ -35,10 +35,10 @@ $(document).ready(function () {
 	})
 	$("#equal").click(function () {
 		if (operator === "x") {
-			result = eval($("#display").val().replace("x", "*"));
+			result = eval($("#display").val().replace(/x/gi, "*"));
 		}
 		else if (operator === "/") {
-			result = eval($("#display").val().replace("÷", "/"));
+			result = eval($("#display").val().replace(/÷/gi, "/"));
 		}
 		else {
 			result = eval($("#display").val());

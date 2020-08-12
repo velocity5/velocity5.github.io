@@ -24,26 +24,29 @@ body {
 	padding: 20px;
 	background-color: transparent;
 	perspective: 1000px;
+ 
 }
 .inner {
 	position: relative;
 }
 .inner img {
 	max-width: 300px;
-	max-height: 300px; 
+	max-height: 300px;
+	
 }
 .front, .back {
 	position: absolute;
 	backface-visibility: hidden;
 	transition: all 0.8s;
+	transform-style: preserve-3d;
 }
 .flip-card .back {
 	transform: rotateY(180deg);
 }
-.flip-card:hover .back {
+.flip-card.active .back {
 	transform: rotateY(0deg);
 }
 
-.flip-card:hover .front {
+.flip-card.active .front {
 	transform: rotateY(180deg);
 }

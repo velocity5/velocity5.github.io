@@ -2,366 +2,660 @@
 <html lang="en">
 
 <head>
-  <title> PGToys Demo-Boostrap 3 </title>
+  <title> ZIGToys</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script type="text/javascript" src="vendor/bootstrap.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="vendor/bootstrap.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style-test.css">
   <link rel="stylesheet" type="text/css" href="css_fontawesome/all.css">
-  <link rel="icon" type="image/png" href="images/icon/favicon.png" sizes="16x16">
 </head>
 
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-    <div class="container main-menu">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a href="index.html" class="navbar-brand">
-          <span>PG</span>TOYS
-        </a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav navbar-left">
-          <li><a href="#home" class="click-home">Home</a></li>
-          <li><a href="#about" class="click-about">About</a></li>
-          <li><a href="#product" class="click-product">Products <i class="fa fa-angle-down"></i></a>
-            <ul class="submenu">
-              <li>
-                <a href="#details1.html">Figures</a>
-              </li>
-              <li>
-                <a href="#details2.html">Drivers</a>
-              </li>
-              <li>
-                <a href="#details3.html">Others</a>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#service" class="click-service">Services</a></li>
-          <li><a href="#contact" class="click-contact">Contact</a></li>
-        </ul>
-        <form class="navbar-form search-bar">
-          <div class="form-group">
-            <input type="text" name="search" placeholder="Search" class="form-control search-box">
-            <button type="submit" class="btn btn-default btn-search">
-              <i class="fas fa-search"></i>
-            </button>
-          </div>
-        </form>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="" class="a4" role="button" data-toggle="modal" data-target="#login"><i class="far fa-user">
-                Login</i></a></li>
-          <li><a href="" class="a4" role="button" data-toggle="modal" data-target="#signup"><i class="fas fa-user-plus">
-                Signup</i></a></li>
-          <li><a href="" role="button"><i class="fas fa-shopping-cart"></i></a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div>
-  </nav> <!-- end-nav -->
-  <div class="background_top">
+  <header class="bg-white">
     <div class="container">
-      <div class="row_1">
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 img-top-left">
-          <img src="images/product_images/zio-trans.png" alt="kamen rider zio" class="img img-responsive">
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 text-center sologan">
-          <h1><span>PG</span>Toys</h1>
-          <h3>Build Your Own Wolrd</h3>
-          <a href="#product" class="btn find" title="Find More"><i class="fas fa-chevron-down"></i> </a>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 img-top-right">
-          <img src="images/product_images/horobi-trans.png" alt="kamen rider horobi" class="img img-responsive">
-        </div>
-      </div>
-    </div>
-  </div> <!-- end background_top -->
-  <!-- block about -->
-  <div id="about">
-    <div class="container">
-      <div class="row_2">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-          <h2>about us</h2>
-        </div>
-      </div>
-      <hr class="below">
       <div class="row">
-        <div class="hidden-xs hidden-sm col-md-7 col-lg-7">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequuntur laborum praesentium ullam
-            temporibus magnam recusandae! Reprehenderit autem temporibus esse culpa pariatur, animi voluptates aperiam
-            neque cum fugit architecto labore!</p>
-          <ul class="about-list">
-            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <div class="col-md-3 col-xs-12 user-part">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#login"><i class="fa fa-user"> Đăng nhập</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link dangky" href="#" data-toggle="modal" data-target="#signup"><i class="fa fa-user-plus"> Đăng ký</i></a>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita facilis non totam asperiores
-            et quo facere exercitationem optio quam, quidem recusandae earum consectetur adipisci dignissimos, nisi eos
-            suscipit voluptatum.</p>
         </div>
-        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
-          <img src="images/product_images/product_cabin.jpg" alt="Sample Product" class="img-responsive img-right">
+        <div class="col-md-6 col-xs-12 d-flex justify-content-center logo">
+          <a class="navbar-brand pt-3" href="#">
+            <img src="images/icon/logo1.png" title="Logo" alt="Logo">
+          </a>
         </div>
-        <div class="col-xs-12 col-sm-12 hidden-md hidden-lg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam consequuntur laborum praesentium ullam
-            temporibus magnam recusandae! Reprehenderit autem temporibus esse culpa pariatur, animi voluptates aperiam
-            neque cum fugit architecto labore!</p>
-          <ul class="about-list">
-            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-            <li><i class="fas fa-check"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+        <div class="col-md-3 col-xs-12 pt-2">
+          <ul class="info">
+            <li class="nav-item">
+              <p><i class="fas fa-phone-alt"> (+84)1923-8564</i></p>
+            </li>
+            <li class="nav-item">
+              <a href="#"><i class="fa fa-envelope"> support@zigtoys.com</i></a>
+            </li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto expedita facilis non totam asperiores
-            et quo facere exercitationem optio quam, quidem recusandae earum consectetur adipisci dignissimos, nisi eos
-            suscipit voluptatum.</p>
         </div>
       </div>
     </div>
-  </div>
-  </div> <!-- end block about -->
-  <!-- block testimonial -->
-  <div class="background-midtop">
-    <h2 class="testimonial text-center">What Others Say About Us</h2>
-    <hr class="below">
-    <div id="carousel-id" class="carousel slide customer" data-ride="carousel">
-      <ol class="carousel-indicators indicator-customer">
-        <li data-target="#carousel-id" data-slide-to="0" class=""></li>
-        <li data-target="#carousel-id" data-slide-to="1" class=""></li>
-        <li data-target="#carousel-id" data-slide-to="2" class="active"></li>
+  </header>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Trang Chủ</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#product">Sản Phẩm <i class="fa fa-angle-down"></i></a>
+          <ul class="submenu">
+            <li>
+              <a href="details1.html">Figures</a>
+            </li>
+            <li>
+              <a href="details2.html">Drivers</a>
+            </li>
+            <li>
+              <a href="details3.html">Sản phẩm khác</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Về ZIGToys</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Blog&Tips</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Liên Hệ</a>
+        </li>
+      </ul>
+      <form class="form-inline">
+        <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tìm kiếm">
+        <button>
+          <i class="fa fa-search" aria-hidden="true"></i>
+        </button>
+      </form>
+      <div class="header-cart">
+        <div class="heart-wrapper">
+          <a href="" class="btn btn-theme-transparent hidden-xs hidden-sm"><i class="far fa-heart" style="font-size:24px"></i></a>
+        </div>
+        <div class="cart-wrapper">
+          <a href="" class="btn btn-theme-transparent" data-toggle="modal" data-target="#cart"><i
+              class="fa fa-shopping-cart" style="font-size:24px"></i></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+<!--end nav menu-->
+<div class="slider_top">
+    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselIndicators" data-slide-to="1"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="item">
-          <div class="img-box">
-            <img src="images/icon/jimmy_fallon.jpg" class="testimonial-img" alt="Jimmy Fallon">
-          </div>
-          <p class="review text-center"><i class="fas fa-quote-left"></i> For the first time, I don't think this kind of
-            toys can make my daughter happier than a Doll House.<br />But I was wrong. She plays with a smile and even
-            told me to join her.<br /> You guys are amazing team. Keep up the good work! <i
-              class="fas fa-quote-right"></i></p>
-          <p class="overview"><b>Jimmy Fallon</b><i>45 years old / TV Host</i> at NBC studios.</p>
-        </div>
-        <div class="item active">
-          <div class="img-box">
-            <img src="images/icon/will_smith.jpg" class="testimonial-img" alt="Will Smith">
-          </div>
-          <p class="review text-center"><i class="fas fa-quote-left"></i> My son pretty like the superman stuff, so I
-            brought him an item from your store as his birthday present.<br /> And his face bright on. I don't know how
-            to describe his happiness.<br /> Thanks for the advice! <i class="fas fa-quote-right"></i></p>
-          <p class="overview"><b>Will Smith</b><i>51 years old / Actor</i>.</p>
-        </div>
-        <div class="item">
-          <div class="img-box">
-            <img src="images/icon/angel_asher.jpg" class="testimonial-img" alt="Angel Asher">
-          </div>
-          <p class="review text-center"><i class="fas fa-quote-left"></i> This is the first time I brought your
-            toys.<br /> Pretty cool! Awesome! My friend also want to buy it too. I gave him your address.<br /> And he
-            will come, some day. Thanks! <i class="fas fa-quote-right"></i></p>
-          <p class="overview"><b>Angel Asher</b><i>12 years old / Student</i>.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- end block testimonial -->
-  <div class="background_mid" id="product">
-    <div class="container">
-      <div class="row_7 tieude_mid">
-        <div class="col-md-12 text-center">
-          <h2>our products</h2>
-          <hr class="below">
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="thumbnail thumb1">
-            <img class="img-responsive" src="images/product_images/build.jpg">
-            <div class="caption text-center">
-              <h4>Figure</h4>
-              <p><a href="details1.html" class="btn red-bg btn-danger" role="button">Details</a></p>
+        <div class="carousel-item darken-img">
+          <img class="d-block w-100" src="images/product_images/burning-falcon.jpg" alt="First slide">
+          <div class="caption">
+            <div class="container d-flex justify-content-center">
+              <div class="div-table summer">
+                <div class="caption-content">
+                  <h3 class="caption-title">SIÊU PHẨM HÈ 2020</h3>
+                </div>
+                <div class="view">
+                  <button type="button" class="btn btn-outline-secondary btn-view">Xem Ngay</button>
+                </div>
+              </div>
             </div>
+          </div>
+        </div>
+        <div class="carousel-item active darken-img">
+          <img class="d-block w-100" src="images/product_images/garo-1.jpg" alt="Second slide">
+          <div class="caption">
+            <div class="container d-flex justify-content-center">
+              <div class="div-table">
+                  <div class="caption-content">
+                    <h4 class="caption-title">NHẬN COUPON<span>30%</span> </h4>
+                    <h2 class="caption-subtitle"> cho lần ĐĂNG KÝ ĐẦU TIÊN</h2>
+                  </div>
+                  <div class="subscribe">
+                    <button type="button" class="btn btn-warning btn-subscribe">Đăng Ký Ngay</button>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div> <!-- end slider-top -->
 
+
+
+  <!-- block about -->
+      <div class="container-fluid" id="about"> 
+        <div class="row text-center">
+          <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="box heading">
+              <h2>Giới thiệu về ZIGToys</h2>
+              <hr class="below">
+            </div> 
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="thumbnail">
-            <img class="img-responsive" src="images/product_images/driver.jpeg">
-            <div class="caption text-center">
-              <h4>Driver</h4>
-              <p><a class="btn green-bg btn-success" role="button" href="details2.html">Details</a></p>
+        <div class="row text-center">
+          <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="box content">
+              <p>
+                Là đơn vị chuyên cung cấp các sản phẩm mô hình đồ chơi và một số sản phẩm khác của các hãng
+                Bandai và Saban Hasbro.
+              </p>
+              <p>
+                ZIGToys luôn đặt giá trị cốt lõi là sự <b>UY TÍN</b> và <b>TÍN NHIỆM</b> về giá cả.
+              </p>
+            </div>
+            <div class="view-more">
+              <a class="btn-more" href="#">Xem Thêm <i class="fas fa-angle-right"></i></a>
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="thumbnail">
-            <img class="img-responsive" src="images/product_images/progrise.jpg">
-            <div class="caption text-center">
-              <h4>Others</h4>
-              <p><a class="btn orange-bg btn-warning" role="button" href="details3.html">Details</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end background_mid -->
-  <div class="container img-frame">
-    <div class="row wrap-img">
-      <!-- brand logo here -->
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 img-logo">
-        <img src="images/brand_images/bandai3.jpg" class="img-responsive" alt="Bandai">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 img-logo">
-        <img src="images/brand_images/saban_brand.png" class="img-responsive" alt="Saban">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 img-logo">
-        <img src="images/brand_images/garo.png" class="img-responsive" alt="Garo">
-      </div>
-      <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 img-logo">
-        <img src="images/brand_images/tsuburaya.png" class="img-responsive" alt="Tsuburaya Productions">
-      </div>
-    </div>
-  </div> <!-- end brand logo -->
-  <!-- block service -->
-  <div id="service">
-    <div class="container">
-      <div class="row_3">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center tieude_service">
-          <h2>our services</h2>
-          <p>we provides product commit:</p>
-          <hr class="below">
-        </div>
-      </div>
-      <div class="row_service">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h2 class="anti">anti-toxic</h2>
-          <i class="fas fa-biohazard" style="font-size:30px"></i>
-          <p>we say NO with product which contain chemical could harm you or your kids.</p>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h2 class="safe">safety</h2>
-          <i class="fas fa-child" style="font-size:30px"></i>
-          <p>we assure that every toys can be play safe.</p>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h2 class="quality">quality</h2>
-          <i class="fas fa-user-tie" style="font-size:30px"></i>
-          <p>we have a talent team that make sure every products is high quality.</p>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end block service -->
-  <div id="method">
-    <div class="container">
-      <div class="row_method">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center tieude_service">
-          <h2>payments system</h2>
-          <p>We Provides Various Way To Make A Purchase:</p>
-          <hr class="below">
-        </div>
-      </div>
-      <div class="row_4 text-center">
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="icon-box">
-            <i class="fa fa-bank" style="font-size:30px"></i>
-            <h2 class="bank">bank transfer</h2>
-            <div class="wrap">
-              <img src="images/brand_images/agri.png" alt="Agribank" title="Agribank" class="img-responsive">
-              <img src="images/brand_images/vcb.png" alt="Vietcombank" title="Vietcombank" class="img-responsive">
-              <img src="images/brand_images/vtb.png" alt="Vietinbank" title="Vietinbank" class="img-responsive">
-              <img src="images/brand_images/tech.png" alt="Techcombank" title="Techcombank" class="img-responsive">
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="icon-box">
-            <i class="fas fa-wallet" style="font-size: 30px"></i>
-            <h2 class="mob">mobile wallet</h2>
-            <div class="wrap1">
-              <img src="images/brand_images/momo.png" alt="MoMo" title="MoMo" class="img-responsive">
-              <img src="images/brand_images/payoo.jpg" alt="Payoo" title="Payoo" class="img-responsive">
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <div class="icon-box">
-            <i class="fa fa-truck" style="font-size:30px"></i>
-            <h2 class="cod">COD</h2>
-            <p>
-              Cash on delivery. Free of charge for goods up to 500.000 VND.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> <!-- end block medthod -->
-  <!-- block footer -->
-  <div id="contact">
-    <div class="container text-center">
-      <div class="row_contact">
-        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center tieude_contact">
-          <h2>contact us</h2>
-          <hr class="below">
+    </div> <!-- end block about -->
+
+    <!--new arrival-->
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="box heading">
+            <h2>Sản phẩm mới</h2>
+            <hr class="below">
+          </div> 
         </div>
       </div>
       <div class="row text-center">
-        <div class="row">
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="info-box">
-                  <i class="fas fa-map-marker-alt"></i>
-                  <h4 class="title">Our Address</h4>
-                  <p>612 Luong Dinh Cua, Dong Da, Ha Noi</p>
-                </div>
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <div class="product-image">
+              <img src="images/product_images/01-Figure.jpg" alt="" class="img-fluid figure">
+              <div class="zoom"><i class="fas fa-search-plus" data-toggle="modal" data-target="#quickview1"></i></div>
+            </div>
+            <div class="product text-center">
+              <h4 class="product-title">
+               <a href="details1.html"> S.H.Figure <br />
+                Kamen Rider Zero One </a>
+              </h4>
+              <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
               </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="fas fa-phone-alt"></i>
-                  <h4 class="title">Call Us</h4>
-                  <p>+842 XXX YYY ZZZ</p>
-                </div>
+                <p class="price">1.000.000đ</p>
+              <div class="buttons">
+                <a class="btn btn-icon-left" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  Thêm vào giỏ
+                </a>
+                <a class="btn btn-icon-right" href="#">
+                  <i class="far fa-heart"></i>
+                </a>
               </div>
-              <div class="col-md-6">
-                <div class="info-box">
-                  <i class="far fa-envelope"></i>
-                  <h4 class="title">Email Us</h4>
-                  <p id="support">support@pgtoys.vn</p>
+            </div>
+          </div> <!--end sp 1-->
+        </div>
+        <!--modal quick view 1-->
+        <div class="modal fade" id="quickview1" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> 
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div id="product-id" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#product-id" data-slide-to="0" class="active"></li>
+                          <li data-target="#product-id" data-slide-to="1"></li>
+                          <li data-target="#product-id" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                          <div class="carousel-item active">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/01-Figure.jpg" alt="ZeroOne">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/01-figure-act1.jpg" alt="ZeroOne">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/01-figure-act2.jpg" alt="ZeroOne">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev product-control" href="#product-id" role="button" data-slide="prev">
+                          <i class="fa fa-chevron-circle-left fa-2x"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next product-control" href="#product-id" role="button" data-slide="next">
+                          <i class="fa fa-chevron-circle-right fa-2x"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
               </div>
             </div>
-          </div> <!-- end info-box -->
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <form action="#" method="post" role="form" class="submit-form">
-              <div class="form-row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="your_name" id="name" class="form-control" placeholder="Your name">
+          </div>
+        </div>
+        <!--end modal quick view 1-->
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <div class="product-image">
+              <img src="images/product_images/wolf-Figure.jpg" alt="" class="img-fluid figure">
+              <div class="zoom"><i class="fas fa-search-plus" data-toggle="modal" data-target="#quickview2"></i></div>
+            </div>
+            <div class="product text-center">
+              <h4 class="product-title">
+               <a href="details1.html"> S.H.Figure <br />
+                Kamen Rider Vulcan </a>
+              </h4>
+              <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div>
+                <p class="price">1.000.000đ</p>
+              <div class="buttons">
+                <a class="btn btn-icon-left" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  Thêm vào giỏ
+                </a>
+                <a class="btn btn-icon-right" href="#">
+                  <i class="far fa-heart"></i>
+                </a>
+              </div>
+            </div>
+          </div> <!--end sp 2-->
+        </div>
+        <!--modal quick view 2-->
+        <div class="modal fade" id="quickview2" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> 
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div id="product-id-2" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#product-id-2" data-slide-to="0" class="active"></li>
+                          <li data-target="#product-id-2" data-slide-to="1"></li>
+                          <li data-target="#product-id-2" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                          <div class="carousel-item active">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/wolf-Figure.jpg" alt="Vulcan">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/vulcan.jpg" alt="Vulcan">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/vulcan-act.jpg" alt="Vulcan">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev product-control" href="#product-id-2" role="button" data-slide="prev">
+                          <i class="fa fa-chevron-circle-left fa-2x"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next product-control" href="#product-id-2" role="button" data-slide="next">
+                          <i class="fa fa-chevron-circle-right fa-2x"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
-                <div class="col-md-6 form-group">
-                  <input type="email" name="your_email" id="email" class="form-control" placeholder="Your email">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end modal quick view 2-->
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <div class="product-image">
+              <img src="images/product_images/geiz.png" alt="" class="img-fluid figure">
+              <div class="zoom"><i class="fas fa-search-plus" data-toggle="modal" data-target="#quickview3"></i></div>
+            </div>
+            <div class="product text-center">
+              <h4 class="product-title">
+               <a href="details1.html"> S.H.Figure <br />
+                Kamen Rider Geiz </a>
+              </h4>
+              <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div> 
+                <p class="price">1.000.000đ</p>
+              <div class="buttons">
+                <a class="btn btn-icon-left" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  Thêm vào giỏ
+                </a>
+                <a class="btn btn-icon-right" href="#">
+                  <i class="far fa-heart"></i>
+                </a>
+              </div>
+            </div>
+          </div> <!--end sp 3-->
+        </div>
+        <!--modal quick view 3-->
+        <div class="modal fade" id="quickview3" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> 
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div id="product-id-3" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#product-id-3" data-slide-to="0" class="active"></li>
+                          <li data-target="#product-id-3" data-slide-to="1"></li>
+                          <li data-target="#product-id-3" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                          <div class="carousel-item active">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/geiz.png" alt="Geiz">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/geiz-act-1.jpg" alt="Geiz">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/geiz-act-2.jpg" alt="Geiz">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev product-control" href="#product-id-3" role="button" data-slide="prev">
+                          <i class="fa fa-chevron-circle-left fa-2x"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next product-control" href="#product-id-3" role="button" data-slide="next">
+                          <i class="fa fa-chevron-circle-right fa-2x"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> 
                 </div>
               </div>
-              <div class="form-group">
-                <input type="subject" name="subject" id="subject" class="form-control" placeholder="Subject">
+            </div>
+          </div>
+        </div>
+        <!--end modal quick view 3-->
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <div class="product-image">
+              <img src="images/product_images/thouser-fig.jpg" alt="" class="img-fluid figure">
+              <div class="zoom"><i class="fas fa-search-plus" data-toggle="modal" data-target="#quickview4"></i></div>
+            </div>
+            <div class="product text-center">
+              <h4 class="product-title">
+               <a href="details1.html"> S.H.Figure <br />
+                Kamen Rider Thouser </a>
+              </h4>
+              <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+              </div> 
+                <p class="price">1.000.000đ</p>
+              <div class="buttons">
+                <a class="btn btn-icon-left" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  Thêm vào giỏ
+                </a>
+                <a class="btn btn-icon-right" href="#">
+                  <i class="far fa-heart"></i>
+                </a>
               </div>
-              <div class="form-group">
-                <textarea name="your_message" id="message" class="form-control" placeholder="Your message"></textarea>
+            </div>
+          </div> <!--end sp 4-->
+        </div>
+        <!--modal quick view 4-->
+        <div class="modal fade" id="quickview4" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> 
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div id="product-id-4" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#product-id-4" data-slide-to="0" class="active"></li>
+                          <li data-target="#product-id-4" data-slide-to="1"></li>
+                          <li data-target="#product-id-4" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                          <div class="carousel-item active">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/thouser-fig.jpg" alt="Thouser">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/thouser-act.jpg" alt="Thouser">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/thouser-act-2.jpg" alt="Thouser">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev product-control" href="#product-id-4" role="button" data-slide="prev">
+                          <i class="fa fa-chevron-circle-left fa-2x"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next product-control" href="#product-id-4" role="button" data-slide="next">
+                          <i class="fa fa-chevron-circle-right fa-2x"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
               </div>
-              <button type="button" class="btn btn-success"><i class="far fa-paper-plane"></i> Send Message</button>
-            </form>
-          </div> <!-- end form message -->
-        </div> <!-- end row -->
+            </div>
+          </div>
+        </div>
+        <!--end modal quick view 4-->
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <div class="product-image">
+              <img src="images/product_images/woz.jpg" alt="" class="img-fluid figure">
+              <div class="zoom"><i class="fas fa-search-plus" data-toggle="modal" data-target="#quickview5"></i></div>
+            </div>
+            <div class="product text-center">
+              <h4 class="product-title">
+               <a href="details1.html"> S.H.Figure <br />
+                Kamen Rider Woz </a>
+              </h4>
+              <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div> 
+                <p class="price">1.000.000đ</p>
+              <div class="buttons">
+                <a class="btn btn-icon-left" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  Thêm vào giỏ
+                </a>
+                <a class="btn btn-icon-right" href="#">
+                  <i class="far fa-heart"></i>
+                </a>
+              </div>
+            </div>
+          </div> <!--end sp 5-->
+        </div>
+        <!--modal quick view 5-->
+        <div class="modal fade" id="quickview5" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> 
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div id="product-id-5" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#product-id-5" data-slide-to="0" class="active"></li>
+                          <li data-target="#product-id-5" data-slide-to="1"></li>
+                          <li data-target="#product-id-5" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/woz.jpg" alt="Woz">
+                          </div>
+                          <div class="carousel-item active">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/woz-act.jpg" alt="Woz">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/woz-act-1.jpg" alt="Woz">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev product-control" href="#product-id-5" role="button" data-slide="prev">
+                          <i class="fa fa-chevron-circle-left fa-2x"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next product-control" href="#product-id-5" role="button" data-slide="next">
+                          <i class="fa fa-chevron-circle-right fa-2x"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end modal quick view 5-->
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4 col-lg-4">
+          <div class="thumbnail">
+            <div class="product-image">
+              <img src="images/product_images/val.jpg" alt="" class="img-fluid figure">
+              <div class="zoom"><i class="fas fa-search-plus" data-toggle="modal" data-target="#quickview6"></i></div>
+            </div>
+            <div class="product text-center">
+              <h4 class="product-title">
+               <a href="details1.html"> S.H.Figure <br />
+                Kamen Rider Valkyrie </a>
+              </h4>
+              <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="far fa-star"></i>
+              </div> 
+                <p class="price">1.000.000đ</p>
+              <div class="buttons">
+                <a class="btn btn-icon-left" href="#">
+                  <i class="fa fa-shopping-cart"></i>
+                  Thêm vào giỏ
+                </a>
+                <a class="btn btn-icon-right" href="#">
+                  <i class="far fa-heart"></i>
+                </a>
+              </div>
+            </div>
+          </div> <!--end sp 6-->
+        </div>
+        <!--modal quick view 6-->
+        <div class="modal fade" id="quickview6" tabindex="-1" role="dialog" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" title="Close"> 
+                  <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div id="product-id-6" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#product-id-6" data-slide-to="0" class="active"></li>
+                          <li data-target="#product-id-6" data-slide-to="1"></li>
+                          <li data-target="#product-id-6" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/val.jpg" alt="Valkyrie">
+                          </div>
+                          <div class="carousel-item active">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/val-act.jpg" alt="Valkyrie">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="img-fluid d-block mx-auto" src="images/product_images/val-act-1.jpg" alt="Valkyrie">
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev product-control" href="#product-id-6" role="button" data-slide="prev">
+                          <i class="fa fa-chevron-circle-left fa-2x"></i>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next product-control" href="#product-id-6" role="button" data-slide="next">
+                          <i class="fa fa-chevron-circle-right fa-2x"></i>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end modal quick view 6-->
       </div>
     </div>
-  </div> <!-- end contact -->
+    <!--end new arrival-->
+
   <!-- back2top -->
   <a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
-  </div>
-  </div> <!-- end block contact -->
+  
   <div id="footer">
     <div class="container text-center">
       <div class="row">
@@ -371,15 +665,13 @@
       </div>
     </div>
   </div>
-  <!-- back2top -->
-  <a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
   </div>
   </div> <!-- end block footer -->
   </div>
   <!-- modal login -->
-  <div class="modal fade" id="login" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      modal-content
+  <div class="modal fade" id="login" role="dialog" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <!--modal-content-->
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal">&times;</button>
         <div class="container">
@@ -434,7 +726,7 @@
     </div>
   </div>
   </div>
-  </div> end modal login
+  </div> <!--end modal login-->
   <div class="modal fade" id="signup" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-body">
@@ -526,11 +818,9 @@
   </div>
   <!-- end modal signup -->
   <script type="text/javascript" src="js/index.js"></script>
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-  <script>
-    $('.bxslider').bxSlider();
-  </script>
+  <script src="js/jquery-3.5.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 
 </html>

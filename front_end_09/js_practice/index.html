@@ -62,7 +62,9 @@
 		}
 		// check tinh hop le
 		function checkValidate(id, pass, confirm) {
-			if (id.length > 0 && id.length < 21 && pass.length > 5 && pass.length <= 32 && confirm === pass) {
+			if (id.length > 0 && id.length < 21 && id.indexOf(' ') == -1
+				&& pass.length > 5 && pass.length <= 32 && confirm === pass
+				&& pass.indexOf(' ') == -1) {
 				return "Pass";
 			} else {
 				return "Fail";
@@ -185,7 +187,97 @@
 			}
 			console.log(filterH);
 		}
-		
+		function hocVien(name) {
+			const newStr = name.filter(String => String.substr(0, 1) == "H" || String.substr(0, 1) == "h");
+			return newStr;
+		}
+		// print integer between 2 numbers and sum
+		function sumMid(a, b) {
+			let arr2 = [];
+			let min = Math.min(a, b);
+			let max = Math.max(a, b);
+			for (let i = min; i < max; i++) {
+				if (i > min)
+					arr2.push(i);
+				else if (min === max) {
+					return 0;
+				}
+			}
+
+			const sum = arr2.reduce((sum, item) => sum += item);
+			return sum;
+		}
+		function checkPrime(numb) {
+			if (numb === 1) return false;
+			for (let i = 2; i < (numb - 1); i++) {
+				if (numb % i === 0) {
+					return ("Not prime");
+				}
+			} return ("is prime");
+		}
+		function anotherStr(str) {
+			let words = str.split(" ");
+			let arr = [];
+			for (let i = 0; i < words.length; i++) {
+				let temp = words[i].toLowerCase();
+				temp = temp.charAt(0).toUpperCase() + temp.substr(1);
+				arr.push(temp);
+			}
+			return arr.join(" ");
+		}
+		const checkPalindrome = (str) => {
+			let reg = /[^A-Za-z0-9]/g;
+			str = str.toLowerCase().replace(reg, '');
+			for (let i = 0; i < str.length / 2; i++) {
+				if (str[i] != str[str.length - i - 1]) {
+					return false;
+				}
+			}
+			return true;
+		};
+		function filterLongWord(arry) {
+			let longWord = arry[0].length;
+			arry.map((item) => (longWord = Math.max(longWord, item.length)));
+			result = arry.filter((item) => item.length == longWord);
+			return result;
+		}
+		var employeeId = "abc123";
+		function foo() {
+			employeeId = "bcd123";
+		}
+		foo();
+		console.log(employeeId);
+		function checkDup(arry) {
+			let counts = [];
+			for (let i = 0; i <= arry.length; i++) {
+				if (counts[arry[i]] === undefined) {
+					counts[arry[i]] = 1;
+				} else return true;
+			}
+			return false;
+		}
+		function array(arry) {
+			let max1 = 0;
+			let max2 = 0;
+			for (let i = 0; i <= arry.length; i++) {
+				if (max1 < arry[i]) {
+					max2 = max1;
+					max1 = arry[i];
+
+				}
+			}
+			return max2;
+		}
+		function checkDup(arry) {
+			let counts = [];
+			for (let i = 0; i <= arry.length; i++) {
+				if (counts[arry[i]] === undefined) {
+					debugger;
+					counts[arry[i]] = 1;
+				} else return true;
+			}
+			return false;
+		}
 	</script>
 
 </body>

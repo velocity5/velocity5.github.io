@@ -190,16 +190,19 @@ $(document).ready(function () {
 $(document).ready(function(){
 	$('.slideBanner').slick({
 		dots: false,
-	  	autoplay: true,
+		autoplay: true,
+		infinite: true,
 	  	speed: 300,
 		cssEase: "linear",
-		arrows: false,
-	  	slidesToShow: 1,
-		slidesToScroll: 1,
-		prevArrow:"<button type='button' class='slick-prev'><i class='fas fa-chevron-left' aria-hidden='true'></i></button>",
-        nextArrow:"<button type='button' class='slick-next'><i class='fas fa-chevron-right' aria-hidden='true'></i></button>",
-		fade: true
+		arrows: true,
+		fade: true,
 	});
+	$(".slick-arrow.slick-next")
+		.text('')
+		.append(`<i class="fas fa-chevron-right"></i>`);
+	$(".slick-arrow.slick-prev")
+		.text('')
+		.append(`<i class="fas fa-chevron-left"></i>`);
   });
 // Add2cart function
 let carts = document.querySelectorAll(".add-cart");
