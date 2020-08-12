@@ -78,6 +78,9 @@
         .description-tab .tabs-hold {
             border-radius: 0;
         }
+        button.btn-search {
+            right: 0;
+        }
     }
     @media (max-width: 991.98px) { 
         .bg-sidebar {
@@ -298,6 +301,9 @@
         }
         .description-tab .tabs-hold {
             border-radius: 0;
+        }
+        button.btn-search {
+            right: 68%;
         }
     }
     @media (max-width: 767px) { 
@@ -634,6 +640,9 @@
             display: unset;
             width: auto;
         }
+        button.btn-search {
+            right: 47%;
+        }
     }
     @media (max-width: 449px) {
         .caption-content h4, .caption-content h2 {
@@ -697,6 +706,11 @@
             left: 23%;
         }
     }
+    @media (max-width: 425px) {
+        button.btn-search {
+            right: 44%;
+        }
+    }
     @media (max-width: 420px) {
         .product-container .cart-qty {
             width: 60px;
@@ -751,6 +765,9 @@
         .owl-carousel .owl-item img {
             display: unset;
             width: auto;
+        }
+        button.btn-search {
+            right: 42%;
         }
     }
     @media (max-width: 411px) {
@@ -844,6 +861,9 @@
         #relate-product .owl-nav .owl-prev, #relate-product .owl-nav .owl-next {
             opacity: 1;
         }
+        button.btn-search {
+            right: 36%;
+        }
     }
     @media (max-width: 360px) {
         .info-part {
@@ -861,6 +881,9 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 26px 22.5px 21px;
+        }
+        button.btn-search {
+            right: 33%;
         }
     }
     @media (max-width: 355px) {
@@ -899,6 +922,24 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 26px 15.8px 20px;
+        }
+        button.btn-search {
+            right: 24%;
+        }
+    }
+    @media (max-width: 280px) {
+        button.btn-search {
+            right: 12%;
+        }
+        .mobileMenu {
+            width: 200px;
+        }
+        .navbar-nav .nav-item {
+            margin-right: 3rem;
+        }
+        .form-search input {
+            padding: 5px;
+            margin-left: -10px;
         }
     }
 }
