@@ -26,6 +26,7 @@ $(document).ready(function () {
 		}
 	})
 })
+
 /*Scroll to top when arrow up clicked*/
 $(window).scroll(function () {
 	var height = $(window).scrollTop();
@@ -138,30 +139,42 @@ $('.fa-eye').on('click',
 			$("#formSignup-pass").attr("type", "text");
 		}
 	});
-// owl carousel brand and relate product
+// slick carousel brand and relate product
 $(document).ready(function () {
-	$(".brand-owl").owlCarousel({
-		loop: true,
-		margin: 20,
+	$(".brand-slick").slick({
 		dots: false,
 		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplaySpeed: 1500,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
+		infinite: true,
+	  	speed: 300,
+		cssEase: "linear",
+		arrows: false,
+		slidesToShow: 3,
+		slidesToScroll: 3,
+		responsive: [
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+					infinite: true,
+					dots: false
+				}
 			},
-			480: {
-				items: 2,
+			{
+				breakpoint: 600,
+				settings: {
+				  slidesToShow: 2,
+				  slidesToScroll: 2
+				}
 			},
-			500: {
-				items: 3,
-			},
-			520: {
-				items: 4,
+			{
+				breakpoint: 480,
+				settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1
+				}
 			}
-		}
+		  ]
 	});
 	$("#relate-product").owlCarousel({
 		loop: true,

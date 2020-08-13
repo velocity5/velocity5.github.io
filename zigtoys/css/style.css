@@ -73,6 +73,9 @@
         color: white;
         font-size: 13px;
     }
+    .nav-item .hiddenMobil {
+        display: none;
+    }
     .nav-link.dangnhap:hover {
         color: #747d8c;
     }
@@ -346,6 +349,7 @@
         font-size: 16px;
         border: 1px solid orange;
         border-radius: 3px;
+        transition: all 0.4s ease;
         background: transparent;
         color: #34495e;
     }
@@ -353,21 +357,22 @@
         margin-top: 40px;
         border: none;
     }
-    .nav-pill .nav__link:hover {
-        color: #e67e22;
+    a.nav__link.active {
+        background: orange;
+        color: #fff;
     }
-    .nav-pill a.active {
-        color: orange;
-        border-color: orange;
-    }
-    .product-content {
-        padding: 10px;
+    a.newItem {
+        text-decoration: none;
     }
     .thumb-card {
         max-width: 300px;
         margin: auto;
         border: 1px solid #ccc;
         border-radius: 3px;
+        transition: all 0.4s ease;
+    }
+    .thumb-card:hover {
+        box-shadow: 3px 0px 5px 0px rgba(112,111,112,0.7);
     }
     .thumb-card .img-fluid {
         position: relative;
@@ -379,17 +384,17 @@
         height: 300px;
         margin: auto;
     }
-    .product-title {
-        text-align: center;
+    .product-content {
+        padding: 10px;
     }
-    .product-title a {
+    .product-title {
         font-size: 20px;
-        text-decoration: none;
         color: #232323;
         text-transform: capitalize;
+        text-align: center;
         font-family: 'Roboto', sans-serif;
     }
-    .product-title a:hover {
+    .product-title:hover {
         color: #e3b424;
     }
     .group-rate {
@@ -449,7 +454,7 @@
         cursor: pointer;
     }
     /* brand section */
-    .brand-owl .brand-item img {
+    .brand-slick .brand-item img {
         max-width: 50%;
     }
     .brand {

@@ -63,6 +63,16 @@
         }
     }
     @media (max-width: 1024px) {
+        .content p {
+            padding: 10px;
+            letter-spacing: 2px;
+        }
+        .blog-image img {
+            height: auto;
+        }
+        .blog-title {
+            padding: 10px 15px;
+        }
         .navbar-nav .nav-item {
             padding: 10px 5px;
         }
@@ -190,19 +200,8 @@
             margin-bottom: 10px;
             transition: all 0.3s ease-in-out;
         }
-        .justify-content-center .div-table 
-        .caption-content {
-            display: block;
-        }
-        .justify-content-center .div-table 
-        .caption-content > .caption-subtitle {
-            margin-top: 0;
-        }
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 34%;
-        }
-        .thumbnail .zoom {
-            top: 40%;
         }
         .product .product-title {
             font-size: 18px;
@@ -225,6 +224,7 @@
         .subscribe-newsletter button {
             width: 120px;
         }
+
         /* about us */
         .title-col {
             padding: 2px;
@@ -295,6 +295,10 @@
             font-size: 13px;
         }
     @media (max-width: 768px) {
+        /* home product */
+        .product-title {
+            font-size: 16px;
+        }
           /* product detail */
           #detail-tab, #descript-tab, #review-tab {
             padding: 20px 14px 19px;
@@ -306,7 +310,10 @@
             right: 68%;
         }
     }
-    @media (max-width: 767px) { 
+    @media (max-width: 767px) {
+        .brand-slick .brand-item img {
+            max-width: 100%;
+        } 
         .resize .navbar-brand img {
             margin-top: -2rem;
         }
@@ -322,14 +329,6 @@
         .navbar-brand img {
             max-width: 200px;
             margin-top: 0;  
-        }
-        .summer .view {
-            margin-top: 50%;
-        }
-        .thumbnail .zoom {
-            top: 36%;
-            font-size: 25px;
-            left: 64%;
         }
         .product .product-title {
             font-size: 18px;
@@ -478,6 +477,7 @@
         .breadcrumb-contain .breadcrumb {
             max-width: 33rem;
         }
+
     }
     @media (max-width: 575.98px) { 
         .title-col {
@@ -516,6 +516,9 @@
         .container-fluid .side-post .side-title span {
             margin-top: -10%;
             font-size: 16px;
+        }
+        .slideBanner {
+            display: none;
         }
     }
     @media (max-width: 558px) {
@@ -565,9 +568,6 @@
         .resize .navbar-toggler {
             margin-top: 0;
         }
-        .thumbnail .zoom {
-            top: 53%;
-        }
     }
     @media (max-width: 510px) {
         .breadcrumb-contain .breadcrumb {
@@ -583,6 +583,9 @@
         }
     }
     @media (max-width: 500px) {
+        .brand{
+            display: none;
+        }
         .username, .mail-signup, .mail-pass, .md-form.mb-3 #inputBirthday {
             margin-left: 2.5rem;
         }
@@ -630,6 +633,15 @@
         }
     }
     @media (max-width: 450px) {
+        .info-part .quick-mail {
+            display: none;
+        }
+        .blog-image img {
+            height: auto;
+        }
+        .blog-title {
+            padding: 5px 10px;
+        }
         #detail-tab, #descript-tab, #review-tab {
             padding: 19px 18px;
         }
@@ -707,9 +719,11 @@
         }
     }
     @media (max-width: 425px) {
+        
         button.btn-search {
             right: 44%;
         }
+
     }
     @media (max-width: 420px) {
         .product-container .cart-qty {
@@ -748,10 +762,6 @@
         .form-search input, .wrap-all {
             display: flex;
             align-self: flex-start;
-        }
-        .summer .view {
-            margin-top: -10%;
-            margin-left: -10%;
         }
         .caption .caption-content {
             padding-top: 0;
@@ -886,12 +896,6 @@
             right: 33%;
         }
     }
-    @media (max-width: 355px) {
-        .thumbnail-img .product-img 
-        .zoom-product {
-        margin-top: -45%;
-        }
-    }
     @media (max-width: 320px) {
         .box-contain .fa-eye {
             margin-left: 13rem;
@@ -928,6 +932,24 @@
         }
     }
     @media (max-width: 280px) {
+        .content p {
+            padding: 0;
+            letter-spacing: 0;
+        }
+        .nav-item .dangnhap {
+            display: none;
+        }
+        .nav-item .dangnhap.hiddenMobil {
+            display: block;
+            font-size: 20px;
+        }
+        header .nav-link {
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .section-title h2 {
+            font-size: 25px;
+        }
         button.btn-search {
             right: 12%;
         }
