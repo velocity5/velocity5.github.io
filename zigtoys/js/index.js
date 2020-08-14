@@ -139,6 +139,31 @@ $('.fa-eye').on('click',
 			$("#formSignup-pass").attr("type", "text");
 		}
 	});
+// validate address form
+$(document).ready(function() {
+	$('.processBtn').click(function() {
+		$('.warning').hide();
+		let hasWarning = false;
+		let customName = $(".inputName").val();
+		let customNumb = $(".inputNumb").val();
+		let customCity = $(".selectCity").val();
+		let customDst = $(".selectDst").val();
+		let customCommune = $(".selectCommune").val();
+		if (customName == '' || customNumb == '' || customCity == '' || customDst == '' || customCommune == '') {
+			$(".inputName").after(`<span class="warning" style='color:red;background:none'> Vui lòng nhập Họ tên</span>`);
+			$(".inputNumb").after(`<span class="warning" style='color:red;background:none'> Vui lòng nhập Số điện thoại<span>`);
+			$(".selectCity").after(`<span class="warning" style='color:red;background:none'> Vui lòng chọn Thành phố<span>`);
+			$(".selectDst").after(`<span class="warning" style='color:red;background:none'> Vui lòng chọn Quận/Huyện<span>`);
+			$(".selectCommune").after(`<span class="warning" style='color:red;background:none'> Vui lòng chọn Phường/Xã<span>`);
+			$(".note").after(`<span class="warning" style='color:red;background:none'> Vui lòng nhập Địa chỉ cụ thể</span>`);
+			hasWarning = true;
+			$(".inputName").focus();
+		}
+		if(hasWarning == true ) {
+			return false;
+		}
+	});
+})
 // slick carousel brand and relate product
 $(document).ready(function () {
 	$(".brand-slick").slick({

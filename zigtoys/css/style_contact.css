@@ -21,7 +21,7 @@
     font-style: italic;
 }
 .comment-form-name input[type="text"], 
-.comment-form-email input[type="email"], textarea {
+.comment-form-email input[type="email"], .comment-form-textarea textarea {
     border: 1px solid #e7e7e7;
     background: #f8f8f8;
     color: #666666;
@@ -29,6 +29,12 @@
     padding: 10px 20px;
     border-radius: 6px;
     width: 100%;
+}
+.comment-form-name input[type="text"]:focus,
+.comment-form-email input[type="email"]:focus,
+.comment-form-textarea textarea:focus {
+    outline: none;
+    border-color: rgba(255 165 0 / 0.8); 
 }
 .submit button {
     font-family: 'Roboto' ,sans-serif;

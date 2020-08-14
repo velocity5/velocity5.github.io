@@ -55,75 +55,35 @@
     color: #ff9f43;
 }
 /* address form */
-.field {
+.selectBox {
+    border-radius: 3px;
+    border-color: #dde1e6;
+    padding: 5px 10px;
+    color: #737780;
+}
+.fieldContain input:focus, .fieldContain select:focus,
+.fieldContain .note:focus {
+    border-color: rgba(255 165 0 / 0.8);
+    outline: none;
+}
+.selectContain {
     display: flex;
     flex-direction: column;
-    font-size: 13px;
-    font-family: sans-serif;
-    font-weight: 600;
-    align-items: baseline;
-    margin: 0 0 15px;
-    transform: translate(30%, 10%);
 }
-.field input, .field textarea,
-.field select {
-    width: 40%;
-}
-.field input {
-    height: 40px;
-    line-height: 34px;
-    border: 1px solid lightgrey;
-    border-radius: 3px;
-    padding: 6px 12px;
-}
-.field select {
-    position: relative;
-    height: 40px;
-    line-height: 34px;
-    border-radius: 3px;
-    padding-left: 10px;
-    border: 1px solid lightgrey;
-}
-.selectBox::after {
-    content: '\f078';
-    font-family: "Font Awesome 5 Free";
-    width: 20px;
-    height: 20px;
-    font-size: 16px;
-    top: 55%;
-    left: 37.5%;
-    padding: 0 0 2px;
-    position: absolute;
-}
-.labelForm span {
-    margin-left: 5px;
-}
-.field input:focus, .field textarea {
-    outline-color: rgba(255 165 0 / 0.8);
-}
-textarea.note {
+.note {
     background: #fff;
-}
-.selectCity {
-    cursor: pointer;
-}
-.selectCity:focus, .selectDst:focus, 
-.selectCommune:focus {
-    outline-color: rgba(255 165 0 / 0.8);
-}
-
-.buttonContain {
-    display: flex;
-    margin-left: 29.5%;
-    margin-bottom: 50px;
+    border-radius: 3px;
+    padding: 5px 10px;
 }
 a.processBtn {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    border: 1px solid #d3cbcb;
+    border: none;
     padding: 10px 10px;
     font-size: 13px;
+    font-weight: 400;
     border-radius: 3px;
+    margin-bottom: 50px;
     color: white;
     background: #FFC107;
     transition: all 0.4s ease-in-out;
