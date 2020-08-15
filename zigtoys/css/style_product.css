@@ -43,7 +43,6 @@ button.reset {
 button.reset:hover, button.reset:active {
     background: #98999b;
 }
-
 #product-close .close {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
@@ -164,9 +163,7 @@ h6.product-section-title {
 .isOpen ~ .fa-chevron-right {
     transform: rotate(-90deg);
 }
-.product-radio-group {
-    margin-left: 1.5rem;
-}
+
 .product-radio-group label {
     margin-bottom: 1rem;
 }
@@ -191,21 +188,6 @@ h6.product-section-title {
 .product-img img {
     width: 200px;
     height: 277px;
-}
-.thumbnail-img .zoom-product {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -20px;
-    margin-top: -44%;
-    font-size: 30px;
-    opacity: 0;
-    color: #ecebeb;
-    cursor: pointer;
-    transition: all 0.4s ease-in-out;
-}
-.thumbnail-img:hover .zoom-product {
-    opacity: 1;
 }
 h4.product-page-title {
     font-size: 20px;
@@ -286,4 +268,50 @@ h4.product-page-title {
 }
 .pagination-older {
     margin-left: 25px;
+}
+/*------------- customize checkbox/radio -------------*/
+.filled-in, .form-check-input {
+    display: none;
+}
+.filled-in + label, .form-check-input + label {
+    cursor: pointer;
+}
+.filled-in + label::before {
+    content: "✓";
+    border: 1px solid #000;
+    color: transparent;
+    border-radius: 3px;
+    font-size: 12px;
+    padding-left: 3px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    transition: .2s all ease;
+}
+.filled-in + label:active::before, 
+.form-check-input + label:active::before {
+    transform: scale(0);
+}
+.filled-in:checked + label::before {
+    background-color: #fd9644;
+    border-color: rgb(255, 229, 180);
+    color: beige;
+}
+.form-check-input + label::before {
+    content: "";
+    border: 1px solid #000;
+    color: transparent;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    display: inline-block;
+    transition: .2s all ease;
+}
+.form-check-input:checked + label::before {
+    background-color: #fd9644;
+    border-color: rgb(255, 229, 180);
+    color: #fd9644;
 }

@@ -7,7 +7,6 @@
     bottom: 1.9rem;
     z-index: 10;
     padding: 16px;
-
 }
 .img-title span {
     font-size: 15px;
@@ -203,6 +202,7 @@
 }
 .blog-body {
     padding: 10px 10px;
+    background: #f5f6fa;
 }
 /* comment blog */
 .form-title {

@@ -598,25 +598,19 @@
         font-weight: normal;
     }
     /* modal frame login */
-    .userLogin .modal-login ul > li {
+    .modal-content .nav-tabs > li {
         width: 50%;
         text-align: center;
         background: #ddd;
-        height: 48px;
-        line-height: 48px;     
-    }
-    .userLogin .modal-login ul > li > a.active {
-        background: #fff;
-    }
-    
-    .modal-login ul > li a {
-        text-decoration: none;
-        color: #000;
-        padding: 0 15px;
         line-height: 48px;
-        position: relative;
-        font-family: 'Roboto' ,sans-serif;
-        font-weight: 500;
+        height: 48px;
+    }
+    .modal-content .nav-tabs li > a {
+        text-decoration: none;
+        color: black;
+    }
+    .modal-content .nav-tabs > li.active {
+        background: white;
     }
     .forgot-pwd::before {
         content: '\f059';
