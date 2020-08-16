@@ -6,10 +6,112 @@
 body {
     font-family: 'Roboto' ,sans-serif;
 }
-/* tab login */
-
+/* tab login signup*/
+.formBox {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    padding: 5px;
+    background: beige;
+    overflow: hidden;
+}
+.buttonBox {
+    width: 200px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #947e401f;
+    border-radius: 30px;
+}
+.toggleBtn {
+    padding: 10px 10px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #2C3A47;
+}
+.toggleBtn:focus {
+    outline: none;
+}
+#btnCover {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: #fd9644;
+    border-radius: 30px;
+    transition: all .3s ease;
+}
+.inputGroup {
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: all .4s ease;
+}
+.inputField {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 3px;
+    border: 1px solid #bdc3c7;
+    outline: none;
+    position: relative;
+}
+.inputField:focus {
+    border-color: rgba(255 165 0 / 0.8);
+}
+.pwd-section {
+    position: relative;
+}
+.eyeConLog {
+    position: absolute;
+    right: 10px;
+    top: 20%;
+}
+.eyeConSign {
+    position: absolute;
+    right: 10px;
+    top: 34%;
+}
+#btnLogin, #btnSignup {
+    width: 85%;
+    padding: 10px 30px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: #fd9644;
+    color: #f7f1e3;
+    border: 0;
+    outline: none;
+}
+#btnLogin:hover, #btnSignup:hover {
+    background: #fcaa67;
+}
+#btnSignup {
+    margin-top: 20px;
+}
+#remember_me {
+    margin: 10px 0 30px 0;
+}
 .forgot-pwd::before {
     content: '\f059';
     font-family: "Font Awesome 5 Free";
     margin-right: 2px;
+}
+.forgotBox {
+    margin: 5px;
+    text-align: center;
+}
+a.forgot-pwd {
+    text-decoration: none;
+    font-size: 13px;
+}
+#login {
+    left: 50px;
+}
+#signup {
+    left: 450px;
 }
