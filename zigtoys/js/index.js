@@ -44,101 +44,6 @@ $(document).ready(function () {
 	});
 
 });
-/*validate username n' password login*/
-$(document).ready(function () {
-	$("#btnLogin").click(function (e) {
-		$(".error").hide();
-		let hasError = false;
-		let passReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/;
-
-		let userName = $("#inputUser").val();
-		let pwdVal = $('#inputPassword').val();
-		if (pwdVal == '' || userName == '') {
-			$("#inputUser").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Tên người dùng không được để trống</span>`);
-			$("#inputPassword").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Mật khẩu không được để trống</span>`)
-			hasError = true;
-		}
-		else if (!passReg.test(pwdVal)) {
-			$("#inputPassword").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Mật khẩu không chính xác</span>`);
-			hasError = true;
-		}
-		if (hasError == true) {
-			return false;
-		}
-	});
-});
-//validate password signup
-$(document).ready(function () {
-	$("#btnSignup").click(function (e) {
-		$(".error").hide();
-		let hasError = false;
-		let emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		let emailAdd = $('#formSignup-mail').val();
-		let pwdVal = $('#formSignup-pass').val();
-		let userName = $('#formUsername').val();
-		if (emailAdd == '' || pwdVal == '' || userName == '') {
-			$('#formSignup-mail').after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Vui lòng nhập email</span>`);
-			$('#formSignup-pass').after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Vui lòng nhập mật khẩu</span>`);
-			$('#formUsername').after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Vui lòng nhập tên người dùng</span>`);
-			hasError = true;
-		}
-		else if (!emailReg.test(emailAdd)) {
-			$("#formSignup-mail").after(`<span class='error' style='color:crimson;background:none'><i class="fas fa-exclamation-triangle" style="background:none"></i> Email không hợp lệ</span>`);
-			hasError = true;
-		}
-		if (hasError == true) {
-			return false;
-		}
-	});
-	$("#formSignup-pass").keyup(function () {
-		let psw = $(this).val();
-		//validate the length
-		if (psw.length < 8) {
-			$('#length').removeClass('valid').addClass('invalid');
-		} else {
-			$('#length').removeClass('invalid').addClass('valid');
-		}
-		//validate letter
-		if (psw.match(/[A-z]/)) {
-			$('#letter').removeClass('invalid').addClass('valid');
-		} else {
-			$('#letter').removeClass('valid').addClass('invalid');
-		}
-		//validate capital
-		if (psw.match(/[A-Z]/)) {
-			$('#capital').removeClass('invalid').addClass('valid');
-		} else {
-			$('#capital').removeClass('valid').addClass('invalid');
-		}
-		//validate number
-		if (psw.match(/\d/)) {
-			$('#number').removeClass('invalid').addClass('valid');
-		} else {
-			$('#number').removeClass('valid').addClass('invalid');
-		}
-	}).focus(function () {
-		$('#psw-info').show();
-	}).blur(function () {
-		$('#psw-info').hide();
-	});
-});
-// show-hide password
-$('.fa-eye').on('click',
-	function () {
-		$(this).toggleClass("fa-eye-slash");
-		let type = $("#inputPassword").attr("type");
-		if (type == "text") {
-			$('#inputPassword').attr("type", "password");
-		} else {
-			$('#inputPassword').attr("type", "text");
-		}
-		let typesingup = $("#formSignup-pass").attr("type");
-		if (typesingup == "text") {
-			$("#formSignup-pass").attr("type", "password");
-		} else {
-			$("#formSignup-pass").attr("type", "text");
-		}
-	});
 // validate address form
 $(document).ready(function() {
 	$('.processBtn').click(function() {
@@ -170,23 +75,23 @@ $(document).ready(function () {
 		dots: false,
 		autoplay: true,
 		infinite: true,
-	  	speed: 300,
+	  	speed: 400,
 		cssEase: "linear",
 		arrows: false,
 		slidesToShow: 3,
 		slidesToScroll: 3,
 		responsive: [
 			{
-				breakpoint: 1024,
+				breakpoint: 991,
 				settings: {
 					slidesToShow: 3,
-					slidesToScroll: 3,
+					slidesToScroll: 1,
 					infinite: true,
 					dots: false
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 767,
 				settings: {
 				  slidesToShow: 2,
 				  slidesToScroll: 2
@@ -201,30 +106,48 @@ $(document).ready(function () {
 			}
 		  ]
 	});
-	$("#relate-product").owlCarousel({
-		loop: true,
-		margin: 20,
-		nav: true,
-		navText: ["<i class='fas fa-chevron-circle-left fa-2x'></i>", "<i class='fa fa-chevron-circle-right fa-2x'></i>"],
+	$("#relate-product").slick({
 		dots: false,
 		autoplay: true,
-		autoplayTimeout: 3000,
-		autoplaySpeed: 1500,
-		responsiveClass: true,
-		responsive: {
-			0: {
-				items: 1,
+		infinite: true,
+		centerPadding: "60px",
+		slidesToShow: 3,
+  		slidesToScroll: 1,
+		autoplaySpeed: 2000,
+		cssEase: "linear",
+		arrows: true,
+		responsive: [
+			{
+				breakpoint: 991,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 1
+				}
 			},
-			480: {
-				items: 2,
+			{
+				breakpoint: 768,
+				settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1
+				}
 			},
-			550: {
-				items: 3,
+			{
+				breakpoint: 480,
+				settings: {
+				  slidesToShow: 1,
+				  slidesToScroll: 1
+				}
 			}
-		}
+		  ]
 	});
+	$(".slick-arrow.slick-next")
+		.text('')
+		.append(`<i class="fas fa-chevron-right"></i>`);
+	$(".slick-arrow.slick-prev")
+		.text('')
+		.append(`<i class="fas fa-chevron-left"></i>`);
 });
-// slick slider banner
+
 $(document).ready(function(){
 	$('.slideBanner').slick({
 		dots: false,
@@ -561,6 +484,9 @@ s0.parentNode.insertBefore(s1,s0);
 $(".checkOut").click(function () {
 	location.href = "checkout.html";
 });
-$("#orderNow").click(function() {
+$("#orderNow").click(function () {
 	location.href = "products.html"; 
 });
+$(".buynow").click(function() {
+	location.href = "address.html";
+})

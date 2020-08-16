@@ -299,13 +299,14 @@ h4.product-page-title {
     color: beige;
 }
 .form-check-input + label::before {
-    content: "";
-    border: 1px solid #000;
+    content: "⬤";
     color: transparent;
-    border-radius: 50%;
-    font-size: 12px;
+    font-size: 9px;
     width: 16px;
     height: 16px;
+    border-radius: 50%;
+    padding-left: 3px;
+    border: 1px solid #000;
     margin-right: 5px;
     display: inline-block;
     transition: .2s all ease;
@@ -313,5 +314,5 @@ h4.product-page-title {
 .form-check-input:checked + label::before {
     background-color: #fd9644;
     border-color: rgb(255, 229, 180);
-    color: #fd9644;
+    color: beige;
 }

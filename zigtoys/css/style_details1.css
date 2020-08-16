@@ -90,7 +90,7 @@
     display: flex;
     flex-direction: row;
   }
-  .btn-group .addcart, .btn-group .buynow {
+  .btn-group .add-cart, .btn-group .buynow {
     color: white;
     margin-bottom: 23px;
     border-radius: 6px;
@@ -100,58 +100,22 @@
     font-weight: 400;
     font-family: 'Roboto' , sans-serif;
   }
-  .addToCart span {
+  .addCartFont span {
     font-weight: 400;
     font-family: 'Roboto' , sans-serif;
   }
-  .btn-group a {
-    text-decoration: none;
-    text-align: center;
-    padding-top: 11px;
-    font-weight: 400;
-    font-family: 'Roboto' , sans-serif;
-  }
+  
   /* relate product slide */
   #relate-product {
     margin-bottom: 50px;
     margin-top: 20px;
   }
-  #relate-product:hover .owl-nav .owl-prev {
-    opacity: 1;
-    background: transparent;
-  }
-  #relate-product:hover .owl-nav .owl-next {
-    opacity: 1;
-    background: transparent;
-  }
-  .owl-nav .owl-prev {
-    position: absolute;
-    transition: 0.4s ease-in-out;
-    color: goldenrod!important;
-    top: 50%;
-    left: 0;
-    opacity: 0;
-  }
-  .owl-nav .owl-prev > i:hover, .owl-nav .owl-next > i:hover {
-    color: gold;
-  }
-  .owl-nav .owl-prev:focus, .owl-nav .owl-next:focus {
-    outline: 0;
-  }
-  .owl-nav .owl-next {
-    position: absolute;
-    transition: 0.4s ease-in-out;
-    color: goldenrod!important;
-    top: 50%;
-    right: 0;
-    opacity: 0;
-  }
-
+  
   /* product description */
   .tabs-hold {
     padding-top: 18px;
     padding-bottom: 18px;
-    width: 88%;
+    width: calc(100% - 12%);
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     background:#272e38;
@@ -171,7 +135,7 @@
     border-top:5px solid #e74c3c;
     border-bottom:5px solid #e74c3c;
     padding:30px 25px;
-    width: 88%;
+    width: calc(100% - 12%);
   }
   .tabs-hold li > a.nav-item:hover {
     background: #e74c3c;
@@ -250,6 +214,7 @@
   /* comment-form  */
   .comment-form button{
     background-color:#1e3799;
+    margin-top: 20px;
   }
   .comment-form button:hover, .comment-form button:active {
     background-color: #0c2461;

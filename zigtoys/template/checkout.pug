@@ -18,12 +18,10 @@ block content
                     .paymentWrap
                         ul.payment-list
                             li
-                                input(type="radio" name="payment-method" value="cod" id='cod' checked)
-                                span.radio-fake
+                                input(type="radio" name="payment-method" value="cod" id='cod' checked).radio-fake
                                 label(for="cod").radio Thanh toán tiền mặt
                             li
-                                input(type="radio" name="payment-method" value="transfer" id='transfer')
-                                span.radio-fake
+                                input(type="radio" name="payment-method" value="transfer" id='transfer').radio-fake
                                 label(for="transfer").radio Thanh toán chuyển khoản
                                 .atms
                                     .atm
@@ -31,8 +29,7 @@ block content
                                     .atm
                                         img(src="images/brand_images/VCB.jpg", alt="Vietcombank")
                             li
-                                input(type="radio" name="payment-method" value="digiwallet" id='digiwallet')
-                                span.radio-fake
+                                input(type="radio" name="payment-method" value="digiwallet" id='digiwallet').radio-fake
                                 label(for="digiwallet").radio Thanh toán qua ví điện tử
                                 .digis
                                     .digi

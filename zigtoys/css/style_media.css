@@ -646,15 +646,18 @@
         .blog-title {
             padding: 5px 10px;
         }
+         /* product */
+         .thumb-card {
+            margin-bottom: 20px;
+        }
         #detail-tab, #descript-tab, #review-tab {
             padding: 19px 18px;
         }
         .description-tab .tabs-hold, .description-tab .tab-content {
             width: auto;
         }
-        .owl-carousel .owl-item img {
-            display: unset;
-            width: auto;
+        .slick-arrow {
+            display: none!important;
         }
         button.btn-search {
             right: 47%;
@@ -723,11 +726,12 @@
         }
     }
     @media (max-width: 425px) {
-        
         button.btn-search {
             right: 44%;
         }
-
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 19px 13.9px;
+        }
     }
     @media (max-width: 420px) {
         .product-container .cart-qty {
@@ -776,10 +780,6 @@
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 10%;
         }
-        .owl-carousel .owl-item img {
-            display: unset;
-            width: auto;
-        }
         button.btn-search {
             right: 42%;
         }
@@ -801,10 +801,6 @@
         }
         .description-tab .tabs-hold {
             border-radius: 0;
-        }
-        .owl-carousel .owl-item img {
-            display: unset;
-            width: auto;
         }
     }
     @media (max-width: 410px) {
@@ -935,7 +931,7 @@
         h2.price {
             font-size: 20px;
         }
-        .addToCart span, a.buynow {
+        .addCartFont span, .buynow {
             font-size: 13px;
         }
         .btn-group a.buynow {
@@ -946,6 +942,9 @@
         }
         button.btn-search {
             right: 24%;
+        }
+        .title-relate {
+            font-size: 25px;
         }
         /* checkout */
         .payment-list span.radio-fake {
@@ -980,6 +979,9 @@
         }
         .section-title h2 {
             font-size: 25px;
+        }
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 25px 9px 20px;
         }
         button.btn-search {
             right: 12%;

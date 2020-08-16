@@ -56,18 +56,18 @@ block content
                             span(id="qty") 1
                             button(type="button").qty-incre +
                     .btn-group
-                        button.btn-warning.addcart 
-                            i.fa.fa-shopping-cart.addToCart  
+                        button.btn-warning.add-cart.addCartFont 
+                            i.fa.fa-shopping-cart  
                                 span Thêm Vào Giỏ
-                        a(href="address.html").btn-danger.buynow MUA NGAY
+                        button.btn-danger.buynow MUA NGAY
                     .description-tab
                         ul.nav.nav-tabs.tabs.tabs-hold(role="tablist")
                             li 
                                 a.active.nav-item(data-toggle="tab", href="#descript", role="tab", id="descript-tab" ,aria-controls="descript", aria-selected="true") Mô Tả Sản Phẩm
-                            li
-                                a.nav-item(data-toggle="tab", href="#detail", role="tab", id="detail-tab", aria-controls="detail", aria-selected="false") Chi Tiết Sản Phẩm
-                            li
-                                a.nav-item(data-toggle="tab", href="#review", role="tab", id="review-tab",aria-controls="review", aria-selected="false") Đánh Giá
+                                    li
+                                        a.nav-item(data-toggle="tab", href="#detail", role="tab", id="detail-tab", aria-controls="detail", aria-selected="false") Chi Tiết Sản Phẩm
+                                    li
+                                        a.nav-item(data-toggle="tab", href="#review", role="tab", id="review-tab",aria-controls="review", aria-selected="false") Đánh Giá
                         .tab-content.tab__detail
                             .tab-pane.fade.show.active#descript(role="tabpanel",aria-labelledby="descript-tab")
                                 p Hàng chính hãng của Nhật. 
@@ -115,40 +115,36 @@ block content
                                                                 a.cmt-reply(href="#")
                                                                     i.fa.fa-reply
                                                                     span.hidden-sm Trả lời 
-                                    .respond-wrap
-                                        h3.comment-title Viết đánh giá
-                                        span
-                                            .rating
-                                                input#1(type='radio' name='rating' value='1')
-                                                label(for='1') ☆
-                                                input#2(type='radio' name='rating' value='2')
-                                                label(for='2') ☆
-                                                input#3(type='radio' name='rating' value='3')
-                                                label(for='3') ☆
-                                                input#4(type='radio' name='rating' value='4')
-                                                label(for='4') ☆ 
-                                                input#5(type='radio' name='rating' value='5')
-                                                label(for='5') ☆
-                                        form.comment-form
-                                            textarea.form-control#cmt-area(placeholder='Viết đánh giá của bạn...')
-                                            button.btn.btn-primary(type="submit") GỬI ĐÁNH GIÁ                                         
+                                            .respond-wrap
+                                                h3.comment-title Viết đánh giá
+                                                    span
+                                                        .rating
+                                                            input#1(type='radio' name='rating' value='1')
+                                                            label(for='1') ☆
+                                                            input#2(type='radio' name='rating' value='2')
+                                                            label(for='2') ☆
+                                                            input#3(type='radio' name='rating' value='3')
+                                                            label(for='3') ☆
+                                                            input#4(type='radio' name='rating' value='4')
+                                                            label(for='4') ☆ 
+                                                            input#5(type='radio' name='rating' value='5')
+                                                            label(for='5') ☆
+                                                    form.comment-form
+                                                        textarea.form-control#cmt-area(placeholder='Viết đánh giá của bạn...')
+                                                        button.btn.btn-primary(type="submit") GỬI ĐÁNH GIÁ                                         
         section
             .container
-                .row.text-center
-                    .col-12.col-xs-12.col-sm-12.col-md-12.col-lg-12
-                        .box.heading
-                                h2.title-relate Sản Phẩm Liên Quan
-                                hr.below
-                .row.text-center
-                    #relate-product.owl-carousel.owl-theme
-                        .product-layout.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                .section-title
+                    h2.title-relate Sản Phẩm Liên Quan
+                    hr.below
+                .row.text-center#relate-product
+                    .product-layout.col-xl-12.col-lg-12.col-md-12.col-sm-12
+                        a(href="product_detail.html").newItem
                             .thumb-card
                                 .product-image
-                                    a(href="product_detail.html")
-                                        img.img-fluid.figure(src='images/product_images/wf-white.jpg' alt)
+                                    img.img-fluid.figure(src='images/product_images/wf-white.jpg' alt)
                                 .product-content.text-center
-                                    h4.product-title
-                                        a(href='product_detail.html') Mô hình S.H.Figuarts <br>Kamen Rider Vulcan
+                                    .product-title Mô hình S.H.Figuarts <br>Kamen Rider Vulcan
                                     .content-bottom
                                         .group-rate
                                             p.price 1.500.000đ 
@@ -163,14 +159,13 @@ block content
                                                 i.fa.fa-shopping-cart.add-cart(title="Thêm vào giỏ")
                                             button.btn.btn-icon-right
                                                 i.far.fa-heart(title="Thêm vào danh sách")
-                        .product-layout.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .product-layout.col-xl-12.col-lg-12.col-md-12.col-sm-12
+                        a(href="product_detail.html").newItem
                             .thumb-card
                                 .product-image
-                                    a(href="product_detail.html")
-                                        img.img-fluid.figure(src='images/product_images/kv-white.jpg' alt)
+                                    img.img-fluid.figure(src='images/product_images/kv-white.jpg' alt)
                                 .product-content.text-center
-                                    h4.product-title
-                                        a(href='product_detail.html') Mô hình S.H.Figuarts <br>Kamen Rider KivaLa
+                                    .product-title Mô hình S.H.Figuarts <br>Kamen Rider KivaLa
                                     .content-bottom
                                         .group-rate
                                             p.price 1.300.000đ
@@ -184,15 +179,14 @@ block content
                                             button.btn.btn-icon-left
                                                 i.fa.fa-shopping-cart.add-cart
                                             button.btn.btn-icon-right
-                                                i.far.fa-heart
-                        .product-layout.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                                                i.far.fa-heart   
+                    .product-layout.col-xl-12.col-lg-12.col-md-12.col-sm-12
+                        a(href="product_detail.html").newItem
                             .thumb-card
                                 .product-image
-                                    a(href="product_detail.html")
-                                        img.img-fluid.figure(src='images/product_images/wz-white.jpg' alt)
+                                    img.img-fluid.figure(src='images/product_images/wz-white.jpg' alt)
                                 .product-content.text-center
-                                    h4.product-title
-                                        a(href='product_detail.html') Mô hình S.H.Figuarts <br>Kamen Rider Woz
+                                    .product-title Mô hình S.H.Figuarts <br>Kamen Rider Woz
                                     .content-bottom
                                         .group-rate
                                             p.price 1.200.000đ 
@@ -207,14 +201,13 @@ block content
                                                 i.fa.fa-shopping-cart.add-cart
                                             button.btn.btn-icon-right
                                                 i.far.fa-heart
-                        .product-layout.col-lg-12.col-md-12.col-sm-12.col-xs-12
+                    .product-layout.col-xl-12.col-lg-12.col-md-12.col-sm-12
+                        a(href="product_detail.html").newItem
                             .thumb-card
                                 .product-image
-                                    a(href="product_detail.html")
-                                        img.img-fluid.figure(src='images/product_images/gz-white.jpg' alt)
+                                    img.img-fluid.figure(src='images/product_images/gz-white.jpg' alt)
                                 .product-content.text-center
-                                    h4.product-title
-                                        a(href='product_detail.html') Mô hình S.H.Figuarts <br>Kamen Rider Geiz
+                                    .product-title Mô hình S.H.Figuarts <br>Kamen Rider Geiz
                                     .content-bottom
                                         .group-rate
                                             p.price 1.200.000đ

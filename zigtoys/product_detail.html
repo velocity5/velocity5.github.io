@@ -31,58 +31,8 @@
           <div class="col-12 col-sm-12 col-xs-12 col-md-6 info-part d-flex justify-content-start"><span class="quick-phone"><a class="nav-link phone-number" href="#"> <i class="fas fa-phone-alt"> (+84)1923-8564</i></a></span><span class="quick-mail"><a class="nav-link email" href="#"><i class="far fa-envelope"> support@zigtoys.com</i></a></span></div>
           <div class="col-12 col-sm-12 col-xs-12 col-md-6 user-part">
             <ul>
-              <li class="nav-item"><a class="nav-link dangnhap" href="#" data-toggle="modal" data-target="#loginPopup"> <i class="far fa-user-circle"> Đăng Nhập | Đăng Ký</i></a><a class="nav-link dangnhap hiddenMobil" href="#" data-toggle="modal" data-target="#loginPopup"> <i class="far fa-user-circle"></i></a></li>
+              <li class="nav-item"><a class="nav-link dangnhap" href="login.html"> <i class="far fa-user-circle"> Đăng Nhập | Đăng Ký</i></a><a class="nav-link dangnhap hiddenMobil" href="login.html"> <i class="far fa-user-circle"></i></a></li>
             </ul>
-            <div class="modal fade user-modal in" id="loginPopup" tabindex="-1" role="dialog">
-              <div class="modal-dialog modal-sm" role="document">
-                <div class="modal-content">
-                  <ul class="nav nav-tabs" role="tablist">
-                    <li class="nav-item active" id="loginTab"><a href="#login" role="tab" data-toggle="tab">ĐĂNG NHẬP</a></li>
-                    <li class="nav-item" id="signupTab"><a href="#signup" role="tab" data-toggle="tab">ĐĂNG KÝ</a></li>
-                  </ul>
-                  <div class="tab-content tab__user">
-                    <div class="tab-pane fade show active" id="login" role="tabpanel">
-                      <form>
-                        <div class="boxField">
-                          <input class="validate mail-login" id="inputEmail" type="email"/>
-                          <label class="label" for="up">Email của bạn</label>
-                        </div>
-                        <div class="boxField">
-                          <input class="validate pass" id="inputPassword" type="password"/>
-                          <label class="label" for="up">Mật khẩu</label><i class="far fa-eye"></i>
-                        </div>
-                        <div class="boxField check-remember">
-                          <input id="remember_me" type="checkbox"/>
-                          <label for="remember_me">Ghi nhớ đăng nhập</label>
-                        </div>
-                        <div class="boxField">
-                          <button class="btn btn-default btn-login" id="btnLogin">ĐĂNG NHẬP</button>
-                        </div><a class="forgot-pwd" href="#" data-toggle="modal" data-target="#reset" data-dismiss="modal">Quên mật khẩu?</a>
-                      </form>
-                    </div>
-                    <div class="tab-pane fade" id="signup" role="tabpanel">
-                      <form>
-                        <div class="boxField">
-                          <input class="username" id="formUsername" type="text"/>
-                          <label for="up">Tên người dùng</label>
-                        </div>
-                        <div class="boxField">
-                          <input class="validate mail-signup" id="formSignup-mail" type="email"/>
-                          <label for="up">Email của bạn</label>
-                        </div>
-                        <div class="boxField">
-                          <input class="validate pass" id="formSignup-pass" type="password"/>
-                          <label for="up">Mật khẩu</label><i class="far fa-eye"></i>
-                        </div>
-                        <div class="boxField">
-                          <button class="btn btn-default btn-signup" id="btnSignup">ĐĂNG KÝ</button>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -166,13 +116,14 @@
               </div>
             </form>
             <div class="btn-group">
-              <button class="btn-warning addcart"> <i class="fa fa-shopping-cart addToCart"> <span>Thêm Vào Giỏ</span></i></button><a class="btn-danger buynow" href="address.html">MUA NGAY</a>
+              <button class="btn-warning add-cart addCartFont"> <i class="fa fa-shopping-cart"> <span>Thêm Vào Giỏ</span></i></button>
+              <button class="btn-danger buynow">MUA NGAY</button>
             </div>
             <div class="description-tab">
               <ul class="nav nav-tabs tabs tabs-hold" role="tablist">
-                <li> <a class="active nav-item" data-toggle="tab" href="#descript" role="tab" id="descript-tab" aria-controls="descript" aria-selected="true">Mô Tả Sản Phẩm</a></li>
-                <li><a class="nav-item" data-toggle="tab" href="#detail" role="tab" id="detail-tab" aria-controls="detail" aria-selected="false">Chi Tiết Sản Phẩm</a></li>
-                <li><a class="nav-item" data-toggle="tab" href="#review" role="tab" id="review-tab" aria-controls="review" aria-selected="false">Đánh Giá</a></li>
+                <li> <a class="active nav-item" data-toggle="tab" href="#descript" role="tab" id="descript-tab" aria-controls="descript" aria-selected="true">Mô Tả Sản Phẩm
+                    <li><a class="nav-item" data-toggle="tab" href="#detail" role="tab" id="detail-tab" aria-controls="detail" aria-selected="false">Chi Tiết Sản Phẩm</a></li>
+                    <li><a class="nav-item" data-toggle="tab" href="#review" role="tab" id="review-tab" aria-controls="review" aria-selected="false">Đánh Giá</a></li></a></li>
               </ul>
               <div class="tab-content tab__detail">
                 <div class="tab-pane fade show active" id="descript" role="tabpanel" aria-labelledby="descript-tab">
@@ -209,27 +160,28 @@
                             </div>
                           </li>
                         </ul>
+                        <div class="respond-wrap">
+                          <h3 class="comment-title">Viết đánh giá<span>
+                              <div class="rating">
+                                <input id="1" type="radio" name="rating" value="1"/>
+                                <label for="1">☆</label>
+                                <input id="2" type="radio" name="rating" value="2"/>
+                                <label for="2">☆</label>
+                                <input id="3" type="radio" name="rating" value="3"/>
+                                <label for="3">☆</label>
+                                <input id="4" type="radio" name="rating" value="4"/>
+                                <label for="4">☆ </label>
+                                <input id="5" type="radio" name="rating" value="5"/>
+                                <label for="5">☆</label>
+                              </div></span>
+                            <form class="comment-form">
+                              <textarea class="form-control" id="cmt-area" placeholder="Viết đánh giá của bạn..."></textarea>
+                              <button class="btn btn-primary" type="submit">GỬI ĐÁNH GIÁ                                         </button>
+                            </form>
+                          </h3>
+                        </div>
                       </li>
                     </ul>
-                    <div class="respond-wrap">
-                      <h3 class="comment-title">Viết đánh giá</h3><span>
-                        <div class="rating">
-                          <input id="1" type="radio" name="rating" value="1"/>
-                          <label for="1">☆</label>
-                          <input id="2" type="radio" name="rating" value="2"/>
-                          <label for="2">☆</label>
-                          <input id="3" type="radio" name="rating" value="3"/>
-                          <label for="3">☆</label>
-                          <input id="4" type="radio" name="rating" value="4"/>
-                          <label for="4">☆ </label>
-                          <input id="5" type="radio" name="rating" value="5"/>
-                          <label for="5">☆</label>
-                        </div></span>
-                      <form class="comment-form">
-                        <textarea class="form-control" id="cmt-area" placeholder="Viết đánh giá của bạn..."></textarea>
-                        <button class="btn btn-primary" type="submit">GỬI ĐÁNH GIÁ                                         </button>
-                      </form>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -239,21 +191,16 @@
       </div>
       <section>
         <div class="container">
-          <div class="row text-center">
-            <div class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-12">
-              <div class="box heading">
-                <h2 class="title-relate">Sản Phẩm Liên Quan</h2>
-                <hr class="below"/>
-              </div>
-            </div>
+          <div class="section-title">
+            <h2 class="title-relate">Sản Phẩm Liên Quan</h2>
+            <hr class="below"/>
           </div>
-          <div class="row text-center">
-            <div class="owl-carousel owl-theme" id="relate-product">
-              <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="row text-center" id="relate-product">
+            <div class="product-layout col-xl-12 col-lg-12 col-md-12 col-sm-12"><a class="newItem" href="product_detail.html">
                 <div class="thumb-card">
-                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/wf-white.jpg" alt="alt"/></a></div>
+                  <div class="product-image"><img class="img-fluid figure" src="images/product_images/wf-white.jpg" alt="alt"/></div>
                   <div class="product-content text-center">
-                    <h4 class="product-title"><a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Vulcan</a></h4>
+                    <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Vulcan</div>
                     <div class="content-bottom">
                       <div class="group-rate">
                         <p class="price">1.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
@@ -264,30 +211,28 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                </div></a></div>
+            <div class="product-layout col-xl-12 col-lg-12 col-md-12 col-sm-12"><a class="newItem" href="product_detail.html">
                 <div class="thumb-card">
-                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/kv-white.jpg" alt="alt"/></a></div>
+                  <div class="product-image"><img class="img-fluid figure" src="images/product_images/kv-white.jpg" alt="alt"/></div>
                   <div class="product-content text-center">
-                    <h4 class="product-title"><a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider KivaLa</a></h4>
+                    <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider KivaLa</div>
                     <div class="content-bottom">
                       <div class="group-rate">
                         <p class="price">1.300.000đ</p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
                       </div>
                       <div class="group-btn">
                         <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart"></i></button>
-                        <button class="btn btn-icon-right"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart">  </i></button>
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                </div></a></div>
+            <div class="product-layout col-xl-12 col-lg-12 col-md-12 col-sm-12"><a class="newItem" href="product_detail.html">
                 <div class="thumb-card">
-                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/wz-white.jpg" alt="alt"/></a></div>
+                  <div class="product-image"><img class="img-fluid figure" src="images/product_images/wz-white.jpg" alt="alt"/></div>
                   <div class="product-content text-center">
-                    <h4 class="product-title"><a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Woz</a></h4>
+                    <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Woz</div>
                     <div class="content-bottom">
                       <div class="group-rate">
                         <p class="price">1.200.000đ </p>
@@ -299,13 +244,12 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="product-layout col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                </div></a></div>
+            <div class="product-layout col-xl-12 col-lg-12 col-md-12 col-sm-12"><a class="newItem" href="product_detail.html">
                 <div class="thumb-card">
-                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/gz-white.jpg" alt="alt"/></a></div>
+                  <div class="product-image"><img class="img-fluid figure" src="images/product_images/gz-white.jpg" alt="alt"/></div>
                   <div class="product-content text-center">
-                    <h4 class="product-title"><a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Geiz</a></h4>
+                    <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Geiz</div>
                     <div class="content-bottom">
                       <div class="group-rate">
                         <p class="price">1.200.000đ</p>
@@ -317,9 +261,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
+                </div></a></div>
           </div>
         </div>
       </section>

@@ -11,47 +11,8 @@ header.bg-header
       .col-12.col-sm-12.col-xs-12.col-md-6.user-part
         ul
           li.nav-item
-            a.nav-link.dangnhap(href='#' data-toggle='modal' data-target='#loginPopup') 
+            a.nav-link.dangnhap(href='login.html') 
               i.far.fa-user-circle  Đăng Nhập | Đăng Ký
-            a.nav-link.dangnhap.hiddenMobil(href='#' data-toggle='modal' data-target='#loginPopup') 
+            a.nav-link.dangnhap.hiddenMobil(href='login.html') 
               i.far.fa-user-circle
-        .modal.fade.user-modal.in#loginPopup(tabindex="-1" role="dialog")
-          .modal-dialog.modal-sm(role="document")
-            .modal-content
-              ul.nav.nav-tabs(role="tablist")
-                li#loginTab.nav-item.active
-                  a(href="#login" role="tab" data-toggle="tab") ĐĂNG NHẬP
-                li#signupTab.nav-item
-                  a(href="#signup" role="tab" data-toggle="tab") ĐĂNG KÝ
-              .tab-content.tab__user
-                .tab-pane.fade.show.active#login(role="tabpanel")
-                  form
-                    .boxField
-                      input#inputEmail.validate.mail-login(type='email')
-                      label.label(for="up") Email của bạn
-                    .boxField
-                      input#inputPassword.validate.pass(type='password')
-                      label.label(for="up") Mật khẩu
-                      i.far.fa-eye
-                    .boxField.check-remember
-                      input#remember_me(type='checkbox')
-                      label(for='remember_me') Ghi nhớ đăng nhập
-                    .boxField
-                      button.btn.btn-default.btn-login#btnLogin ĐĂNG NHẬP
-                    a.forgot-pwd(href="#" data-toggle='modal' data-target="#reset" data-dismiss="modal") Quên mật khẩu?
-                .tab-pane.fade#signup(role="tabpanel")
-                  form
-                    .boxField
-                      input#formUsername.username(type='text')
-                      label(for="up") Tên người dùng
-                    .boxField
-                      input#formSignup-mail.validate.mail-signup(type='email')
-                      label(for="up") Email của bạn
-                    .boxField
-                      input#formSignup-pass.validate.pass(type='password')
-                      label(for="up") Mật khẩu
-                      i.far.fa-eye
-                    .boxField
-                      button.btn.btn-default.btn-signup#btnSignup ĐĂNG KÝ
-
 
