@@ -3,26 +3,6 @@
         overflow-x: hidden;
     }
     /* navbar menu */
-    .bg-header {
-        background-color: rgb(234 181 67 / 0.8);
-    }
-    header ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-    }
-    header ul li {
-        display: block;
-        text-align: right;
-        float: right;
-    }
-    header .nav-link {
-        padding: 10px;
-    }
-    .info-part span a {
-        color: #fff;
-        font-size: 13px;
-    } 
    .navbar {
        font-size: 18px;
        background-color: rgb(251 197 49 / 1);
@@ -66,34 +46,21 @@
     .navbar-nav li:hover .submenu {
         display: block;
     }
-    .info {
-        margin-top: 24px;
-    }
-    .nav-item .dangnhap {
-        color: white;
-        font-size: 13px;
-    }
-    .nav-item .hiddenMobil {
-        display: none;
-    }
-    .nav-link.dangnhap:hover {
-        color: #747d8c;
-    }
     .wrap-all {
         display: flex;
-        /*margin-right: 3rem;*/
     }
-    .heart-wrapper .btn i {
-        color: #f0932b;
+    .nav-link.dangnhap:hover {
+        color: beige;
     }
-    .heart-wrapper .btn i:hover {
-        color: #e55039;
-    }
-    .heart-wrapper {
-        height: 2rem;
+    .userLogin a {
+        color: #576574;
     }
     .cart-wrapper .btn i {
         color: black;
+    }
+    .cart-icon {
+        border-left: solid 1px rgb(243 156 18 / 0.7);
+        border-radius: 0;
     }
     .cart-wrapper .btn i:hover {
         color: rgba(138, 133, 133, 0.5);
@@ -152,6 +119,9 @@
         transform: rotate(-135deg);
     }
     /* searchBar */
+    .form-search {
+        margin-right: 4%;
+    }
    .form-search .search-icon {
        color: black;
        margin-left: -2rem;
@@ -361,9 +331,6 @@
         background: orange;
         color: #fff;
     }
-    a.newItem {
-        text-decoration: none;
-    }
     .thumb-card {
         max-width: 300px;
         margin: auto;
@@ -388,13 +355,16 @@
         padding: 10px;
     }
     .product-title {
+        text-align: center;
+    }
+    .product-title a {
         font-size: 20px;
         color: #232323;
         text-transform: capitalize;
-        text-align: center;
+        text-decoration: none;
         font-family: 'Roboto', sans-serif;
     }
-    .product-title:hover {
+    .product-title a:hover {
         color: #e3b424;
     }
     .group-rate {

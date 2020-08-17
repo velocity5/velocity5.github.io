@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&amp;display=swap"/>
     <link rel="stylesheet" href="css_fontawesome/all.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css"/>
     <link rel="stylesheet" href="slick/slick.css"/>
     <link rel="stylesheet" href="slick/slick-theme.css"/>
     <link href="vendor/aos/dist/aos.css" rel="stylesheet"/>
@@ -25,23 +23,14 @@
     <link rel="stylesheet" href="css/style_blog.css"/>
   </head>
   <body>
-    <header class="bg-header">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-xs-12 col-md-6 info-part d-flex justify-content-start"><span class="quick-phone"><a class="nav-link phone-number" href="#"> <i class="fas fa-phone-alt"> (+84)1923-8564</i></a></span><span class="quick-mail"><a class="nav-link email" href="#"><i class="far fa-envelope"> support@zigtoys.com</i></a></span></div>
-          <div class="col-12 col-sm-12 col-xs-12 col-md-6 user-part">
-            <ul>
-              <li class="nav-item"><a class="nav-link dangnhap" href="login.html"> <i class="far fa-user-circle"> Đăng Nhập | Đăng Ký</i></a><a class="nav-link dangnhap hiddenMobil" href="login.html"> <i class="far fa-user-circle"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </header>
     <nav class="navbar navbar-expand-lg navbar-dark justify-content-sm-start sticky-top"><a class="navbar-brand order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo2.jpg" alt="Logo"/></a>
       <button class="navbar-toggler align-self-start" type="button">
         <div class="animatedIcon"><span></span><span></span><span></span></div>
       </button>
       <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end bg-sidebar mobileMenu" id="mobileToggle">
+        <form class="form-inline form-search my-2 my-lg-0 align-self-stretch">
+          <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
+        </form>
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
@@ -54,20 +43,17 @@
           <li class="nav-item"><a class="nav-link" href="blog.html">Zig Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
         </ul>
-        <form class="form-inline form-search my-2 my-lg-0 align-self-stretch">
-          <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
-        </form>
         <div class="wrap-all">
+          <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Ký | Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
           <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
-          <div class="heart-wrapper"><a class="btn" href="href"><i class="far fa-heart" style="font-size:24px"></i></a></div>
         </div>
       </div>
       <form class="form-inline form-searchMobile my-2 my-lg-0">
         <input class="form-input" type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
       </form>
       <div class="wrapMobile">
+        <div class="userLoginMobile"><a class="nav-link dangnhapMobile" href="login.html"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
         <div class="cartMobile"><a class="btn cart-iconMobile" href="cart.html"><span class="badge badge-pill-red badgeMobile">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
-        <div class="heartMobile"><a class="btn" href="#"><i class="far fa-heart" style="font-size:24px"></i></a></div>
       </div>
     </nav>
     <div class="backgroundOverlay"></div>
@@ -117,202 +103,214 @@
         <div class="tab-content tab__features">
           <div class="tab-pane active fade-in" id="newest">
             <div class="row newest-container">
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/01-white.jpg" alt="alt"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Zero One</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.000.000đ</p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"> </i></button>
-                        </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/01-white.jpg" alt="alt"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Zero One</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.000.000đ</p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"> </i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/wf-white.jpg" alt="alt"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Vulcan</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.000.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star">   </i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"> </i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/wf-white.jpg" alt="alt"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Vulcan</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.000.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star">   </i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"> </i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/gz-white.jpg" alt="alt"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Geiz</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.200.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/gz-white.jpg" alt="alt"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Geiz</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.200.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__secondrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/bd-white.jpg" alt="alt"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Build</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"> </i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__secondrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/bd-white.jpg" alt="alt"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Build</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"> </i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__secondrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/wz-white.jpg" alt="alt"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider Woz</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.200.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__secondrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/wz-white.jpg" alt="alt"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider Woz</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.200.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__secondrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/kv-white.jpg" alt="alt"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider KivaLa</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.300.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__secondrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/kv-white.jpg" alt="alt"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider KivaLa</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.300.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="tab-pane fade-in" id="bestseller">
             <div class="row bestseller-container">
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/ul-white.jpg" alt="Ultraman X"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Ultraman X Armor</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">5.000.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"> </i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/ul-white.jpg" alt="Ultraman X"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Ultraman X Armor</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">5.000.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"> </i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/gd-white.jpg" alt="Metal Build Gundam Astray Red Frame Kai"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô Hình Gundam <br>Astray Red Frame Kai</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">4.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"> </i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/gd-white.jpg" alt="Metal Build Gundam Astray Red Frame Kai"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô Hình Gundam <br>Astray Red Frame Kai</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">4.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"> </i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/mp-white.jpg" alt="Zord"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình robot <br>Beast Morpher Zord</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách">     </i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/mp-white.jpg" alt="Zord"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình robot <br>Beast Morpher Zord</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách">     </i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/pr-white.jpg" alt="Power Rangers"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình Power Rangers <br>Beast Morpher Gold</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.000.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/pr-white.jpg" alt="Power Rangers"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình Power Rangers <br>Beast Morpher Gold</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.000.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/w-white.jpg" alt="Kamen Rider W"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình S.H.Figuarts <br>Kamen Rider W</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">3.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/w-white.jpg" alt="Kamen Rider W"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình S.H.Figuarts <br>Kamen Rider W</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">3.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
-              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow"><a class="newItem" href="product_detail.html">
-                  <div class="thumb-card">
-                    <div class="product-image"><img class="img-fluid figure" src="images/product_images/dino-white.jpg" alt="Power Rangers"/></div>
-                    <div class="product-content">
-                      <div class="product-title">Mô hình Power Rangers <br>Dino Charge Red</div>
-                      <div class="content-bottom">
-                        <div class="group-rate">
-                          <p class="price">1.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-                        </div>
-                        <div class="group-btn">
-                          <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
-                          <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
-                        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xs-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 space__firstrow">
+                <div class="thumb-card">
+                  <div class="product-image"><a href="product_detail.html"><img class="img-fluid figure" src="images/product_images/dino-white.jpg" alt="Power Rangers"/></a></div>
+                  <div class="product-content">
+                    <div class="product-title"> <a href="product_detail.html">Mô hình Power Rangers <br>Dino Charge Red</a></div>
+                    <div class="content-bottom">
+                      <div class="group-rate">
+                        <p class="price">1.500.000đ </p><span class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                      </div>
+                      <div class="group-btn">
+                        <button class="btn btn-icon-left"><i class="fa fa-shopping-cart add-cart" title="Thêm vào giỏ"></i></button>
+                        <button class="btn btn-icon-right"><i class="far fa-heart" title="Thêm vào danh sách"></i></button>
                       </div>
                     </div>
-                  </div></a></div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -463,7 +461,6 @@
     </footer><a id="back2Top" title="Back to top" href="#"><i class="fa fa-chevron-right"></i></a>
     <script src="js/jquery-3.5.0.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js"></script>
-    <script src="owlcarousel/owl.carousel.min.js"></script>
     <script src="slick/slick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="js/listDistrictAndCommune.js"></script>

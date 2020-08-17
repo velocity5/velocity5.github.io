@@ -7,38 +7,50 @@ link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/
 link(rel="stylesheet", href="css/style_login.css")
 block content
     .container
-        .formBox
-            .buttonBox
-                #btnCover
-                button(type="button" onclick="login()").toggleBtn Đăng Nhập
-                button(type="button" onclick="signup()").toggleBtn Đăng Ký
-            form.inputGroup#login(method="get")
-                .form-group
-                    input(type="email" placeholder="Email của bạn*" required oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="200")#inputMailLogin.inputField
-                .form-group.pwd-section
-                    input#inputPassLogin.inputField(type="password" placeholder="Mật khẩu*" required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100").inputPass
-                    .showHide
-                        i.far.fa-eye.eyeConLog
-                    .rememberBox
-                        input#remember_me(type='checkbox')
-                        label(for='remember_me') Ghi nhớ đăng nhập
-                .form-group
-                    button.btn.btn-default#btnLogin ĐĂNG NHẬP
-                    .forgotBox
-                        a.forgot-pwd(href="#" data-toggle='modal' data-target="#reset" data-dismiss="modal") Quên mật khẩu?
-            form.inputGroup#signup(method="get")
-                .form-group
-                    input(type="text" placeholder="Họ tên*" required oninvalid="this.setCustomValidity('Vui lòng nhập tên của bạn.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="30")#inputName.inputField
-                .form-group
-                    input(type="email" placeholder="Email của bạn*" required oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="200")#inputMailSignup.inputField
-                .form-group.pwd-section
-                    input#inputSignupPass.inputField(type="password" placeholder="Mật khẩu*" required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu. Mật khẩu phải có từ 6-20 ký tự bao gồm ít nhất 1 chữ hoa, 1 chữ thường, 1 số và 1 ký tự đặc biệt')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100").inputPass
-                    .showHide
-                        i.far.fa-eye.eyeConSign
-                .form-group
-                    input#inputRe__SignupPass.inputField(type="password" placeholder="Xác nhận mật khẩu*" required oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu. Mật khẩu phải trùng khớp với mật khẩu bạn đã đặt.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100")
-                .form-group
-                    button.btn.btn-default#btnSignup ĐĂNG KÝ
+        .row
+            .col-12.col-lg-12.col-md-12.col-xl-12.col-sm-12
+                .formBox
+                    .buttonBox
+                        #btnCover
+                        button(type="button" onclick="login()").toggleBtn Đăng Nhập
+                        button(type="button" onclick="signup()").toggleBtn Đăng Ký
+                    form.inputGroup#login(method="get" action="index.html")
+                        .form-group
+                            input(type="email" placeholder="Email của bạn*" required oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="200")#inputMailLogin.inputField
+                        .form-group.pwd-section
+                            input#inputPassLogin.inputField(type="password" placeholder="Mật khẩu*" required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100").inputPass
+                            .showHide
+                                i.far.fa-eye.eyeConLog
+                            .rememberBox
+                                input#remember_me(type='checkbox')
+                                label(for='remember_me') Ghi nhớ đăng nhập
+                        .form-group
+                            button.btn.btn-default#btnLogin ĐĂNG NHẬP
+                            .forgotBox
+                                a.forgot-pwd(href="#" data-toggle='modal' data-target="#reset" data-dismiss="modal") Quên mật khẩu?
+                    form.inputGroup#signup(method="get")
+                        .form-group
+                            input(type="text" placeholder="Họ tên*" required oninvalid="this.setCustomValidity('Vui lòng nhập tên của bạn.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="30")#inputName.inputField
+                        .form-group
+                            input(type="email" placeholder="Email của bạn*" required oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="200")#inputMailSignup.inputField
+                        .form-group.pwd-section
+                            input#inputSignupPass.inputField(type="password" placeholder="Mật khẩu*" required oninvalid="this.setCustomValidity('Vui lòng nhập mật khẩu. Mật khẩu phải có từ 6-20 ký tự bao gồm ít nhất 1 chữ hoa, 1 chữ thường, 1 số và 1 ký tự đặc biệt')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100").inputPass
+                            .showHide
+                                i.far.fa-eye.eyeConSign
+                        .form-group
+                            input#inputRe__SignupPass.inputField(type="password" placeholder="Xác nhận mật khẩu*" required oninvalid="this.setCustomValidity('Vui lòng nhập lại mật khẩu. Mật khẩu phải trùng khớp với mật khẩu bạn đã đặt.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100")
+                        .form-group
+                            button.btn.btn-default#btnSignup ĐĂNG KÝ
+                .modal.fade#reset(tabindex='-1' role='dialog' aria-labelledby='#reset' aria-hidden='true')
+                    .modal-dialog.modal-dialog-centered(role='document')
+                        .modal-content
+                            .modal-header
+                                button.close(type='button' data-dismiss='modal' aria-label='Close')
+                                span(aria-hidden='true') ×
+                            h1.resetTitle.text-center Reset Mật Khẩu
+                            .modal-body
+                                input(type="email" placeholder="Email của bạn*" required oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="200")#inputMailReset.inputField
+                            button.btn.btn-reset(type='button') Reset Mật Khẩu
 
 script(src="js/jquery-3.5.0.js")
 script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js")

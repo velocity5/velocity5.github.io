@@ -133,6 +133,7 @@
         .navbar-toggler {
             margin-left: 90%;
             margin-top: -4rem;
+            height: 45px;
         }
         .navbar-toggler:focus {
             outline: 0;
@@ -155,6 +156,12 @@
             display: flex;
             margin-left: 75%;
             margin-top: -5rem;
+        }
+        .userLoginMobile a {
+            color: #576574;
+        }
+        .nav-link.dangnhapMobile:hover {
+            color: beige;
         }
         .form-searchMobile input {
             padding: 0 1rem;
@@ -182,12 +189,6 @@
         }
         .form-searchMobile .searchLink:hover {
             color: darkorange;
-        }
-        .heartMobile .btn i {
-            color: #f0932b;
-        }
-        .heartMobile .btn i:hover {
-            color: #e55039;
         }
         /* homepage */
         .info-part {
@@ -605,7 +606,10 @@
         .check-remember {
             margin-left: 2.5rem;
         }
-        .form-searchMobile, .wrapMobile {
+        .navbar-brand img {
+            max-width: 150px;
+        }
+        .wrapMobile {
             display: none;
         }
         .product-container .cart-sum {
@@ -637,9 +641,6 @@
         }
     }
     @media (max-width: 450px) {
-        .info-part .quick-mail {
-            display: none;
-        }
         .blog-image img {
             height: auto;
         }
@@ -965,17 +966,6 @@
         .content p {
             padding: 0;
             letter-spacing: 0;
-        }
-        .nav-item .dangnhap {
-            display: none;
-        }
-        .nav-item .dangnhap.hiddenMobil {
-            display: block;
-            font-size: 20px;
-        }
-        header .nav-link {
-            padding: 5px;
-            margin-top: 5px;
         }
         .section-title h2 {
             font-size: 25px;

@@ -7,6 +7,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
       span
       span
   .collapse.navbar-collapse.p-3.p-lg-0.mt-lg-0.d-flex.flex-column.flex-lg-row.flex-xl-row.justify-content-lg-end.bg-sidebar.mobileMenu#mobileToggle
+    form.form-inline.form-search.my-2.my-lg-0.align-self-stretch
+        input.form-input(type='text' placeholder='Tìm kiếm')
+        a.searchLink(href="#")
+          i.fas.fa-search.search-icon
     ul.navbar-nav
       li.nav-item
         a.nav-link(href='index.html')
@@ -26,29 +30,25 @@ nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
         a.nav-link(href='blog.html') Zig Blog
       li.nav-item
         a.nav-link(href='contact.html') Liên Hệ
-    form.form-inline.form-search.my-2.my-lg-0.align-self-stretch
-        input.form-input(type='text' placeholder='Tìm kiếm')
-        a.searchLink(href="#")
-          i.fas.fa-search.search-icon
     .wrap-all
+      .userLogin
+          a.nav-link.dangnhap(href='login.html' title="Đăng Ký | Đăng Nhập") 
+            i.far.fa-user-circle(style='font-size:24px')
       .cart-wrapper
         a.btn.cart-icon(href="cart.html")
           span.badge.badge-pill-red 0
           i.fa.fa-shopping-cart(style='font-size:24px')
-      .heart-wrapper
-        a.btn(href)
-          i.far.fa-heart(style='font-size:24px')
 
   form.form-inline.form-searchMobile.my-2.my-lg-0
     input.form-input(type='text' placeholder='Tìm kiếm')
     a.searchLink(href="#")
       i.fas.fa-search.search-icon
   .wrapMobile
+    .userLoginMobile
+        a.nav-link.dangnhapMobile(href='login.html') 
+          i.far.fa-user-circle(style='font-size:24px')
     .cartMobile
       a.btn.cart-iconMobile(href="cart.html")
         span.badge.badge-pill-red.badgeMobile 0
         i.fa.fa-shopping-cart(style='font-size:24px')
-    .heartMobile
-      a.btn(href="#")
-        i.far.fa-heart(style='font-size:24px')
 .backgroundOverlay
