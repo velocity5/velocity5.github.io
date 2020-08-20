@@ -7,45 +7,30 @@ body {
     font-family: 'Roboto' ,sans-serif;
 }
 /* tab login signup*/
-.formBox {
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    padding: 5px;
-    background: beige;
-    overflow: hidden;
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
-.buttonBox {
-    width: 200px;
-    margin: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #947e401f;
-    border-radius: 30px;
+.wrap-all {
+    display: block;
 }
-.toggleBtn {
-    padding: 10px 10px;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-    color: #2C3A47;
+.wrap-form {
+    max-width: 300px;
 }
-.toggleBtn:focus {
-    outline: none;
+.nav-pills .nav-link {
+    color: #000;
 }
-#btnCover {
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 100px;
-    height: 100%;
+.nav-pills .nav-link.active, 
+.nav-pills .show>.nav-link {
     background: #fd9644;
-    border-radius: 30px;
-    transition: all .3s ease;
+}
+#pillsTab {
+    transform: translate(50px);
 }
 .inputGroup {
-    top: 120px;
+    top: 30px;
     position: absolute;
     width: 280px;
     transition: all .4s ease;
@@ -108,10 +93,4 @@ body {
 a.forgot-pwd {
     text-decoration: none;
     font-size: 13px;
-}
-#login {
-    left: 50px;
-}
-#signup {
-    left: 450px;
 }
