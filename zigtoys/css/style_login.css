@@ -13,8 +13,11 @@ body {
     justify-content: center;
     padding: 15px;
 }
-.wrap-all {
+.box {
     display: block;
+}
+.logo-img {
+    margin: auto auto 10px 10px;
 }
 .wrap-form {
     max-width: 300px;
