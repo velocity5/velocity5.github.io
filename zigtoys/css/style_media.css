@@ -261,28 +261,11 @@
             color: beige;
         }
         /* homepage */
-        .info-part {
-            font-size: 14px;
-            transition: all 0.3s ease-in-out;
-        }
-        .info {
-            margin-top: 16px;
-        }
-        .info li:nth-child(2) {
-            margin-top: 30px;
-        }
-        .user-part {
-            margin-bottom: 10px;
-            transition: all 0.3s ease-in-out;
-        }
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 34%;
         }
         .product .product-title {
             font-size: 18px;
-        }
-        .benefit {
-            margin-bottom: 40px;
         }
         .title-content h3 {
             font-size: 16px;
@@ -391,15 +374,6 @@
         } 
         .resize .navbar-brand img {
             margin-top: -2rem;
-        }
-        .user-part {
-            margin-top: -2.4rem;
-        }
-        .info li:first-child {
-            margin-left: 10px;
-        }
-        .info li:nth-child(2) {
-            margin-top: 0px;
         }
         .navbar-brand img {
             max-width: 200px;
@@ -547,12 +521,10 @@
             margin-left: 0;
         }
     }
-   
     @media (max-width: 590px) {
         .breadcrumb-contain .breadcrumb {
             max-width: 33rem;
         }
-
     }
     @media (max-width: 575.98px) { 
         .title-col {
@@ -648,9 +620,6 @@
         .breadcrumb-contain .breadcrumb {
             max-width: 28rem;
         }
-        .md-form.check-remember {
-            transition: all 0.3s ease-in-out;
-        }
     }
     @media (max-width: 502px) {
         #detail-tab, #descript-tab, #review-tab {
@@ -661,20 +630,8 @@
         .brand{
             display: none;
         }
-        .username, .mail-signup, .mail-pass, .md-form.mb-3 #inputBirthday {
-            margin-left: 2.5rem;
-        }
-        .box-contain .fa-eye {
-            margin-left: 19rem;
-        }
         .error {
             margin-left: 3rem;
-        }
-        .radio-group {
-            margin-left: 7rem;
-        }
-        .check-remember {
-            margin-left: 2.5rem;
         }
         .navbar-brand img {
             max-width: 150px;
@@ -771,24 +728,6 @@
         .navbar-brand img {
             max-width: 120px;
         }
-        /* modal signup login v.v */
-        .username, .mail-signup, .mail-pass, .md-form.mb-3 #inputBirthday
-        {
-            margin-left: 1rem;
-            transition: all 0.3s ease-in-out;
-        }
-        .box-contain .fa-eye {
-            margin-left: 18rem;
-            transition: all 0.3s ease-in-out;
-        }
-        .radio-group {
-            margin-left: 5rem;
-            transition: all 0.3s ease-in-out;
-        }
-        .md-form.check-remember {
-            margin-left: 1rem;
-            transition: all 0.3s ease-in-out;
-        }
         .text-right {
             margin-left: -40%;
         }
@@ -803,11 +742,6 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 20px 4px;
-        }
-    }
-    @media (max-width: 438px) {
-        .info-part  .quick-mail{
-            display: none;
         }
     }
     @media (max-width: 430px) {
@@ -907,32 +841,12 @@
         }
     }
     @media (max-width: 400px) {
-        .user-part {
-            margin-right: 25px;
-        }
-        .info-part {
-            margin-right: 20%;
-        }
         .navbar-brand img {
             margin-left: 27px;
         }
         .searchBox {
             left: 20%;
             transition: all 0.3s ease-in-out;
-        }
-        .username, .mail-signup, .mail-pass, 
-        .md-form.mb-3 #inputBirthday {
-            margin-left: 0;
-            width: 100%;
-        }
-        .modal-footer .btn-login, .modal-footer .btn-reset {
-            width: 100%;
-        }
-        .radio-group {
-            margin-left: 2rem;
-        }
-        .box-contain .fa-eye {
-            margin-left: 16rem;
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 20px 13px;
@@ -942,35 +856,18 @@
             padding: 0.5rem 0.5rem 0.5rem 0.1rem;
         }        
     }
-    @media (max-width: 388px) {
-        .box-contain .fa-eye {
-            margin-left: 15rem;
-        }
-    }
     @media(max-width: 383px) {
         .product-container table tr th {
             padding: 0.5rem 0.5rem 0.5rem 0rem;
         }  
     }
     @media (max-width: 375px) {
-        .user-part {
-            margin-right: 50px;
-        }
-        .info li:first-child {
-            margin-right: 20px;
-        }
         .container-fluid .side-post .side-title a {
             margin-top: -27%;
         }
         #detail-tab, #descript-tab, #review-tab {
             padding-right: 37px;
             padding-top: 26px;
-        }
-        .owl-nav .owl-prev > i, .owl-nav .owl-next > i {
-            font-size: 40px;
-        }
-        #relate-product .owl-nav .owl-prev, #relate-product .owl-nav .owl-next {
-            opacity: 1;
         }
         button.btn-search {
             right: 36%;
