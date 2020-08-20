@@ -3,7 +3,14 @@ $('.navbar-toggler, .backgroundOverlay').click(function () {
 	$('.mobileMenu, .backgroundOverlay').toggleClass('slide');
 	$('.animatedIcon, .backgroundOverlay').toggleClass('openIcon');
 });
-
+/* search menu */
+$('.search-icon__Mobil').click(function() {
+	$('.searchBar__Mobil').toggleClass('active');
+	if ($('.searchBar__Mobil').hasClass('active')) {
+		$('.searchBar__Mobil input').focus();
+	}
+	else $('.searchBar__Mobil input').blur();
+})
 /* active class navmenu */
 $(document).ready(function () {
 	let url = window.location.href;

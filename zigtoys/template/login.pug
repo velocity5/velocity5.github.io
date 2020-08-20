@@ -26,7 +26,7 @@ html(lang="en")
                     .tab-content#pillsTabContent
                         .tab-pane.fade.show.active#pillsLoginTab(role="tabpanel")
                             .col-sm-12
-                                form.inputGroup#login(method="post" action="index.html")
+                                form.inputGroup#login(method="get" action="index.html")
                                     .form-group
                                         input(type="email" placeholder="Email của bạn*" required oninvalid="this.setCustomValidity('Vui lòng nhập địa chỉ email hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="200")#inputMailLogin.inputField
                                     .form-group.pwd-section
