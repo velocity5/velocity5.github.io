@@ -99,27 +99,6 @@
     padding: 10px 20px;
 }
 /* side bar */
-.group-search {
-    display: flex;
-    position: relative;
-}
-.btn-search {
-    position: absolute;
-    right: 35px;
-    height: 38px;
-    display: block;
-    border: none;
-    background: #f0f0f0;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-}
-.searchField {
-    display: block;
-    border-width: 0;
-    box-shadow: 0px 15px 45px -9px rgba(0,0,0,.2);
-    padding: 16px 20px 16px 20px;
-    transition: .3s all ease-in-out;
-}
 .sameSeries-title {
     font-size: 20px;
 }
@@ -141,6 +120,7 @@
 }
 .side-post {
     margin-top: 30px;
+    margin-bottom: 50px;
 }
 .side-post h2 {
     margin-left: 10px;

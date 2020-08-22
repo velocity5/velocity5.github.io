@@ -88,9 +88,6 @@
         .description-tab .tabs-hold {
             border-radius: 0;
         }
-        button.btn-search {
-            right: 0;
-        }
         /* checkout */
         .addDetail {
             text-align: justify;
@@ -364,9 +361,6 @@
         .description-tab .tabs-hold {
             border-radius: 0;
         }
-        button.btn-search {
-            right: 68%;
-        }
     }
     @media (max-width: 767px) {
         .brand-slick .brand-item img {
@@ -430,11 +424,8 @@
             padding: 5px;
         }
         /* blog */
-        .img-big .img-title {
-            margin-bottom: 4rem;
-        }
         .img-small .img-side-title h4 {
-            font-size: 14px;
+            font-size: 10px;
             margin-bottom: 0;
         }
         /* blog detail */
@@ -541,6 +532,7 @@
         }
         .img-small .img-side-title h4 {
             font-size: 20px;
+            margin-bottom: inherit;
         }
         .container-fluid .side-post h2 {
             margin-left: 0;
@@ -687,9 +679,6 @@
         .slick-arrow {
             display: none!important;
         }
-        button.btn-search {
-            right: 47%;
-        }
         .navbar-toggler {
             margin-left: 85%;
             margin-top: -4rem;
@@ -750,9 +739,6 @@
         }
     }
     @media (max-width: 425px) {
-        button.btn-search {
-            right: 44%;
-        }
         #detail-tab, #descript-tab, #review-tab {
             padding: 19px 13.9px;
         }
@@ -812,9 +798,6 @@
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 10%;
         }
-        button.btn-search {
-            right: 42%;
-        }
         .atms .atm {
             margin-right: 2rem;
         }
@@ -869,9 +852,6 @@
             padding-right: 37px;
             padding-top: 26px;
         }
-        button.btn-search {
-            right: 36%;
-        }
         .payment-list span.radio-fake {
             left: 20%;
         }
@@ -896,9 +876,6 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 26px 22.5px 21px;
-        }
-        button.btn-search {
-            right: 33%;
         }
         /* checkout */
         .payment-list span.radio-fake {
@@ -944,9 +921,6 @@
         #detail-tab, #descript-tab, #review-tab {
             padding: 26px 15.8px 20px;
         }
-        button.btn-search {
-            right: 24%;
-        }
         .title-relate {
             font-size: 25px;
         }
@@ -975,9 +949,6 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 25px 9px 20px;
-        }
-        button.btn-search {
-            right: 12%;
         }
         .mobileMenu {
             width: 200px;
