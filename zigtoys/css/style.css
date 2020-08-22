@@ -10,7 +10,10 @@
        transition: all 0.4s linear;
    }
     .navbar-brand img {
-        max-width: 150px;
+        max-width: 100px;
+    }
+    .navbar-nav {
+        margin-right: 6%;
     }
     .navbar-nav .nav-item {
         padding: 10px 20px;
@@ -30,6 +33,8 @@
     .submenu {
         position: absolute;
         background-color: #EAB543;
+        margin-left: -20px;
+        margin-top: 12px;
         z-index: 1;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
@@ -40,8 +45,8 @@
         display: block;
         padding: 14px 16px;
         text-decoration: none;
-        color: white;
-        text-align: center;
+        color: #f2eeee;
+        text-align: justify;
     }
     .navbar-nav li:hover .submenu {
         display: block;
@@ -119,12 +124,9 @@
         transform: rotate(-135deg);
     }
     /* searchBar */
-    .form-search {
-        margin-right: 4%;
-    }
    .form-search .search-icon {
        color: black;
-       margin-left: -2rem;
+       margin-left: -10%;
    }
     .form-search input {
         background: transparent;
@@ -424,12 +426,21 @@
         cursor: pointer;
     }
     /* brand section */
-    .brand-slick .brand-item img {
+    .brand-slick .brand-item {
         max-width: 50%;
+    }
+    .brand-slick .brand-item img {
+        opacity: 0.4;
+        transition: opacity 0.3s ease-in;
+    }
+    .brand-slick .brand-item img:hover {
+        opacity: 1;
+    }
+    .brand-slick .brand-item img:focus {
+        outline: none;
     }
     .brand {
         padding: 20px 0;
-        background-color: beige;
     }
     /* blog */
    .blog-image img {
@@ -480,7 +491,7 @@
         cursor: pointer;
         transform: rotate(270deg);
         position: fixed;
-        bottom: 80px;
+        bottom: 40px;
         right: 10px;
         background-color: rgba(253, 203, 110,0.6);
         color: #fff;

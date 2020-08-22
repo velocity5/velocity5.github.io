@@ -82,11 +82,12 @@ $(document).ready(function () {
 		dots: false,
 		autoplay: true,
 		infinite: true,
-	  	speed: 400,
+	  	speed: 300,
 		cssEase: "linear",
 		arrows: false,
-		slidesToShow: 3,
-		slidesToScroll: 3,
+		slidesToShow: 4,
+		centerMode: true,
+		slidesToScroll: 1,
 		responsive: [
 			{
 				breakpoint: 991,
@@ -105,7 +106,7 @@ $(document).ready(function () {
 				}
 			},
 			{
-				breakpoint: 480,
+				breakpoint: 575,
 				settings: {
 				  slidesToShow: 1,
 				  slidesToScroll: 1

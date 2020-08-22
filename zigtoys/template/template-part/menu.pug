@@ -6,16 +6,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
       span
       span
       span
-  .collapse.navbar-collapse.p-3.p-lg-0.mt-lg-0.d-flex.flex-column.flex-lg-row.flex-xl-row.justify-content-lg-end.bg-sidebar.mobileMenu#mobileToggle
-    form.form-inline.form-search.my-2.my-lg-0.align-self-stretch
-        input.form-input(type='text' placeholder='Tìm kiếm')
-        a.searchLink(href="#")
-          i.fas.fa-search.search-icon
-    ul.navbar-nav
+  .collapse.navbar-collapse.p-3.p-lg-0.mt-lg-0.d-flex.flex-column.flex-lg-row.flex-xl-row.bg-sidebar.mobileMenu#mobileToggle
+    ul.navbar-nav.justify-content-lg-start
       li.nav-item
         a.nav-link(href='index.html')
           | Trang Chủ
-          span.sr-only (current)
+          span.sr-only
       li.nav-item
         a.nav-link(href='about.html') Về ZIGToys
       li.nav-item
@@ -30,7 +26,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
         a.nav-link(href='blog.html') Zig Blog
       li.nav-item
         a.nav-link(href='contact.html') Liên Hệ
-    .wrap-all
+    form.form-inline.form-search.my-2.my-lg-0
+      .searchBar
+        input(type="text" placeholder="Tìm kiếm")
+        a.searchLink(href="#")
+          i.fas.fa-search.search-icon
+    .wrap-all.justify-content-lg-end
       .userLogin
           a.nav-link.dangnhap(href='login.html' title="Đăng Ký | Đăng Nhập") 
             i.far.fa-user-circle(style='font-size:24px')
