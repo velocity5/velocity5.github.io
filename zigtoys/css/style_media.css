@@ -46,11 +46,7 @@
             padding: 5px;
         }
     }
-    @media (max-width: 1170px) {
-        .navbar-nav .nav-item {
-            padding: 10px 15px;
-        }
-    }
+    
     @media (max-width: 1039px) {
         .collapse .navbar-nav {
             font-size: 13px;
@@ -65,7 +61,6 @@
     @media (max-width: 1024px) {
         .content p {
             padding: 10px;
-            letter-spacing: 2px;
         }
         .blog-image img {
             height: auto;
@@ -94,25 +89,21 @@
         }
     }
     @media (max-width: 991.98px) { 
-        .bg-sidebar {
-            background-color: #EAB543;
-        }
+        /* menu */
         .mobileMenu {
             position: fixed;
-            top: 0;
+            top: 46px;
             bottom: 0;
             left: 0;
-            width: 300px;
+            width: 250px;
+            background: #fd9644;
             margin: auto;
-            transition: all ease 0.25s;
             transform: translateX(-100%);
+            transition: all 0.3s ease;
         }
         .mobileMenu.slide {
-            transform: translateX(0%);
+            transform: translateX(0);
         }
-        .mobileMenu .navbar-nav {
-            overflow-y: auto;
-          }
         .backgroundOverlay {
             position: fixed;
             top: 0;
@@ -120,142 +111,18 @@
             left: 0;
             right: 0;
             margin: auto;
-            background-color: rgba(0, 0, 0, 0.5);
             display: none;
+            background-color: rgba(0,0,0,0.5);
         }
         .backgroundOverlay.slide {
             display: block;
-            z-index: 100;
+            z-index: 1;
         }
-        .navbar-toggler {
-            margin-left: 90%;
-            margin-top: -3rem;
-            height: 45px;
+        .form-search, .wrap-all {
+            order: 2;
         }
-        .navbar-toggler:focus {
-            outline: 0;
-        }
-        .collapse .navbar-nav {
-            font-size: 20px;
-        }
-        .navbar-nav .nav-item {
-            margin-right: 8rem;
-        }
-        .navbar-nav li:hover, .navbar-nav li.active {
-            width: 100%;
-        }
-        .form-search input, .wrap-all, .searchLink {
-            display: none;
-        }
-        /* searchbar menu */
-        .form-searchMobile {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .searchBar__Mobil {
-            position: absolute;
-            width: 40px;
-            height: 40px;
-            transform: translate(-50%, -50%);
-            top: 55%;
-            left: 70%;
-            border-radius: 3px;
-            background: rgb(251 197 49 / 1);
-            transition: width 0.5s;
-            z-index: 99;
-            overflow: hidden;
-        }
-        .searchBar__Mobil.active {
-            width: 300px;
-        }
-        .search-icon__Mobil {
-            width: 30px;
-            height: 30px;
-            background: transparent;
-            position: absolute;
-            cursor: pointer;
-            top: 6px;
-            right: 5px;
-            transition: 0.5s;
-            border-radius: 3px;
-        }
-        .search-icon__Mobil::before {
-            content: "";
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: transparent;
-            border: 2px solid #000;
-            border-radius: 50%;
-            transition: 0.5s;
-        }
-        .search-icon__Mobil::after {
-            content: "";
-            position: absolute;
-            top: 14px;
-            left: 20px;
-            height: 15px;
-            background: transparent;
-            border-left: 2px solid #000;
-            border-radius: 0;
-            transform: rotate(-45deg);
-            transition: 0.5s;
-        }
-        .searchBar__Mobil input {
-            position: absolute;
-            top: 5px;
-            left: 10px;
-            width: calc(100% - 50px);
-            padding: 5px;
-            height: 30px;
-            border: none;
-            outline: 0;
-            background: rgb(251 197 49 / 1);
-        }
-        .searchBar__Mobil input:focus, .searchBar__Mobil input:active {
-            border-bottom: 2px solid #d35400;
-            background: #fff;
-        }
-        .searchBar__Mobil.active .search-icon__Mobil {
-            background: #d35400;
-        }
-        .searchBar__Mobil.active .search-icon__Mobil::before {
-            content: "";
-            position: absolute;
-            width: 18px;
-            height: 18px;
-            background: transparent;
-            border: none;
-            border-right: 2px solid #fff;
-            border-radius: 0;
-            transition: 0.5s;
-            transform: rotate(45deg);
-        }
-        .searchBar__Mobil.active .search-icon__Mobil::after {
-            content: "";
-            position: absolute;
-            top: 12px;
-            left: 0px;
-            width: 18px;
-            height: 18px;
-            background: transparent;
-            border: none;
-            border-right: 2px solid #fff;
-            border-radius: 0;
-            transition: 0.5s;
-            transform: rotate(-45deg);
-        }
-        .wrapMobile {
-            display: flex;
-            margin-left: 75%;
-            margin-top: -5rem;
-        }
-        .userLoginMobile a {
-            color: #576574;
-        }
-        .nav-link.dangnhapMobile:hover {
-            color: beige;
+        .form-search {
+            margin-left: 20%;
         }
         /* homepage */
         .subscribe .btn-outline-secondary.btn-subscribe {
@@ -369,10 +236,7 @@
         .resize .navbar-brand img {
             margin-top: -2rem;
         }
-        .navbar-brand img {
-            max-width: 200px;
-            margin-top: 0;  
-        }
+      
         .product .product-title {
             font-size: 18px;
         }
@@ -473,15 +337,6 @@
         span.customStreet {
             padding: 2px;
             text-align: justify;
-        }
-    }
-    @media (max-width: 754px) {
-        .form-searchMobile {
-            margin-left: 35%;
-        }
-        .wrapMobile {
-            margin-bottom: 5px;
-            margin-left: 73%;
         }
     }
     @media (max-width: 745px) {
@@ -593,12 +448,7 @@
             padding: 20px 10px;
         }
     }
-    @media (max-width: 520px) {
-        .searchBox {
-            left: 30%;
-            transition: all 0.3s ease-in-out;
-        }
-    }
+  
     @media (max-width: 512px) {
         .resize .navbar-brand img {
             max-width: 130px;
@@ -625,12 +475,7 @@
         .error {
             margin-left: 3rem;
         }
-        .navbar-brand img {
-            max-width: 150px;
-        }
-        .wrapMobile {
-            display: none;
-        }
+       
         .product-container .cart-sum {
             display: none;
         } 
@@ -660,6 +505,7 @@
         }
     }
     @media (max-width: 450px) {
+     
         .blog-image img {
             height: auto;
         }
@@ -679,25 +525,6 @@
         .slick-arrow {
             display: none!important;
         }
-        .navbar-toggler {
-            margin-left: 85%;
-            margin-top: -4rem;
-        }
-        .wrapMobile {
-            display: flex;
-            align-items: center;
-            margin-left: 0;
-            margin-right: 15%;
-        }
-        .form-search input, .searchLink {
-            display: block;
-        }
-        .form-search input {
-            margin-left: 12px;
-        }
-        .searchBar__Mobil {
-            display: none;
-        }
     }
     @media (max-width: 449px) {
         .caption-content h4, .caption-content h2 {
@@ -714,9 +541,7 @@
         }
     }
     @media (max-width: 448px) {
-        .navbar-brand img {
-            max-width: 120px;
-        }
+       
         .text-right {
             margin-left: -40%;
         }
@@ -764,31 +589,7 @@
             border-radius: 0;
             width: auto;
         }
-        .mobileMenu {
-            width: auto;
-        }
-        .collapse .navbar-nav {
-            font-size: unset;
-        }
-        .navbar-toggler {
-            margin-left: 85%;
-            margin-top: -3rem;
-        }
-        .form-search {
-            margin-right: 0;
-        }
-        .form-search input {
-            display: flex;
-            align-self: flex-start;
-            margin-left: 0;
-        }
-        .form-searchMobile {
-            display: none;
-        }
-        .wrapMobile {
-            margin-left: 50%;
-            padding-top: 10%;
-        }
+      
         .caption .caption-content {
             padding-top: 0;
         }
@@ -824,13 +625,7 @@
         }
     }
     @media (max-width: 400px) {
-        .navbar-brand img {
-            margin-left: 27px;
-        }
-        .searchBox {
-            left: 20%;
-            transition: all 0.3s ease-in-out;
-        }
+       
         #detail-tab, #descript-tab, #review-tab {
             padding: 20px 13px;
             font-size: 10px;
@@ -857,20 +652,7 @@
         }
     }
     @media (max-width: 360px) {
-        .navbar-toggler {
-            margin-left: 80%;
-            margin-top: -3.5rem;
-        }
-        .navbar-brand img {
-            margin-left: auto;
-        }
-        .wrapMobile {
-            display: none;
-        }
-        .wrap-all {
-            display: flex;
-            margin-right: 48%;
-        }
+        
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-top: 0;
         }
@@ -886,11 +668,6 @@
         }
     }
     @media (max-width: 320px) {
-        /* menu icon part */
-        .wrapMobile {
-            margin-left: 40%;
-        }
-        /* end menu icon */
         .box-contain .fa-eye {
             margin-left: 13rem;
         }
@@ -949,24 +726,6 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 25px 9px 20px;
-        }
-        .mobileMenu {
-            width: 200px;
-        }
-        .navbar-nav .nav-item {
-            margin-right: 3rem;
-        }
-        .wrapMobile {
-            display: none;
-        }
-        .wrap-all {
-            display: flex;
-            margin-right: 28%;
-        }
-        .form-search input {
-            padding: 5px;
-            margin-left: -10px;
-            width: 100%;
         }
         /* checkout */
         .payment-list span.radio-fake {

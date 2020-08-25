@@ -1,27 +1,18 @@
-nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
-  a.navbar-brand.order-lg-0.ml-lg-0.ml-2(href='index.html')
-    img(src="images/icon/logo2.jpg", alt="Logo")
-  button.navbar-toggler.align-self-start(type='button')
-    .animatedIcon
-      span
-      span
-      span
-  .collapse.navbar-collapse.p-3.p-lg-0.mt-lg-0.d-flex.flex-column.flex-lg-row.flex-xl-row.bg-sidebar.mobileMenu#mobileToggle
-    ul.navbar-nav.justify-content-lg-start
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.justify-content-sm-start.sticky-top.bg-menu
+  a.navbar-brand.order-1.order-lg-0.ml-lg-0.ml-2(href='index.html')
+    img(src="images/icon/logo.jpg", alt="Logo")
+  button.navbar-toggler.align-self-start(type='button' data-toggle='collapse' data-target='#mobileToggle' aria-controls='mobileToggle' aria-expanded='false' aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse.d-flex.flex-column.flex-lg-row.flex-xl-row.justify-content-lg-end.p-3.p-lg-0.mt-5.mt-lg-0.mobileMenu#mobileToggle
+    ul.navbar-nav.align-self-stretch.mr-auto
       li.nav-item
         a.nav-link(href='index.html')
-          | Trang Chủ
+          | Trang chủ 
           span.sr-only
       li.nav-item
         a.nav-link(href='about.html') Về ZIGToys
-      li.nav-item
-        a.nav-link(href="#") Sản Phẩm 
-          i.fas.fa-caret-down
-        ul.submenu
-          li
-            a.submenu-item(href='products.html') Mô Hình Figures
-          li
-            a.submenu-item(href='#') Phụ Kiện Liên Quan
+      li.nav-item.dropdown
+        a.nav-link(href='products.html') Sản Phẩm
       li.nav-item
         a.nav-link(href='blog.html') Zig Blog
       li.nav-item
@@ -31,26 +22,12 @@ nav.navbar.navbar-expand-lg.navbar-dark.justify-content-sm-start.sticky-top
         input(type="text" placeholder="Tìm kiếm")
         a.searchLink(href="#")
           i.fas.fa-search.search-icon
-    .wrap-all.justify-content-lg-end
-      .userLogin
-          a.nav-link.dangnhap(href='login.html' title="Đăng Ký | Đăng Nhập") 
-            i.far.fa-user-circle(style='font-size:24px')
-      .cart-wrapper
-        a.btn.cart-icon(href="cart.html")
-          span.badge.badge-pill-red 0
-          i.fa.fa-shopping-cart(style='font-size:24px')
-
-  form.form-inline.form-searchMobile.my-2.my-lg-0
-    .searchBar__Mobil
-      input(type="text" placeholder="Tìm kiếm")
-      a.searchLinkMobil(href="#")
-        .search-icon__Mobil
-  .wrapMobile
-    .userLoginMobile
-        a.nav-link.dangnhapMobile(href='login.html') 
-          i.far.fa-user-circle(style='font-size:24px')
-    .cartMobile
-      a.btn.cart-iconMobile(href="cart.html")
-        span.badge.badge-pill-red.badgeMobile 0
+  .wrap-all.justify-content-lg-end
+    .userLogin
+      a.nav-link.dangnhap(href='login.html' title="Đăng Nhập") 
+        i.far.fa-user-circle(style='font-size:24px')
+    .cart-wrapper
+      a.btn.cart-icon(href="cart.html")
+        span.badge.badge-pill-red 0
         i.fa.fa-shopping-cart(style='font-size:24px')
 .backgroundOverlay

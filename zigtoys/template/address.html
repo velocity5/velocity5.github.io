@@ -23,13 +23,22 @@
     <link rel="stylesheet" href="css/style_blog.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start sticky-top bg-menu"><a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo.jpg" alt="Logo"/></a>
-      <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="mobileToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-5 mt-lg-0 mobileMenu" id="mobileToggle">
-        <ul class="navbar-nav align-self-stretch mr-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only"></span></a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-sm-start sticky-top"><a class="navbar-brand order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo2.jpg" alt="Logo"/></a>
+      <button class="navbar-toggler align-self-start" type="button">
+        <div class="animatedIcon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row bg-sidebar mobileMenu" id="mobileToggle">
+        <div class="userLogin__Sidebar"><a class="nav-link dangnhap" href="login.html" title="Đăng Ký | Đăng Nhập"> <i class="far fa-user-circle" style="font-size:20px"> </i>
+            <h4>Đăng Nhập</h4></a></div>
+        <ul class="navbar-nav justify-content-lg-start">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only"></span></a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
-          <li class="nav-item dropdown"><a class="nav-link" href="products.html">Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sản Phẩm <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu">
+              <li><a class="submenu-item" href="products.html">Mô Hình Figures</a></li>
+              <li><a class="submenu-item" href="#">Phụ Kiện Liên Quan</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Zig Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
         </ul>
@@ -38,10 +47,18 @@
             <input type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
           </div>
         </form>
+        <div class="wrap-all justify-content-lg-end">
+          <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Ký | Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
+          <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+        </div>
       </div>
-      <div class="wrap-all justify-content-lg-end">
-        <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
-        <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+      <div class="wrapMobileContain">
+        <form class="form-inline form-searchMobile my-2 my-lg-0">
+          <div class="searchBar__Mobil">
+            <input type="text" placeholder="Tìm kiếm"/><a class="searchLinkMobil" href="#"><i class="fas fa-search search-icon"></i></a>
+          </div>
+        </form>
+        <div class="wrapMobile"><a class="btn cart-iconMobile" href="cart.html"><span class="badge badge-pill-red badgeMobile">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
       </div>
     </nav>
     <div class="backgroundOverlay"></div>
@@ -62,20 +79,20 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto">
-            <form class="formContain" method="get" action="checkout.html">
+            <form class="formContain">
               <div class="form-group fieldContain">
                 <label for="">Họ tên</label><span style="color:red;font-style:normal">*</span>
-                <input class="form-control inputName" type="text" placeholder="Nhập Họ tên" required="required" oninvalid="this.setCustomValidity('Vui lòng nhập tên của bạn.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100"/>
+                <input class="form-control inputName" type="text" placeholder="Nhập Họ tên" required="required"/>
               </div>
               <div class="form-group fieldContain">
                 <label for="">Số điện thoại</label><span style="color:red;font-style:normal">*</span>
-                <input class="form-control inputNumb" type="number" placeholder="Nhập Số điện thoại" required="required" oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none"/>
+                <input class="form-control inputNumb" type="number" placeholder="Nhập Số điện thoại" required="required"/>
               </div>
               <div class="form-group selectContain fieldContain">
                 <div class="labelForm">
                   <label for="">Tỉnh/Thành phố</label><span style="color:red;font-style:normal">*</span>
                 </div>
-                <select class="selectCity selectBox" id="input-user-city-province" name="city-province" required="required">
+                <select class="selectCity selectBox" id="input-user-city-province" name="city-province">
                   <option class="defaultOption" value="0"> Chọn Tỉnh/Thành Phố</option>
                   <option value="01"> Thành phố Hà Nội</option>
                   <option value="79"> Thành phố Hồ Chí Minh</option>
@@ -146,7 +163,7 @@
                 <div class="labelForm">
                   <label for="">Quận/Huyện</label><span style="color:red;font-style:normal">*</span>
                 </div>
-                <select class="selectDst selectBox" id="input-user-district" name="district" required="required">
+                <select class="selectDst selectBox" id="input-user-district" name="district">
                   <option value="0"> Chọn Quận/Huyện</option>
                 </select>
               </div>
@@ -154,7 +171,7 @@
                 <div class="labelForm">
                   <label for="">Phường/Xã</label><span style="color:red;font-style:normal">*</span>
                 </div>
-                <select class="selectCommune selectBox" id="input-user-commune" name="commune" required="required">
+                <select class="selectCommune selectBox" id="input-user-commune" name="commune">
                   <option value="0"> Chọn Phường/Xã</option>
                 </select>
               </div>
@@ -162,11 +179,8 @@
                 <div class="labelForm">
                   <label for="">Địa chỉ</label><span style="color:red;font-style:normal">*</span>
                 </div>
-                <textarea class="note form-control" name="content" placeholder="Ví dụ: Số nhà X, ngõ Y..." required="required"></textarea>
-              </div>
-              <div class="form-group">
-                <button class="btn btn-default processBtn">Giao đến địa chỉ này </button>
-              </div>
+                <textarea class="note form-control" name="content" placeholder="Ví dụ: Số nhà X, ngõ Y..."></textarea>
+              </div><a class="processBtn" href="checkout.html" type="button">Giao đến địa chỉ này </a>
             </form>
           </div>
         </div>

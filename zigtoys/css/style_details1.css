@@ -100,6 +100,9 @@
     font-weight: 400;
     font-family: 'Roboto' , sans-serif;
   }
+  .btn-group .add-cart {
+    background: #fd9644;
+  }
   .addCartFont span {
     font-weight: 400;
     font-family: 'Roboto' , sans-serif;

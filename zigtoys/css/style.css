@@ -3,53 +3,21 @@
         overflow-x: hidden;
     }
     /* navbar menu */
-   .navbar {
-       font-size: 18px;
-       background-color: rgb(251 197 49 / 1);
-       padding-bottom: 10px;
-       transition: all 0.4s linear;
-   }
-    .navbar-brand img {
-        max-width: 100px;
+    .bg-menu {
+        background: #fd9644!important;
     }
-    .navbar-nav {
-        margin-right: 6%;
+    li.nav-item {
+        padding: 10px 16px;     
     }
-    .navbar-nav .nav-item {
-        padding: 10px 20px;
+    li.nav-item.active, li.nav-item:hover {
+        background: rgba(211, 84, 0,0.3);
+        color: #cdc5c5;
     }
-    .navbar-nav li {
-        border-bottom: 2px solid transparent;
-        line-height: 30px;
-        overflow: hidden;
-    }
-    .navbar-nav li:hover, .navbar-nav li.active, .subactive {
-        border-color: crimson;
-        background-color: rgba(211, 84, 0,0.3);
-    }
-    .navbar-nav li ul {
-        display: none;
-    }
-    .submenu {
-        position: absolute;
-        background-color: #EAB543;
-        margin-left: -20px;
-        margin-top: 12px;
-        z-index: 1;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-    .submenu li:hover {
-        background-color: rgba(211, 84, 0,0.3);
-    }
-    .submenu li a {
-        display: block;
-        padding: 14px 16px;
-        text-decoration: none;
-        color: #f2eeee;
-        text-align: justify;
-    }
-    .navbar-nav li:hover .submenu {
-        display: block;
+    li.nav-item a {
+        font-family: 'Roboto' ,sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
     }
     .wrap-all {
         display: flex;
@@ -77,52 +45,7 @@
         float: right;
         margin-left: -5px;
     }
-    .form-searchMobile, .wrapMobile {
-        display: none;
-    }
-    /* animate hamburger */
-    .animatedIcon {
-        width: 30px;
-        height: 20px;
-        position: relative;
-        margin: 0;
-        transform: rotate(0deg);
-        transition: .5s ease-in-out;
-        cursor: pointer;
-    }
-    .animatedIcon span {
-        display: block;
-        position: absolute;
-        height: 4px;
-        width: 100%;
-        border-radius: 3px;
-        opacity: 1;
-        left: 0;
-        transform: rotate(0deg);
-        transition: .25s ease-in-out;
-        background-color: beige;
-    }
-    .animatedIcon span:nth-child(1) {
-        top: 0;
-    }
-    .animatedIcon span:nth-child(2) {
-        top: 10px;
-    }
-    .animatedIcon span:nth-child(3) {
-        top: 20px;
-    }
-    .animatedIcon.openIcon span:nth-child(1) {
-        top: 11px;
-        transform: rotate(135deg);
-    }
-    .animatedIcon.openIcon span:nth-child(2) {
-        opacity: 0;
-        left: -60px;
-    }
-    .animatedIcon.openIcon span:nth-child(3) {
-        top: 11px;
-        transform: rotate(-135deg);
-    }
+   
     /* searchBar */
    .form-search .search-icon {
        color: black;
@@ -286,12 +209,12 @@
         padding-top: 20px;
     }
     .view-more .btn-more, .view-all .btn-all {
-        color: #ffc107;
+        color: #fd9644;
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
         background-color: transparent;
-        border: 1px solid #ffc107;
+        border: 1px solid #fd9644;
         padding: 13px 20px;
         height: 48px;
         font-size: 14px;
@@ -301,7 +224,7 @@
         transition: 0.3s;
     }
     .btn-more:hover, .btn-all:hover {
-        background-color: #ffc107;
+        background-color: #fd9644;
         color: white;
     }
     .view-all {
@@ -330,7 +253,7 @@
         border: none;
     }
     a.nav__link.active {
-        background: orange;
+        background: #fd9644;
         color: #fff;
     }
     .thumb-card {
@@ -395,16 +318,13 @@
         justify-content: flex-end;
     }
     .group-btn .btn-icon-left:hover {
-        color: orange;
+        color: #fd9644;
     }
     .thumb-card .group-btn .btn-icon-right {
         margin-left: 10px;
     }
-    .thumb-card .group-btn .btn-icon-right:hover {
-        color: orange;
-    }
     .thumb-card .group-btn .btn-icon-right:hover > i {
-        color: orange;
+        color: #fd9644;
     }
     .btn-icon-right i {
         color: #ccc;
@@ -426,18 +346,14 @@
         cursor: pointer;
     }
     /* brand section */
-    .brand-slick .brand-item {
-        max-width: 50%;
-    }
     .brand-slick .brand-item img {
+        width: 100%;
+        padding: 0 50px;
         opacity: 0.4;
         transition: opacity 0.3s ease-in;
     }
     .brand-slick .brand-item img:hover {
         opacity: 1;
-    }
-    .brand-slick .brand-item img:focus {
-        outline: none;
     }
     .brand {
         padding: 20px 0;
@@ -554,7 +470,7 @@
         font-family: 'Roboto' ,sans-serif;
         font-weight: 500;
         color: white;
-        background: #ffb727;
+        background: #fd9644;
         height: 48px;
         width: 130px;
     }

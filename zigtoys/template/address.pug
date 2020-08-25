@@ -14,20 +14,20 @@ block content
         .container
             .row
                 .col-xl-5.col-lg-6.col-md-8.col-sm-10.mx-auto
-                    form.formContain
+                    form.formContain(method="get" action="checkout.html")
                         .form-group.fieldContain
                             label(for='') Họ tên
                             span(style="color:red;font-style:normal") *
-                            input.form-control.inputName(type='text' placeholder='Nhập Họ tên' required)
+                            input.form-control.inputName(type='text' placeholder='Nhập Họ tên' required oninvalid="this.setCustomValidity('Vui lòng nhập tên của bạn.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100")
                         .form-group.fieldContain
                             label(for='') Số điện thoại
                             span(style="color:red;font-style:normal") *
-                            input.form-control.inputNumb(type='number' placeholder='Nhập Số điện thoại' required)
+                            input.form-control.inputNumb(type='number' placeholder='Nhập Số điện thoại' required oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none")
                         .form-group.selectContain.fieldContain
                             .labelForm
                                 label(for='') Tỉnh/Thành phố
                                 span(style="color:red;font-style:normal") *
-                            select#input-user-city-province(name='city-province').selectCity.selectBox
+                            select#input-user-city-province(name='city-province' required).selectCity.selectBox
                                 option(value='0').defaultOption  Chọn Tỉnh/Thành Phố
                                 option(value='01')  Thành phố Hà Nội
                                 option(value='79')  Thành phố Hồ Chí Minh
@@ -96,20 +96,21 @@ block content
                             .labelForm
                                 label(for="") Quận/Huyện
                                 span(style="color:red;font-style:normal") *
-                            select#input-user-district(name='district').selectDst.selectBox
+                            select#input-user-district(name='district' required).selectDst.selectBox
                                 option(value='0')  Chọn Quận/Huyện
                         .form-group.selectContain.fieldContain
                             .labelForm
                                 label(for="") Phường/Xã
                                 span(style="color:red;font-style:normal") *
-                            select#input-user-commune(name='commune').selectCommune.selectBox
+                            select#input-user-commune(name='commune' required).selectCommune.selectBox
                                 option(value='0')  Chọn Phường/Xã
                         .form-group.fieldContain
                             .labelForm
                                 label(for="") Địa chỉ
                                 span(style="color:red;font-style:normal") *
-                            textarea.note.form-control(name="content", placeholder="Ví dụ: Số nhà X, ngõ Y...")
-                        a.processBtn(href="checkout.html", type="button") Giao đến địa chỉ này 
+                            textarea.note.form-control(name="content", placeholder="Ví dụ: Số nhà X, ngõ Y..." required)
+                        .form-group
+                            button.btn.btn-default.processBtn Giao đến địa chỉ này 
 
                     
                     

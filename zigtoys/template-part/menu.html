@@ -1,18 +1,11 @@
 
-<nav class="navbar navbar-expand-lg navbar-dark justify-content-sm-start sticky-top"><a class="navbar-brand order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo2.jpg" alt="Logo"/></a>
-  <button class="navbar-toggler align-self-start" type="button">
-    <div class="animatedIcon"><span></span><span></span><span></span></div>
-  </button>
-  <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row bg-sidebar mobileMenu" id="mobileToggle">
-    <ul class="navbar-nav justify-content-lg-start">
-      <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only"></span></a></li>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start sticky-top bg-menu"><a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo.jpg" alt="Logo"/></a>
+  <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="mobileToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-5 mt-lg-0 mobileMenu" id="mobileToggle">
+    <ul class="navbar-nav align-self-stretch mr-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only"></span></a></li>
       <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
-      <li class="nav-item"><a class="nav-link" href="#">Sản Phẩm <i class="fas fa-caret-down"></i></a>
-        <ul class="submenu">
-          <li><a class="submenu-item" href="products.html">Mô Hình Figures</a></li>
-          <li><a class="submenu-item" href="#">Phụ Kiện Liên Quan</a></li>
-        </ul>
-      </li>
+      <li class="nav-item dropdown"><a class="nav-link" href="products.html">Sản Phẩm</a></li>
       <li class="nav-item"><a class="nav-link" href="blog.html">Zig Blog</a></li>
       <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
     </ul>
@@ -21,20 +14,10 @@
         <input type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
       </div>
     </form>
-    <div class="wrap-all justify-content-lg-end">
-      <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Ký | Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
-      <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
-    </div>
   </div>
-  <form class="form-inline form-searchMobile my-2 my-lg-0">
-    <div class="searchBar__Mobil">
-      <input type="text" placeholder="Tìm kiếm"/><a class="searchLinkMobil" href="#">
-        <div class="search-icon__Mobil"></div></a>
-    </div>
-  </form>
-  <div class="wrapMobile">
-    <div class="userLoginMobile"><a class="nav-link dangnhapMobile" href="login.html"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
-    <div class="cartMobile"><a class="btn cart-iconMobile" href="cart.html"><span class="badge badge-pill-red badgeMobile">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+  <div class="wrap-all justify-content-lg-end">
+    <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
+    <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
   </div>
 </nav>
 <div class="backgroundOverlay"></div>

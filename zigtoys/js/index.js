@@ -3,14 +3,7 @@ $('.navbar-toggler, .backgroundOverlay').click(function () {
 	$('.mobileMenu, .backgroundOverlay').toggleClass('slide');
 	$('.animatedIcon, .backgroundOverlay').toggleClass('openIcon');
 });
-/* search menu */
-$('.search-icon__Mobil').click(function() {
-	$('.searchBar__Mobil').toggleClass('active');
-	if ($('.searchBar__Mobil').hasClass('active')) {
-		$('.searchBar__Mobil input').focus();
-	}
-	else $('.searchBar__Mobil input').blur();
-})
+
 /* active class navmenu */
 $(document).ready(function () {
 	let url = window.location.href;
@@ -23,13 +16,7 @@ $(document).ready(function () {
 	$('.navbar-nav li').each(function () {
 		let href = $(this).find('a').attr("href");
 		if (url == href) {
-			let parentClass = $(this).parent('ul').attr('class');
-			if (parentClass == '.submenu') {
-				$(this).addClass('subactive');
-				$(this).parents('.navbar-nav li').addClass('active');
-			} else {
-				$(this).addClass("active");
-			}
+			$(this).addClass("active");
 		}
 	})
 })
@@ -51,31 +38,6 @@ $(document).ready(function () {
 	});
 
 });
-// validate address form
-$(document).ready(function() {
-	$('.processBtn').click(function() {
-		$('.warning').hide();
-		let hasWarning = false;
-		let customName = $(".inputName").val();
-		let customNumb = $(".inputNumb").val();
-		let customCity = $(".selectCity").val();
-		let customDst = $(".selectDst").val();
-		let customCommune = $(".selectCommune").val();
-		if (customName == '' || customNumb == '' || customCity == '' || customDst == '' || customCommune == '') {
-			$(".inputName").after(`<span class="warning" style='color:red;background:none'> Vui lòng nhập Họ tên</span>`);
-			$(".inputNumb").after(`<span class="warning" style='color:red;background:none'> Vui lòng nhập Số điện thoại<span>`);
-			$(".selectCity").after(`<span class="warning" style='color:red;background:none'> Vui lòng chọn Thành phố<span>`);
-			$(".selectDst").after(`<span class="warning" style='color:red;background:none'> Vui lòng chọn Quận/Huyện<span>`);
-			$(".selectCommune").after(`<span class="warning" style='color:red;background:none'> Vui lòng chọn Phường/Xã<span>`);
-			$(".note").after(`<span class="warning" style='color:red;background:none'> Vui lòng nhập Địa chỉ cụ thể</span>`);
-			hasWarning = true;
-			$(".inputName").focus();
-		}
-		if(hasWarning == true ) {
-			return false;
-		}
-	});
-})
 // slick carousel brand and relate product
 $(document).ready(function () {
 	$(".brand-slick").slick({
@@ -86,7 +48,6 @@ $(document).ready(function () {
 		cssEase: "linear",
 		arrows: false,
 		slidesToShow: 4,
-		centerMode: true,
 		slidesToScroll: 1,
 		responsive: [
 			{
@@ -477,24 +438,17 @@ function selectDistrict() {
 	}
 	$('#input-user-commune').html(outputCommune);
 }
-/* live chat */
-/*var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5f1b88f35e51983a11f5c2f7/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})(); */
-/* background responsive */
 /* redirect button */
-$(".checkOut").click(function () {
-	location.href = "checkout.html";
+$(document).ready(function() {
+	$("#signupNow").click(function () {
+		location.href = "login.html";
+	});
+	$("#orderNow").click(function () {
+		location.href = "products.html";
+	});
+	$(".buynow").click(function () {
+		location.href = "address.html";
+	});
 });
-$("#orderNow").click(function () {
-	location.href = "products.html"; 
-});
-$(".buynow").click(function() {
-	location.href = "address.html";
-})
+
+

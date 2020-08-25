@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Thanh toán</title>
+    <title>Giỏ hàng</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&amp;display=swap"/>
     <link rel="stylesheet" href="css_fontawesome/all.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
@@ -23,13 +23,22 @@
     <link rel="stylesheet" href="css/style_blog.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start sticky-top bg-menu"><a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo.jpg" alt="Logo"/></a>
-      <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="mobileToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-5 mt-lg-0 mobileMenu" id="mobileToggle">
-        <ul class="navbar-nav align-self-stretch mr-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only"></span></a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark justify-content-sm-start sticky-top"><a class="navbar-brand order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo2.jpg" alt="Logo"/></a>
+      <button class="navbar-toggler align-self-start" type="button">
+        <div class="animatedIcon"><span></span><span></span><span></span></div>
+      </button>
+      <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row bg-sidebar mobileMenu" id="mobileToggle">
+        <div class="userLogin__Sidebar"><a class="nav-link dangnhap" href="login.html" title="Đăng Ký | Đăng Nhập"> <i class="far fa-user-circle" style="font-size:20px"> </i>
+            <h4>Đăng Nhập</h4></a></div>
+        <ul class="navbar-nav justify-content-lg-start">
+          <li class="nav-item"><a class="nav-link" href="index.html">Trang Chủ<span class="sr-only"></span></a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
-          <li class="nav-item dropdown"><a class="nav-link" href="products.html">Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Sản Phẩm <i class="fas fa-caret-down"></i></a>
+            <ul class="submenu">
+              <li><a class="submenu-item" href="products.html">Mô Hình Figures</a></li>
+              <li><a class="submenu-item" href="#">Phụ Kiện Liên Quan</a></li>
+            </ul>
+          </li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Zig Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
         </ul>
@@ -38,22 +47,29 @@
             <input type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
           </div>
         </form>
+        <div class="wrap-all justify-content-lg-end">
+          <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Ký | Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
+          <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+        </div>
       </div>
-      <div class="wrap-all justify-content-lg-end">
-        <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
-        <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+      <div class="wrapMobileContain">
+        <form class="form-inline form-searchMobile my-2 my-lg-0">
+          <div class="searchBar__Mobil">
+            <input type="text" placeholder="Tìm kiếm"/><a class="searchLinkMobil" href="#"><i class="fas fa-search search-icon"></i></a>
+          </div>
+        </form>
+        <div class="wrapMobile"><a class="btn cart-iconMobile" href="cart.html"><span class="badge badge-pill-red badgeMobile">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
       </div>
     </nav>
     <div class="backgroundOverlay"></div>
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xs-12 col-sm-12 col-md-12 progressBarTotal">
-            <ul class="progressbar">
-              <li class="complete">Đăng nhập</li>
-              <li class="complete">Địa chỉ giao hàng</li>
-              <li class="active">Thanh toán</li>
-            </ul>
+          <div class="col-12 col-xs-12 col-sm-12 col-md-12 breadcrumb-contain">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a class="black-text" href="index.html">Trang chủ</a></li>
+              <li class="breadcrumb-item active">Giỏ hàng</li>
+            </ol>
           </div>
         </div>
       </div>
@@ -61,56 +77,65 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 paymentContain text-center">
-            <h3 class="payementTitle">Chọn hình thức thanh toán:</h3>
-            <div class="paymentWrap">
-              <ul class="payment-list">
-                <li>
-                  <input class="radio-fake" type="radio" name="payment-method" value="cod" id="cod" checked="checked"/>
-                  <label class="radio" for="cod">Thanh toán tiền mặt</label>
-                </li>
-                <li>
-                  <input class="radio-fake" type="radio" name="payment-method" value="transfer" id="transfer"/>
-                  <label class="radio" for="transfer">Thanh toán chuyển khoản</label>
-                  <div class="atms">
-                    <div class="atm"><img src="images/brand_images/VTB.jpg" alt="Vietinbank"/></div>
-                    <div class="atm"><img src="images/brand_images/VCB.jpg" alt="Vietcombank"/></div>
+          <div class="col-12 col-sm-12">
+            <div class="product-container">
+              <table id="cart-table">
+                <tr>
+                  <th></th>
+                  <th class="cart-name">Tên Sản Phẩm</th>
+                  <th class="cart-price">Đơn Giá</th>
+                  <th class="cart-quanty">Số Lượng</th>
+                  <th class="cart-sum">Tổng Giá</th>
+                  <th class="cart-del"> </th>
+                </tr>
+                <tr class="cart-row">
+                  <td>
+                    <div class="cart-img-product"><img src="images/product_images/01-Figure.jpg" alt="alt"/></div>
+                  </td>
+                  <td class="cart-name"> <a href="product_detail.html">S.H.Figuart<br /> Kamen Rider Zero One</a></td>
+                  <td class="cart-price">1000000</td>
+                  <td class="product-qty">
+                    <div class="cart-qty">
+                      <button class="qty-minus"><i class="fas fa-minus"></i></button>
+                      <input class="numberInCart" type="text" value="1"/>
+                      <button class="qty-plus"><i class="fas fa-plus"></i></button>
+                    </div>
+                  </td>
+                  <td class="cart-sum"> </td>
+                  <td>
+                    <button class="delItem"><i class="far fa-trash-alt"></i></button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="billCart container">
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-xs-12">
+                  <div class="couponBox">
+                    <p class="boldText">Mã Khuyến Mãi (nếu có)</p>
+                    <div class="inputCoupon">
+                      <div class="mt-3">
+                        <div class="md-form md-outline mb-0">
+                          <input class="form-control font-weight-light" type="text" placeholder="Mời nhập mã" id="discount-code"/>
+                          <button class="applyCoupon" type="submit">ÁP DỤNG</button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </li>
-                <li>
-                  <input class="radio-fake" type="radio" name="payment-method" value="digiwallet" id="digiwallet"/>
-                  <label class="radio" for="digiwallet">Thanh toán qua ví điện tử</label>
-                  <div class="digis">
-                    <div class="digi"><img src="images/brand_images/momo.jpg" alt="MoMo"/></div>
-                    <div class="digi"><img src="images/brand_images/zalo.png" alt="ZaloPay"/></div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-xs-12">
+                  <div class="previewCost">
+                    <p class="titlePreview">Thành Tiền</p>
+                    <div class="bill-detail"><span>Tạm Tính</span><span></span></div>
+                    <div class="discount"><span>Giảm giá<span class="discount-rate"></span></span>
+                      <p>0</p>
+                    </div>
+                    <p class="previewSum"> <span>Tổng cộng: </span><span></span></p>
+                    <button class="checkOut" type="submit">TIẾN HÀNH ĐẶT HÀNG</button>
                   </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-12 col-xs-12 col-sm-12 col-md-6 reviewContain text-center">
-            <div class="reviewAdd">
-              <div class="addTitle"><span>Địa chỉ giao hàng</span><a href="address.html">Sửa</a></div>
-              <div class="addDetail"><span class="customName">Nguyễn Văn A</span><span class="customStreet">Số 314, Lương Thế Vinh, Nguyễn Trãi, Thanh Xuân, Hà Nội</span><span class="customPhone">Điện thoại: 0339087465</span></div>
-            </div>
-            <div class="reviewProduct">
-              <div class="productTitle"><span>Đơn hàng</span><a href="#">Sửa</a></div>
-              <div class="productIncart">
-                <div class="infoSum"><strong class="qtyNum">x1</strong><span> S.H.Figuarts Kamen Rider Zero One-Rising Hopper</span></div>
-                <div class="priceSum">1.000.000đ</div>
-              </div>
-              <div class="priceSum">
-                <div class="feeInclude">
-                  <div class="shippingFee">Phí vận chuyển</div>
-                  <div class="valueInner">Miễn phí</div>
-                </div>
-                <div class="total">
-                  <div class="name">Thành tiền: </div>
-                  <div class="valueTotal">1.000.000đ</div>
                 </div>
               </div>
             </div>
-            <button class="processCheck" type="button" onclick="location.href='success.html'">THANH TOÁN</button>
           </div>
         </div>
       </div>
