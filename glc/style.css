@@ -4,7 +4,6 @@
     padding: 0;
     font-family: 'Roboto', sans-serif;
 }
-
 .container {
     max-width: 1140px;
     margin-left: auto;
@@ -36,6 +35,9 @@
 }
 .banner__img {
     width: 100%;
+}
+nav .active {
+    color: #218c74;
 }
 /*------- product ---------*/
 .product__title {
@@ -112,4 +114,43 @@ footer .policy a:focus, footer .policy a:hover {
 }
 .social-link a:hover {
     color: #95a5a6;
+}
+/*---------- contact ----------*/
+.contact-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info {
+    display: block;
+    margin-top: 30px;
+    font-weight: normal;
+    color: #000;
+    font-weight: 300;
+}
+.contact-item h1 {
+    color: #218c74;
+    margin-bottom: 10px;
+}
+.contact-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;    
+}
+.contact-item a:hover {
+    color: #95a5a6;
+}
+.contact-item {
+    padding: 12px;
+}
+/*---------- about -----------*/
+section.about {
+    text-align: center;
+    padding: 10px 10px;
+}
+.about-content {
+    text-align: justify;
+    padding: 20px 20px;
+    margin: 10px;
+    line-height: 2;
 }
