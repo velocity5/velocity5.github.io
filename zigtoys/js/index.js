@@ -3,7 +3,6 @@ $('.navbar-toggler, .backgroundOverlay').click(function () {
 	$('.mobileMenu, .backgroundOverlay').toggleClass('slide');
 	$('.animatedIcon, .backgroundOverlay').toggleClass('openIcon');
 });
-
 /* active class navmenu */
 $(document).ready(function () {
 	let url = window.location.href;
@@ -173,7 +172,6 @@ function onLoadCartNumber() {
 	let productNumber = localStorage.getItem('cartNumber');
 	if (productNumber) {
 		document.querySelector(".cart-icon span").textContent = productNumber;
-		document.querySelector(".cart-iconMobile span").textContent = productNumber;
 	}
 }
 function cartNumber(product) {
@@ -182,11 +180,9 @@ function cartNumber(product) {
 	if (productNumber) {
 		localStorage.setItem('cartNumber', productNumber + 1);
 		document.querySelector(".cart-icon span").textContent = productNumber + 1;
-		document.querySelector(".cart-iconMobile span").textContent = productNumber + 1;
 	} else {
 		localStorage.setItem('cartNumber', 1);
 		document.querySelector(".cart-icon span").textContent = 1;
-		document.querySelector(".cart-iconMobile span").textContent = 1;
 	}
 	setItems(product);
 }
@@ -344,7 +340,7 @@ function updateCartTotal() {
 	total = sum - discount;
 	$('.bill-detail span:last-child').text(sum.toLocaleString('vi'));
 	$('.bill-detail span:last-child').text(discount.toLocaleString('vi'));
-	$('.previewSum span:last-child').text(total.toLocaleString('vi'));
+	$('.previewSum span').text(total.toLocaleString('vi'));
 }
 /* update price */
 $('td.cart-price').each(function () {
@@ -358,7 +354,7 @@ $('td.cart-price').each(function () {
 	$(this).text(numb);
 	$(this).siblings('.cart-sum').text(cartSum);
 	$('.bill-detail span:last-child').text(sum.toLocaleString('vi'));
-	$('.previewSum span:last-child').text(total.toLocaleString('vi'));
+	$('.previewSum span').text(total.toLocaleString('vi'));
 });
 /* update cart sum */
 function updateCartSum(currentItem, currentQty) {
@@ -367,12 +363,12 @@ function updateCartSum(currentItem, currentQty) {
 	$(currentItem).parents('.product-qty').siblings('.cart-sum').text(cartSum);
 }
 /* apply coupon */
-$('.applyCoupon').on('click', () => {
+/*$('.applyCoupon').on('click', () => {
 	discountRate = $(this).prev('input').val();
 	$('.discount span.discount-rate').text(discountRate + '%');
 	$('.discount p:last-child').text(discount.toLocaleString('vi'));
 	updateCartTotal();
-})
+}) */
 /* end apply coupon */
 $(function () {
 	AOS.init();
@@ -438,6 +434,52 @@ function selectDistrict() {
 	}
 	$('#input-user-commune').html(outputCommune);
 }
+/* validate form option */
+$(document).ready(function () {
+	$('.processBtn').click(function() {
+		$(".error").hide();
+		let hasError = false;
+		let nameVal = $(".inputName").val();
+		let numbVal = $(".inputNumb").val();
+		let numbReg = /(09|01[2|6|8|9])+([0-9]{8})\b/;
+		let selectCity = $(".selectCity").val();
+		let selectDst = $(".selectDst").val();
+		let selectCommune = $(".selectCommune").val();
+		let note = $(".note").val();
+		if (nameVal == '' || numbVal == '' || selectCity == '' || selectDst == '' || selectCommune == '' || note == '') {
+			$(".inputName").after(`<div class="error">
+			Vui lòng nhập họ tên.
+			</div>`)
+			$(".inputNumb").after(`<div class="error">
+			Vui lòng nhập số điện thoại hợp lệ.
+			</div>`)
+			$(".dropCity").after(`<div class="error">
+			Vui lòng chọn Tỉnh/Thành Phố.
+			</div>`)
+			$(".dropDst").after(`<div class="error">
+			Vui lòng chọn Quận/Huyện.
+			</div>`)
+			$(".dropCommune").after(`<div class="error">
+			Vui lòng chọn Phường/Xã.
+			</div>`)
+			$(".note").after(`<div class="error">
+			Vui lòng nhập địa chỉ chi tiết.
+			</div>`)
+			hasError = true;
+			$(".inputName").focus();
+		}
+		else if (!numbReg.test(numbVal)) {
+			$(".inputNumb").after(`<div class="error">
+			Vui lòng nhập số điện thoại hợp lệ.
+			</div>`)
+			hasError = true;
+			$(".inputNumb").focus();
+		}
+		if(hasError == true)  return false;
+	})
+});
+
+
 /* redirect button */
 $(document).ready(function() {
 	$("#signupNow").click(function () {

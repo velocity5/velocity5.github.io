@@ -172,8 +172,8 @@ h6.product-section-title {
     position: fixed;
     top: 0;
     left: 0;
-    width: 20rem;
-    padding: 5rem 3rem;
+    width: 250px;
+    padding: 10px 30px;
     z-index: 1100;
     background: white;
     height: 100vh;
@@ -250,7 +250,7 @@ h4.product-page-title {
     content: "";
     top: 0;
     left: 0;
-    background-color: #EEB31D;
+    background-color: #fd9644;
     border-radius: 20px;
     transform: scale(0);
     transition: all 0.2s;

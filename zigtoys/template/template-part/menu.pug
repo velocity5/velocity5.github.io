@@ -1,9 +1,13 @@
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.justify-content-sm-start.sticky-top.bg-menu
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.justify-content-sm-start.bg-menu
   a.navbar-brand.order-1.order-lg-0.ml-lg-0.ml-2(href='index.html')
     img(src="images/icon/logo.jpg", alt="Logo")
   button.navbar-toggler.align-self-start(type='button' data-toggle='collapse' data-target='#mobileToggle' aria-controls='mobileToggle' aria-expanded='false' aria-label='Toggle navigation')
     span.navbar-toggler-icon
   .collapse.navbar-collapse.d-flex.flex-column.flex-lg-row.flex-xl-row.justify-content-lg-end.p-3.p-lg-0.mt-5.mt-lg-0.mobileMenu#mobileToggle
+    .userLogin__Mobile
+      a.nav-link.dangnhap(href='login.html' title="Đăng Nhập") 
+        i.far.fa-user-circle(style='font-size:24px') 
+        h4 Đăng Nhập
     ul.navbar-nav.align-self-stretch.mr-auto
       li.nav-item
         a.nav-link(href='index.html')
@@ -11,7 +15,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.justify-content-sm-start.sticky-
           span.sr-only
       li.nav-item
         a.nav-link(href='about.html') Về ZIGToys
-      li.nav-item.dropdown
+      li.nav-item
         a.nav-link(href='products.html') Sản Phẩm
       li.nav-item
         a.nav-link(href='blog.html') Zig Blog
@@ -22,12 +26,26 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.justify-content-sm-start.sticky-
         input(type="text" placeholder="Tìm kiếm")
         a.searchLink(href="#")
           i.fas.fa-search.search-icon
-  .wrap-all.justify-content-lg-end
-    .userLogin
-      a.nav-link.dangnhap(href='login.html' title="Đăng Nhập") 
-        i.far.fa-user-circle(style='font-size:24px')
-    .cart-wrapper
-      a.btn.cart-icon(href="cart.html")
-        span.badge.badge-pill-red 0
-        i.fa.fa-shopping-cart(style='font-size:24px')
+    .wrap-all.justify-content-lg-end
+      .userLogin
+        a.nav-link.dangnhap(href='login.html' title="Đăng Nhập") 
+          i.far.fa-user-circle(style='font-size:24px')
+      .cart-wrapper
+        a.btn.cart-icon(href="cart.html")
+          span.badge.badge-pill-red 0
+          i.fa.fa-shopping-cart(style='font-size:24px')
+  .mobileComponent
+    .navbar-brand__Mobile
+      a.navbar-brand__Mobile.order-lg-0.ml-lg-0.ml-2(href='index.html')
+        img(src="images/icon/logo.jpg", alt="Logo")
+    .wrap-all__Mobile
+      .cart-wrapper__Mobile
+        a.btn.cart-icon(href="cart.html")
+          span.badge.badge-pill-red 0
+          i.fa.fa-shopping-cart(style='font-size:24px')
+    form.form-inline.form-search__Mobile.my-2.my-lg-0
+      .searchBar__Mobile
+        input(type="text" placeholder="Tìm kiếm sản phẩm...")
+        a.searchLink__Mobile(href="#")
+          i.fas.fa-search.search-icon
 .backgroundOverlay

@@ -61,14 +61,6 @@
     padding: 5px 10px;
     color: #737780;
 }
-.selectContain::after {
-    content: "\f078";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 13px;
-    margin-left: calc(100% - 6%);
-    margin-top: -24px;
-}
 .fieldContain input:focus, .fieldContain select:focus,
 .fieldContain .note:focus {
     border-color: rgba(255 165 0 / 0.8);
@@ -78,10 +70,31 @@
     display: flex;
     flex-direction: column;
 }
+.dropArrow {
+    position: absolute;
+    left: calc(100% - 35px);
+    font-size: 13px;
+    color: grey;
+}
+
+.dropCity {
+    top: calc(100% - 66%);
+}
+.dropDst {
+    top: calc(100% - 53%);
+}
+.dropCommune {
+    top: calc(100% - 40%);
+}
 .note {
     background: #fff;
     border-radius: 3px;
     padding: 5px 10px;
+}
+.error {
+    color: crimson;
+    font-size: 13px;
+    margin-left: 10px;
 }
 .processBtn {
     font-family: 'Roboto', sans-serif;

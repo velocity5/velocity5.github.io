@@ -80,10 +80,6 @@ p.titlePreview, p.previewSum span, td.cart-price {
     font-family: "Roboto" ,sans-serif;
 }
  
-.bill-detail span:first-child {
-    font-family: 'Roboto' ,sans-serif;
-    font-weight: 500;
-}
 .checkOut {
     height: 48px;
     width: 100%;
@@ -92,37 +88,44 @@ p.titlePreview, p.previewSum span, td.cart-price {
     font-weight: 700;
     font-family: 'Roboto' ,sans-serif;
     border-radius: 6px;
-    background-color: #FFB800;
+    background-color: #fd9644;
     color: white;
 }
 .checkOut:hover {
     background-color: rgb(248 185 26 / 0.8);
 }
-#discount-code {
-    width: 200px;
-}
 .discount-rate {
     margin-left: 1rem;
 }
-.discount, .bill-detail, .previewSum {
+.titleFee, .previewSum {
+    font-family: 'Roboto' ,sans-serif;
     display: flex;
     justify-content: space-between;
+}
+.previewSum {
+    font-weight: 600;
 }
 .applyCoupon {
     font-family: 'Roboto' ,sans-serif;
     margin-top: 20px;
     width: 200px;
-    height: 38px;
+    height: 48px;
     font-size: 13px;
     font-weight: 200;
     border: none;
     border-radius: 6px;
-    background-color: #FFB800;
+    background-color: #fd9644;
     color: white;
+}
+#discount-code {
+    width: 200px;
+    height: 48px;
+}
+.applyCoupon:hover, .checkOut:hover {
+    background-color: #ee9853;
 }
 /* currency sign */
 td.cart-price:after, td.cart-sum:after, 
-.bill-detail span:last-child:after, .discount p:last-child:after,
 .previewSum span:last-child:after {
     content: '\20AB';
     margin-left: 5px;

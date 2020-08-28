@@ -1,6 +1,12 @@
 footer.bg-dark
     .container
         .row
+            .col-md-3.col-xs-12.newsletter
+                h4.title-newsletter Đăng ký nhận tin
+                form(action="#")
+                    .form-group.subscribe-newsletter
+                        input(type="email",class="form-control",placeholder="Nhập email của bạn")
+                        button(type="submit", class="btn btn-warning") Đăng Ký
             .col-md-3.col-xs-12.info-footer
                 h4.title-info-footer Thông tin cửa hàng
                 h5.add Địa chỉ: 
@@ -32,20 +38,15 @@ footer.bg-dark
                     li
                         a.quick-link(href="products.html") Sản Phẩm
                     li
-                        a.quick-link(href="blog.html") Zig Blog    
-            .col-md-3.col-xs-12.newsletter
-                h4.title-newsletter Đăng ký nhận tin
-                form(action="#")
-                    .form-group.subscribe-newsletter
-                        input(type="email",class="form-control",placeholder="Nhập email của bạn")
-                        button(type="submit", class="btn btn-warning") Đăng Ký
+                        a.quick-link(href="blog.html") Zig Blog 
                 .social-link
                     a(href="#")
                         i(class="fab fa-facebook-square", style="font-size:30px")
                     a(href="#")
                         i(class="fab fa-youtube", style="font-size:30px")
                     a(href="#")
-                        i(class="fab fa-instagram", style="font-size:30px")
+                        i(class="fab fa-instagram", style="font-size:30px")   
+            
     .container-fluid
         hr.divider
         .row

@@ -23,13 +23,15 @@
     <link rel="stylesheet" href="css/style_blog.css"/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start sticky-top bg-menu"><a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo.jpg" alt="Logo"/></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-sm-start bg-menu"><a class="navbar-brand order-1 order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo.jpg" alt="Logo"/></a>
       <button class="navbar-toggler align-self-start" type="button" data-toggle="collapse" data-target="#mobileToggle" aria-controls="mobileToggle" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
       <div class="collapse navbar-collapse d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end p-3 p-lg-0 mt-5 mt-lg-0 mobileMenu" id="mobileToggle">
+        <div class="userLogin__Mobile"><a class="nav-link dangnhap" href="login.html" title="Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"> </i>
+            <h4>Đăng Nhập</h4></a></div>
         <ul class="navbar-nav align-self-stretch mr-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ <span class="sr-only"></span></a></li>
           <li class="nav-item"><a class="nav-link" href="about.html">Về ZIGToys</a></li>
-          <li class="nav-item dropdown"><a class="nav-link" href="products.html">Sản Phẩm</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Sản Phẩm</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Zig Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
         </ul>
@@ -38,10 +40,21 @@
             <input type="text" placeholder="Tìm kiếm"/><a class="searchLink" href="#"><i class="fas fa-search search-icon"></i></a>
           </div>
         </form>
+        <div class="wrap-all justify-content-lg-end">
+          <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
+          <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+        </div>
       </div>
-      <div class="wrap-all justify-content-lg-end">
-        <div class="userLogin"><a class="nav-link dangnhap" href="login.html" title="Đăng Nhập"> <i class="far fa-user-circle" style="font-size:24px"></i></a></div>
-        <div class="cart-wrapper"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+      <div class="mobileComponent">
+        <div class="navbar-brand__Mobile"><a class="navbar-brand__Mobile order-lg-0 ml-lg-0 ml-2" href="index.html"><img src="images/icon/logo.jpg" alt="Logo"/></a></div>
+        <div class="wrap-all__Mobile">
+          <div class="cart-wrapper__Mobile"><a class="btn cart-icon" href="cart.html"><span class="badge badge-pill-red">0</span><i class="fa fa-shopping-cart" style="font-size:24px"></i></a></div>
+        </div>
+        <form class="form-inline form-search__Mobile my-2 my-lg-0">
+          <div class="searchBar__Mobile">
+            <input type="text" placeholder="Tìm kiếm sản phẩm..."/><a class="searchLink__Mobile" href="#"><i class="fas fa-search search-icon"></i></a>
+          </div>
+        </form>
       </div>
     </nav>
     <div class="backgroundOverlay"></div>
@@ -247,6 +260,15 @@
     <footer class="bg-dark">
       <div class="container">
         <div class="row">
+          <div class="col-md-3 col-xs-12 newsletter">
+            <h4 class="title-newsletter">Đăng ký nhận tin</h4>
+            <form action="#">
+              <div class="form-group subscribe-newsletter">
+                <input class="form-control" type="email" placeholder="Nhập email của bạn"/>
+                <button class="btn btn-warning" type="submit">Đăng Ký</button>
+              </div>
+            </form>
+          </div>
           <div class="col-md-3 col-xs-12 info-footer">
             <h4 class="title-info-footer">Thông tin cửa hàng</h4>
             <h5 class="add">Địa chỉ: <span>123 Lương Định Của</span></h5>
@@ -269,18 +291,9 @@
               <li><a class="quick-link" href="index.html">Trang Chủ</a></li>
               <li><a class="quick-link" href="about.html">Về ZIGToys</a></li>
               <li><a class="quick-link" href="products.html">Sản Phẩm</a></li>
-              <li><a class="quick-link" href="blog.html">Zig Blog    </a></li>
+              <li><a class="quick-link" href="blog.html">Zig Blog </a></li>
             </ul>
-          </div>
-          <div class="col-md-3 col-xs-12 newsletter">
-            <h4 class="title-newsletter">Đăng ký nhận tin</h4>
-            <form action="#">
-              <div class="form-group subscribe-newsletter">
-                <input class="form-control" type="email" placeholder="Nhập email của bạn"/>
-                <button class="btn btn-warning" type="submit">Đăng Ký</button>
-              </div>
-            </form>
-            <div class="social-link"><a href="#"><i class="fab fa-facebook-square" style="font-size:30px"></i></a><a href="#"><i class="fab fa-youtube" style="font-size:30px"></i></a><a href="#"><i class="fab fa-instagram" style="font-size:30px"></i></a></div>
+            <div class="social-link"><a href="#"><i class="fab fa-facebook-square" style="font-size:30px"></i></a><a href="#"><i class="fab fa-youtube" style="font-size:30px"></i></a><a href="#"><i class="fab fa-instagram" style="font-size:30px">  </i></a></div>
           </div>
         </div>
       </div>

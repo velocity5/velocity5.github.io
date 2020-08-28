@@ -18,17 +18,17 @@ block content
                         .form-group.fieldContain
                             label(for='') Họ tên
                             span(style="color:red;font-style:normal") *
-                            input.form-control.inputName(type='text' placeholder='Nhập Họ tên' required oninvalid="this.setCustomValidity('Vui lòng nhập tên của bạn.')" oninput="setCustomValidity('')" autocomplete="none" maxlength="100")
+                            input.form-control.inputName(type='text' placeholder='Nhập Họ tên' required autocomplete="none" maxlength="100")
                         .form-group.fieldContain
                             label(for='') Số điện thoại
                             span(style="color:red;font-style:normal") *
-                            input.form-control.inputNumb(type='number' placeholder='Nhập Số điện thoại' required oninvalid="this.setCustomValidity('Vui lòng nhập số điện thoại hợp lệ.')" oninput="setCustomValidity('')" autocomplete="none")
+                            input.form-control.inputNumb(type='number' placeholder='Nhập Số điện thoại' required autocomplete="none")
                         .form-group.selectContain.fieldContain
                             .labelForm
                                 label(for='') Tỉnh/Thành phố
                                 span(style="color:red;font-style:normal") *
                             select#input-user-city-province(name='city-province' required).selectCity.selectBox
-                                option(value='0').defaultOption  Chọn Tỉnh/Thành Phố
+                                option(value='').defaultOption  Chọn Tỉnh/Thành Phố
                                 option(value='01')  Thành phố Hà Nội
                                 option(value='79')  Thành phố Hồ Chí Minh
                                 option(value='31')  Thành phố Hải Phòng
@@ -92,18 +92,24 @@ block content
                                 option(value='94')  Tỉnh Sóc Trăng
                                 option(value='95')  Tỉnh Bạc Liêu
                                 option(value='96')  Tỉnh Cà Mau
+                            .dropArrow.dropCity
+                                i.fas.fa-chevron-down
                         .form-group.selectContain.fieldContain
                             .labelForm
                                 label(for="") Quận/Huyện
                                 span(style="color:red;font-style:normal") *
                             select#input-user-district(name='district' required).selectDst.selectBox
-                                option(value='0')  Chọn Quận/Huyện
+                                option(value='')  Chọn Quận/Huyện
+                            .dropArrow.dropDst
+                                i.fas.fa-chevron-down
                         .form-group.selectContain.fieldContain
                             .labelForm
                                 label(for="") Phường/Xã
                                 span(style="color:red;font-style:normal") *
                             select#input-user-commune(name='commune' required).selectCommune.selectBox
-                                option(value='0')  Chọn Phường/Xã
+                                option(value='')  Chọn Phường/Xã
+                            .dropArrow.dropCommune
+                                i.fas.fa-chevron-down
                         .form-group.fieldContain
                             .labelForm
                                 label(for="") Địa chỉ
