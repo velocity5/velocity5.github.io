@@ -172,6 +172,7 @@ function onLoadCartNumber() {
 	let productNumber = localStorage.getItem('cartNumber');
 	if (productNumber) {
 		document.querySelector(".cart-icon span").textContent = productNumber;
+		document.querySelector(".cart-wrapper__Mobile .cart-icon span").textContent = productNumber;
 	}
 }
 function cartNumber(product) {
@@ -180,9 +181,11 @@ function cartNumber(product) {
 	if (productNumber) {
 		localStorage.setItem('cartNumber', productNumber + 1);
 		document.querySelector(".cart-icon span").textContent = productNumber + 1;
+		document.querySelector(".cart-wrapper__Mobile .cart-icon span").textContent = productNumber + 1;
 	} else {
 		localStorage.setItem('cartNumber', 1);
 		document.querySelector(".cart-icon span").textContent = 1;
+		document.querySelector(".cart-wrapper__Mobile .cart-icon span").textContent = 1;
 	}
 	setItems(product);
 }
@@ -387,7 +390,6 @@ $('.product-section-header').click(function () {
 /* responsive filter function */
 $(window).on("load resize", () => {
 	let width = $(this).width();
-	console.log(width);
 	if (width <= 991) {
 		$("#product-filter").addClass("onMobile");
 	} else $("#product-filter").removeClass("onMobile");
@@ -396,7 +398,7 @@ $('#product_filter-icon').click(function () {
 	$("#product-filter").removeClass("isClose");
 	$(".darkLayer").css("display", "block");
 });
-$(" #product-close button").click(function () {
+$("#product-close button").click(function () {
 	$("#product-filter").addClass("isClose");
 	$(".darkLayer").css("display", "none");
 });
