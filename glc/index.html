@@ -1,16 +1,23 @@
+<!-- Khai báo kiểu tài liệu là html, cú pháp: "html:5" -->
 <!DOCTYPE html>
 <html lang="en">
+<!-- Bổ sung thông tin của trang web -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Charm Perfume | Trang chủ</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8"> <!--Mã ký tự sử dụng (Không cần để ý vì đã được viết sẵn)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Giúp trang web hiển thị tốt trên mọi thiết bị-->
+    <title> Charm Perfume | Trang chủ</title> <!--Title trên tab của trình duyệt-->
+    <link rel="stylesheet" href="style.css"> <!--Kết nối tới file css a.k a: External Css-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Font chữ sẽ dùng cho trang web -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <!-- Icon sẽ dùng cho trang web (Website: Fontawesome) -->
 </head>
+
 <body>
-    <header class="header">
-        <div class="container wrap">
+    <!-- Các thành phần muốn hiển thị lên trang web thì viết trong này -->
+
+    <header class="header"> <!-- Là phần đầu trang, chứa: logo website vs menu -->
+
+        <div class="container wrap"> <!-- Gom các thành phần không giống nhau của trang web -->
             <a href="index.html">
                 <img src="img/charmed.png" class="logo__wrap">
             </a>
@@ -31,10 +38,11 @@
                 </ul>
             </nav>
         </div>
-    </header>
-    <main class="main-content">
-        <div class="container">
-            <section class="banner">
+    </header>  <!-- End header -->
+
+    <main class="main-content">  <!-- Nội dung chính của trang web -->
+        <div class="container"> 
+            <section class="banner"> <!--Nhóm nội dung có liên quan đến nhau -->
                 <img src="img/banner.png" class="banner__img" alt="banner">
             </section>
             <section class="product">
@@ -44,7 +52,7 @@
                 <div class="product__list">
                     <div class="product__wrapper">
                         <div class="product__content">
-                            <a href="#">
+                            <a href="#"> <!-- Phần tử nào cần cho thành link đều bọc trong thẻ a -->
                                 <div class="products__img">
                                     <img src="img/pr1.png" alt="Wood Sage & Sea Salt Cologne">
                                 </div>
@@ -55,7 +63,7 @@
                                  </div>
                             </a>
                             <div class="product__price">
-                                <span>2.000.000 đ</span>
+                                <span>2.000.000 đ</span> <!-- Đánh dấu nội dung nhỏ như 1 từ hay số--> 
                             </div>
                         </div>     
                     </div>
@@ -184,7 +192,7 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer> <!-- Chân trang web. Chứa thông tin bản quyền, đường dẫn mạng xã hội, v.v... -->
         <p>Bản quyền thuộc về Charm &copy; 2020.</p>
         <p class="policy">
             <a href="#">Chính sách riêng tư</a>
@@ -202,5 +210,6 @@
             </a>
         </div>
     </footer>
+<!--Kết thúc trang web-->
 </body>
 </html>
