@@ -374,7 +374,11 @@ function updateCartSum(currentItem, currentQty) {
 }) */
 /* end apply coupon */
 $(function () {
-	AOS.init();
+	AOS.init({
+		disable: 'mobile',
+		once: true
+	});
+	
 });
 /* filter function */
 $('.reset').click(function () {

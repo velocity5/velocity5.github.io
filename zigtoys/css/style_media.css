@@ -200,6 +200,12 @@
             z-index: 1;
         }
         /* homepage */
+        .product-title a {
+            font-size: 16px;
+        }
+        .overlap {
+            margin-top: auto;
+        }
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 34%;
         }
@@ -215,13 +221,12 @@
         .prev {
             margin-left: 85%;
         }
-        .subscribe-newsletter .form-control {
+        .subscribe-newsletter, .title-newsletter {
+            transform: translate(-20px, 0px);
+        }
+        .subscribe-newsletter .form-control, .subscribe-newsletter button {
             width: 180px;
         }
-        .subscribe-newsletter button {
-            width: 120px;
-        }
-
         /* about us */
         .title-col {
             padding: 2px;
@@ -575,7 +580,6 @@
         }
     }
     @media (max-width: 450px) {
-        /* */
         .blog-image img {
             height: auto;
         }
@@ -598,6 +602,14 @@
         /* cart */
         .applyCoupon, #discount-code {
             width: 100%!important;
+        }
+        /* contact */
+          #submit {
+            width: 100%;
+        }
+        /* footer */
+        .subscribe-newsletter, .title-newsletter {
+            transform: translate(0px, 0px);
         }
     }
     @media (max-width: 449px) {
@@ -828,6 +840,12 @@
         }
         #detail-tab, #descript-tab, #review-tab {
             padding: 25px 9px 20px;
+        }
+        .comment-section ul > li .comment-img img {
+            width: 50px;
+        }
+        .comment-section ul > li .comment-content p {
+            padding: 0;
         }
         /* checkout */
         .payment-list span.radio-fake {
