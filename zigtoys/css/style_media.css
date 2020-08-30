@@ -590,8 +590,11 @@
          .thumb-card {
             margin-bottom: 20px;
         }
-        #detail-tab, #descript-tab, #review-tab {
+        #detail-tab, #descript-tab {
             padding: 19px 18px;
+        }
+        a#review-tab {
+            padding: 19px 13.8px;
         }
         .description-tab .tabs-hold, .description-tab .tab-content {
             width: auto;
@@ -625,6 +628,9 @@
         .subscribe .btn-outline-secondary.btn-subscribe {
             margin-left: 30%;
         }
+        #detail-tab, #descript-tab, #review-tab {
+            padding: 20px 17.7px;
+        }
     }
     @media (max-width: 448px) { 
         .text-right {
@@ -638,9 +644,6 @@
         }
         .error {
             margin-left: 1rem;
-        }
-        #detail-tab, #descript-tab, #review-tab {
-            padding: 20px 4px;
         }
     }
     @media (max-width: 430px) {
