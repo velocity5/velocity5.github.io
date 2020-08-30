@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 5px 10px;
+    color: #fff;
+    background: green;
+    border: green;
+    border-radius: 3px;
+    transition: all 0.4s ease;
+}
+button:hover {
+    box-shadow: 10px 5px 15px -5px rgba(150,145,150,1);
+}
+/* table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+    background: #000;
+}
+table td, table th {
+    padding: 12px;
+    border-top: 1px solid #576574;
+}
+.th-dark tr th {
+    padding: 5px 10px;
+}
+tr td {
+    background: #8395a7;
+}
+td a:first-child {
+    color: #bdc3c7;
+    text-decoration: none;
+}
+td a:first-child:hover {
+    color: #fff;
+}
+td a:last-child {
+    color: crimson;
+    text-decoration: none;
+}
+td a:last-child:hover {
+    color: brown;
+}
