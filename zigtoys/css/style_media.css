@@ -103,9 +103,8 @@
         .navbar-brand__Mobile {
             order: 2;
             position: absolute;
+            transform: translate(-50px, -50px);
             left: 50%;
-            margin-left: -50px;
-            top: -100%;
         }
         .wrap-all__Mobile {
             display: block;
@@ -745,6 +744,9 @@
         }
     }
     @media (max-width: 320px) {
+        .navbar-brand__Mobile {
+            left: 44%;
+        }
         .box-contain .fa-eye {
             margin-left: 13rem;
         }
@@ -793,11 +795,6 @@
             text-align: justify;
         }
     }
-    @media (max-width: 299px) {
-        .navbar-brand__Mobile {
-            left: 45%;
-        }
-    }
     @media (max-width: 290px) {
         .wrap-all__Mobile {
             left: 74%;
@@ -816,6 +813,9 @@
         }
         .product-container table tr th {
             padding: 0.5rem 0 0.5rem 0rem;
+        }
+        .navbar-brand__Mobile {
+            left: 40%;
         }
     }
     @media (max-width: 280px) {

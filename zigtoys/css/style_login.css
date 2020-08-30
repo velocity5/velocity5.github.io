@@ -17,7 +17,9 @@ body {
     display: block;
 }
 .logo-img {
-    margin: auto auto 10px 10px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
 }
 .wrap-form {
     max-width: 300px;
@@ -29,19 +31,16 @@ body {
 .nav-pills .show>.nav-link {
     background: #fd9644;
 }
-#pillsTab {
-    transform: translate(50px);
-}
+
 .inputGroup {
     top: 30px;
     position: absolute;
-    width: 280px;
+    width: 100%;
     transition: all .4s ease;
 }
 .inputField {
-    width: 100%;
     padding: 10px;
-    margin: 5px 0;
+    margin: 5px -15px;
     border-radius: 3px;
     border: 1px solid #bdc3c7;
     outline: none;
@@ -55,34 +54,36 @@ body {
 }
 .eyeConLog {
     position: absolute;
-    right: 10px;
+    right: 10%;
     top: 20%;
 }
 .eyeConSign {
     position: absolute;
-    right: 10px;
+    right: 10%;
     top: 34%;
 }
 #btnLogin, #btnSignup {
-    width: 85%;
+    width: 216px;
     padding: 10px 30px;
     font-weight: 600;
     cursor: pointer;
     display: block;
-    margin: auto;
     background: #fd9644;
     color: #f7f1e3;
     border: 0;
     outline: none;
 }
+#btnLogin {
+    transform: translate(-12px, -20px);
+}
+#btnSignup {
+    transform: translate(-12px, 0);
+}
 #btnLogin:hover, #btnSignup:hover {
     background: #fcaa67;
 }
-#btnSignup {
-    margin-top: 20px;
-}
 #remember_me {
-    margin: 10px 0 30px 0;
+    margin: 10px 0 30px -13px;
 }
 .forgot-pwd::before {
     content: '\f059';
@@ -90,7 +91,6 @@ body {
     margin-right: 2px;
 }
 .forgotBox {
-    margin: 5px;
     text-align: center;
 }
 a.forgot-pwd {
