@@ -33,11 +33,11 @@ tr td {
     background: #8395a7;
 }
 td a:first-child {
-    color: #bdc3c7;
+    color: #fff;
     text-decoration: none;
 }
 td a:first-child:hover {
-    color: #fff;
+    color: #bdc3c7;
 }
 td a:last-child {
     color: crimson;
@@ -45,4 +45,41 @@ td a:last-child {
 }
 td a:last-child:hover {
     color: brown;
+}
+/* modal */
+.modal-title {
+    font-size: 16px;
+}
+/* update */
+.container h1 {
+    text-align: center;
+    margin-top: 12px;
+}
+.form-control {
+    padding: 5px 10px;
+    outline: 0;
+}
+.form-flex {
+    display: flex;
+    margin: 12px;
+    padding: 12px;
+    justify-content: center;
+}
+.wrap {
+    margin-right: 20px;
+}
+span.danger {
+    color: crimson;
+}
+.btn-group {
+    text-align: center;
+}
+.btn-group .btn-back {
+    padding: 10px 20px;
+    background: grey;
+    margin-right: 20px;
+}
+.btn-group .btn-save {
+    padding: 10px 20px;
+    background: green;
 }
