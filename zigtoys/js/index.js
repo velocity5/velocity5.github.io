@@ -497,6 +497,9 @@ $(document).ready(function() {
 	$(".buynow").click(function () {
 		location.href = "address.html";
 	});
+	$(".checkOut").click(function () {
+		location.href = "checkout.html";
+	})
 });
 
 
