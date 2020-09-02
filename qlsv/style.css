@@ -54,10 +54,7 @@ td a:last-child:hover {
 .container h1 {
     text-align: center;
     margin-top: 12px;
-}
-.form-control {
-    padding: 5px 10px;
-    outline: 0;
+    margin-bottom: 20px;
 }
 .form-flex {
     display: flex;
@@ -65,21 +62,26 @@ td a:last-child:hover {
     padding: 12px;
     justify-content: center;
 }
-.wrap {
-    margin-right: 20px;
-}
+
 span.danger {
     color: crimson;
 }
-.btn-group {
+
+/* create new */
+form {
+    margin-top: 20px;
+}
+.flex-btn {
     text-align: center;
 }
-.btn-group .btn-back {
+.flex-btn .btn-back {
     padding: 10px 20px;
     background: grey;
     margin-right: 20px;
+    color: #fff;
 }
-.btn-group .btn-save {
+.flex-btn .btn-save {
     padding: 10px 20px;
     background: green;
+    color: #fff;
 }
