@@ -1,1 +1,0 @@
-<?php do_action( 'savana_lite_header_sidebar'); ?>
