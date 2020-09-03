@@ -1,2 +1,2 @@
-# Project web front-end
+# Project Web Front-end
 ## Framework Used: BS4
