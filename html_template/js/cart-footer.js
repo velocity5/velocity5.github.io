@@ -12,21 +12,21 @@ function CartFooter(props) {
             Subtotal{" "}
             <span>
               $
-              {props.subTotal}
+              {(props.subTotal).toLocaleString()}
             </span>
           </li>
           <li>
             Tax{" "}
             <span>
               $
-              {props.tax}
+              {(props.tax).toLocaleString()}
             </span>
           </li>
           <li className="total">
             Total{" "}
             <span>
               $
-              {props.subTotal + props.tax}
+              {(props.subTotal + props.tax).toLocaleString()}
             </span>
           </li>
         </ul>
