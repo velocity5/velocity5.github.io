@@ -5,153 +5,175 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cut Web Minimo</title>
+	<script src="https://kit.fontawesome.com/75e2b85055.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles/style.css">	
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="css_fontawesome/all.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-			<ul class="navbar-nav navmenu">
-				<li class="nav-item" id="item1">
-					<a class="nav-link" href="#">lifestyle</a>
-				</li>
-				<li class="nav-item" id="item2">
-					<a class="nav-link" href="photodiary.html">photodiary</a>
-				</li>
-				<li class="nav-item" id="item3">
-					<a class="nav-link" href="#">music</a>
-				</li>
-				<li class="nav-item" id="item4">
-					<a class="nav-link" href="#">travel</a>
-				</li>
-			</ul>
+	<div class="wrapper">
+		<header>
+			<div class="row in__row">
+				<div class="col logo">
+					<a href=""class="minimo">
+						<img src="images/logo.jpg" alt="logo">
+					</a>
+				</div>
+				<div class="col menu">
+					<ul>
+						<li><a href="">lifestyle</a></li>
+						<li><a href="">photodiary</a></li>
+						<li><a href="">music</a></li>
+						<li><a href="">travel</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<img src="images/girls.jpg" alt="2 girls">
+		<div class="container">
+			<h3 class="title">
+				photodiary
+			</h3>
+			<h2 class="head__title">
+				The perfect weekend getaway
+			</h2>
+			<p class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+			</p>
+			<input type="text" placeholder="LEAVE A COMMENT" id="cmt">
 		</div>
-	</nav>
-	<!-- end navmenu -->
-	<div class="container">
-		<div class="row section-zero">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<img src="images/girls.jpg" alt="girls">
-				<h4 class="title"><strong>photodiary</strong></h4>
-				<a href="" class="heading-section-zero">The perfect weekend gateway</a>
-				<p class="content">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-					et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-					aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-					culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus
-					error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-					inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-					voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-					qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-					amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
-					dolore magnam aliquam quaerat voluptatem.
-				</p>
-				<input type="text" name="comment" class="comment" placeholder="Leave a comment">
+		<section class="posts__upper">
+			<div class="row">
+				<div class="col">
+					<a href="" class="posts__link">
+						<img src="images/crowd.jpg" alt="girl raising hand">
+						<h5 class="tag__text">
+							lifestyle
+						</h5>
+						<h3 class="post__title">
+							More than just a music festival
+						</h3>
+						<p class="post__content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate hic! Cupiditate, iste fugiat inventore tempora laudantium doloribus rerum iure, aliquam at sed eius autem earum omnis quibusdam labore quidem.
+						</p>
+					</a>
+				</div>
+				<div class="col">
+					<a href="" class="posts__link">
+						<img src="images/coffee.jpg" alt="coffee">
+						<h5 class="tag__text">
+							lifestyle
+						</h5>
+						<h3 class="post__title">
+							Life tastes better with coffee
+						</h3>
+						<p class="post__content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate hic! Cupiditate, iste fugiat inventore tempora laudantium doloribus rerum iure, aliquam at sed eius autem earum omnis quibusdam labore quidem.
+						</p>
+					</a>
+				</div>
+				<div class="col">
+					<a href="" class="posts__link">
+						<img src="images/bridge.jpg" alt="girl in bridge">
+						<h5 class="tag__text">
+							lifestyle
+						</h5>
+						<h3 class="post__title">
+							American dream
+						</h3>
+						<p class="post__content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate hic! Cupiditate, iste fugiat inventore tempora laudantium doloribus rerum iure, aliquam at sed eius autem earum omnis quibusdam labore quidem.
+						</p>
+					</a>
+				</div>
+				<div class="col">
+					<a href="" class="posts__link">
+						<img src="images/girl-back-hat.jpg" alt="girl back hat">
+						<h5 class="tag__text">
+							lifestyle
+						</h5>
+						<h3 class="post__title">
+							A day exploring the Alps
+						</h3>
+						<p class="post__content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate hic! Cupiditate, iste fugiat inventore tempora laudantium doloribus rerum iure, aliquam at sed eius autem earum omnis quibusdam labore quidem.
+						</p>
+					</a>
+				</div>
 			</div>
-		</div>
-		<div class="row section-one">
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="images/crowd.jpg" class="img-style img-left" alt="girl-with-crowd">
-				<h4 class="title-style"><strong>lifestyle</strong></h4>
-				<a href="" class="heading"><strong>More than just a music festival</strong></a>
-				<p class="style-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris </p>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="images/coffee.jpg" class="img-style" alt="coffee-cup">
-				<h4 class="title-style"><strong>lifestyle</strong></h4>
-				<a href="" class="heading"><strong>Life tastes better with coffee</strong></a>
-				<p class="style-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris </p>
-			</div>
-		</div>
-		<div class="row section-two">
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="images/bridge.jpg" class="img-style" alt="bridge">
-				<h4 class="title-style"><strong>photography</strong></h4>
-				<a href="" class="heading"><strong>American dream</strong></a>
-				<p class="style-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris </p>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="images/girl.jpg" class="img-style" alt="a girl">
-				<h4 class="title-style"><strong>photography</strong></h4>
-				<a href="" class="heading"><strong>A day exploring the Alps</strong></a>
-				<p class="style-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris </p>
-			</div>
-		</div>
+		</section>
 	</div>
-	<div class="container-fluid signup-form">
-		<div class="row background-signup">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<h2 class="signup"><strong>Sign up for our newsletter!</strong></h2>
-				<input type="email" name="mail" placeholder="Enter a valid email address" class="mail-box"><a href="#"
-					class="send-icon"><img src="images/send-icon.png"></a>
+	<section class="newsletter">
+		<div class="newsletter__contain">
+			<h3 class="newsletter__signup">
+				Sign up for our newsletter!
+			</h3>
+			<div class="mail-input">
+				<input type="email" placeholder="Enter a valid email address"/>
+				<a href="#" class="send__icon">
+					<img src="images/send-icon.png" alt="" />
+				</a>
 			</div>
 		</div>
-	</div>
-	<div class="container">
-		<div class="row section-three">
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="images/girl-back-hat.jpg" class="img-style" alt="girl-back-hat">
-				<h4 class="title-style"><strong>lifestyle</strong></h4>
-				<a href="" class="heading"><strong>Top 10 song for running</strong></a>
-				<p class="style-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris </p>
-			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<img src="images/road.jpg" class="img-style" alt="road">
-				<h4 class="title-style"><strong>lifestyle</strong></h4>
-				<a href="" class="heading"><strong>Cold winter days</strong></a>
-				<p class="style-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-					incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-					ullamco laboris </p>
-			</div>
-		</div>
-		<div class="row load-more">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-				<button class="btn btn-outline-secondary btn-load">Load more</button>
-			</div>
+	</section>
+	<div class="wrapper">
+		<section class="posts__lower">
+			<div class="row">
+				<div class="col">
+					<a href="" class="posts__link">
+						<img src="images/girl-back-hat.jpg" alt="girl hat">
+						<h5 class="tag__text">
+							lifestyle
+						</h5>
+						<h3 class="post__title">
+							Top 10 song for running
+						</h3>
+						<p class="post__content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate hic! Cupiditate, iste fugiat inventore tempora laudantium doloribus rerum iure, aliquam at sed eius autem earum omnis quibusdam labore quidem.
+						</p>
+					</a>
+				</div>
+				<div class="col">
+					<a href="" class="posts__link">
+						<img src="images/road.jpg" alt="road">
+						<h5 class="tag__text">
+							lifestyle
+						</h5>
+						<h3 class="post__title">
+							Cold winter days
+						</h3>
+						<p class="post__content">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, voluptate hic! Cupiditate, iste fugiat inventore tempora laudantium doloribus rerum iure, aliquam at sed eius autem earum omnis quibusdam labore quidem.
+						</p>
+					</a>
+				</div>
+		</section>
+		<div class="load__btn">
+				<a href="">	
+					<span class="span__btn">Load more</span>
+				</a>
 		</div>
 	</div>
 	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 terms-section">
-					<a href="#" class="terms">Terms and conditions</a>
-					<a href="#">Privacy</a>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 follow-section">
-					<p>Follow <i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <a href=""><img src="images/insta.png"></a></p>
-				</div>
+		<div class="row">
+			<div class="col left__text">
+				<p>
+					<a href="">Term and conditions</a>
+				</p>
+				<p>
+					<a href="">Privacy</a>
+				</p>
+			</div>
+			<div class="col right_icon">
+				<p>Follow</p>
+				<a href=""><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
 			</div>
 		</div>
 	</footer>
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-		crossorigin="anonymous"></script>
 </body>
 
 </html>
